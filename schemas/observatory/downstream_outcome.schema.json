@@ -1,0 +1,136 @@
+{
+  "$id": "https://example.invalid/observatory/downstream_outcome.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "candidate_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "censoring_date": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "doi": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "downstream_outcome_id": {
+      "type": "string"
+    },
+    "native_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "occurred_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "outcome_type": {
+      "type": "string"
+    },
+    "provenance_event_id": {
+      "type": "string"
+    },
+    "record_version": {
+      "type": "integer"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_object_id": {
+      "type": "string"
+    },
+    "value_json": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "value_numeric": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "venue": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "window_years": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "downstream_outcome_id",
+    "candidate_id",
+    "outcome_type",
+    "source_id",
+    "source_object_id",
+    "provenance_event_id",
+    "observed_at",
+    "record_version"
+  ],
+  "title": "Observatory downstream_outcome",
+  "type": "object"
+}

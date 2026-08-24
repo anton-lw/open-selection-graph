@@ -1,0 +1,16 @@
+schema: observatory.construct-model-register/1
+registered_at: 2026-08-20T00:00:00Z
+analysis_partition: exploratory_existing
+alternatives:
+  - id: correlated_multitrait
+    dimensions: [human_overall, human_confidence, semantic_word, semantic_char]
+    factor_count: 2
+  - id: single_common_factor
+    dimensions: [human_overall, human_confidence, semantic_word, semantic_char]
+    factor_count: 1
+  - id: method_separated
+    dimensions: [human_overall, human_confidence, semantic_word, semantic_char]
+    factor_count: 3
+invariance_groups: [gate_architecture, source_id, policy_version_id]
+decision_rule: Compare held-in reconstruction error and loading congruence; never pool a group whose first-component congruence is below 0.90.
+attenuation_rule: Join rubric-specific reliability ceilings; report uncorrected correlations and ceilings, never silently correct.

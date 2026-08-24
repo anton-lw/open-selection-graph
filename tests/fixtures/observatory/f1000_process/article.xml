@@ -1,0 +1,2412 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE article PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Publishing DTD v1.2 20190208//EN" "http://jats.nlm.nih.gov/publishing/1.2/JATS-journalpublishing1.dtd"><article xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" article-type="research-article" dtd-version="1.2" xml:lang="en">
+    <front>
+        <journal-meta>
+            <journal-id journal-id-type="pmc">F1000Research</journal-id>
+            <journal-title-group>
+                <journal-title>F1000Research</journal-title>
+            </journal-title-group>
+            <issn pub-type="epub">2046-1402</issn>
+            <publisher>
+                <publisher-name>F1000 Research Limited</publisher-name>
+                <publisher-loc>London, UK</publisher-loc>
+            </publisher>
+        </journal-meta>
+        <article-meta>
+            <article-id pub-id-type="doi">10.12688/f1000research.1-1.v1</article-id>
+            <article-categories>
+                <subj-group subj-group-type="heading">
+                    <subject>Research Article</subject>
+                </subj-group>
+                <subj-group>
+                    <subject>Articles</subject>
+                    <subj-group>
+                        <subject>Epidemiology</subject>
+                    </subj-group>
+                    <subj-group>
+                        <subject>Global Health</subject>
+                    </subj-group>
+                    <subj-group>
+                        <subject>Preventive Medicine</subject>
+                    </subj-group>
+                    <subj-group>
+                        <subject>Social &amp; Behavioral Determinants of Health</subject>
+                    </subj-group>
+                </subj-group>
+            </article-categories>
+            <title-group>
+                <article-title>Knowledge of specific HIV transmission modes in relation to HIV infection in Mozambique</article-title>
+                <fn-group content-type="pub-status">
+                    <fn>
+                        <p>[version 1; peer review: 2 approved, 1 not approved]</p>
+                    </fn>
+                </fn-group>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author" corresp="yes">
+                    <name>
+                        <surname>Brewer</surname>
+                        <given-names>Devon D</given-names>
+                    </name>
+                    <xref ref-type="corresp" rid="c1">a</xref>
+                    <xref ref-type="aff" rid="a1">1</xref>
+                </contrib>
+                <aff id="a1">
+                    <label>1</label>Interdisciplinary Scientific Research, Seattle, WA, USA</aff>
+            </contrib-group>
+            <author-notes>
+                <corresp id="c1">
+                    <label>a</label>
+                    <email xlink:href="mailto:dbrewer@interscientific.net">dbrewer@interscientific.net</email>
+                </corresp>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No relevant competing interests declared.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>13</day>
+                <month>7</month><year>2012</year>
+            </pub-date>
+            <pub-date pub-type="collection"><year>2012</year>
+            </pub-date><volume>1</volume>
+            <elocation-id>1</elocation-id>
+            <history>
+                <date date-type="accepted">
+                    <day>2</day>
+                    <month>7</month><year>2012</year>
+                </date>
+            </history>
+            <permissions>
+                <copyright-statement>Copyright: &#xA9; 2012 Brewer DD</copyright-statement>
+                <copyright-year>2012</copyright-year>
+                <license xlink:href="https://creativecommons.org/licenses/by/3.0/">
+                    <license-p>This is an open access article distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+                </license>
+            </permissions>
+            <self-uri content-type="pdf" xlink:href="https://f1000research.com/articles/1-1/pdf"/>
+            <abstract>
+                <p>
+                    <bold>Background:</bold> In prior research, Africans who knew about blood-borne risks were modestly less likely to be HIV-infected than those who were not aware of such risks.</p>
+                <p>
+                    <bold>Objectives/Methods:</bold> I examined the association between knowledge of specific HIV transmission modes and prevalent HIV infection with data from the 2009 Mozambique AIDS Indicator Survey.</p>
+                <p>
+                    <bold>Results:</bold> Respondents displayed high awareness of blood exposures and vaginal sex as modes of HIV transmission. However, only about half of respondents were aware of anal sex as a way HIV can be transmitted. After adjustments for demographics and sexual behaviors, respondents who knew that HIV could spread by contact with infected blood or by sharing injection needles or razor blades were less likely to be infected than those who did not know about these risks. Respondents who knew about sexual risks were as, or more, likely to be HIV infected as those who did not know about sexual risks. Also, children of HIV-uninfected mothers were less likely to be infected if their mothers were aware of blood-borne HIV risks than if their mothers were unaware.</p>
+                <p>
+                    <bold>Conclusion:</bold> HIV education campaigns in Mozambique and elsewhere in sub-Saharan Africa should include a focus on risks from blood exposures and anal sex.</p>
+            </abstract>
+            <kwd-group kwd-group-type="author">
+                <kwd>iatrogenic disease</kwd>
+                <kwd>HIV</kwd>
+                <kwd>knowledge</kwd>
+                <kwd>health education</kwd>
+                <kwd>infectious disease transmission</kwd>
+            </kwd-group>
+            <funding-group>
+                <funding-statement>The author(s) declared that no grants were involved in supporting this work.</funding-statement>
+            </funding-group>
+        </article-meta>
+    </front>
+    <body>
+        <sec sec-type="intro">
+            <title>Introduction</title>
+            <p>A wide variety of blood exposures is independently associated with incident and prevalent HIV infection in sub-Saharan Africa
+                <sup>
+                    <xref ref-type="bibr" rid="ref-1">1</xref>&#x2013;
+                    <xref ref-type="bibr" rid="ref-9">9</xref>
+                </sup>. Anal sex has also been repeatedly associated with HIV infection in heterosexual Africans
+                <sup>
+                    <xref ref-type="bibr" rid="ref-10">10</xref>&#x2013;
+                    <xref ref-type="bibr" rid="ref-15">15</xref>
+                </sup>, with some exceptions
+                <sup>
+                    <xref ref-type="bibr" rid="ref-16">16</xref>,
+                    <xref ref-type="bibr" rid="ref-17">17</xref>
+                </sup>. Knowledge of blood-borne HIV risks varies markedly across the region, with awareness much higher in West, central and East Africa than in southern Africa
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup>. This geographic variation in knowledge corresponds closely to differences in HIV prevalence, such that countries in which many people know about blood-borne risks have much lower HIV prevalence than countries in which few know about these risks. Although HIV education campaigns in West, central and East Africa have included a focus on blood-borne risks, campaigns in Southern Africa have not, likely leading to deficits in Southern Africans&#x2019; knowledge. At the individual level, persons who know about blood-borne risks are modestly less likely to be HIV-infected than those who are not aware of such risks, independent of demographics and sexual behaviors
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup>.</p>
+            <p>In contrast, belief in condom use as a strategy for avoiding HIV infection is positively associated with HIV infection at both the individual and national levels in sub-Saharan Africa
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup>. That is, those who believe condoms are an effective strategy for preventing HIV transmission are more likely to be HIV-infected than those who do not believe condom use protects against HIV, independent of demographics and sexual behaviors.</p>
+            <p>Although long assumed to be rare, anal sex is not uncommon in sub-Saharan Africa, as modest to large proportions of heterosexual men and women report engaging in it
+                <sup>
+                    <xref ref-type="bibr" rid="ref-10">10</xref>&#x2013;
+                    <xref ref-type="bibr" rid="ref-15">15</xref>,
+                    <xref ref-type="bibr" rid="ref-19">19</xref>&#x2013;
+                    <xref ref-type="bibr" rid="ref-27">27</xref>
+                </sup>. Research based on nonprobability samples suggests that many Africans are unaware that anal sex is a significant risk for HIV transmission. While 87% of young adult Nigerians in one study knew anal sex is an HIV risk
+                <sup>
+                    <xref ref-type="bibr" rid="ref-28">28</xref>
+                </sup>, only 54% of men in Cape Town, South Africa in 1999
+                <sup>
+                    <xref ref-type="bibr" rid="ref-19">19</xref>
+                </sup> and 29% of adolescents in a Western Cape (South Africa) township with very high HIV prevalence shared that perception
+                <sup>
+                    <xref ref-type="bibr" rid="ref-26">26</xref>
+                </sup>. Some South African women in a qualitative study explained the lack of risk involved with anal sex
+                <sup>
+                    <xref ref-type="bibr" rid="ref-29">29</xref>
+                </sup>. Moreover, Kenyan prostitutes viewed vaginal sex as equally or more risky than anal sex
+                <sup>
+                    <xref ref-type="bibr" rid="ref-21">21</xref>
+                </sup>. Throughout the last 13 years, researchers have noted that HIV education campaigns targeting heterosexuals in sub-Saharan Africa lack warnings about the risk of anal sex
+                <sup>
+                    <xref ref-type="bibr" rid="ref-10">10</xref>,
+                    <xref ref-type="bibr" rid="ref-15">15</xref>,
+                    <xref ref-type="bibr" rid="ref-19">19</xref>,
+                    <xref ref-type="bibr" rid="ref-23">23</xref>,
+                    <xref ref-type="bibr" rid="ref-24">24</xref>,
+                    <xref ref-type="bibr" rid="ref-27">27</xref>,
+                    <xref ref-type="bibr" rid="ref-30">30</xref>
+                </sup>.</p>
+            <p>In this paper, I report on the relationship between knowledge of HIV transmission routes and prevalent HIV infection in Mozambique, a country with high HIV prevalence not included in prior analyses. I analyzed data from the 2009 Mozamibique AIDS Indicator Survey (AIS), a special version of the Demographic and Health Surveys (DHS) conducted in poor countries. The 2009 Mozambique AIS differs from prior DHS with respect to how knowledge of HIV transmission risks was measured. In the 2009 Mozambique AIS respondents were asked directly about several specific blood-borne and sexual transmission routes. The 2009 Mozambique AIS also involved HIV testing of children, enabling examination of the association between mothers&#x2019; knowledge of blood-borne HIV transmission routes and HIV infection in their children.</p>
+        </sec>
+        <sec sec-type="methods">
+            <title>Methods</title>
+            <sec>
+                <title>2009 Mozambique AIDS Indicator Survey (AIS) data</title>
+                <p>In the 2009 Mozambique AIS, the household participation rate was 99%, and 95% of eligible women (age 15-64) and 90% of eligible men (age 15&#x2013;64) participated
+                    <sup>
+                        <xref ref-type="bibr" rid="ref-31">31</xref>
+                    </sup>. Ninety-two percent of adult respondents and 87% of children between ages 0 and 11 years provided dried blood spot specimens for HIV testing. HIV serostatus was determined with an enzyme-linked immunosorbent assay (ELISA) test and confirmed by a different ELISA test. Specimens with discrepant ELISA results were confirmed by a further ELISA test. The 2009 Mozambique AIS data and documentation are available at 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.measuredhs.com">http://www.measuredhs.com</ext-link>.</p>
+                <p>I included respondents&#x2019; data in analysis if they reported never having been tested previously for HIV and also reported awareness of HIV/AIDS. HIV counseling may, in some places, involve education about blood-borne and sexual risks
+                    <sup>
+                        <xref ref-type="bibr" rid="ref-32">32</xref>
+                    </sup>, which may confound the relationship between knowledge and serostatus
+                    <sup>
+                        <xref ref-type="bibr" rid="ref-33">33</xref>
+                    </sup>. Respondents who did not report awareness of HIV/AIDS were not asked about ways that it could be transmitted. Ninety-seven percent of female respondents and 99% of male respondents reported they had heard of HIV/AIDS.</p>
+                <p>Respondents who reported awareness of HIV/AIDS were asked whether it was possible to transmit HIV through each of several types of direct and indirect interpersonal contact. I focused on knowledge of four types of contact: sharing injection needles/blades; contact with infected blood; unprotected vaginal sex (i.e., vaginal sex without a condom); and unprotected anal sex. I coded "don&#x2019;t know" responses to these questions as "no".</p>
+                <p>For the analyses of mother&#x2019;s knowledge and child&#x2019;s serostatus, I included biological mother-child pairs in which the mother was HIV-uninfected, to eliminate confounding by vertical transmission.</p>
+            </sec>
+            <sec>
+                <title>2003 Mozambique Demographic and Health Survey (DHS) data</title>
+                <p>In the 2003 Mozambique DHS, the household participation rate was 95%, and 91% of eligible women (age 15-49 years) and 81% of eligible men (age 15&#x2013;64 years) participated
+                    <sup>
+                        <xref ref-type="bibr" rid="ref-34">34</xref>
+                    </sup>. Women were recruited as respondents from all households, but men were recruited as respondents only from one-third of households. Respondents did not provide blood specimens for HIV testing. The 2003 Mozambique DHS data and documentation are also available at 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.measuredhs.com">http://www.measuredhs.com</ext-link>.</p>
+                <p>As I did with the AIS data, I included respondents&#x2019; data in analysis if they reported never having been tested previously for HIV and also reported awareness of HIV/AIDS. Ninety-seven percent of female respondents and 99% of male respondents in the 2003 DHS reported they had heard of HIV/AIDS.</p>
+                <p>Respondents who reported awareness of HIV/AIDS were asked "Do you know how you can avoid HIV/AIDS?" Those answering affirmatively were then asked "How can you prevent HIV/AIDS?" Interviewers encouraged and recorded multiple responses, and responses were coded by DHS staff. To compare with the 2009 Mozambique AIS and other DHS, I focused on two measures: whether a respondent had a response that was coded as "only use sterilized syringes/needles" and "always use a condom". I coded "don&#x2019;t know" responses to the open-ended question as "no" for each of these measures.</p>
+            </sec>
+            <sec>
+                <title>Statistical analysis</title>
+                <p>With the 2009 Mozambique AIS data, I computed cross-classifications, odds ratios, and the associated 95% confidence intervals (CI) for the relationships between each knowledge measure and prevalent HIV infection, separately for women and men. To examine the associations further, I calculated the odds ratios, with HIV status as the dependent variable and a knowledge measure as the independent variable, adjusted for age (in whole years), urban/rural residence, number of whole years of education, wealth (in quintiles), reported number of sex partners in the prior 12 months, and whether the respondent reported having had a sexually transmitted disease in the prior 12 months. In addition, I calculated adjusted odds ratios (AORs) in the manner just described but adjusting for each of the three other knowledge measures as well. I also computed the Pearson (phi) correlation between each pair of knowledge measures. I used SPSS 7.5 (SPSS Inc., Chicago, USA) to perform the analyses. I compared the adjusted odds ratios for Mozambique with similar DHS results from four countries in Southern Africa (Lesotho, Malawi, Swaziland, and Zimbabwe) based on knowledge measures derived from free responses to an open-ended question about ways to avoid HIV infection
+                    <sup>
+                        <xref ref-type="bibr" rid="ref-18">18</xref>
+                    </sup>.</p>
+            </sec>
+            <sec>
+                <title>Online search of HIV prevention education efforts focused on blood-borne risks</title>
+                <p>In July of 2011, I sought evidence of public HIV education campaigns focused on blood-borne risks in Mozambique by searching two online databases: the Google search engine and the Media/Materials Clearinghouse. For the Google search, I used the key words "Mozambique", "HIV", and "razor". I examined the resources identified until I found 30 consecutive resources to be irrelevant (for a total 320 resources examined). I repeated this search in September of 2011 at the Google&#x2019;s Mozambican site, with the equivalent key words in Portuguese: "Mo&#xE7;ambique", "VIH," and "l&#xE2;mina" (290 resources examined). I also extended this search by adding, in turn, the names of the 14 HIV prevention programs and campaigns mentioned in the AIS questionnaire (for questions about respondents&#x2019; familiarity with the programs and campaigns)
+                    <sup>
+                        <xref ref-type="bibr" rid="ref-31">31</xref>
+                    </sup>. My Google search was not exhaustive, especially given the limited scope induced by the key word "razor". However, the razor blade is perhaps the most ubiquitous sharp instrument involving possible blood exposure in daily life in Mozambique. Any public education campaign about blood-borne HIV risks that excludes explicit mention of razor blades is probably superficial or very narrow. For the Media/Materials Clearinghouse search, I inspected all materials pertaining to Mozambique. I also examined any sources related to Mozambique that I had found in an earlier search of the US National Library of Medicine Gateway
+                    <sup>
+                        <xref ref-type="bibr" rid="ref-18">18</xref>
+                    </sup>.</p>
+            </sec>
+        </sec>
+        <sec sec-type="results">
+            <title>Results</title>
+            <p>In the 2009 Mozambique AIS, over 90% of respondents reported that HIV could spread through shared needles/razors and nearly 80% reported that HIV could be spread through contact with infected blood (
+                <xref ref-type="table" rid="T1">Table 1</xref>). Approximately 90% of women and men reported vaginal sex as an HIV transmission route. In contrast, only 48% of women and 58% of men thought that HIV could spread through anal sex.</p>
+            <table-wrap id="T1" orientation="portrait" position="anchor">
+                <label>Table 1. </label>
+                <caption>
+                    <title>Knowledge of specific HIV transmission modes and relationship with prevalent HIV infection, Mozambique, 2009.</title>
+                </caption>
+                <table content-type="article-table" frame="hsides">
+                    <thead>
+                        <tr>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="left" colspan="1" rowspan="1">Women</th>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="left" colspan="1" rowspan="1">Men</th>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                        </tr>
+                        <tr>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="center" colspan="1" rowspan="1">HIV prevalence</th>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="center" colspan="1" rowspan="1">HIV prevalence</th>
+                            <th colspan="1" rowspan="1"/>
+                        </tr>
+                        <tr>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="center" colspan="1" rowspan="1">acknowledged?</th>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="center" colspan="1" rowspan="1">acknowledged?</th>
+                            <th colspan="1" rowspan="1"/>
+                        </tr>
+                        <tr>
+                            <th align="left" colspan="1" rowspan="1">Knowledge measure</th>
+                            <th align="left" colspan="1" rowspan="1">N</th>
+                            <th align="left" colspan="1" rowspan="1">% acknowledging</th>
+                            <th align="left" colspan="1" rowspan="1">Yes</th>
+                            <th align="left" colspan="1" rowspan="1">No</th>
+                            <th align="left" colspan="1" rowspan="1">N</th>
+                            <th align="left" colspan="1" rowspan="1">% acknowledging</th>
+                            <th align="left" colspan="1" rowspan="1">Yes</th>
+                            <th align="left" colspan="1" rowspan="1">No</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="1" rowspan="1">Needles/razors</td>
+                            <td colspan="1" rowspan="1">3383</td>
+                            <td colspan="1" rowspan="1">90.4</td>
+                            <td colspan="1" rowspan="1">12.2</td>
+                            <td colspan="1" rowspan="1">12.0</td>
+                            <td colspan="1" rowspan="1">3391</td>
+                            <td colspan="1" rowspan="1">92.6</td>
+                            <td colspan="1" rowspan="1">8.5</td>
+                            <td colspan="1" rowspan="1">7.6</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Blood contact</td>
+                            <td colspan="1" rowspan="1">3378</td>
+                            <td colspan="1" rowspan="1">77.3</td>
+                            <td colspan="1" rowspan="1">11.7</td>
+                            <td colspan="1" rowspan="1">13.8</td>
+                            <td colspan="1" rowspan="1">3390</td>
+                            <td colspan="1" rowspan="1">78.7</td>
+                            <td colspan="1" rowspan="1">8.6</td>
+                            <td colspan="1" rowspan="1">7.8</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Vaginal sex</td>
+                            <td colspan="1" rowspan="1">3381</td>
+                            <td colspan="1" rowspan="1">87.1</td>
+                            <td colspan="1" rowspan="1">12.5</td>
+                            <td colspan="1" rowspan="1">10.3</td>
+                            <td colspan="1" rowspan="1">3385</td>
+                            <td colspan="1" rowspan="1">91.9</td>
+                            <td colspan="1" rowspan="1">8.8</td>
+                            <td colspan="1" rowspan="1">4.4</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Anal sex</td>
+                            <td colspan="1" rowspan="1">3378</td>
+                            <td colspan="1" rowspan="1">47.9</td>
+                            <td colspan="1" rowspan="1">13.6</td>
+                            <td colspan="1" rowspan="1">10.9</td>
+                            <td colspan="1" rowspan="1">3383</td>
+                            <td colspan="1" rowspan="1">58.2</td>
+                            <td colspan="1" rowspan="1">8.9</td>
+                            <td colspan="1" rowspan="1">7.7</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </table-wrap>
+            <p>Before adjustments for demographics and sexual behavior variables, respondents who believed that HIV spread through vaginal or anal sex were more likely to be infected than those who did not believe HIV spread in that way (
+                <xref ref-type="table" rid="T1">Table 1</xref>). In unadjusted analyses, respondents who reported that HIV could be transmitted through blood contact or reusing sharps were about as likely to be infected as respondents who did not think HIV was transmitted in that way.</p>
+            <p>Urban residence, education, and wealth were moderately positively associated with knowledge of blood-borne HIV risks (results not shown), and these same factors were positively related to HIV infection as well
+                <sup>
+                    <xref ref-type="bibr" rid="ref-31">31</xref>
+                </sup>. Consequently, the AORs between the knowledge measures and HIV infection in (
+                <xref ref-type="table" rid="T2">Table 2</xref> and 
+                <xref ref-type="table" rid="T3">Table 3</xref>) provide better estimates of the relationship between the knowledge measures and HIV infection.</p>
+            <table-wrap id="T2" orientation="portrait" position="anchor">
+                <label>Table 2. </label>
+                <caption>
+                    <title>Associations between measures of knowledge of HIV transmission modes and prevalent HIV infection, Mozambican women, 2009.</title>
+                </caption>
+                <table content-type="article-table" frame="hsides">
+                    <thead>
+                        <tr>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="left" colspan="1" rowspan="1">AOR single measure
+                                <sup>
+                                    <xref ref-type="other" rid="note-1">1</xref>
+                                </sup>
+                            </th>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                        </tr>
+                        <tr>
+                            <th align="left" colspan="1" rowspan="1">Knowledge measure</th>
+                            <th align="left" colspan="1" rowspan="1">Bivariate OR</th>
+                            <th align="left" colspan="1" rowspan="1">Mozambique</th>
+                            <th align="left" colspan="1" rowspan="1">4 Southern African countries
+                                <sup>
+                                    <xref ref-type="other" rid="note-2">2</xref>
+                                </sup>
+                            </th>
+                            <th align="left" colspan="1" rowspan="1">AOR all measures
+                                <sup>
+                                    <xref ref-type="other" rid="note-3">3</xref>
+                                </sup>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="1" rowspan="1">Needles/razors</td>
+                            <td colspan="1" rowspan="1">1.02 (0.72&#x2013;1.45)</td>
+                            <td colspan="1" rowspan="1">0.89 (0.62&#x2013;1.27)</td>
+                            <td colspan="1" rowspan="1">0.80 (0.70&#x2013;0.92)</td>
+                            <td colspan="1" rowspan="1">0.93 (0.63&#x2013;1.37)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Blood contact</td>
+                            <td colspan="1" rowspan="1">0.83 (0.65&#x2013;1.05)</td>
+                            <td colspan="1" rowspan="1">0.81 (0.63&#x2013;1.03)</td>
+                            <td colspan="1" rowspan="1">&#x2014;</td>
+                            <td colspan="1" rowspan="1">0.80 (0.62&#x2013;1.03)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Vaginal sex</td>
+                            <td colspan="1" rowspan="1">1.24 (0.89&#x2013;1.72)</td>
+                            <td colspan="1" rowspan="1">1.06 (0.76&#x2013;1.49)</td>
+                            <td colspan="1" rowspan="1">1.26 (1.13&#x2013;1.42)</td>
+                            <td colspan="1" rowspan="1">1.04 (0.72&#x2013;1.49)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Anal sex</td>
+                            <td colspan="1" rowspan="1">1.28 (1.04&#x2013;1.58)</td>
+                            <td colspan="1" rowspan="1">1.18 (0.95&#x2013;1.46)</td>
+                            <td colspan="1" rowspan="1">&#x2014;</td>
+                            <td colspan="1" rowspan="1">1.21 (0.96&#x2013;1.51)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table-wrap-foot>
+                    <fn>
+                        <p>Table 2 Note: 95% confidence intervals in parentheses</p>
+                    </fn>
+                    <fn id="note-1">
+                        <p>
+                            <sup>1</sup>Adjusted for age, urban/rural residence, education, wealth, reported number of sex partners in the prior 12 months, and reported sexually transmitted disease in the prior 12 months</p>
+                    </fn>
+                    <fn id="note-2">
+                        <p>
+                            <sup>2</sup>Summary of results from Lesotho, Malawi, Swaziland, and Zimbabwe for similar knowledge measure</p>
+                    </fn>
+                    <fn id="note-3">
+                        <p>
+                            <sup>3</sup>Includes same adjustments as for single measure AOR, but also adjusted for the 3 other knowledge measures</p>
+                    </fn>
+                </table-wrap-foot>
+            </table-wrap>
+            <table-wrap id="T3" orientation="portrait" position="anchor">
+                <label>Table 3. </label>
+                <caption>
+                    <title>Associations between measures of knowledge of HIV transmission modes and prevalent HIV infection, Mozambican men, 2009.</title>
+                </caption>
+                <table content-type="article-table" frame="hsides">
+                    <thead>
+                        <tr>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                            <th align="left" colspan="1" rowspan="1">AOR single measure
+                                <sup>
+                                    <xref ref-type="other" rid="note-4">1</xref>
+                                </sup>
+                            </th>
+                            <th colspan="1" rowspan="1"/>
+                            <th colspan="1" rowspan="1"/>
+                        </tr>
+                        <tr>
+                            <th align="left" colspan="1" rowspan="1">Knowledge measure</th>
+                            <th align="left" colspan="1" rowspan="1">Bivariate OR</th>
+                            <th align="left" colspan="1" rowspan="1">Mozambique</th>
+                            <th align="left" colspan="1" rowspan="1">4 Southern African countries
+                                <sup>
+                                    <xref ref-type="other" rid="note-5">2</xref>
+                                </sup>
+                            </th>
+                            <th align="left" colspan="1" rowspan="1">AOR all measures
+                                <sup>
+                                    <xref ref-type="other" rid="note-6">3</xref>
+                                </sup>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="1" rowspan="1">Needles/razors</td>
+                            <td colspan="1" rowspan="1">1.13 (0.70&#x2013;1.83)</td>
+                            <td colspan="1" rowspan="1">0.91 (0.55&#x2013;1.49)</td>
+                            <td colspan="1" rowspan="1">0.86 (0.71&#x2013;1.04)</td>
+                            <td colspan="1" rowspan="1">0.87 (0.52&#x2013;1.45)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Blood contact</td>
+                            <td colspan="1" rowspan="1">1.11 (0.82&#x2013;1.51)</td>
+                            <td colspan="1" rowspan="1">0.95 (0.70&#x2013;1.30)</td>
+                            <td colspan="1" rowspan="1">&#x2014;</td>
+                            <td colspan="1" rowspan="1">0.93 (0.67&#x2013;1.30)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Vaginal sex</td>
+                            <td colspan="1" rowspan="1">2.10 (1.16&#x2013;3.80)</td>
+                            <td colspan="1" rowspan="1">1.85 (0.99&#x2013;3.45)</td>
+                            <td colspan="1" rowspan="1">1.21 (1.07&#x2013;1.37)</td>
+                            <td colspan="1" rowspan="1">1.93 (1.02&#x2013;3.64)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="1" rowspan="1">Anal sex</td>
+                            <td colspan="1" rowspan="1">1.18 (0.92&#x2013;1.51)</td>
+                            <td colspan="1" rowspan="1">1.03 (0.79&#x2013;1.34)</td>
+                            <td colspan="1" rowspan="1">&#x2014;</td>
+                            <td colspan="1" rowspan="1">0.98 (0.75&#x2013;1.28)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table-wrap-foot>
+                    <fn>
+                        <p>Table 3 Note: 95% confidence intervals in parentheses</p>
+                    </fn>
+                    <fn id="note-4">
+                        <p>
+                            <sup>1</sup>Adjusted for age, urban/rural residence, education, wealth, reported number of sex partners in the prior 12 months, and reported sexually transmitted disease in the prior 12 months</p>
+                    </fn>
+                    <fn id="note-5">
+                        <p>
+                            <sup>2</sup>Summary of results from Lesotho, Malawi, Swaziland, and Zimbabwe for similar knowledge measure</p>
+                    </fn>
+                    <fn id="note-6">
+                        <p>
+                            <sup>3</sup>Includes same adjustments as for single measure AOR, but also adjusted for the 3 other knowledge measures</p>
+                    </fn>
+                </table-wrap-foot>
+            </table-wrap>
+            <p>After adjustments for demographic factors and sexual behavior variables, the measures of knowledge of blood-borne risks become inversely related to HIV infection. That is, respondents who reported that HIV can spread through shared needles/razors and blood contact were less likely to be infected than those who reported that HIV does not spread through such means, once demographics and sexual behaviors were held constant. The adjustments for potential confounders also caused the positive associations for knowledge of vaginal sex risk in women and knowledge of anal sex risk in men to disappear. However, the adjusted associations for knowledge of anal sex risk in women and knowledge of vaginal sex risk in men remained meaningfully positive. In particular, men who believed HIV spreads through vaginal sex were almost twice as likely to be infected as men who did not believe this (
+                <xref ref-type="table" rid="T3">Table 3</xref>).</p>
+            <p>The adjusted odds ratios for knowledge of shared needles/razors as transmission risks are generally similar to those for knowledge of avoiding shared razors as an HIV prevention strategy in four other countries in Southern Africa (
+                <xref ref-type="table" rid="T2">Table 2</xref> and 
+                <xref ref-type="table" rid="T3">Table 3</xref>). The adjusted associations for knowledge of vaginal sex risk also approximate those for knowledge of condoms as a prevention strategy from the other Southern African countries.</p>
+            <p>The blood-borne risk knowledge measures correlated moderately with each other (r = 0.26&#x2013;0.29) as did the sexual risk knowledge measures (r = 0.23&#x2013;0.29). The associations between one blood-borne risk knowledge measure and one sexual risk knowledge measure were weaker (r = 0.12&#x2013;0.23). Nonetheless, when all four knowledge measures were included in analysis together (last column in (
+                <xref ref-type="table" rid="T2">Table 2</xref> and 
+                <xref ref-type="table" rid="T3">Table 3</xref>), the associations between each knowledge measure and HIV infection were almost the same as when the knowledge measures were analyzed separately.</p>
+            <p>HIV uninfected mothers&#x2019; knowledge of blood-borne HIV risks was also inversely related to their children&#x2019;s HIV status. Children whose mothers knew that contact with blood is an HIV risk were less likely to be infected (0.4%; 11/2511) than children whose mothers did not know about this risk (1.2%; 7/591; OR 0.37, 95% CI 0.14&#x2013;0.95). Similarly, children whose mothers knew that sharing needles and razors was a risk were also less likely to be infected (0.5%, 16/2918) than children whose mothers were unaware of this risk (1.1%, 2/185; OR 0.50, 95% CI 0.12&#x2013;2.21).</p>
+            <p>In the 2003 Mozambique DHS, 9.8% (1110/11381) of women and 18.9% (413/2709) of men recalled "only use sterilized syringes/needles" as a way to prevent HIV. However, 55% (6253/11381) of women and 68% (1845/2709) of men recalled "always use a condom" as a way to prevent HIV.</p>
+            <p>There was no online evidence of public HIV education campaigns that focused on blood-borne transmission risks in Mozambique. Some participants in a face-to-face community HIV education program that was implemented in Mozambique credited the program with informing them about some blood-borne risks
+                <sup>
+                    <xref ref-type="bibr" rid="ref-35">35</xref>,
+                    <xref ref-type="bibr" rid="ref-36">36</xref>
+                </sup>. However, none of the descriptions of the program at the program&#x2019;s website (
+                <ext-link ext-link-type="uri" xlink:href="http://www.steppingstonesfeedback.org">http://www.steppingstonesfeedback.org</ext-link>) or elsewhere online indicate that this topic is formally covered in the program.</p>
+        </sec>
+        <sec sec-type="discussion">
+            <title>Discussion</title>
+            <p>Adult Mozambicans displayed very high awareness of some blood exposures and vaginal sex as modes of HIV transmission when directly asked about such contact in the 2009 Mozambique AIDS Indicator Survey. However, only a little more than half of respondents were aware of anal sex as a way HIV can be transmitted. After adjustments for demographics and sexual behaviors, knowledge of blood-borne risks was inversely associated with prevalent HIV infection. That is, respondents who knew that HIV could spread by contact with infected blood or by sharing injection needles or razor blades were less likely to be infected than those who did not know about these risks. Knowledge of sexual risks was negligibly to positively related to prevalent HIV infection. The positive association was strongest in men: those acknowledging unprotected vaginal sex as a risk were almost twice as likely to be infected with HIV as those not acknowledging. These associations between knowledge of blood-borne and sexual risks and prevalent HIV infection in Mozambique are similar in magnitude to those observed in four other Southern African countries based on roughly parallel knowledge measures. In addition, mothers&#x2019; knowledge of blood-borne risks was inversely associated with HIV infection in their children, which suggests that persons aware of such risks not only are more likely to take corresponding preventive measures for themselves but for those in their care as well. Moreover, there was no online evidence that public HIV education campaigns in Mozambique have included a meaningful focus on blood-borne risks.</p>
+            <p>The very high proportion of Mozambicans who were aware of blood-borne HIV risks (approximately 90%) in the 2009 AIS contrasts sharply with the very low proportions of 2003 Mozambique DHS respondents and DHS respondents in four other Southern African countries who mentioned such risks (8&#x2013;23%)
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup>. This difference seems to be due to assessing knowledge in the 2009 Mozambique AIS by 
+                <italic toggle="yes">recognition</italic> of specific risks and in the other DHS by 
+                <italic toggle="yes">recall</italic> of risks. In South Africa and Swaziland, the discrepancies between levels of knowledge of blood-borne HIV risks when measured by recognition
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>,
+                    <xref ref-type="bibr" rid="ref-26">26</xref>,
+                    <xref ref-type="bibr" rid="ref-37">37</xref>
+                </sup> and recall
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>,
+                    <xref ref-type="bibr" rid="ref-38">38</xref>&#x2013;
+                    <xref ref-type="bibr" rid="ref-42">42</xref>
+                </sup> are even larger. These combined results refute my earlier hypothesis
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup> that Southern Africans and perhaps Africans generally know that contaminated blood can transmit HIV only when the exposure is visible and large. Instead, these results indicate that Southern Africans are typically aware of a variety of blood-borne HIV risks (including shared needles and razors that might not involve large or visible blood contamination), but only when specifically prompted.</p>
+            <p>Interestingly, observed levels of Southern Africans&#x2019; knowledge of sexual risks differ relatively little based on measurement approach. In the aforementioned studies, the proportions of respondents aware of sexual HIV transmission risks tended to be only slightly less when measured with recall methods than recognition methods. The difference between the proportion of 2003 Mozambique DHS respondents who recalled "always use a condom" as a prevention strategy (62%) and the proportion of 2009 Mozambique AIS respondents who recognized vaginal sex as a transmission mode (92%) is somewhat larger, although this could be due to increases over time in Mozambicans&#x2019; perceptions of vaginal sex as a risk.</p>
+            <p>The discrepancy between observed levels of knowledge of blood-borne HIV risks based on recall and recognition measurement reveals that blood-borne risks are not salient in the minds of Southern Africans. In 2011, Class interviewed 23 HIV infected adults and 26 parents or other caretakers of HIV infected children in Maputo, Mozambique (Deena Class, personal communications, July 11, 2011, August 27, 2011, and September 29, 2011). Nearly all of Class&#x2019; respondents noted blood-borne transmission as one mode of HIV spread. However, none of the adults attributed their infections to a blood exposure. Five of the infected children had seronegative biological mothers, indicating that these children had acquired their infections horizontally. Remarkably, only one of these mothers suspected blood-borne transmission for her child. Furthermore, none of these five mothers were told by their healthcare providers how their children might have been infected. In another study, Zimbabwean youth almost universally recognized the potential for HIV transmission through shared razors, yet ranked the avoidance of sharing razors as the least effective strategy for preventing HIV in comparison to strategies focused on sexual exposures and behaviors not known to protect against infection (avoiding deep kissing and washing hands)
+                <sup>
+                    <xref ref-type="bibr" rid="ref-43">43</xref>
+                </sup>. Similarly, Kenyans in Nyanza province grossly underestimated how long HIV can survive on a blood-contaminated razor blade or inside a blood-contaminated needle or syringe
+                <sup>
+                    <xref ref-type="bibr" rid="ref-44">44</xref>
+                </sup>. Thus, many Africans may recognize blood-borne HIV transmission as a theoretical possibility, but regard it as unlikely in practice.</p>
+            <p>Such apparent misunderstandings of blood-borne HIV transmission are not surprising given the lack of public education about blood-borne risks in sub-Saharan Africa. Just as in other African countries
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup>, efforts to educate Mozambican traditional healers about hygienic practices began decades ago
+                <sup>
+                    <xref ref-type="bibr" rid="ref-45">45</xref>,
+                    <xref ref-type="bibr" rid="ref-46">46</xref>
+                </sup> and continue to this day
+                <sup>
+                    <xref ref-type="bibr" rid="ref-47">47</xref>,
+                    <xref ref-type="bibr" rid="ref-48">48</xref>
+                </sup>. There was also at least one attempt to educate barbers about blood-borne risks in the early 1990s
+                <sup>
+                    <xref ref-type="bibr" rid="ref-49">49</xref>
+                </sup>. However, I found no good evidence that public HIV education campaigns in Mozambique have in the past focused on blood-borne risks to any meaningful extent. Furthermore, as in other Southern African countries
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup>, large recent and current public HIV education campaigns in Mozambique exclude mention of blood-borne risks
+                <sup>
+                    <xref ref-type="bibr" rid="ref-50">50</xref>,
+                    <xref ref-type="bibr" rid="ref-51">51</xref>
+                </sup> (see also: One Love Regional Campaign &#x2013; Southern Africa, and Center for Communication Programs). Indeed, Class&#x2019; Mozambican respondents who noted blood-borne transmission as one mode of HIV spread said they learned of these risks informally, not from HIV education campaigns, health care providers, or public health sources (Deena Class, personal communication, September 29, 2011).</p>
+            <p>Mozambicans&#x2019; awareness of anal sex as a transmission risk was much lower than their awareness of vaginal sex as a risk, even though the actual risk from anal sex is much higher. Contrary to my expectation, knowledge of anal sex risk was not associated with lower rate of HIV infection. It is unclear why this is so. Further investigation of the perceived risk of anal sex (e.g., whether risk differs for men and women) and whether respondents engage in anal sex might help clarify this result.</p>
+            <p>Beliefs in vaginal sex as an HIV transmission risk and condom use as an HIV prevention strategy
+                <sup>
+                    <xref ref-type="bibr" rid="ref-18">18</xref>
+                </sup> are associated with a higher likelihood of HIV infection in Mozambique and elsewhere in sub-Saharan Africa. This is consistent with the lack of association between condom use in vaginal sex and incident HIV infection
+                <sup>
+                    <xref ref-type="bibr" rid="ref-14">14</xref>,
+                    <xref ref-type="bibr" rid="ref-52">52</xref>,
+                    <xref ref-type="bibr" rid="ref-53">53</xref>
+                </sup>. Condom use itself may even make people more vulnerable to infection by reducing mucosal exposure to HIV and thus hindering the development of alloimmunity against HIV
+                <sup>
+                    <xref ref-type="bibr" rid="ref-54">54</xref>,
+                    <xref ref-type="bibr" rid="ref-55">55</xref>
+                </sup>.</p>
+            <p>To determine the modes of transmission of HIV in sub-Saharan Africa with confidence, researchers must assess blood and sexual exposures comprehensively in incident HIV cases and controls, trace their contacts corresponding to such exposures, and sequence the DNA in infected persons&#x2019; HIV isolates
+                <sup>
+                    <xref ref-type="bibr" rid="ref-56">56</xref>&#x2013;
+                    <xref ref-type="bibr" rid="ref-58">58</xref>
+                </sup>. In the meantime, HIV education campaigns in Mozambique and other poor countries should focus on blood-borne and anal sex transmission risks comprehensively and emphasize strategies for avoiding these dangers
+                <sup>
+                    <xref ref-type="bibr" rid="ref-59">59</xref>&#x2013;
+                    <xref ref-type="bibr" rid="ref-61">61</xref>
+                </sup>.</p>
+        </sec>
+    </body>
+    <back>
+        <ack>
+            <title>Acknowledgments</title>
+            <p>I thank Stuart Brody, Deena Class, David Gisselquist, and John Potterat for helpful comments on an earlier draft of this article. I also thank the government of the Republic of Mozambique for making the data from the 2009 Mozambique AIS and 2003 Mozambique DHS publicly available.</p>
+        </ack>
+        <ref-list>
+            <ref id="ref-1">
+                <label>1</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>St Lawrence</surname>
+                            <given-names>JS</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Klaskala</surname>
+                            <given-names>W</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Kankasa</surname>
+                            <given-names>C</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Factors associated with HIV prevalence in a pre-partum cohort of Zambian women.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2006</year>;<volume>17</volume>(<issue>9</issue>):<fpage>607</fpage>&#x2013;<lpage>613</lpage>.
+                    <pub-id pub-id-type="pmid">16942652</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/095646206778113050</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-2">
+                <label>2</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Deuchert</surname>
+                            <given-names>E</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Maternal health care and the spread of AIDS in Burkina Faso and Cameroon.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">World Health Pop.</italic>
+						</source><year>2007</year>;<volume>9</volume>(<issue>3</issue>):<fpage>55</fpage>&#x2013;<lpage>72</lpage>.
+                    <pub-id pub-id-type="pmid">18272943</pub-id>
+                    <pub-id pub-id-type="doi">10.12927/whp.2007.19344</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-3">
+                <label>3</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Deuchert</surname>
+                            <given-names>E</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Brody</surname>
+                            <given-names>S</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>The role of health care in the spread of HIV/AIDS in sub-Saharan Africa: evidence from Kenya.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2006</year>;<volume>17</volume>(<issue>11</issue>):<fpage>749</fpage>&#x2013;<lpage>752</lpage>.
+                    <pub-id pub-id-type="pmid">17062178</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/095646206778691167</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-4">
+                <label>4</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Brewer</surname>
+                            <given-names>DD</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Potterat</surname>
+                            <given-names>JJ</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Roberts</surname>
+                            <given-names>JM</given-names>
+                            <suffix>Jr</suffix>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Male and female circumcision associated with prevalent HIV infection in virgins and adolescents in Kenya, Lesotho, and Tanzania.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Ann Epidemiol.</italic>
+						</source><year>2007</year>;<volume>17</volume>(<issue>3</issue>):<fpage>217</fpage>&#x2013;<lpage>226</lpage>.
+                    <pub-id pub-id-type="pmid">17320788</pub-id>
+                    <pub-id pub-id-type="doi">10.1016/j.annepidem.2006.10.010</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-5">
+                <label>5</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Gisselquist</surname>
+                            <given-names>D</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Points to consider: Responses to HIV/AIDS in Africa, Asia, and the Caribbean.</article-title>Adonis and Abbey Publishers Ltd, London;<year>2007</year>.
+                    <ext-link ext-link-type="uri" xlink:href="https://sites.google.com/site/davidgisselquist/pointstoconsider">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-6">
+                <label>6</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Peters</surname>
+                            <given-names>EJ</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Brewer</surname>
+                            <given-names>DD</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Udonwa</surname>
+                            <given-names>NE</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Diverse blood exposures associated with incident HIV infection in Calabar, Nigeria.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2009</year>;<volume>20</volume>(<issue>12</issue>):<fpage>846</fpage>&#x2013;<lpage>851</lpage>.
+                    <pub-id pub-id-type="pmid">19948899</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/ijsa.2009.009272</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-7">
+                <label>7</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Okinyi</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Brewer</surname>
+                            <given-names>DD</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Potterat</surname>
+                            <given-names>JJ</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Horizontally acquired HIV infection in Kenyan and Swazi children.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2009</year>;<volume>20</volume>(<issue>12</issue>):<fpage>852</fpage>&#x2013;<lpage>857</lpage>.
+                    <pub-id pub-id-type="pmid">19948900</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/ijsa.2009.009204</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-8">
+                <label>8</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Vaz</surname>
+                            <given-names>P</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Pedro</surname>
+                            <given-names>A</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Le Bozec</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Nonvertical, nonsexual transmission of human immunodeficiency virus in children.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Pediatr Infect Dis J.</italic>
+						</source><year>2010</year>;<volume>29</volume>(<issue>3</issue>):<fpage>271</fpage>&#x2013;<lpage>274</lpage>.
+                    <pub-id pub-id-type="pmid">20016396</pub-id>
+                    <pub-id pub-id-type="doi">10.1097/INF.0b013e3181c17a58</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-9">
+                <label>9</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Brewer</surname>
+                            <given-names>DD</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Scarification and male circumcision associated with HIV infection in Mozambican children and youth.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">WebmedCentral EPIDEMIOLOGY</italic>
+						</source><year>2011</year>,<volume>2</volume>(<issue>9</issue>):<fpage>WMC002206</fpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.webmedcentral.com/article_view/2206">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-10">
+                <label>10</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Lane</surname>
+                            <given-names>T</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Pettifor</surname>
+                            <given-names>A</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Pascoe</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Heterosexual anal intercourse increases risk of HIV infection among young South African men.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">AIDS.</italic>
+						</source><year>2006</year>;<volume>20</volume>(<issue>1</issue>):<fpage>123</fpage>&#x2013;<lpage>125</lpage>.
+                    <pub-id pub-id-type="pmid">16327330</pub-id>
+                    <pub-id pub-id-type="doi">10.1097/01.aids.0000198083.55078.02</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-11">
+                <label>11</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Mlotshwa</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Abdool Karim</surname>
+                            <given-names>Q</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Frohlich</surname>
+                            <given-names>J</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Risk factors for HIV infection in young women in rural South Africa: implications for HIV prevention trials.</article-title>Abstract MOPE0276, 17th International AIDS Conference, Mexico City, August,<year>2008</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.iasociety.org/Abstracts/A200719965.aspx">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-12">
+                <label>12</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Grijsen</surname>
+                            <given-names>ML</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Graham</surname>
+                            <given-names>SM</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Mwangome</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Screening for genital and anorectal sexually transmitted infections in HIV prevention trials in Africa.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Sex Transm Infect.</italic>
+						</source><year>2008</year>;<volume>84</volume>(<issue>5</issue>):<fpage>364</fpage>&#x2013;<lpage>370</lpage>.
+                    <pub-id pub-id-type="pmid">18375645</pub-id>
+                    <pub-id pub-id-type="doi">10.1136/sti.2007.028852</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-13">
+                <label>13</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Adoga</surname>
+                            <given-names>MP</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Banwat</surname>
+                            <given-names>EB</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Forbi</surname>
+                            <given-names>JC</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Human immunodeficiency virus, hepatitis B virus and hepatitis C virus: sero-prevalence, co-infection and risk factors among prison inmates in Nasarawa State, Nigeria.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">J Infect Dev Ctries.</italic>
+						</source><year>2009</year>;<volume>3</volume>(<issue>7</issue>):<fpage>539</fpage>&#x2013;<lpage>547</lpage>.
+                    <pub-id pub-id-type="pmid">19762972</pub-id>
+                    <pub-id pub-id-type="doi">10.3855/jidc.472</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-14">
+                <label>14</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Feldblum</surname>
+                            <given-names>PJ</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Lie</surname>
+                            <given-names>C</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Weaver</surname>
+                            <given-names>MA</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Baseline factors associated with incident HIV and STI in four microbicide trials.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Sex Transm Dis.</italic>
+						</source><year>2010</year>;<volume>37</volume>(<issue>10</issue>):<fpage>594</fpage>&#x2013;<lpage>601</lpage>.
+                    <pub-id pub-id-type="pmid">20879087</pub-id>
+                    <pub-id pub-id-type="doi">10.1097/OLQ.0b013e3181e15f0b</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-15">
+                <label>15</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Kalichman</surname>
+                            <given-names>SC</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Simbayi</surname>
+                            <given-names>LC</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Cain</surname>
+                            <given-names>D</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Heterosexual anal intercourse among community and clinical settings in Cape Town, South Africa.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Sex Transm Infect.</italic>
+						</source><year>2009</year>;<volume>85</volume>(<issue>6</issue>):<fpage>411</fpage>&#x2013;<lpage>415</lpage>.
+                    <pub-id pub-id-type="pmid">19429569</pub-id>
+                    <pub-id pub-id-type="doi">10.1136/sti.2008.035287</pub-id>
+                    <pub-id pub-id-type="pmcid">3017216</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-16">
+                <label>16</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Mwakagile</surname>
+                            <given-names>D</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Mmari</surname>
+                            <given-names>E</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Makwaya</surname>
+                            <given-names>C</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Sexual behaviour among youths at high risk for HIV-1 infection in Dar es Salaam, Tanzania.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Sex Transm Infect.</italic>
+						</source><year>2001</year>;<volume>77</volume>(<issue>4</issue>):<fpage>255</fpage>&#x2013;<lpage>259</lpage>.
+                    <pub-id pub-id-type="pmid">11463924</pub-id>
+                    <pub-id pub-id-type="doi">10.1136/sti.77.4.255</pub-id>
+                    <pub-id pub-id-type="pmcid">1744337</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-17">
+                <label>17</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Priddy</surname>
+                            <given-names>FH</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Wakasiaka</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Hoang</surname>
+                            <given-names>TD</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Anal sex, vaginal practices, and HIV incidence in female sex workers in urban Kenya: implications for the development of intravaginal HIV prevention methods.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">AIDS Res Hum Retroviruses.</italic>
+						</source><year>2011</year>;<volume>27</volume>(<issue>10</issue>):<fpage>1067</fpage>&#x2013;<lpage>72</lpage>.
+                    <pub-id pub-id-type="pmid">21406032</pub-id>
+                    <pub-id pub-id-type="doi">10.1089/aid.2010.0362</pub-id>
+                    <pub-id pub-id-type="pmcid">3186689</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-18">
+                <label>18</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Brewer</surname>
+                            <given-names>DD</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Knowledge of blood-borne transmission risk is inversely associated with HIV infection in sub-Saharan Africa.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">J Infect Dev Ctries.</italic>
+						</source><year>2011</year>;<volume>5</volume>(<issue>3</issue>):<fpage>182</fpage>&#x2013;<lpage>198</lpage>.
+                    <pub-id pub-id-type="pmid">21444987</pub-id>
+                    <pub-id pub-id-type="doi">10.3855/jidc.1308</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-19">
+                <label>19</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Ramjee</surname>
+                            <given-names>G</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Gouws</surname>
+                            <given-names>E</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Andrews</surname>
+                            <given-names>A</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>The acceptability of a vaginal microbicide among South African men.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int Fam Planning Perspect.</italic>
+						</source><year>2001</year>;<volume>27</volume>(<issue>4</issue>):<fpage>164</fpage>&#x2013;<lpage>170</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.guttmacher.org/pubs/journals/2716401.html">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-20">
+                <label>20</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Brody</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Potterat</surname>
+                            <given-names>JJ</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Assessing the role of anal intercourse in the epidemiology of AIDS in Africa.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2003</year>;<volume>14</volume>(<issue>7</issue>):<fpage>431</fpage>&#x2013;<lpage>436</lpage>.
+                    <pub-id pub-id-type="pmid">12869220</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/095646203322025704</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-21">
+                <label>21</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Ferguson</surname>
+                            <given-names>A</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Morris</surname>
+                            <given-names>C</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Assessing the role of anal intercourse in the epidemiology of AIDS in Africa.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2003</year>;<volume>14</volume>(<issue>12</issue>):<fpage>856</fpage>.
+                    <pub-id pub-id-type="pmid">14678597</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/095646203322556228</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-22">
+                <label>22</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Simbayi</surname>
+                            <given-names>LC</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Kalichman</surname>
+                            <given-names>SC</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Jooste</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Risk factors for HIV-AIDS among youth in Cape Town, South Africa.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">AIDS Behav.</italic>
+						</source><year>2005</year>;<volume>9</volume>(<issue>1</issue>):<fpage>53</fpage>&#x2013;<lpage>61</lpage>.
+                    <pub-id pub-id-type="pmid">15812613</pub-id>
+                    <pub-id pub-id-type="doi">10.1007/s10461-005-1681-4</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-23">
+                <label>23</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Schwandt</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Morris</surname>
+                            <given-names>C</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Ferguson</surname>
+                            <given-names>A</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Anal and dry sex in commercial sex work, and relation to risk for sexually transmitted infections and HIV in Meru, Kenya.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Sex Transm Infect.</italic>
+						</source><year>2006</year>;<volume>82</volume>(<issue>5</issue>):<fpage>392</fpage>&#x2013;<lpage>396</lpage>.
+                    <pub-id pub-id-type="pmid">16790563</pub-id>
+                    <pub-id pub-id-type="doi">10.1136/sti.2006.019794</pub-id>
+                    <pub-id pub-id-type="pmcid">2563859</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-24">
+                <label>24</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Genberg</surname>
+                            <given-names>BL</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Kulich</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Kawichai</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>HIV risk behaviors in sub-Saharan Africa and Northern Thailand: baseline behavioral data from Project Accept.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">J Acquir Immune Defic Syndr.</italic>
+						</source><year>2008</year>;<volume>49</volume>(<issue>3</issue>):<fpage>309</fpage>&#x2013;<lpage>319</lpage>.
+                    <pub-id pub-id-type="pmid">18845954</pub-id>
+                    <pub-id pub-id-type="doi">10.1097/QAI.0b013e3181893ed0</pub-id>
+                    <pub-id pub-id-type="pmcid">2643066</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-25">
+                <label>25</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Morhason-Bello</surname>
+                            <given-names>IO</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Oladokun</surname>
+                            <given-names>A</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Enakpene</surname>
+                            <given-names>CA</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Sexual behaviour of in-school adolescents in Ibadan, South-West Nigeria.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Afr J Reprod Health.</italic>
+						</source><year>2008</year>;<volume>12</volume>(<issue>2</issue>):<fpage>89</fpage>&#x2013;<lpage>97</lpage>.
+                    <pub-id pub-id-type="pmid">20695044</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-26">
+                <label>26</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>DeJanes</surname>
+                            <given-names>W</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Knowledge, substance use, and gender differences associated with HIV infection risk among youth in a South African township.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Med Sociol Online.</italic>
+						</source><year>2009</year>;<volume>4</volume><issue>(2)</issue>:<fpage>3</fpage>&#x2013;<lpage>25</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.medicalsociologyonline.org/oldsite/archives/issue42/dejanes.html">Reference Source</ext-link></mixed-citation>
+            </ref>
+            <ref id="ref-27">
+                <label>27</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Kazaura</surname>
+                            <given-names>MR</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Masatu</surname>
+                            <given-names>MC</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Sexual practices among unmarried adolescents in Tanzania.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">BMC Public Health.</italic>
+						</source><year>2009</year>;<volume>9</volume>:<fpage>373</fpage>.
+                    <pub-id pub-id-type="pmid">19804651</pub-id>
+                    <pub-id pub-id-type="doi">10.1186/1471-2458-9-373</pub-id>
+                    <pub-id pub-id-type="pmcid">2765439</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-28">
+                <label>28</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Ola</surname>
+                            <given-names>TM</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Oludare</surname>
+                            <given-names>BA</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Sexual practices and knowledge about HIV/AIDS among Nigerian secondary school students.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J Health Res.</italic>
+						</source><year>2008</year>;<volume>1</volume>:<fpage>197</fpage>&#x2013;<lpage>205</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ajol.info/index.php/ijhr/article/view/55377"/>Reference Source</mixed-citation>
+            </ref>
+            <ref id="ref-29">
+                <label>29</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Stadler</surname>
+                            <given-names>JJ</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Delany</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Mntambo</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Sexual coercion and sexual desire: ambivalent meanings of heterosexual anal sex in Soweto, South Africa.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">AIDS Care.</italic>
+						</source><year>2007</year>;<volume>19</volume>(<issue>10</issue>):<fpage>1189</fpage>&#x2013;<lpage>1193</lpage>.
+                    <pub-id pub-id-type="pmid">18071961</pub-id>
+                    <pub-id pub-id-type="doi">10.1080/09540120701408134</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-30">
+                <label>30</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Karim</surname>
+                            <given-names>SS</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Ramjee</surname>
+                            <given-names>G</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Anal sex and HIV transmission in women.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Am J Public Health.</italic>
+						</source><year>1998</year>;<volume>88</volume>(<issue>8</issue>):<fpage>1265</fpage>&#x2013;<lpage>1266</lpage>.
+                    <pub-id pub-id-type="pmid">9702169</pub-id>
+                    <pub-id pub-id-type="doi">10.2105/AJPH.88.8.1265-a</pub-id>
+                    <pub-id pub-id-type="pmcid">1508299</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-31">
+                <label>31</label>
+                <mixed-citation publication-type="book">
+                    <collab>Instituto Nacional de Sa&#xFA;de (INS), Instituto Nacional de Estat&#xED;stica (INE), ICF Macro:</collab>
+                    <article-title>Inqu&#xE9;rito Nacional de Preval&#xEA;ncia, Riscos Comportamentais e Informa&#xE7;&#xE3;o sobre o HIV e SIDA em Mo&#xE7;ambique</article-title>2009. INS, INE, and ICF Macro, Calverton, Maryland, USA<year>2010</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.measuredhs.com/pubs/pdf/AIS8/AIS8.pdf">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-32">
+                <label>32</label>
+                <mixed-citation publication-type="book">
+                    <collab>Centers for Disease Control and Prevention:</collab>
+                    <article-title>Antenatal pre-test session flipchart.</article-title><year>2011</year>.</mixed-citation>
+            </ref>
+            <ref id="ref-33">
+                <label>33</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Matambo</surname>
+                            <given-names>R</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Dauya</surname>
+                            <given-names>E</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Mutswanga</surname>
+                            <given-names>J</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Voluntary counseling and testing by nurse counselors: what is the role of routine repeated testing after a negative result?</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Clin Infect Dis.</italic>
+						</source><year>2006</year>;<volume>42</volume>(<issue>4</issue>):<fpage>569</fpage>&#x2013;<lpage>571</lpage>.
+                    <pub-id pub-id-type="pmid">16421803</pub-id>
+                    <pub-id pub-id-type="doi">10.1086/499954</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-34">
+                <label>34</label>
+                <mixed-citation publication-type="book">
+                    <collab>Instituto Nacional de Estat&#xED;stica (INE), Minist&#xE9;rio da Sa&#xFA;de (MS), ORC Macro: </collab>
+                    <article-title>Mo&#xE7;ambique Inqu&#xE9;rito Demogr&#xE1;fico e de Sa&#xFA;de</article-title>2003. INE, MS, and ORC Macro, Calverton, MD, USA<year>2005</year>.</mixed-citation>
+            </ref>
+            <ref id="ref-35">
+                <label>35</label>
+                <mixed-citation publication-type="book">
+                    <collab>Action Aid Mozambique, Save the Children UK, UNICEF: </collab>
+                    <article-title>Stepping Stones Pilot Program Evaluation: Zambezia 1999</article-title><year>1999</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.steppingstonesfeedback.org/resources/26/SS_UNICEF_Evaluation_Mozambique_1999.pdf">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-36">
+                <label>36</label>
+                <mixed-citation publication-type="book">
+                    <article-title>Stepping Stones Evaluation - District of Mandimba.</article-title><year>2002</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.aidstar-one.com/sites/default/files/promising_practices/g3p_docs/Estamos Evaluation Jun 02.pdf">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-37">
+                <label>37</label>
+                <mixed-citation publication-type="book">
+                    <collab>Department of Health (Republic of South Africa), South African Medical Research Council: </collab>
+                    <article-title>South Africa Demographic and Health Survey 1998.</article-title><year>2002</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://catalog.ihsn.org/index.php/catalog/2472">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-38">
+                <label>38</label>
+                <mixed-citation publication-type="book">
+                    <collab>Northern Cape Department of Health, Academy for Educational Development/Capable Partners Programme South Africa: </collab>
+                    <article-title>A rapid assessment of the extent to which knowledge, attitude and practice of maternal nutrition, infant, and young child feeding in the context of PMTCT of HIV are integrated in the community.</article-title><year>2008</year>.</mixed-citation>
+            </ref>
+            <ref id="ref-39">
+                <label>39</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Tuli</surname>
+                            <given-names>K</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Ndwedwe Child Survival Project KwaZulu Natal, South Africa.</article-title><year>2006</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://pdf.usaid.gov/pdf_docs/PDACG909.pdf">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-40">
+                <label>40</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Versteeg</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Couper</surname>
+                            <given-names>I</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Mbiza</surname>
+                            <given-names>E</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Knowledge, attitudes and practices regarding HIV and AIDS in the Segwaelane and Damonsville communities.</article-title>Madibeng Centre for Research, Brits, South Africa;<year>2005</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.madibeng.org.za/pdfs/Segwaelane_Damonsville_report.pdf">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-41">
+                <label>41</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Crush</surname>
+                            <given-names>J</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Raimundo</surname>
+                            <given-names>I</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Simelane</surname>
+                            <given-names>H</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Migration-induced HIV and AIDS in rural Mozambique and Swaziland.</article-title>Idasa, Cape Town;<year>2010</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.sudoc.abes.fr/DB=2.1/SRCH?IKT=12&amp;TRM=169822397">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-42">
+                <label>42</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Pettifor</surname>
+                            <given-names>AE</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Rees</surname>
+                            <given-names>HV</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Steffenson</surname>
+                            <given-names>A</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>HIV and sexual behaviour among young South Africans: a national survey of 15-24 year olds.</article-title>Reproductive Health Research Unit, University of the Witwatersrand<year>2004</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://kff.org/global-health-policy/poll-finding/hiv-and-sexual-behaviour-among-young-south/">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-43">
+                <label>43</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Banana</surname>
+                            <given-names>C</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>An investigation into the risk behaviour regarding HIV transmission among youth in Bulawayo</article-title>.
+                    <italic toggle="yes">PhD thesis</italic>. University of South Africa<year>2007</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.netd.ac.za/?action=view&amp;identifier=oai:umkn-dsp01.unisa.ac.za:10500/2342">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-44">
+                <label>44</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Ounga</surname>
+                            <given-names>T</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Okinyi</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Onyuro</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Knowledge of HIV survival on skin-piercing instruments among young adults in Nyanza Province, Kenya.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2009</year>;<volume>20</volume>(<issue>2</issue>):<fpage>119</fpage>&#x2013;<lpage>122</lpage>.
+                    <pub-id pub-id-type="pmid">19182059</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/ijsa.2008.008007</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-45">
+                <label>45</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Green</surname>
+                            <given-names>EC</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Zokwe</surname>
+                            <given-names>B</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Dupree</surname>
+                            <given-names>JD</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>The experience of an AIDS prevention program focused on South African traditional healers.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Soc Sci Med.</italic>
+						</source><year>1995</year>;<volume>40</volume>(<issue>4</issue>):<fpage>503</fpage>&#x2013;<lpage>515</lpage>.
+                    <pub-id pub-id-type="pmid">7725124</pub-id>
+                    <pub-id pub-id-type="doi">10.1016/0277-9536(94)E0105-2</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-46">
+                <label>46</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Swarns</surname>
+                            <given-names>RL</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Mozambique enlists healers in AIDS prevention.</article-title>New York Times, December 6,<year>1999</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.nytimes.com/1999/12/06/world/mozambique-enlists-healers-in-aids-prevention.html">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-47">
+                <label>47</label>
+                <mixed-citation publication-type="book">
+                    <collab>Mozambique News Agency: </collab>
+                    <article-title>HIV/AIDS &#x2013; new training manual for traditional healers.</article-title>January 9,<year>2011</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://allafrica.com/stories/201101100119.html">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-48">
+                <label>48</label>
+                <mixed-citation publication-type="book">
+                    <article-title>Ag&#xEA;ncia de Informa&#xE7;&#xE3;o de Mo&#xE7;ambique: HIV/SIDA: em prepara&#xE7;&#xE3;o manual de treino para "curandeiros".</article-title>January 8, 2011.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.portaldogoverno.gov.mz/noticias/news_folder_sociedad_cultu/janeiro-2011/hiv-sida-em-preparacao-manual-de-treino-para-curandeiros/">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-49">
+                <label>49</label>
+                <mixed-citation publication-type="book">
+                    <collab>Associacao dos Barbeiros, Mozambique Ministerio de Saude, Central de Educacao em Saude Publica: </collab>
+                    <article-title>O barbeiro e o SIDA, por cada corte uma lamina nova, proteja a sua vida e a dos seus clientes [poster];</article-title><year>1992</year>.</mixed-citation>
+            </ref>
+            <ref id="ref-50">
+                <label>50</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Hainsworth</surname>
+                            <given-names>G</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Zilh&#xE3;o</surname>
+                            <given-names>I</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Badiani</surname>
+                            <given-names>R</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>From inception to large scale: the Gera&#xE7;&#xE3;o Biz Programme in Mozambique.</article-title>World Health Organization, Geneva<year>2009</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.popline.org/node/208015">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-51">
+                <label>51</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Hattori</surname>
+                            <given-names>MK</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Richter</surname>
+                            <given-names>K</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Greene</surname>
+                            <given-names>J</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Trust, caution, and condom use with regular partners: an evaluation of the trusted partner campaign targeting youth in four countries.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Soc Marketing Q.</italic>
+						</source><year>2010</year>;<volume>16</volume>(<issue>2</issue>):<fpage>18</fpage>&#x2013;<lpage>48</lpage>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.psi.org/resources/research-metrics/publications/hiv/trust-caution-and-condom-use-regular-partners-evaluation">Reference Source</ext-link></mixed-citation>
+            </ref>
+            <ref id="ref-52">
+                <label>52</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Allen</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Meinzen-Derr</surname>
+                            <given-names>J</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Kautzman</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Sexual behavior of HIV discordant couples after HIV counseling and testing.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">AIDS.</italic>
+						</source><year>2003</year>;<volume>17</volume>(<issue>5</issue>):<fpage>733</fpage>&#x2013;<lpage>740</lpage>.
+                    <pub-id pub-id-type="pmid">12646797</pub-id>
+                    <pub-id pub-id-type="doi">10.1097/01.aids.0000050867</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-53">
+                <label>53</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Wawer</surname>
+                            <given-names>MJ</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Gray</surname>
+                            <given-names>RH</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Sewankambo</surname>
+                            <given-names>NK</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Rates of HIV-1 transmission per coital act, by stage of HIV-1 infection, in Rakai, Uganda.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">J Infect Dis.</italic>
+						</source><year>2005</year>;<volume>191</volume>(<issue>9</issue>):<fpage>1403</fpage>&#x2013;<lpage>1409</lpage>.
+                    <pub-id pub-id-type="pmid">15809897</pub-id>
+                    <pub-id pub-id-type="doi">10.1086/429411</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-54">
+                <label>54</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Kingsley</surname>
+                            <given-names>C</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Peters</surname>
+                            <given-names>B</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Babaahmady</surname>
+                            <given-names>K</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Heterosexual and homosexual partners practising unprotected sex may develop allogeneic immunity and to a lesser extent tolerance.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">PLoS ONE.</italic>
+						</source><year>2009</year>;<volume>4</volume>(<issue>11</issue>):<fpage>e7938</fpage>.
+                    <pub-id pub-id-type="pmid">19956755</pub-id>
+                    <pub-id pub-id-type="doi">10.1371/journal.pone.0007938</pub-id>
+                    <pub-id pub-id-type="pmcid">2775923</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-55">
+                <label>55</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Peters</surname>
+                            <given-names>B</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Whittall</surname>
+                            <given-names>T</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Babaahmady</surname>
+                            <given-names>K</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Effect of heterosexual intercourse on mucosal alloimmunisation and resistance to HIV-1 infection.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Lancet.</italic>
+						</source><year>2004</year>;<volume>363</volume>(<issue>9408</issue>):<fpage>518</fpage>&#x2013;<lpage>524</lpage>.
+                    <pub-id pub-id-type="pmid">14975614</pub-id>
+                    <pub-id pub-id-type="doi">10.1016/S0140-6736(04)15538-4</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-56">
+                <label>56</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Brewer</surname>
+                            <given-names>DD</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Rothenberg</surname>
+                            <given-names>RB</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Potterat</surname>
+                            <given-names>JJ</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>HIV epidemiology in sub-Saharan Africa: rich in conjecture, poor in data.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2004</year>;<volume>15</volume>:<fpage>63</fpage>&#x2013;<lpage>65</lpage>.
+                    <pub-id pub-id-type="doi">10.1258/095646204322637317</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-57">
+                <label>57</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Brody</surname>
+                            <given-names>S</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Potterat</surname>
+                            <given-names>JJ</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Establishing valid AIDS monitoring and research in countries with generalized epidemics.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2004</year>;<volume>15</volume>(<issue>1</issue>):<fpage>1</fpage>&#x2013;<lpage>6</lpage>.
+                    <pub-id pub-id-type="pmid">14769163</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/095646204322637173</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-58">
+                <label>58</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Brewer</surname>
+                            <given-names>DD</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Hagan</surname>
+                            <given-names>H</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Sullivan</surname>
+                            <given-names>DG</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Social structural and behavioral underpinnings of hyperendemic Hepatitis C virus transmission in drug injectors.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">J Infect Dis.</italic>
+						</source><year>2006</year>;<volume>194</volume>(<issue>6</issue>):<fpage>764</fpage>&#x2013;<lpage>772</lpage>.
+                    <pub-id pub-id-type="pmid">16941342</pub-id>
+                    <pub-id pub-id-type="doi">10.1086/505585</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-59">
+                <label>59</label>
+                <mixed-citation publication-type="journal">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Gisselquist</surname>
+                            <given-names>D</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Friedman</surname>
+                            <given-names>E</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Potterat</surname>
+                            <given-names>JJ</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Four policies to reduce HIV transmission through unsterile health care.</article-title>
+                    <source>
+							
+                        <italic toggle="yes">Int J STD AIDS.</italic>
+						</source><year>2003</year>;<volume>14</volume>(<issue>11</issue>):<fpage>717</fpage>&#x2013;<lpage>722</lpage>.
+                    <pub-id pub-id-type="pmid">14624731</pub-id>
+                    <pub-id pub-id-type="doi">10.1258/09564620360719723</pub-id>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-60">
+                <label>60</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Correa</surname>
+                            <given-names>M</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Gisselquist</surname>
+                            <given-names>D</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Gore</surname>
+                            <given-names>DH</given-names>
+                        </name>
+							
+                        <etal/>
+						</person-group>:
+                    <article-title>Blood-borne HIV: risks and prevention.</article-title>Orient Longman Private Limited, Chennai.<year>2008</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://www.thelancet.com/journals/laninf/article/PIIS1473-3099(08)70253-6/fulltext#article_upsell">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+            <ref id="ref-61">
+                <label>61</label>
+                <mixed-citation publication-type="book">
+                    <person-group person-group-type="author">
+							
+                        <name name-style="western">
+                            <surname>Gisselquist</surname>
+                            <given-names>D</given-names>
+                        </name>
+							
+                        <name name-style="western">
+                            <surname>Correa</surname>
+                            <given-names>M</given-names>
+                        </name>
+						</person-group>:
+                    <article-title>Don&#x2019;t get stuck with HIV: how to protect yourself during health care and cosmetic procedures</article-title>.<year>2011</year>.
+                    <ext-link ext-link-type="uri" xlink:href="http://dontgetstuck.wordpress.com/">Reference Source</ext-link>
+                </mixed-citation>
+            </ref>
+        </ref-list>
+    </back>
+    <sub-article article-type="reviewer-report" id="report101">
+        <front-stub>
+            <article-id pub-id-type="doi">10.5256/f1000research.50.r101</article-id>
+            <title-group>
+                <article-title>Reviewer response for version 1</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Morel</surname>
+                        <given-names>Carlos</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="r101a1">1</xref>
+                    <role>Referee</role>
+                </contrib>
+                <aff id="r101a1">
+                    <label>1</label>FIOCRUZ/CDTS, Oswaldo Cruz Foundation, Ministry of Health, Rio de Janeiro, Brazil</aff>
+            </contrib-group>
+            <author-notes>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>2</day>
+                <month>8</month><year>2012</year>
+            </pub-date>
+            <permissions>
+                <copyright-statement>Copyright: &#xA9; 2012 Morel C</copyright-statement>
+                <copyright-year>2012</copyright-year>
+                <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+                    <license-p>This is an open access peer review report distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+                </license>
+            </permissions>
+            <related-article ext-link-type="doi" id="relatedArticleReport101" related-article-type="peer-reviewed-article" xlink:href="10.12688/f1000research.1-1.v1"/>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>recommendation</meta-name>
+                    <meta-value>approve</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </front-stub>
+        <body>
+            <p>This is an interesting article. However, I am sure there are some sections where readers would like to have some more information e.g. how the adjustments for demographic and sexual behaviors were performed.</p>
+            <p>Reviewer Expertise:</p>
+            <p>NA</p>
+            <p>I confirm that I have read this submission and believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard.</p>
+        </body>
+        <sub-article article-type="response" id="comment52-101">
+            <front-stub>
+                <contrib-group>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Brewer</surname>
+                            <given-names>Devon</given-names>
+                        </name>
+                        <aff>Interdisciplinary Scientific Research, USA</aff>
+                    </contrib>
+                </contrib-group>
+                <author-notes>
+                    <fn fn-type="conflict">
+                        <p>
+                            <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                    </fn>
+                </author-notes>
+                <pub-date pub-type="epub">
+                    <day>2</day>
+                    <month>8</month><year>2012</year>
+                </pub-date>
+            </front-stub>
+            <body>
+                <p>I thank Dr. Morel for his review. I computed the adjusted odds ratios with multiple logistic regression. If there are any other points that require more information, I hope reviewers and readers will highlight those sections, so I can clarify them.</p>
+            </body>
+        </sub-article>
+    </sub-article>
+    <sub-article article-type="reviewer-report" id="report100">
+        <front-stub>
+            <article-id pub-id-type="doi">10.5256/f1000research.50.r100</article-id>
+            <title-group>
+                <article-title>Reviewer response for version 1</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Livesley</surname>
+                        <given-names>Nigel</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="r100a1">1</xref>
+                    <role>Referee</role>
+                </contrib>
+                <aff id="r100a1">
+                    <label>1</label>USAID East Africa, University Research Co., LLC, Bethesda, MD 20814, USA</aff>
+            </contrib-group>
+            <author-notes>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>27</day>
+                <month>7</month><year>2012</year>
+            </pub-date>
+            <permissions>
+                <copyright-statement>Copyright: &#xA9; 2012 Livesley N</copyright-statement>
+                <copyright-year>2012</copyright-year>
+                <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+                    <license-p>This is an open access peer review report distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+                </license>
+            </permissions>
+            <related-article ext-link-type="doi" id="relatedArticleReport100" related-article-type="peer-reviewed-article" xlink:href="10.12688/f1000research.1-1.v1"/>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>recommendation</meta-name>
+                    <meta-value>reject</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </front-stub>
+        <body>
+            <p>This paper has a number of serious flaws.</p>
+            <p>
+                <bold>a) The literature is quoted selectively and issues are oversimplified.</bold>
+            </p>
+            <p>The paper states that blood exposure is important but does not state that the preponderance of studies show that sexual exposure is by far the most common mode of HIV transmission.</p>
+            <p>For example it doesn&#x2019;t reference articles such as:</p>
+            <p>
+                <list list-type="bullet">
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; 
+                            <ext-link ext-link-type="uri" xlink:href="http://www.thelancet.com/journals/lancet/article/PIIS0140-6736%2804%2916219-3/fulltext">Unsafe injections and transmission of HIV-1 in sub-Saharan Africa.</ext-link>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; 
+                            <ext-link ext-link-type="uri" xlink:href="http://ijsa.rsmjournals.com/content/15/1/7.abstract">The global burden of disease attributable to contaminated injections given in health care settings.</ext-link>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; 
+                            <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1887593/">Quantifying HIV-1 transmission due to contaminated injections.</ext-link>
+                        </p>
+                    </list-item>
+                </list>
+            </p>
+            <p>The paper seems to claim that knowledge about blood borne infections account for the regional differences in HIV prevalence. A single citation (a paper by the same author) for this claim is provided. Other possibilities are not discussed such as:</p>
+            <p>
+                <list list-type="bullet">
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; 
+                            <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17405781">Understanding the differences between contrasting HIV epidemics in east and west Africa: results from a simulation model of the Four Cities Study</ext-link>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; 
+                            <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11686462">Ecological and individual level analysis of risk factors for HIV infection in four urban populations in sub-Saharan Africa with different levels of HIV infection.</ext-link>
+                        </p>
+                    </list-item>
+                </list>
+            </p>
+            <p>The paper also implies that condoms are not protective against HIV. Again this is not what the preponderance of studies shows:</p>
+            <p>
+                <list list-type="bullet">
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; 
+                            <ext-link ext-link-type="uri" xlink:href="http://apps.who.int/rhl/hiv_aids/cd003255/en/index.html">Condom effectiveness in reducing heterosexual HIV transmission.</ext-link>
+                        </p>
+                    </list-item>
+                </list>
+            </p>
+            <p>The author also notes the reference 
+                <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12646797">Allen S et al. (2003)</ext-link> as evidence for the lack of an association between condoms and HIV incidence but the study found that incident HIV infection was found in 5.4% of testing intervals when discordant couples had unprotected sex and in 2.6% of testing intervals when the discordant couples did not have unprotected sex.</p>
+            <p>
+                <bold>b) The interpretation of the results are not always supported by the data in the paper:</bold>
+            </p>
+            <p>The Author states:</p>
+            <p>&#x201C;
+                <italic>After adjustments for demographic factors and sexual behavior variables, the measures of knowledge of blood-borne risks become inversely related to HIV infection. That is, respondents who reported that HIV can spread through shared needles/razors and blood contact were less likely to be infected than those who reported that HIV does not spread through such means, once demographics and sexual behaviors were held constant</italic>&#x201D;.</p>
+            <p>However, it is unclear how the author reaches this conclusion. The OR for the above relationships are about 0.9 and the confidence intervals are wide. This is not evidence of a relationship.</p>
+            <p>The author also states:</p>
+            <p>
+                <italic>&#x201C;The adjustments for potential confounders also caused the positive associations for knowledge of vaginal sex risk in women and knowledge of anal sex risk in men to disappear. However, the adjusted associations for knowledge of anal sex risk in women and knowledge of vaginal sex risk in men remained meaningfully positive.&#x201D;</italic>
+            </p>
+            <p>It is again unclear what &#x201C;meaningfully positive&#x201D; means. The OR for women and anal sex has wide CI and doesn&#x2019;t meet statistical significance. A definition of what the criteria for meaningfully positive are would be useful.</p>
+            <p>And finally; The OR for men&#x2019;s understanding of vaginal sex is close to being statistically significant.</p>
+            <p>
+                <bold>c) The paper&#x2019;s conclusion is not supported:</bold>
+            </p>
+            <p>The author claims that:</p>
+            <p>
+                <italic>&#x201C;HIV education campaigns in Mozambique and elsewhere in sub-Saharan Africa should include a focus on risks from blood exposures and anal sex.&#x201D;</italic>
+            </p>
+            <p>However, the data in the paper doesn&#x2019;t suggest that this is called for, and even if the data were supportive of the need to do this, there are opportunity costs associated with doing so. What should health workers or health educators not do to create time and money for this change in message?</p>
+            <p>
+                <list list-type="bullet">
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; Is the title appropriate for the content of the article? 
+                            <bold>Yes</bold>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; Is the abstract a suitable summary of the article? 
+                            <bold>No (see above)</bold>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; Is the article well constructed and clear? 
+                            <bold>No (see above)</bold>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; Is there adequate analysis, including information on how the data were analyzed (e.g. programs, code, stats etc.)? 
+                            <bold>There is no information on how the author decided that some results were important</bold>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; Are the conclusions sensible and balanced? 
+                            <bold>No (see above).</bold>
+                        </p>
+                    </list-item>
+                    <list-item>
+                        <p>&#xA0;&#xA0;&#xA0; Have any potential biases or competing interests been disclosed? 
+                            <bold>Yes</bold>
+                        </p>
+                    </list-item>
+                </list>
+            </p>
+            <p>Reviewer Expertise:</p>
+            <p>NA</p>
+            <p>I confirm that I have read this submission and believe that I have an appropriate level of expertise to state that I do not consider it to be of an acceptable scientific standard, for reasons outlined above.</p>
+        </body>
+        <sub-article article-type="response" id="comment50-100">
+            <front-stub>
+                <contrib-group>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Brewer</surname>
+                            <given-names>Devon</given-names>
+                        </name>
+                        <aff>Interdisciplinary Scientific Research, USA</aff>
+                    </contrib>
+                </contrib-group>
+                <author-notes>
+                    <fn fn-type="conflict">
+                        <p>
+                            <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                    </fn>
+                </author-notes>
+                <pub-date pub-type="epub">
+                    <day>30</day>
+                    <month>7</month><year>2012</year>
+                </pub-date>
+            </front-stub>
+            <body>
+                <p>I thank Dr. Livesley for his review. He claims that I cited selectively from the literature and oversimplified issues, and that my interpretation of the results and the conclusions are not supported by the data. In this reply, I demonstrate that these charges are incorrect. Livesley states that &#x201C;the preponderance of studies show that sexual exposure is by far the most common mode of HIV transmission&#x201D; and criticizes me for not citing three articles that he thinks support this view. However, there is no solid empirical evidence that vaginal sex is the dominant mode of HIV transmission in sub-Saharan Africa, because studies with designs rigorous enough to determine modes of transmission have not yet been conducted. In the last paragraph of the current article, I wrote &#x201C;to determine the modes of transmission of HIV in sub-Saharan Africa with confidence, researchers must assess blood and sexual exposures comprehensively in incident HIV cases and controls, trace their contacts corresponding to such exposures, and sequence the DNA in infected persons&#x2019; HIV isolates56 57 58.&#x201D; My colleagues and I have published this plea dozens of times in the last nine years, and no other researchers have attempted to conduct the necessary research. Simply stating that vaginal sex is the dominant mode of transmission, or wishing it to be the case, does not make it so; rather, in science, strong empirical evidence must be presented to support a claim. My colleagues and I carried out a study in Calabar, Nigeria in which we assessed blood and sexual exposures fairly comprehensively in incident HIV cases and controls (
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/19948899">Peters 
+                        <italic>et al.</italic>, 2009</ext-link>). We found that diverse blood exposures were associated with incident HIV infection. To my knowledge, no epidemiologic study of HIV infection before or since has matched or surpassed the strength of the research design of the Calabar study. Consequently, little can be concluded about the dominant modes of HIV transmission in Africa. Livesley cites 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15145646">Gisselquist D 
+                        <italic>et al.</italic> (2004)</ext-link>, 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/14769164">Hauri 
+                        <italic>et al.</italic> (2004)</ext-link>, and 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/17522260">White 
+                        <italic> et al.</italic> (2007)</ext-link> as sources to support the hypothesis that vaginal sex is the dominant mode of HIV transmission in sub-Saharan Africa. These citations that do not provide support for this hypothesis. Gisselquist 
+                    <italic>et al.</italic> assessed a small set of risk factors (and only one blood exposure, receipt of injections) in relation to incident HIV infection in Rwanda. As I have noted, it is not possible to determine modes of transmission with such a design, especially when blood exposures were so incompletely assessed. Hauri 
+                    <italic>et al.</italic> and White 
+                    <italic>et al.</italic>&#xA0; reported results from modeling exercises on the share of HIV infections that may be due to unhygienic medical injections (just one of many blood exposures encountered by Africans). I and others disagree with many of the assumptions and parameter estimates used and emphasized in their simulations (because they are at odds with empirical data). Their models also lack several key risk components of unhygienic injection practices. I refrain from a detailed technical critique of these studies here. Crucially, neither modeling exercise produced an estimate of the share of HIV transmission due to vaginal sex. Furthermore, modelers have not been able to simulate HIV epidemics that resemble African epidemics with parameter estimates derived from empirical data on Africans&#x2019; vaginal sex behavior (
+                    <ext-link ext-link-type="uri" xlink:href="">Brewer 
+                        <italic>et al.</italic>, 2007</ext-link>). Livesley faults me for citing my prior article that showed a strong inverse association between knowledge of blood-borne HIV risks and HIV prevalence at the national level in sub-Saharan Africa (
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/21444987">Brewer, 2011</ext-link>). It is unclear why this is problematic, as the result is robust, and consistent with individual-level results and historical prevention campaign experience. Livesley notes that I did not discuss other possibilities for national variation in HIV prevalence. Such variation is not the focus of my current article; instead, I focused on knowledge of HIV transmission risks in Mozambique. Nonetheless, it is worth evaluating the two sources Livesley cites, both based on the Four Cities Study, for other explanations of variation in HIV prevalence across Africa. The Four Cities Study did not involve assessing participants&#x2019; blood exposures. Perhaps even more importantly, the results from the Four Cities Study showed that putative sexual risk factors (such as sex partner concurrency and other high risk sexual behaviors) were inversely associated (in the case of concurrency) or not associated with HIV prevalence in the four cities (
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11686462">Auvert 
+                        <italic>et al.</italic>, 2001</ext-link>; 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11399960">Lagarde 
+                        <italic>et al</italic>. 2001</ext-link>; 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11873018">Rothenberg 
+                        <italic>et al</italic>., 2002</ext-link>). In my F1000Research article, I stated that there is a &#x201C;lack of association between condom use in vaginal sex and incident HIV infection14 52 53&#x2033; (p. 5) and cited three articles on studies conducted in sub-Saharan Africa (the only three I was aware of at the time that reported on the association or lack thereof). These three articles showed inconsistent results (
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/20879087">Feldblum 
+                        <italic>et al</italic>., 2010</ext-link>: positive association; 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/15809897">Wawer 
+                        <italic>et al</italic>., 2005</ext-link>: no apparent association; 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/12646797">Allen
+                        <italic> et al.</italic>, 2003</ext-link>: inverse association), which I summarized as a lack of association. Livesley cites 
+                    <ext-link ext-link-type="uri" xlink:href="http://www.ncbi.nlm.nih.gov/pubmed/11869658">Weller and Davis-Beaty 2007</ext-link> for the hypothesis that condoms protect against HIV transmission during vaginal sex. However, Weller and Davis-Beaty&#x2019;s summary included studies from regions outside of Africa, did not account for confounding of condom use with other risk factors (such as common blood exposures in Africa), and did not include Feldblum 
+                    <italic>et al.</italic> and Wawer 
+                    <italic>et al.</italic>&#xA0; results. About half of the studies in Weller and Davis-Beaty&#x2019;s summary were based on condom use measures that applied to anal sex as well as vaginal sex. Consequently, Weller 
+                    <italic>et al</italic>. results cannot be used as an estimate of the protective effect of condom use during vaginal sex in sub-Saharan Africa or elsewhere. The protective effect of condom use during anal sex, though, has been well-established in other research. Livesley questions my description of adjusted odds ratios of 0.81 to 0.95 for the association between knowledge of blood-borne HIV risks and prevalent HIV infection as indicating an inverse relationship. By definition, odds ratios under 1.0 reflect inverse or negative relationships. The adjusted odds ratios were in the inverse direction for two different measures of knowledge of blood-borne HIV risks and for both women and men. The confidence intervals for these odds ratios do include 1.0. However, the consistency of the association across measures and sample subgroups, and similarity in magnitude of the association to similar associations in neighboring and nearby countries mean that it is warranted to describe the relationship as inverse. Livesley criticizes me for characterizing the adjusted odds ratios between knowledge of anal sex and HIV infection in women (AOR = 1.18) and knowledge of vaginal sex and HIV infection in men (AOR = 1.85) as &#x201C;meaningfully positive.&#x201D; In this context, I intended &#x201C;meaningfully positive&#x201D; to refer to associations that were mild to moderate in magnitude. Livesley also correctly noted that &#x201C;the OR for men&#x2019;s understanding of vaginal sex is close to being statistically significant.&#x201D; This result means that Mozambican men who believed that HIV can be transmitted through vaginal sex without a condom were twice as likely to be infected with HIV as men who did not believe vaginal sex was a risk. Livesley argues that the results in my article do not suggest that HIV education programs in sub-Saharan Africa should include a focus on blood-borne risks and anal sex. The results show that Mozambican adults who were unaware of blood-borne transmission were at increased risk for HIV infection, and that children of uninfected mothers who were unaware of blood-borne transmission were at much increased risk for HIV infection. Almost half of Mozambican adults did not know anal sex was an HIV transmission risk. In my opinion, these findings justify including a focus on blood-borne risks and anal sex in HIV education efforts. Livesley further wonders how such topics could be incorporated in HIV prevention and education programming. Successful examples abound. As I discussed in my 2011 article, there is a &#x201C;heavy emphasis on avoiding blood-borne risks in HIV education programs for primary school students in rich countries [69,70], travelers to poor (especially African) countries [71-73], and employees of the United Nations working in poor countries [74,75]&#x201D; (p. 194). Most of these educational efforts have been standard and ongoing for over two decades. The risk of anal sex has also been continuously emphasized in HIV prevention and education programs in rich countries. Moreover, during the last 30 years, there have been many instances of HIV education campaigns highlighting blood-borne risks in west and central Africa (Brewer, 2011), although it is uncertain how widespread and consistent these efforts have been. These examples show that people can be more fully informed of the range of HIV risks without additional program cost. The fundamental question is moral and ethical. On what grounds can HIV prevention and education programs in Africa, funded by taxpayers and sponsored by international agencies, foreign aid agencies, and national governments, continue to deprive people of highly relevant, life-saving information?</p>
+            </body>
+        </sub-article>
+    </sub-article>
+    <sub-article article-type="reviewer-report" id="report50">
+        <front-stub>
+            <article-id pub-id-type="doi">10.5256/f1000research.50.r50</article-id>
+            <title-group>
+                <article-title>Reviewer response for version 1</article-title>
+            </title-group>
+            <contrib-group>
+                <contrib contrib-type="author">
+                    <name>
+                        <surname>Gaudreault</surname>
+                        <given-names>Suzanne</given-names>
+                    </name>
+                    <xref ref-type="aff" rid="r50a1">1</xref>
+                    <role>Referee</role>
+                </contrib>
+                <aff id="r50a1">
+                    <label>1</label>USAID Health Care Improvement Project, University Research Co., LLC, Bethesda, MD 20814, USA</aff>
+            </contrib-group>
+            <author-notes>
+                <fn fn-type="conflict">
+                    <p>
+                        <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                </fn>
+            </author-notes>
+            <pub-date pub-type="epub">
+                <day>17</day>
+                <month>7</month><year>2012</year>
+            </pub-date>
+            <permissions>
+                <copyright-statement>Copyright: &#xA9; 2012 Gaudreault S</copyright-statement>
+                <copyright-year>2012</copyright-year>
+                <license xlink:href="https://creativecommons.org/licenses/by/4.0/">
+                    <license-p>This is an open access peer review report distributed under the terms of the Creative Commons Attribution Licence, which permits unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.</license-p>
+                </license>
+            </permissions>
+            <related-article ext-link-type="doi" id="relatedArticleReport50" related-article-type="peer-reviewed-article" xlink:href="10.12688/f1000research.1-1.v1"/>
+            <custom-meta-group>
+                <custom-meta>
+                    <meta-name>recommendation</meta-name>
+                    <meta-value>approve</meta-value>
+                </custom-meta>
+            </custom-meta-group>
+        </front-stub>
+        <body>
+            <p>This is an interesting article, and I think it makes a positive contribution to the evidence base. However, I think the introduction understates the level of knowledge that people with HIV are likely to have about HIV (see below).</p>
+            <p>The discussion also neglects to consider the fact that due to stigmatization of this disease, many people with HIV do not admit that they have it or even that they have been tested for it.&#xA0; Unfortunately, this is hard to study or measure, but in practice, I have seen that it is especially true for men, even after they have known about their disease and have been on ART for a long time.&#xA0; In this study people who admitted to having been tested before were rightfully excluded from the analysis, but the discussion should acknowledge that stigma and other factors may mean that many people who actually knew about their status already (but lied about it) could still have been included in the data, seriously confounding the analysis.</p>
+            <p>In countries like Mozambique which receive significant foreign assistance to deal with the HIV epidemic&#xA0; (PEPFAR, Global Fund or other) &#x2013; people with HIV who are aware of their status typically receive much more intensive education about HIV (through treatment programs and social programs for people with HIV) than the general public.&#xA0; The content of this education is globally standardized enough that it typically places considerable emphasis on the modes of transmission of HIV. Also, as for people with any health condition, people with HIV are inherently more likely to pay attention to any information on HIV that they come across (public awareness campaigns, etc.).</p>
+            <p>Reviewer Expertise:</p>
+            <p>NA</p>
+            <p>I confirm that I have read this submission and believe that I have an appropriate level of expertise to confirm that it is of an acceptable scientific standard.</p>
+        </body>
+        <sub-article article-type="response" id="comment53-50">
+            <front-stub>
+                <contrib-group>
+                    <contrib contrib-type="author">
+                        <name>
+                            <surname>Brewer</surname>
+                            <given-names>Devon</given-names>
+                        </name>
+                        <aff>Interdisciplinary Scientific Research, USA</aff>
+                    </contrib>
+                </contrib-group>
+                <author-notes>
+                    <fn fn-type="conflict">
+                        <p>
+                            <bold>Competing interests: </bold>No competing interests were disclosed.</p>
+                    </fn>
+                </author-notes>
+                <pub-date pub-type="epub">
+                    <day>19</day>
+                    <month>7</month><year>2012</year>
+                </pub-date>
+            </front-stub>
+            <body>
+                <p>Thank you very much, Dr. Gaudreault, for your review.</p>
+                <p>I agree that it is possible that some previously tested, infected persons might deny having tested previously and that they might have learned about blood exposures and anal sex as routes of transmission during HIV testing or clinical care. However, several lines of evidence suggest that such &#x201C;knowledge through denied prior testing&#x201D; is rare, and that even if this bias were present, it cannot account for the association between knowledge and HIV infection.</p>
+                <p>In Class&#x2019; (2012) research, adult HIV patients and parents and other caretakers of HIV infected children in Maputo, Mozambique, responded to open-ended questions about routes of HIV transmission. Fifty-five percent (12/22) of the adult HIV patients and 62% (16/26) of parents and caretakers were aware of blood-borne modes of HIV transmission. All respondents aware of blood-borne HIV transmission reported learning of these modes of transmission exclusively from unofficial, non-clinical, non-public health sources, such as &#x201C;on the street.&#x201D; Class&#x2019; (2012) respondents reported that none of their clinical providers ever discussed blood-borne transmission as a potential explanation for how infection occurred.</p>
+                <p>It is unclear the extent to which blood-borne HIV risks are covered in HIV counseling in southern Africa. As I demonstrated in this article and a prior report (reference 18), public HIV education campaigns in southern Africa have not in the past and do not currently address blood-borne HIV risks, even though they are often funded and guided by large international aid agencies such as USAID, the Global Fund, PEPFAR, DFID, and UNAIDS. Therefore, it is reasonable to question how well such risks are addressed in these countries&#x2019; HIV counseling programs.</p>
+                <p>Any potential bias in reporting prior HIV testing by infected persons cannot account for the strong national-level inverse association between knowledge of blood-borne HIV risks and HIV infection (see reference 18). Countries in which many people are aware of such risks have much lower HIV prevalences than countries in which few people are aware of these risks.</p>
+                <p>Also, potential bias in reporting prior HIV testing by infected persons is irrelevant to the association between uninfected mothers&#x2019; knowledge of blood-borne HIV risks and HIV infection in their children (reported in the current article). Children of uninfected mothers who know about these risks are much less likely to be infected than children of uninfected mothers who do not know about these risks.</p>
+                <p>Furthermore, even if infected persons who denied prior HIV testing were included in the data I analyzed, their inclusion could not generate the observed inverse association between knowledge of blood-borne risks and HIV infection. If they had learned about blood-borne risks during testing or clinical care, and reported such awareness in the Mozambique AIS, their responses would produce a tendency toward a positive, rather than inverse, association between knowledge of blood-borne risks and HIV infection.</p>
+                <p>Reference</p>
+                <p>Class D. The socio-political economy of antiretroviral treatment as HIV prevention . Doctoral dissertation, University of Trento, 2012. Available at 
+                    <ext-link ext-link-type="uri" xlink:href="http://eprints-phd.biblio.unitn.it/803/">http://eprints-phd.biblio.unitn.it/803/</ext-link>.</p>
+            </body>
+        </sub-article>
+    </sub-article>
+</article>

@@ -1,0 +1,152 @@
+{
+  "$id": "https://example.invalid/observatory/capacity_observation.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "assignments_per_evaluator": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "capacity_observation_id": {
+      "type": "string"
+    },
+    "evaluator_count": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "gate_cycle_id": {
+      "type": "string"
+    },
+    "measurement_caveat": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "missing_review_share": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "panel_size": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "period_end": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "period_start": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "provenance_event_id": {
+      "type": "string"
+    },
+    "proxy_definition": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "record_version": {
+      "type": "integer"
+    },
+    "review_count": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_object_id": {
+      "type": "string"
+    },
+    "submitted_count": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "turnaround_days": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "capacity_observation_id",
+    "gate_cycle_id",
+    "source_id",
+    "source_object_id",
+    "provenance_event_id",
+    "observed_at",
+    "record_version"
+  ],
+  "title": "Observatory capacity_observation",
+  "type": "object"
+}

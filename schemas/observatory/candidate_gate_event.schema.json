@@ -1,0 +1,87 @@
+{
+  "$id": "https://example.invalid/observatory/candidate_gate_event.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_gate_event_id": {
+      "type": "string"
+    },
+    "candidate_id": {
+      "type": "string"
+    },
+    "candidate_version_id": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "coverage_observation_id": {
+      "type": "string"
+    },
+    "earliest_observed_stage": {
+      "type": "string"
+    },
+    "final_observed_stage": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "gate_cycle_id": {
+      "type": "string"
+    },
+    "native_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "provenance_event_id": {
+      "type": "string"
+    },
+    "record_version": {
+      "type": "integer"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_object_id": {
+      "type": "string"
+    },
+    "submitted_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "candidate_gate_event_id",
+    "candidate_id",
+    "gate_cycle_id",
+    "native_id",
+    "earliest_observed_stage",
+    "coverage_observation_id",
+    "source_id",
+    "source_object_id",
+    "provenance_event_id",
+    "observed_at",
+    "record_version"
+  ],
+  "title": "Observatory candidate_gate_event",
+  "type": "object"
+}

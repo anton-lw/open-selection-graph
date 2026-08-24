@@ -1,0 +1,100 @@
+{
+  "$id": "https://example.invalid/observatory/gate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "active_from": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "active_to": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "architecture": {
+      "type": "string"
+    },
+    "country": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "domain": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "gate_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "native_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "organization": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "provenance_event_id": {
+      "type": "string"
+    },
+    "record_version": {
+      "type": "integer"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_object_id": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "gate_id",
+    "native_id",
+    "name",
+    "architecture",
+    "source_id",
+    "source_object_id",
+    "provenance_event_id",
+    "observed_at",
+    "record_version"
+  ],
+  "title": "Observatory gate",
+  "type": "object"
+}

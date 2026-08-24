@@ -1,0 +1,45 @@
+schema: observatory.stop_rules/1
+constitution_version: 0.1.0
+version: 2026-08-10.1
+rules:
+  unresolved_stage:
+    trigger: Earliest public stage cannot be named from primary evidence.
+    action: Grade U; registry-only until resolved.
+  denominator_failure:
+    trigger: Retrieved count is below 95% of a credible provider/dual-method denominator without explanation.
+    action: Downgrade A/B to U or a narrower cycle/object scope.
+  outcome_precision_failure:
+    trigger: Normalized outcome precision is below 0.98 in a stratified audit.
+    action: Retain native labels only; prohibit normalized selection views.
+  policy_precision_failure:
+    trigger: Effective-date/architecture/criterion/scale agreement is below 0.95.
+    action: Retain policy pointers and raw text; remove unsupported structured facts.
+  linkage_precision_failure:
+    trigger: Analysis-grade linkage precision is below 0.97 or lower CI below 0.95.
+    action: Release candidate/discovery links only; prohibit within-work causal analyses.
+  licence_ambiguity:
+    trigger: Redistribution or derivative rights cannot be established per object type.
+    action: Pointer/hash only or exclude content/features capable of reconstruction.
+  privacy_failure:
+    trigger: Direct contact, hidden identity, small-cell, or reconstruction risk remains.
+    action: Remove/aggregate affected component; no waiver for deanonymization.
+  temporal_leakage:
+    trigger: A decision-time feature uses later versions, citations, policy, or identity disclosure.
+    action: Fail analysis view and rebuild features with time cutoff.
+  compute_overrun:
+    trigger: Projected Modal cumulative spend exceeds 30 USD or a job exceeds its approved cap.
+    action: Abort before launch; run locally, reduce redundant computation, or narrow feature family.
+  storage_overrun:
+    trigger: Projected job violates configured free-space reserve.
+    action: Abort; deduplicate, use pointer-first/ephemeral content, or narrow source.
+release_fallbacks:
+  unresolved_stage: registry_only
+  denominator_failure: stage_or_selected_only_panel
+  outcome_precision_failure: native_labels_only
+  policy_precision_failure: policy_pointers_only
+  linkage_precision_failure: discovery_links_only
+  licence_ambiguity: pointer_hash_only
+  privacy_failure: aggregate_or_remove_component
+  temporal_leakage: metadata_panel_without_contaminated_feature
+  compute_overrun: metadata_and_structured_text_only
+  storage_overrun: pointer_first_scoped_snapshot

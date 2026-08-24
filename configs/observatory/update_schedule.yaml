@@ -1,0 +1,41 @@
+schema: observatory.update-schedule/1
+default_mode: health-probe-only
+immutable_release_policy: never mutate an existing release directory
+notifications: local JSONL only
+sources:
+  - source_id: openreview_api
+    cadence: monthly
+    prospective_holdout_cutoff: '2026-08-20T00:00:00Z'
+    preflight: {count_schema_terms_probe: true, source_gate_required: true, budget_gate_required: true}
+    mutation_target: new_staging_snapshot
+    modal_allowed: false
+    large_pull_allowed: false
+  - source_id: crossref
+    cadence: monthly
+    prospective_holdout_cutoff: '2026-08-20T00:00:00Z'
+    preflight: {count_schema_terms_probe: true, source_gate_required: true, budget_gate_required: true}
+    mutation_target: new_staging_snapshot
+    modal_allowed: false
+    large_pull_allowed: false
+  - source_id: copernicus
+    cadence: quarterly
+    prospective_holdout_cutoff: '2026-08-20T00:00:00Z'
+    preflight: {count_schema_terms_probe: true, source_gate_required: true, budget_gate_required: true}
+    mutation_target: new_staging_snapshot
+    modal_allowed: false
+    large_pull_allowed: false
+  - source_id: funding_public
+    cadence: quarterly
+    prospective_holdout_cutoff: '2026-08-20T00:00:00Z'
+    preflight: {count_schema_terms_probe: true, source_gate_required: true, budget_gate_required: true}
+    mutation_target: new_staging_snapshot
+    modal_allowed: false
+    large_pull_allowed: false
+  - source_id: patent_public
+    cadence: quarterly
+    prospective_holdout_cutoff: '2026-08-20T00:00:00Z'
+    preflight: {count_schema_terms_probe: true, source_gate_required: true, budget_gate_required: true}
+    mutation_target: new_staging_snapshot
+    modal_allowed: false
+    large_pull_allowed: false
+

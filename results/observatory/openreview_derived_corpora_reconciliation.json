@@ -1,0 +1,1766 @@
+{
+  "corpora": {
+    "moprd": {
+      "authority": "manifest-only",
+      "hub_id": null,
+      "source_role": "multidisciplinary review/version chains",
+      "viewer_status": "not_hosted_or_not_publicly_viewable"
+    },
+    "nlpeer": {
+      "authority": "manifest-only",
+      "hub_id": null,
+      "source_role": "licensed multi-source harmonization",
+      "viewer_status": "not_hosted_or_not_publicly_viewable"
+    },
+    "peerread": {
+      "api": {
+        "features": [],
+        "info": [],
+        "is_valid": {
+          "filter": false,
+          "preview": false,
+          "search": false,
+          "statistics": false,
+          "viewer": false
+        },
+        "is_valid_http_status": 200,
+        "parquet_files": [],
+        "parquet_http_status": 501,
+        "size": null,
+        "size_failures": [],
+        "size_http_status": 501,
+        "splits": [],
+        "splits_http_status": 501
+      },
+      "authority": "derived-C",
+      "hub_id": "allenai/peer_read",
+      "source_role": "legacy paper/review corpus"
+    },
+    "re2": {
+      "api": {
+        "features": [
+          {
+            "config": "default",
+            "features": [
+              "paper_id",
+              "conference_year_track",
+              "reviewer_id",
+              "messages"
+            ],
+            "http_status": 200,
+            "split": "train"
+          },
+          {
+            "config": "default",
+            "features": [
+              "paper_id",
+              "conference_year_track",
+              "reviewer_id",
+              "messages"
+            ],
+            "http_status": 200,
+            "split": "test"
+          }
+        ],
+        "info": [
+          {
+            "citation_present": false,
+            "config": "default",
+            "homepage": null,
+            "http_status": 501,
+            "license": null
+          }
+        ],
+        "is_valid": {
+          "filter": false,
+          "preview": true,
+          "search": false,
+          "statistics": false,
+          "viewer": false
+        },
+        "is_valid_http_status": 200,
+        "parquet_files": [],
+        "parquet_http_status": 200,
+        "size": {
+          "configs": [],
+          "dataset": {
+            "dataset": "Daoze/ReviewRebuttal",
+            "estimated_num_rows": null,
+            "num_bytes_memory": 0,
+            "num_bytes_original_files": 0,
+            "num_bytes_parquet_files": 0,
+            "num_rows": 0
+          },
+          "splits": []
+        },
+        "size_failures": [
+          {
+            "config": "default",
+            "dataset": "Daoze/ReviewRebuttal",
+            "kind": "config-size",
+            "split": null
+          }
+        ],
+        "size_http_status": 200,
+        "splits": [
+          {
+            "config": "default",
+            "dataset": "Daoze/ReviewRebuttal",
+            "split": "train"
+          },
+          {
+            "config": "default",
+            "dataset": "Daoze/ReviewRebuttal",
+            "split": "test"
+          }
+        ],
+        "splits_http_status": 200
+      },
+      "authority": "derived-C",
+      "hub_id": "Daoze/ReviewRebuttal",
+      "source_role": "initial submissions and review/rebuttal turns"
+    },
+    "researcharcade_papers": {
+      "api": {
+        "features": [
+          {
+            "config": "default",
+            "features": [
+              "venue",
+              "paper_openreview_id",
+              "title",
+              "abstract",
+              "paper_decision",
+              "paper_pdf_link"
+            ],
+            "http_status": 200,
+            "split": "train"
+          }
+        ],
+        "info": [
+          {
+            "citation_present": false,
+            "config": "default",
+            "homepage": null,
+            "http_status": 200,
+            "license": null
+          }
+        ],
+        "is_valid": {
+          "filter": true,
+          "preview": true,
+          "search": true,
+          "statistics": true,
+          "viewer": true
+        },
+        "is_valid_http_status": 200,
+        "parquet_files": [
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 39203833,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-papers/resolve/refs%2Fconvert%2Fparquet/default/train/0000.parquet"
+          }
+        ],
+        "parquet_http_status": 200,
+        "size": {
+          "configs": [
+            {
+              "config": "default",
+              "dataset": "ulab-ai/ResearchArcade-openreview-papers",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 71059414,
+              "num_bytes_original_files": 39203833,
+              "num_bytes_parquet_files": 39203833,
+              "num_columns": 6,
+              "num_rows": 49418
+            }
+          ],
+          "dataset": {
+            "dataset": "ulab-ai/ResearchArcade-openreview-papers",
+            "estimated_num_rows": null,
+            "num_bytes_memory": 71059414,
+            "num_bytes_original_files": 39203833,
+            "num_bytes_parquet_files": 39203833,
+            "num_rows": 49418
+          },
+          "splits": [
+            {
+              "config": "default",
+              "dataset": "ulab-ai/ResearchArcade-openreview-papers",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 71059414,
+              "num_bytes_parquet_files": 39203833,
+              "num_columns": 6,
+              "num_rows": 49418,
+              "split": "train"
+            }
+          ]
+        },
+        "size_failures": [],
+        "size_http_status": 200,
+        "splits": [
+          {
+            "config": "default",
+            "dataset": "ulab-ai/ResearchArcade-openreview-papers",
+            "split": "train"
+          }
+        ],
+        "splits_http_status": 200
+      },
+      "authority": "derived-C",
+      "hub_id": "ulab-ai/ResearchArcade-openreview-papers",
+      "source_role": "paper graph"
+    },
+    "researcharcade_reviews": {
+      "api": {
+        "features": [
+          {
+            "config": "default",
+            "features": [
+              "venue",
+              "review_openreview_id",
+              "replyto_openreview_id",
+              "writer",
+              "title",
+              "content",
+              "time"
+            ],
+            "http_status": 200,
+            "split": "train"
+          }
+        ],
+        "info": [
+          {
+            "citation_present": false,
+            "config": "default",
+            "homepage": null,
+            "http_status": 200,
+            "license": null
+          }
+        ],
+        "is_valid": {
+          "filter": true,
+          "preview": true,
+          "search": true,
+          "statistics": true,
+          "viewer": true
+        },
+        "is_valid_http_status": 200,
+        "parquet_files": [
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 144004475,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-reviews/resolve/refs%2Fconvert%2Fparquet/default/train/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0001.parquet",
+            "size": 145779894,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-reviews/resolve/refs%2Fconvert%2Fparquet/default/train/0001.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0002.parquet",
+            "size": 165072123,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-reviews/resolve/refs%2Fconvert%2Fparquet/default/train/0002.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0003.parquet",
+            "size": 239664684,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-reviews/resolve/refs%2Fconvert%2Fparquet/default/train/0003.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0004.parquet",
+            "size": 307064035,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-reviews/resolve/refs%2Fconvert%2Fparquet/default/train/0004.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0005.parquet",
+            "size": 331840087,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-reviews/resolve/refs%2Fconvert%2Fparquet/default/train/0005.parquet"
+          }
+        ],
+        "parquet_http_status": 200,
+        "size": {
+          "configs": [
+            {
+              "config": "default",
+              "dataset": "ulab-ai/ResearchArcade-openreview-reviews",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 2789353973,
+              "num_bytes_original_files": 1333425298,
+              "num_bytes_parquet_files": 1333425298,
+              "num_columns": 7,
+              "num_rows": 823170
+            }
+          ],
+          "dataset": {
+            "dataset": "ulab-ai/ResearchArcade-openreview-reviews",
+            "estimated_num_rows": null,
+            "num_bytes_memory": 2789353973,
+            "num_bytes_original_files": 1333425298,
+            "num_bytes_parquet_files": 1333425298,
+            "num_rows": 823170
+          },
+          "splits": [
+            {
+              "config": "default",
+              "dataset": "ulab-ai/ResearchArcade-openreview-reviews",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 2789353973,
+              "num_bytes_parquet_files": 1333425298,
+              "num_columns": 7,
+              "num_rows": 823170,
+              "split": "train"
+            }
+          ]
+        },
+        "size_failures": [],
+        "size_http_status": 200,
+        "splits": [
+          {
+            "config": "default",
+            "dataset": "ulab-ai/ResearchArcade-openreview-reviews",
+            "split": "train"
+          }
+        ],
+        "splits_http_status": 200
+      },
+      "authority": "derived-C",
+      "hub_id": "ulab-ai/ResearchArcade-openreview-reviews",
+      "source_role": "review graph"
+    },
+    "researcharcade_revisions": {
+      "api": {
+        "features": [
+          {
+            "config": "default",
+            "features": [
+              "venue",
+              "original_openreview_id",
+              "revision_openreview_id",
+              "content",
+              "time"
+            ],
+            "http_status": 200,
+            "split": "train"
+          }
+        ],
+        "info": [
+          {
+            "citation_present": false,
+            "config": "default",
+            "homepage": null,
+            "http_status": 200,
+            "license": null
+          }
+        ],
+        "is_valid": {
+          "filter": true,
+          "preview": true,
+          "search": true,
+          "statistics": true,
+          "viewer": true
+        },
+        "is_valid_http_status": 200,
+        "parquet_files": [
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 136990787,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-revisions/resolve/refs%2Fconvert%2Fparquet/default/train/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0001.parquet",
+            "size": 139987868,
+            "split": "train",
+            "url": "https://huggingface.co/datasets/ulab-ai/ResearchArcade-openreview-revisions/resolve/refs%2Fconvert%2Fparquet/default/train/0001.parquet"
+          }
+        ],
+        "parquet_http_status": 200,
+        "size": {
+          "configs": [
+            {
+              "config": "default",
+              "dataset": "ulab-ai/ResearchArcade-openreview-revisions",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 694490312,
+              "num_bytes_original_files": 276978655,
+              "num_bytes_parquet_files": 276978655,
+              "num_columns": 5,
+              "num_rows": 54468
+            }
+          ],
+          "dataset": {
+            "dataset": "ulab-ai/ResearchArcade-openreview-revisions",
+            "estimated_num_rows": null,
+            "num_bytes_memory": 694490312,
+            "num_bytes_original_files": 276978655,
+            "num_bytes_parquet_files": 276978655,
+            "num_rows": 54468
+          },
+          "splits": [
+            {
+              "config": "default",
+              "dataset": "ulab-ai/ResearchArcade-openreview-revisions",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 694490312,
+              "num_bytes_parquet_files": 276978655,
+              "num_columns": 5,
+              "num_rows": 54468,
+              "split": "train"
+            }
+          ]
+        },
+        "size_failures": [],
+        "size_http_status": 200,
+        "splits": [
+          {
+            "config": "default",
+            "dataset": "ulab-ai/ResearchArcade-openreview-revisions",
+            "split": "train"
+          }
+        ],
+        "splits_http_status": 200
+      },
+      "authority": "derived-C",
+      "hub_id": "ulab-ai/ResearchArcade-openreview-revisions",
+      "source_role": "revision graph"
+    },
+    "review_arcade_arr": {
+      "api": {
+        "features": [
+          {
+            "config": "acl_arr_reviews",
+            "features": [
+              "title",
+              "authors",
+              "accepted_at",
+              "abstract",
+              "cycle",
+              "mean_overall_assessment",
+              "overall_assessment",
+              "mean_confidence",
+              "confidence",
+              "paper_summary",
+              "summary_of_strengths",
+              "summary_of_weaknesses",
+              "comments_suggestions_and_typos",
+              "soundness",
+              "excitement",
+              "datasets",
+              "software",
+              "metareview_score",
+              "metareview",
+              "summary_of_reasons_to_publish",
+              "text_v1",
+              "text_v2"
+            ],
+            "http_status": 200,
+            "split": "accepted"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "features": [
+              "title",
+              "authors",
+              "accepted_at",
+              "abstract",
+              "cycle",
+              "mean_overall_assessment",
+              "overall_assessment",
+              "mean_confidence",
+              "confidence",
+              "paper_summary",
+              "summary_of_strengths",
+              "summary_of_weaknesses",
+              "comments_suggestions_and_typos",
+              "soundness",
+              "excitement",
+              "datasets",
+              "software",
+              "metareview_score",
+              "metareview",
+              "summary_of_reasons_to_publish",
+              "text_v1",
+              "text_v2"
+            ],
+            "http_status": 200,
+            "split": "rejected"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "features": [
+              "title",
+              "authors",
+              "accepted_at",
+              "abstract",
+              "cycle",
+              "mean_overall_assessment",
+              "overall_assessment",
+              "mean_confidence",
+              "confidence",
+              "paper_summary",
+              "summary_of_strengths",
+              "summary_of_weaknesses",
+              "comments_suggestions_and_typos",
+              "soundness",
+              "excitement",
+              "datasets",
+              "software",
+              "metareview_score",
+              "metareview",
+              "summary_of_reasons_to_publish",
+              "text_v1",
+              "text_v2"
+            ],
+            "http_status": 200,
+            "split": "accepted_final"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "features": [
+              "title",
+              "authors",
+              "accepted_at",
+              "abstract",
+              "cycle",
+              "mean_overall_assessment",
+              "overall_assessment",
+              "mean_confidence",
+              "confidence",
+              "paper_summary",
+              "summary_of_strengths",
+              "summary_of_weaknesses",
+              "comments_suggestions_and_typos",
+              "soundness",
+              "excitement",
+              "datasets",
+              "software",
+              "metareview_score",
+              "metareview",
+              "summary_of_reasons_to_publish",
+              "text_v1",
+              "text_v2"
+            ],
+            "http_status": 200,
+            "split": "rejected_final"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "features": [
+              "title",
+              "authors",
+              "accepted_at",
+              "abstract",
+              "cycle",
+              "mean_overall_assessment",
+              "overall_assessment",
+              "mean_confidence",
+              "confidence",
+              "paper_summary",
+              "summary_of_strengths",
+              "summary_of_weaknesses",
+              "comments_suggestions_and_typos",
+              "soundness",
+              "excitement",
+              "datasets",
+              "software",
+              "metareview_score",
+              "metareview",
+              "summary_of_reasons_to_publish",
+              "text_v1",
+              "text_v2"
+            ],
+            "http_status": 200,
+            "split": "rejected_short"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "features": [
+              "title",
+              "authors",
+              "accepted_at",
+              "abstract",
+              "cycle",
+              "mean_overall_assessment",
+              "overall_assessment",
+              "mean_confidence",
+              "confidence",
+              "paper_summary",
+              "summary_of_strengths",
+              "summary_of_weaknesses",
+              "comments_suggestions_and_typos",
+              "soundness",
+              "excitement",
+              "datasets",
+              "software",
+              "metareview_score",
+              "metareview",
+              "summary_of_reasons_to_publish",
+              "text_v1",
+              "text_v2"
+            ],
+            "http_status": 200,
+            "split": "accepted_short"
+          }
+        ],
+        "info": [
+          {
+            "citation_present": false,
+            "config": "acl_arr_reviews",
+            "homepage": null,
+            "http_status": 200,
+            "license": null
+          }
+        ],
+        "is_valid": {
+          "filter": true,
+          "preview": true,
+          "search": true,
+          "statistics": true,
+          "viewer": true
+        },
+        "is_valid_http_status": 200,
+        "parquet_files": [
+          {
+            "config": "acl_arr_reviews",
+            "filename": "0000.parquet",
+            "size": 210037212,
+            "split": "accepted",
+            "url": "https://huggingface.co/datasets/G4KMU/review_arcade/resolve/refs%2Fconvert%2Fparquet/acl_arr_reviews/accepted/0000.parquet"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "filename": "0000.parquet",
+            "size": 114374672,
+            "split": "accepted_final",
+            "url": "https://huggingface.co/datasets/G4KMU/review_arcade/resolve/refs%2Fconvert%2Fparquet/acl_arr_reviews/accepted_final/0000.parquet"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "filename": "0000.parquet",
+            "size": 41439796,
+            "split": "accepted_short",
+            "url": "https://huggingface.co/datasets/G4KMU/review_arcade/resolve/refs%2Fconvert%2Fparquet/acl_arr_reviews/accepted_short/0000.parquet"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "filename": "0000.parquet",
+            "size": 97527774,
+            "split": "rejected",
+            "url": "https://huggingface.co/datasets/G4KMU/review_arcade/resolve/refs%2Fconvert%2Fparquet/acl_arr_reviews/rejected/0000.parquet"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "filename": "0000.parquet",
+            "size": 14157059,
+            "split": "rejected_final",
+            "url": "https://huggingface.co/datasets/G4KMU/review_arcade/resolve/refs%2Fconvert%2Fparquet/acl_arr_reviews/rejected_final/0000.parquet"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "filename": "0000.parquet",
+            "size": 8687451,
+            "split": "rejected_short",
+            "url": "https://huggingface.co/datasets/G4KMU/review_arcade/resolve/refs%2Fconvert%2Fparquet/acl_arr_reviews/rejected_short/0000.parquet"
+          }
+        ],
+        "parquet_http_status": 200,
+        "size": {
+          "configs": [
+            {
+              "config": "acl_arr_reviews",
+              "dataset": "G4KMU/review_arcade",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 985448497,
+              "num_bytes_original_files": 1016921958,
+              "num_bytes_parquet_files": 486223964,
+              "num_columns": 22,
+              "num_rows": 8739
+            }
+          ],
+          "dataset": {
+            "dataset": "G4KMU/review_arcade",
+            "estimated_num_rows": null,
+            "num_bytes_memory": 985448497,
+            "num_bytes_original_files": 1016921958,
+            "num_bytes_parquet_files": 486223964,
+            "num_rows": 8739
+          },
+          "splits": [
+            {
+              "config": "acl_arr_reviews",
+              "dataset": "G4KMU/review_arcade",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 429491617,
+              "num_bytes_parquet_files": 210037212,
+              "num_columns": 22,
+              "num_rows": 2554,
+              "split": "accepted"
+            },
+            {
+              "config": "acl_arr_reviews",
+              "dataset": "G4KMU/review_arcade",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 199487992,
+              "num_bytes_parquet_files": 97527774,
+              "num_columns": 22,
+              "num_rows": 3381,
+              "split": "rejected"
+            },
+            {
+              "config": "acl_arr_reviews",
+              "dataset": "G4KMU/review_arcade",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 231298356,
+              "num_bytes_parquet_files": 114374672,
+              "num_columns": 22,
+              "num_rows": 1365,
+              "split": "accepted_final"
+            },
+            {
+              "config": "acl_arr_reviews",
+              "dataset": "G4KMU/review_arcade",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 27947822,
+              "num_bytes_parquet_files": 14157059,
+              "num_columns": 22,
+              "num_rows": 455,
+              "split": "rejected_final"
+            },
+            {
+              "config": "acl_arr_reviews",
+              "dataset": "G4KMU/review_arcade",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 16674089,
+              "num_bytes_parquet_files": 8687451,
+              "num_columns": 22,
+              "num_rows": 328,
+              "split": "rejected_short"
+            },
+            {
+              "config": "acl_arr_reviews",
+              "dataset": "G4KMU/review_arcade",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 80548621,
+              "num_bytes_parquet_files": 41439796,
+              "num_columns": 22,
+              "num_rows": 656,
+              "split": "accepted_short"
+            }
+          ]
+        },
+        "size_failures": [],
+        "size_http_status": 200,
+        "splits": [
+          {
+            "config": "acl_arr_reviews",
+            "dataset": "G4KMU/review_arcade",
+            "split": "accepted"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "dataset": "G4KMU/review_arcade",
+            "split": "rejected"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "dataset": "G4KMU/review_arcade",
+            "split": "accepted_final"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "dataset": "G4KMU/review_arcade",
+            "split": "rejected_final"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "dataset": "G4KMU/review_arcade",
+            "split": "rejected_short"
+          },
+          {
+            "config": "acl_arr_reviews",
+            "dataset": "G4KMU/review_arcade",
+            "split": "accepted_short"
+          }
+        ],
+        "splits_http_status": 200
+      },
+      "authority": "derived-C",
+      "hub_id": "G4KMU/review_arcade",
+      "source_role": "consented ARR paper/review pairs"
+    },
+    "reviewarena": {
+      "api": {
+        "features": [
+          {
+            "config": "default",
+            "features": [
+              "forum_id",
+              "conference",
+              "year",
+              "track",
+              "venue_id",
+              "paper_number",
+              "title",
+              "abstract",
+              "authors",
+              "keywords",
+              "tldr",
+              "primary_area",
+              "venue",
+              "decision",
+              "decision_comment",
+              "author_rebuttal",
+              "num_reviews",
+              "reviews_json",
+              "markdown",
+              "markdown_chars"
+            ],
+            "http_status": 200,
+            "split": "neurips"
+          },
+          {
+            "config": "default",
+            "features": [
+              "forum_id",
+              "conference",
+              "year",
+              "track",
+              "venue_id",
+              "paper_number",
+              "title",
+              "abstract",
+              "authors",
+              "keywords",
+              "tldr",
+              "primary_area",
+              "venue",
+              "decision",
+              "decision_comment",
+              "author_rebuttal",
+              "num_reviews",
+              "reviews_json",
+              "markdown",
+              "markdown_chars"
+            ],
+            "http_status": 200,
+            "split": "iclr"
+          },
+          {
+            "config": "default",
+            "features": [
+              "forum_id",
+              "conference",
+              "year",
+              "track",
+              "venue_id",
+              "paper_number",
+              "title",
+              "abstract",
+              "authors",
+              "keywords",
+              "tldr",
+              "primary_area",
+              "venue",
+              "decision",
+              "decision_comment",
+              "author_rebuttal",
+              "num_reviews",
+              "reviews_json",
+              "markdown",
+              "markdown_chars"
+            ],
+            "http_status": 200,
+            "split": "icml"
+          },
+          {
+            "config": "default",
+            "features": [
+              "forum_id",
+              "conference",
+              "year",
+              "track",
+              "venue_id",
+              "paper_number",
+              "title",
+              "abstract",
+              "authors",
+              "keywords",
+              "tldr",
+              "primary_area",
+              "venue",
+              "decision",
+              "decision_comment",
+              "author_rebuttal",
+              "num_reviews",
+              "reviews_json",
+              "markdown",
+              "markdown_chars"
+            ],
+            "http_status": 200,
+            "split": "tmlr"
+          },
+          {
+            "config": "default",
+            "features": [
+              "forum_id",
+              "conference",
+              "year",
+              "track",
+              "venue_id",
+              "paper_number",
+              "title",
+              "abstract",
+              "authors",
+              "keywords",
+              "tldr",
+              "primary_area",
+              "venue",
+              "decision",
+              "decision_comment",
+              "author_rebuttal",
+              "num_reviews",
+              "reviews_json",
+              "markdown",
+              "markdown_chars"
+            ],
+            "http_status": 200,
+            "split": "emnlp"
+          },
+          {
+            "config": "default",
+            "features": [
+              "forum_id",
+              "conference",
+              "year",
+              "track",
+              "venue_id",
+              "paper_number",
+              "title",
+              "abstract",
+              "authors",
+              "keywords",
+              "tldr",
+              "primary_area",
+              "venue",
+              "decision",
+              "decision_comment",
+              "author_rebuttal",
+              "num_reviews",
+              "reviews_json",
+              "markdown",
+              "markdown_chars"
+            ],
+            "http_status": 200,
+            "split": "corl"
+          },
+          {
+            "config": "default",
+            "features": [
+              "forum_id",
+              "conference",
+              "year",
+              "track",
+              "venue_id",
+              "paper_number",
+              "title",
+              "abstract",
+              "authors",
+              "keywords",
+              "tldr",
+              "primary_area",
+              "venue",
+              "decision",
+              "decision_comment",
+              "author_rebuttal",
+              "num_reviews",
+              "reviews_json",
+              "markdown",
+              "markdown_chars"
+            ],
+            "http_status": 200,
+            "split": "colm"
+          }
+        ],
+        "info": [
+          {
+            "citation_present": false,
+            "config": "default",
+            "homepage": null,
+            "http_status": 200,
+            "license": null
+          }
+        ],
+        "is_valid": {
+          "filter": true,
+          "preview": true,
+          "search": true,
+          "statistics": false,
+          "viewer": true
+        },
+        "is_valid_http_status": 200,
+        "parquet_files": [
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 37291354,
+            "split": "colm",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/colm/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 28627916,
+            "split": "corl",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/corl/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 90794691,
+            "split": "emnlp",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/emnlp/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 167662887,
+            "split": "iclr",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/iclr/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0001.parquet",
+            "size": 196573710,
+            "split": "iclr",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/iclr/0001.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0002.parquet",
+            "size": 210807163,
+            "split": "iclr",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/iclr/0002.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0003.parquet",
+            "size": 250525528,
+            "split": "iclr",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/iclr/0003.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0004.parquet",
+            "size": 263725824,
+            "split": "iclr",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/iclr/0004.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 204752048,
+            "split": "icml",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/icml/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 126503813,
+            "split": "neurips",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/neurips/0000.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0001.parquet",
+            "size": 166685127,
+            "split": "neurips",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/neurips/0001.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0002.parquet",
+            "size": 229115194,
+            "split": "neurips",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/neurips/0002.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0003.parquet",
+            "size": 264212756,
+            "split": "neurips",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/neurips/0003.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0004.parquet",
+            "size": 279556753,
+            "split": "neurips",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/neurips/0004.parquet"
+          },
+          {
+            "config": "default",
+            "filename": "0000.parquet",
+            "size": 211604858,
+            "split": "tmlr",
+            "url": "https://huggingface.co/datasets/Samarth0710/reviewarena/resolve/refs%2Fconvert%2Fparquet/default/tmlr/0000.parquet"
+          }
+        ],
+        "parquet_http_status": 200,
+        "size": {
+          "configs": [
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 5150055937,
+              "num_bytes_original_files": 2728439622,
+              "num_bytes_parquet_files": 2728439622,
+              "num_columns": 20,
+              "num_rows": 51529
+            }
+          ],
+          "dataset": {
+            "dataset": "Samarth0710/reviewarena",
+            "estimated_num_rows": null,
+            "num_bytes_memory": 5150055937,
+            "num_bytes_original_files": 2728439622,
+            "num_bytes_parquet_files": 2728439622,
+            "num_rows": 51529
+          },
+          "splits": [
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 2021064783,
+              "num_bytes_parquet_files": 1066073643,
+              "num_columns": 20,
+              "num_rows": 18453,
+              "split": "neurips"
+            },
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 2040604656,
+              "num_bytes_parquet_files": 1089295112,
+              "num_columns": 20,
+              "num_rows": 22532,
+              "split": "iclr"
+            },
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 387555582,
+              "num_bytes_parquet_files": 204752048,
+              "num_columns": 20,
+              "num_rows": 3257,
+              "split": "icml"
+            },
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 400323161,
+              "num_bytes_parquet_files": 211604858,
+              "num_columns": 20,
+              "num_rows": 3748,
+              "split": "tmlr"
+            },
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 175680567,
+              "num_bytes_parquet_files": 90794691,
+              "num_columns": 20,
+              "num_rows": 2009,
+              "split": "emnlp"
+            },
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 55326735,
+              "num_bytes_parquet_files": 28627916,
+              "num_columns": 20,
+              "num_rows": 813,
+              "split": "corl"
+            },
+            {
+              "config": "default",
+              "dataset": "Samarth0710/reviewarena",
+              "estimated_num_rows": null,
+              "num_bytes_memory": 69500453,
+              "num_bytes_parquet_files": 37291354,
+              "num_columns": 20,
+              "num_rows": 717,
+              "split": "colm"
+            }
+          ]
+        },
+        "size_failures": [],
+        "size_http_status": 200,
+        "splits": [
+          {
+            "config": "default",
+            "dataset": "Samarth0710/reviewarena",
+            "split": "neurips"
+          },
+          {
+            "config": "default",
+            "dataset": "Samarth0710/reviewarena",
+            "split": "iclr"
+          },
+          {
+            "config": "default",
+            "dataset": "Samarth0710/reviewarena",
+            "split": "icml"
+          },
+          {
+            "config": "default",
+            "dataset": "Samarth0710/reviewarena",
+            "split": "tmlr"
+          },
+          {
+            "config": "default",
+            "dataset": "Samarth0710/reviewarena",
+            "split": "emnlp"
+          },
+          {
+            "config": "default",
+            "dataset": "Samarth0710/reviewarena",
+            "split": "corl"
+          },
+          {
+            "config": "default",
+            "dataset": "Samarth0710/reviewarena",
+            "split": "colm"
+          }
+        ],
+        "splits_http_status": 200
+      },
+      "authority": "derived-C",
+      "hub_id": "Samarth0710/reviewarena",
+      "source_role": "OpenReview corpus plus OCR"
+    }
+  },
+  "count_disagreements_explicit": true,
+  "field_authority": {
+    "NLPeer_ARR": [
+      "consented release objects only; never infer non-consenting records"
+    ],
+    "OpenReview_raw_Notes": [
+      "note/invitation/forum/reply/original IDs",
+      "readers/signatures",
+      "source timestamps",
+      "native rubric values",
+      "public state transitions"
+    ],
+    "Re2": [
+      "derived initial-version/rebuttal-turn assertions requiring source-note verification"
+    ],
+    "ResearchArcade": [
+      "candidate revision/link candidates and graph convenience fields"
+    ],
+    "ReviewArena": [
+      "OCR-derived markdown only, subject to manuscript-level rights"
+    ],
+    "legacy_local_P2": [
+      "existing exploratory outcomes and novelty/rating transforms"
+    ]
+  },
+  "id_reconciliation": {
+    "researcharcade_iclr_papers": {
+      "by_year": {
+        "2018": {
+          "corpus": 935,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 935,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 935,
+          "shared_local_outcomes": {
+            "accepted": 427,
+            "rejected": 508
+          }
+        },
+        "2019": {
+          "corpus": 1419,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 1419,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 1419,
+          "shared_local_outcomes": {
+            "accepted": 502,
+            "rejected": 917
+          }
+        },
+        "2020": {
+          "corpus": 2213,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 2213,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 2213,
+          "shared_local_outcomes": {
+            "accepted": 705,
+            "rejected": 1508
+          }
+        },
+        "2021": {
+          "corpus": 2594,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 2594,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 2594,
+          "shared_local_outcomes": {
+            "accepted": 859,
+            "rejected": 1735
+          }
+        },
+        "2022": {
+          "corpus": 2617,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 2617,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 2617,
+          "shared_local_outcomes": {
+            "accepted": 1094,
+            "rejected": 1523
+          }
+        },
+        "2023": {
+          "corpus": 3793,
+          "corpus_only": 1,
+          "corpus_only_ids": [
+            "QmH1_mn6SI"
+          ],
+          "local": 3792,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 3792,
+          "shared_local_outcomes": {
+            "accepted": 1573,
+            "not_accepted": 2219
+          }
+        },
+        "2024": {
+          "corpus": 5750,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 7404,
+          "local_only": 1654,
+          "local_only_id_sample": [
+            "0074qaufB6",
+            "014CgNPAGy",
+            "01Yi8rzoNs",
+            "04ARmqba4z",
+            "05gc31KWpz",
+            "06mzMua9Rw",
+            "0HIMHjYhYe",
+            "0KVkTDB6KZ",
+            "0P12CqfvUU",
+            "0PeEOq5iK8"
+          ],
+          "local_only_outcomes": {
+            "withdrawn": 1654
+          },
+          "shared": 5750,
+          "shared_local_outcomes": {
+            "accepted": 2260,
+            "desk_rejected": 53,
+            "rejected": 3431,
+            "withdrawn": 6
+          }
+        },
+        "2025": {
+          "corpus": 8701,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 11672,
+          "local_only": 2971,
+          "local_only_id_sample": [
+            "02DCEU6vSU",
+            "03u7pbpyeN",
+            "04TRw4pYSV",
+            "07ZaA3MiL0",
+            "07cehZ97Xb",
+            "08FCLXDY3S",
+            "09JVxsEZPf",
+            "09TI1yUo9K",
+            "0A6f1b66pE",
+            "0BBzwpLVpm"
+          ],
+          "local_only_outcomes": {
+            "withdrawn": 2971
+          },
+          "shared": 8701,
+          "shared_local_outcomes": {
+            "accepted": 3703,
+            "desk_rejected": 70,
+            "rejected": 4909,
+            "withdrawn": 19
+          }
+        },
+        "2026": {
+          "corpus": 0,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "local": 19814,
+          "local_only": 19814,
+          "local_only_id_sample": [
+            "00F7BfXLYJ",
+            "00HNN8O7Ni",
+            "00UQtHqB2k",
+            "017F77AYeQ",
+            "023yMrtHQP",
+            "02NbD16OnA",
+            "02cEkpURXH",
+            "02mBAZjFzp",
+            "02mgFnnfqG",
+            "032sg6mGp9"
+          ],
+          "local_only_outcomes": {
+            "accepted": 5351,
+            "desk_rejected": 908,
+            "rejected": 8357,
+            "withdrawn": 5198
+          },
+          "shared": 0,
+          "shared_local_outcomes": {}
+        }
+      },
+      "key": "paper_openreview_id"
+    },
+    "reviewarena_iclr": {
+      "by_year": {
+        "2018": {
+          "corpus": 0,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 0.0,
+          "local": 935,
+          "local_only": 935,
+          "local_only_id_sample": [
+            "B12Js_yRb",
+            "B12QlQWRW",
+            "B13EC5u6W",
+            "B13njo1R-",
+            "B14TlG-RW",
+            "B14uJzW0b",
+            "B16_iGWCW",
+            "B16yEqkCZ",
+            "B17JTOe0-",
+            "B18WgG-CZ"
+          ],
+          "local_only_outcomes": {
+            "accepted": 427,
+            "rejected": 508
+          },
+          "shared": 0,
+          "shared_local_outcomes": {}
+        },
+        "2019": {
+          "corpus": 0,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 0.0,
+          "local": 1419,
+          "local_only": 1419,
+          "local_only_id_sample": [
+            "B14ejsA5YQ",
+            "B14rPj0qY7",
+            "B1EjKsRqtQ",
+            "B1G5ViAqFm",
+            "B1G9doA9F7",
+            "B1GAUs0cKQ",
+            "B1GHJ3R9tQ",
+            "B1GIB3A9YX",
+            "B1GIQhCcYm",
+            "B1GMDsR5tm"
+          ],
+          "local_only_outcomes": {
+            "accepted": 502,
+            "rejected": 917
+          },
+          "shared": 0,
+          "shared_local_outcomes": {}
+        },
+        "2020": {
+          "corpus": 2213,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 1.0,
+          "local": 2213,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 2213,
+          "shared_local_outcomes": {
+            "accepted": 705,
+            "rejected": 1508
+          }
+        },
+        "2021": {
+          "corpus": 2594,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 1.0,
+          "local": 2594,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 2594,
+          "shared_local_outcomes": {
+            "accepted": 859,
+            "rejected": 1735
+          }
+        },
+        "2022": {
+          "corpus": 2616,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 0.9996178830722201,
+          "local": 2617,
+          "local_only": 1,
+          "local_only_id_sample": [
+            "BnQhMqDfcKG"
+          ],
+          "local_only_outcomes": {
+            "accepted": 1
+          },
+          "shared": 2616,
+          "shared_local_outcomes": {
+            "accepted": 1093,
+            "rejected": 1523
+          }
+        },
+        "2023": {
+          "corpus": 3792,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 1.0,
+          "local": 3792,
+          "local_only": 0,
+          "local_only_id_sample": [],
+          "local_only_outcomes": {},
+          "shared": 3792,
+          "shared_local_outcomes": {
+            "accepted": 1573,
+            "not_accepted": 2219
+          }
+        },
+        "2024": {
+          "corpus": 2260,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 0.30524041058887086,
+          "local": 7404,
+          "local_only": 5144,
+          "local_only_id_sample": [
+            "0074qaufB6",
+            "014CgNPAGy",
+            "01Yi8rzoNs",
+            "01ep65umEr",
+            "02Ug9N8DCI",
+            "030cjlZm4a",
+            "04ARmqba4z",
+            "04UvXg4CvW",
+            "05gc31KWpz",
+            "06mzMua9Rw"
+          ],
+          "local_only_outcomes": {
+            "desk_rejected": 53,
+            "rejected": 3431,
+            "withdrawn": 1660
+          },
+          "shared": 2260,
+          "shared_local_outcomes": {
+            "accepted": 2260
+          }
+        },
+        "2025": {
+          "corpus": 3703,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 0.31725496915695683,
+          "local": 11672,
+          "local_only": 7969,
+          "local_only_id_sample": [
+            "00ezkB2iZf",
+            "01wMplF8TL",
+            "02DCEU6vSU",
+            "02Od16GFRW",
+            "02kZwCo0C3",
+            "03u7pbpyeN",
+            "04RGjODVj3",
+            "04RLVxDvig",
+            "04TRw4pYSV",
+            "04c5uWq9SA"
+          ],
+          "local_only_outcomes": {
+            "desk_rejected": 70,
+            "rejected": 4909,
+            "withdrawn": 2990
+          },
+          "shared": 3703,
+          "shared_local_outcomes": {
+            "accepted": 3703
+          }
+        },
+        "2026": {
+          "corpus": 5354,
+          "corpus_only": 0,
+          "corpus_only_ids": [],
+          "jaccard": 0.27021298072070254,
+          "local": 19814,
+          "local_only": 14460,
+          "local_only_id_sample": [
+            "00F7BfXLYJ",
+            "00HNN8O7Ni",
+            "00UQtHqB2k",
+            "017F77AYeQ",
+            "023yMrtHQP",
+            "02cEkpURXH",
+            "02mBAZjFzp",
+            "032sg6mGp9",
+            "03Ek1qDZmI",
+            "03MfCNn3pF"
+          ],
+          "local_only_outcomes": {
+            "desk_rejected": 908,
+            "rejected": 8357,
+            "withdrawn": 5195
+          },
+          "shared": 5354,
+          "shared_local_outcomes": {
+            "accepted": 5351,
+            "withdrawn": 3
+          }
+        }
+      },
+      "finding": "row-level overlap is measured without retaining manuscript/review text",
+      "key": "OpenReview forum_id"
+    }
+  },
+  "method": "Hugging Face Dataset Viewer metadata APIs and Parquet column-range reads; no corpus text retained",
+  "observed_at": "2026-08-10T15:06:56+00:00",
+  "passes": true,
+  "raw_text_duplicated": false,
+  "release_policy": {
+    "coverage": "no derived corpus establishes OpenReview candidate-pool completeness",
+    "identifiers_and_counts": "retain with dataset citation and retrieval snapshot",
+    "identity": "no reviewer profiling or deanonymization; ResearchArcade writer strings are not identity truth",
+    "raw_text": "do not duplicate; retain source pointer/hash unless affirmative object licence is verified"
+  },
+  "report_hash": "a428e731a2ef408a2f0675735d3ee9937928eaaba963a284d6c403f0eb124201",
+  "required_corpus_groups": {
+    "ARR-consent": {
+      "authority": [
+        "derived-C"
+      ],
+      "corpus_ids": [
+        "review_arcade_arr"
+      ],
+      "represented": true
+    },
+    "MOPRD": {
+      "authority": [
+        "manifest-only"
+      ],
+      "corpus_ids": [
+        "moprd"
+      ],
+      "represented": true
+    },
+    "NLPeer": {
+      "authority": [
+        "manifest-only"
+      ],
+      "corpus_ids": [
+        "nlpeer"
+      ],
+      "represented": true
+    },
+    "PeerRead": {
+      "authority": [
+        "derived-C"
+      ],
+      "corpus_ids": [
+        "peerread"
+      ],
+      "represented": true
+    },
+    "Re2": {
+      "authority": [
+        "derived-C"
+      ],
+      "corpus_ids": [
+        "re2"
+      ],
+      "represented": true
+    },
+    "ResearchArcade": {
+      "authority": [
+        "derived-C"
+      ],
+      "corpus_ids": [
+        "researcharcade_papers",
+        "researcharcade_reviews",
+        "researcharcade_revisions"
+      ],
+      "represented": true
+    },
+    "ReviewArena": {
+      "authority": [
+        "derived-C"
+      ],
+      "corpus_ids": [
+        "reviewarena"
+      ],
+      "represented": true
+    }
+  },
+  "schema": "observatory.openreview-derived-reconciliation/1",
+  "scope_decision": "Public Viewer metadata and identifier columns are reconciled where free and licence-safe. NLPeer/MOPRD remain manifest-only because the no-bespoke-partnership and object-licence gates forbid a request-only or unresolved pull.",
+  "unresolved": [
+    "Re2 viewer has splits but no materialized viewer size; use release manifest/paper until files are auditable",
+    "PeerRead requires legacy loading code and is not supported by Dataset Viewer",
+    "NLPeer data requires its documented request/licence workflow and is not silently acquired",
+    "MOPRD public distribution and object licences remain unresolved; registry/paper counts only",
+    "Review Arcade lacks stable OpenReview IDs in its viewer schema, so title-only overlap is not forced"
+  ]
+}

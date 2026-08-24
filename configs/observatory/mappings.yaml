@@ -1,0 +1,38 @@
+schema: observatory.native-mappings/1
+constitution_version: 0.1.0
+version: 2026-08-10.1
+mappings:
+  openreview:
+    outcome:
+      values:
+        accepted: selected
+        rejected: rejected
+        withdrawn: withdrawn
+        desk_rejected: desk_rejected
+        not_accepted: unresolved_during_cycle
+        unknown: unknown
+    evaluation_role:
+      values:
+        Official_Review: official_reviewer
+        Meta_Review: meta_reviewer
+        Decision: decision_body
+        Author_Response: candidate_response
+        Comment: public_comment
+  crossref:
+    relation:
+      values:
+        is-review-of: review_of
+        has-review: has_review
+        is-preprint-of: preprint_of
+        is-version-of: version_of
+        is-updated-by: updated_by
+        updates: updates
+  copernicus:
+    relation:
+      values:
+        referee-comment: official_review
+        editor-comment: editor_comment
+        author-comment: author_response
+        final-response: author_final_response
+        manuscript-version: manuscript_version
+        journal-article: version_of_record

@@ -1,0 +1,28 @@
+schema: observatory.modal-budget/1
+constitution_version: 0.1.0
+currency: USD
+total_cap: 30.0
+default_job_cap: 3.0
+automatic_retry_cap: 2
+envelopes:
+  pilots: 3.0
+  publication_fulltext_embedding: 15.0
+  reference_linkage: 6.0
+  patent_pilot: 0.0
+  contingency: 6.0
+initial_envelopes:
+  pilots: 3.0
+  publication_fulltext_embedding: 12.0
+  reference_linkage: 6.0
+  patent_pilot: 3.0
+  contingency: 6.0
+amendments:
+  - effective_at: '2026-08-20T00:00:00Z'
+    decision: Reallocate the unused patent Modal envelope to publication processing after the bounded patent pilot completed locally.
+    evidence: results/observatory/r4/patent_pilot_report.json
+    total_cap_change_usd: 0.0
+contingency_requires:
+  - relevant pilot acceptance gate passed
+  - dated decision-log entry
+  - revised append-only budget ledger projection
+ledger_path: results/observatory/r5/modal_budget_ledger.jsonl

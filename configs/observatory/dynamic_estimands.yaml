@@ -1,0 +1,29 @@
+schema: observatory.dynamic-estimands/1
+registered_at: '2026-08-20T00:00:00Z'
+status: prospective-confirmatory-contract
+estimands:
+  - id: demand_to_strain
+    outcome: evaluation delay and disagreement at t+1
+    exposure: observable demand per capacity proxy at t
+    lags: [1, 2]
+    pretrends: four pre-event periods with joint-zero test
+    fixed_effects: [gate_cycle, architecture, calendar_year]
+    missing_stages: do not impute hidden demand; bound B-grade demand and exclude C/D from rates
+    architecture_sensitivity: estimate separately, then partial-pool only after invariance audit
+  - id: strain_to_accepted_novelty
+    outcome: ruler-specific accepted novelty/diversity at t+1
+    exposure: public timing/workload strain at t
+    lags: [1]
+    pretrends: event-time leads -4 through -1
+    fixed_effects: [gate, field, calendar_year]
+    missing_stages: inverse-probability sensitivity for text availability; no C/D population claim
+    architecture_sensitivity: leave-one-architecture-out and interactions
+  - id: policy_feedback
+    outcome: demand, rejection, timing, and construct mix
+    exposure: registered policy reform
+    lags: [0, 1, 2]
+    pretrends: event-time leads -4 through -1; reject design if non-flat
+    fixed_effects: [gate, architecture, calendar_time]
+    missing_stages: policy dates exact; outcomes native-only where normalization unsupported
+    architecture_sensitivity: reform-specific estimand; no pooled causal coefficient
+

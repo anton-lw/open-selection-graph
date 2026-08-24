@@ -1,0 +1,81 @@
+{
+  "$id": "https://example.invalid/observatory/candidate.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "candidate_id": {
+      "type": "string"
+    },
+    "candidate_type": {
+      "type": "string"
+    },
+    "canonical_title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "domain": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "first_observed_at": {
+      "anyOf": [
+        {
+          "format": "date-time",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "provenance_event_id": {
+      "type": "string"
+    },
+    "record_version": {
+      "type": "integer"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_object_id": {
+      "type": "string"
+    },
+    "status": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "candidate_id",
+    "candidate_type",
+    "source_id",
+    "source_object_id",
+    "provenance_event_id",
+    "observed_at",
+    "record_version"
+  ],
+  "title": "Observatory candidate",
+  "type": "object"
+}

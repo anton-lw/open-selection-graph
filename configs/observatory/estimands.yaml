@@ -1,0 +1,130 @@
+schema: observatory.estimands/1
+constitution_version: 0.1.0
+estimands:
+  - id: P-JOINT-SELECTION
+    programme: P
+    description: Joint relationship of candidate novelty/quality proxies with stage-specific selection.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [candidate_version_id, gate_cycle_id, stage, outcome, novelty_feature_version]
+  - id: P-CAPACITY-LOCKIN
+    programme: P
+    description: Association of finite evaluator capacity with rejection and accepted diversity dynamics.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [gate_cycle_id, observable_count, evaluator_supply, decision_time, outcome]
+  - id: P-ARCHITECTURE-LOCKIN
+    programme: P
+    description: Cross-architecture differences in idea diversity and later saturation.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [gate_cycle_id, architecture, policy_version_id, outcome, novelty_feature_version]
+  - id: P1-LAGGED-INSTITUTION
+    programme: P1
+    description: Lagged relation between selected output and later institutional strictness/state.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [gate_cycle_id, cycle_start, cycle_end, policy_version_id, observable_count, selected_count, accepted_novelty]
+  - id: P1-DEMAND-CAPACITY
+    programme: P1
+    description: Demand and capacity contribution to stage-specific rejection and delay.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [observable_count, evaluator_supply, review_count, outcome, decision_time]
+  - id: P1-POLICY-EVENT
+    programme: P1
+    description: Effect of a dated institutional reform on selection dynamics.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [policy_event_id, effective_at, gate_cycle_id, outcome, pre_period, post_period]
+  - id: P2-RULER-WITHIN-DOOR
+    programme: P2
+    description: Difference in novelty-selection gradient across computational rulers within a gate.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [candidate_version_id, gate_cycle_id, outcome, semantic_novelty, recombinatorial_novelty]
+  - id: P2-DOOR-COMPARISON
+    programme: P2
+    description: Architecture-conditioned novelty-selection gradients.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [architecture, gate_cycle_id, outcome, novelty_feature_version, policy_version_id]
+  - id: P2-HUMAN-CONSTRUCT
+    programme: P2
+    description: Association among native reviewer constructs and computational novelty measures.
+    analysis_class: evaluation_description
+    admissible_grades: [A, B, C]
+    required_fields: [evaluation_id, candidate_version_id, criterion_native, criterion_value, novelty_feature_version]
+  - id: P2-CROSS-GATE-SAME-WORK
+    programme: P2
+    description: Within-work difference in novelty pricing across gates.
+    analysis_class: trajectory
+    admissible_grades: [A, B, C]
+    required_fields: [lineage_edge_id, source_version_id, target_version_id, linkage_tier, gate_cycle_id, outcome]
+  - id: P2-REVISION-CHANGE
+    programme: P2
+    description: Change in constructs/content following evaluation and revision.
+    analysis_class: trajectory
+    admissible_grades: [A, B, C]
+    required_fields: [source_version_id, target_version_id, evaluation_time, revision_time, content_diff_version]
+  - id: P4-ALLOCATION-EFFECT
+    programme: P4
+    description: Effect of random versus ranked allocation among an eligible fundable pool.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [application_id, eligible_pool_id, treatment_arm, assignment_mechanism, outcome]
+  - id: P4-ENTRY-EFFECT
+    programme: P4
+    description: Effect of allocation rule on entry and entrant composition.
+    analysis_class: entry_selection
+    admissible_grades: [A]
+    required_fields: [applicant_id, application_id, entrant_status, rule_version, pre_period, post_period]
+  - id: P4-EVALUABILITY
+    programme: P4
+    description: Whether a public instrument discloses the six identification fields.
+    analysis_class: policy_description
+    admissible_grades: [A, B, C, D]
+    required_fields: [instrument_id, round_id, disclosure_fields, source_evidence]
+  - id: P4-RETURNER-LOWER-BOUND
+    programme: P4
+    description: Lower bound on repeat public applications across rounds.
+    analysis_class: trajectory
+    admissible_grades: [A, B, D]
+    required_fields: [application_id, round_id, lineage_edge_id, organization]
+    partial_if_missing: true
+  - id: X-REJECTED-AFTERLIFE
+    programme: extended
+    description: Later publication and uptake following evaluated rejection.
+    analysis_class: trajectory
+    admissible_grades: [A, B]
+    required_fields: [candidate_id, initial_decision_id, lineage_edge_id, downstream_outcome_id, censoring_date]
+  - id: X-CAPACITY-CONSERVATISM
+    programme: extended
+    description: Association of evaluator strain with severity, disagreement, and construct pricing.
+    analysis_class: stage_selection
+    admissible_grades: [A, B]
+    required_fields: [capacity_observation_id, evaluation_id, gate_cycle_id, outcome]
+  - id: X-ARCHITECTURE-ATLAS
+    programme: extended
+    description: Descriptive comparison of stage flows and constructs across architectures.
+    analysis_class: portfolio_description
+    admissible_grades: [A, B, C, D]
+    required_fields: [gate_cycle_id, architecture, policy_version_id, coverage_observation_id]
+  - id: X-POLICY-TRANSPARENCY
+    programme: extended
+    description: Change in gate evaluability and disclosure through time.
+    analysis_class: policy_description
+    admissible_grades: [A, B, C, D]
+    required_fields: [gate_id, policy_version_id, effective_at, disclosure_fields]
+  - id: X-PATENT-LEGAL-NOVELTY
+    programme: extended
+    description: Claim-level consequences of explicit legal novelty and obviousness judgments.
+    analysis_class: stage_selection
+    admissible_grades: [B]
+    required_fields: [application_id, claim_version_id, legal_ground, office_action_id, outcome]
+  - id: X-SCIENCE-PATENT-CONSTRUCT
+    programme: extended
+    description: Comparative map of scientific novelty measures and legal novelty judgments.
+    analysis_class: evaluation_description
+    admissible_grades: [B, C]
+    required_fields: [candidate_version_id, evaluation_id, construct_family, feature_version]

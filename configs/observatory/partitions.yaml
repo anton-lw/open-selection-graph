@@ -1,0 +1,28 @@
+schema: observatory.partitions/1
+constitution_version: 0.1.0
+version: 2026-08-10.1
+frozen_at: 2026-08-10
+partitions:
+  exploratory_existing:
+    status: exploratory
+    includes:
+      - data/p2/openreview/**
+      - data/openreview/**
+      - data/external/openreview/**
+      - data/p1/openreview_multivenue/**
+      - data/p4/**
+      - results/p1/**
+      - results/p2/**
+      - results/p4/**
+    reason: Inspected or analysed before the Observatory constitution freeze.
+  confirmatory_future_time:
+    status: sealed_until_registration
+    includes:
+      - source records first published after the relevant analysis registration
+    opening_rule: Hash estimand, code surface, policy-event definition, and release manifest first.
+  confirmatory_new_source:
+    status: sealed_until_registration
+    includes:
+      - source families not inspected at candidate-outcome level before registration
+    opening_rule: Freeze source inclusion, population, outcome, features, and exclusions before normalization.
+registry_sha256: c6652f19c17138034e11695c6a62b3025990b512a2cf06be9edd41d8300d77c0

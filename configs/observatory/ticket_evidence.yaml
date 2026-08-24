@@ -1,0 +1,1014 @@
+schema: observatory.ticket-evidence/2
+snapshot_date: '2026-08-20'
+scope:
+- A
+- B
+- C
+- D
+- E
+- F
+- G
+- H
+- I
+- J
+- K
+- L
+- M
+- N
+- O
+- P
+- Q
+requirements: configs/observatory/ticket_requirements.yaml
+status_semantics:
+  complete: Every acceptance clause has direct code, test, or real-data artifact evidence.
+  partial: Useful implementation exists but at least one acceptance clause lacks decisive evidence.
+  pending: No acceptance-grade implementation evidence yet.
+tickets:
+- id: A1
+  status: complete
+  evidence:
+  - docs/observatory/CONSTITUTION.md
+  - src/observatory/constitution.py
+- id: A2
+  status: complete
+  evidence:
+  - configs/observatory/estimands.yaml
+  - configs/observatory/architectures.yaml
+- id: A3
+  status: complete
+  evidence:
+  - configs/observatory/claims.yaml
+  - results/observatory/executed_claim_ledger.json
+- id: A4
+  status: complete
+  evidence:
+  - configs/observatory/partitions.yaml
+- id: A5
+  status: complete
+  evidence:
+  - configs/observatory/architectures.yaml
+  - configs/observatory/mappings.yaml
+- id: A6
+  status: complete
+  evidence:
+  - configs/observatory/source_states.yaml
+  - src/observatory/connectors/delta.py
+- id: A7
+  status: complete
+  evidence:
+  - configs/observatory/stop_rules.yaml
+- id: B1
+  status: complete
+  evidence:
+  - configs/observatory/sources.yaml
+  - src/observatory/registry.py
+- id: B2
+  status: complete
+  evidence:
+  - configs/observatory/publication_census.yaml
+- id: B3
+  status: complete
+  evidence:
+  - configs/observatory/funding_census.yaml
+- id: B4
+  status: complete
+  evidence:
+  - configs/observatory/patent_source_matrix.yaml
+- id: B5
+  status: complete
+  evidence:
+  - tests/fixtures/observatory
+  - src/observatory/probes.py
+- id: B6
+  status: complete
+  evidence:
+  - src/observatory/license_matrix.py
+  - src/observatory/licensing.py
+- id: B7
+  status: complete
+  evidence:
+  - src/observatory/denominators.py
+  - configs/observatory/publication_census.yaml
+- id: B8
+  status: complete
+  evidence:
+  - configs/observatory/excluded_sources.yaml
+- id: C1
+  status: complete
+  evidence:
+  - src/observatory/schema.py
+  - schemas/observatory/catalog.json
+- id: C2
+  status: complete
+  evidence:
+  - src/observatory/ids.py
+- id: C3
+  status: complete
+  evidence:
+  - src/observatory/provenance.py
+  - src/observatory/integrity.py
+- id: C4
+  status: complete
+  evidence:
+  - src/observatory/storage.py
+- id: C5
+  status: complete
+  evidence:
+  - src/observatory/temporal.py
+- id: C6
+  status: complete
+  evidence:
+  - configs/observatory/mappings.yaml
+  - src/observatory/mappings.py
+- id: C7
+  status: complete
+  evidence:
+  - src/observatory/denominators.py
+  - src/observatory/schema.py
+- id: C8
+  status: complete
+  evidence:
+  - src/observatory/views.py
+  - results/observatory/executed_claim_ledger.json
+- id: D1
+  status: complete
+  evidence:
+  - src/observatory/connectors/base.py
+  - src/observatory/connectors/runner.py
+- id: D2
+  status: complete
+  evidence:
+  - src/observatory/connectors/http.py
+  - tests/test_observatory_hardening.py
+- id: D3
+  status: complete
+  evidence:
+  - src/observatory/connectors/checkpoint.py
+  - tests/test_observatory_hardening.py
+- id: D4
+  status: complete
+  evidence:
+  - src/observatory/connectors/formats.py
+- id: D5
+  status: complete
+  evidence:
+  - src/observatory/storage.py
+  - src/observatory/ids.py
+- id: D6
+  status: complete
+  evidence:
+  - src/observatory/fulltext.py
+  - results/observatory/fulltext_benchmark_1000.json
+  - modal_observatory.py
+- id: D7
+  status: complete
+  evidence:
+  - src/observatory/connectors/delta.py
+  - tests/test_observatory_hardening.py
+- id: D8
+  status: complete
+  evidence:
+  - src/observatory/connectors/runner.py
+  - tests/fixtures/observatory
+- id: E1
+  status: complete
+  evidence:
+  - results/observatory/openreview_surface_matrix.json
+  - tests/fixtures/observatory/openreview_surface/probe_manifest.json
+- id: E2
+  status: complete
+  evidence: &id001
+  - results/observatory/modal_openreview_process_receipt.json
+  - results/observatory/openreview_process_audit.json
+  - results/observatory/openreview_forum_count_sample.json
+  - results/observatory/openreview_passing_state_manifest.json
+  - results/observatory/openreview_api_population_coverage.json
+  - src/observatory/adapters/openreview_api.py
+  - src/observatory/openreview_process.py
+  gap: null
+- id: E3
+  status: complete
+  evidence: *id001
+  gap: null
+- id: E4
+  status: complete
+  evidence:
+  - results/observatory/openreview_derived_corpora_reconciliation.json
+  - src/observatory/hf_reconciliation.py
+  gap: null
+- id: E5
+  status: complete
+  evidence:
+  - results/observatory/modal_copernicus_receipt.json
+  - results/observatory/copernicus_population_census.json
+  - results/observatory/copernicus_crossref_posted_census.json
+  - src/observatory/adapters/copernicus.py
+  - tests/fixtures/observatory/copernicus/probe_manifest.json
+  gap: null
+- id: E6
+  status: complete
+  evidence:
+  - results/observatory/modal_copernicus_outcomes_receipt.json
+  - results/observatory/copernicus_public_review_chains.json
+  - results/observatory/copernicus_doi_relation_audit.json
+  - src/observatory/copernicus_outcomes.py
+  - src/observatory/copernicus_relation_audit.py
+  gap: null
+- id: E7
+  status: complete
+  evidence:
+  - results/observatory/modal_elife_process_receipt.json
+  - results/observatory/elife_editorial_model_cohorts.json
+  - src/observatory/elife_cohorts.py
+  - src/observatory/adapters/elife.py
+  - tests/fixtures/observatory/elife_process/probe_manifest.json
+- id: E8
+  status: complete
+  evidence:
+  - results/observatory/modal_f1000_process_receipt.json
+  - results/observatory/f1000_family_process_report.json
+  - results/observatory/modal_f1000_f1000research_shard_receipt.json
+  - results/observatory/modal_f1000_wellcome_open_research_shard_receipt.json
+  - results/observatory/modal_f1000_gates_open_research_shard_receipt.json
+  - results/observatory/modal_f1000_nihr_open_research_shard_receipt.json
+  - src/observatory/adapters/f1000.py
+  - src/observatory/f1000_family.py
+  - tests/fixtures/observatory/f1000_process/probe_manifest.json
+  gap: null
+- id: E9
+  status: complete
+  evidence:
+  - results/observatory/modal_scipost_process_receipt.json
+  - results/observatory/scipost_process_report.json
+  - src/observatory/adapters/scipost.py
+  - src/observatory/scipost_process.py
+  - tests/fixtures/observatory/scipost_process/probe_manifest.json
+  gap: null
+- id: E10
+  status: complete
+  evidence:
+  - results/observatory/selected_history_pointer_audit.json
+  - results/observatory/provider_process_audit.json
+  - tests/fixtures/observatory/peerj/probe_manifest.json
+  - tests/fixtures/observatory/plos_review_history/probe_manifest.json
+  - tests/fixtures/observatory/embo_transparent_review/probe_manifest.json
+  - tests/fixtures/observatory/royal_society_review/probe_manifest.json
+  - tests/fixtures/observatory/bmc_open_review/probe_manifest.json
+  - src/observatory/selected_history.py
+  - src/observatory/views.py
+- id: E11
+  status: complete
+  evidence:
+  - results/observatory/modal_crossref_receipt.json
+  - results/observatory/crossref_peer_review_profile.json
+  - src/observatory/crossref_profile.py
+  - tests/fixtures/observatory/crossref/probe_manifest.json
+  - modal_observatory.py
+  gap: null
+- id: E12
+  status: complete
+  evidence:
+  - results/observatory/source_coverage_atlas.json
+  - src/observatory/atlas.py
+  - results/observatory/copernicus_crossref_population_coverage.json
+  - results/observatory/copernicus_population_coverage.json
+  - results/observatory/openreview_api_population_coverage.json
+  - results/observatory/openreview_surface_population_coverage.json
+  gap: null
+- id: F1
+  status: complete
+  evidence:
+  - src/observatory/institutional.py
+  - results/observatory/r1/institutional_regime_archive.parquet
+  - results/observatory/r1/institutional_products_report.json
+  gap: null
+- id: F2
+  status: complete
+  evidence:
+  - src/observatory/institutional.py
+  - src/observatory/policy_audit.py
+  - results/observatory/r1/openreview_extracted_rules.parquet
+  - results/observatory/r1/policy_extraction_audit.json
+  gap: null
+- id: F3
+  status: complete
+  evidence:
+  - src/observatory/policy_history.py
+  - results/observatory/r2/historical_policy_archive.parquet
+  - results/observatory/r2/policy_history_report.json
+  gap: null
+- id: F4
+  status: complete
+  evidence:
+  - src/observatory/institutional.py
+  - results/observatory/r1/rubric_construct_crosswalk.parquet
+  - results/observatory/r1/institutional_products_report.json
+  gap: null
+- id: F5
+  status: complete
+  evidence:
+  - src/observatory/institutional.py
+  - results/observatory/r1/gate_cycle_flow_series.parquet
+  - results/observatory/r1/institutional_products_report.json
+  gap: null
+- id: F6
+  status: complete
+  evidence: [src/observatory/strain.py, results/observatory/r3/evaluator_supply_strain.parquet, results/observatory/r3/strain_reform_report.json]
+  gap: null
+- id: F7
+  status: complete
+  evidence: [src/observatory/strain.py, results/observatory/r3/timing_strain_series.parquet, results/observatory/r3/strain_reform_report.json]
+  gap: null
+- id: F8
+  status: complete
+  evidence: [src/observatory/strain.py, results/observatory/r3/registered_reforms.parquet, results/observatory/r3/strain_reform_report.json]
+  gap: null
+- id: F9
+  status: complete
+  evidence:
+  - src/observatory/policy_audit.py
+  - results/observatory/r1/policy_extraction_audit.json
+  - tests/test_observatory_core.py
+  gap: null
+- id: G1
+  status: complete
+  evidence:
+  - src/observatory/identity.py
+  - src/observatory/adapters/openalex.py
+  - results/observatory/doi_canonicalization_benchmark.json
+- id: G2
+  status: complete
+  evidence:
+  - src/observatory/adapters/arxiv.py
+  - tests/fixtures/observatory/arxiv/probe_manifest.json
+- id: G3
+  status: complete
+  evidence:
+  - src/observatory/adapters/europepmc.py
+  - tests/fixtures/observatory/europe_pmc/probe_manifest.json
+  - results/observatory/jats_reference_benchmark.json
+- id: G4
+  status: complete
+  evidence:
+  - src/observatory/identity.py
+  - src/observatory/schema.py
+- id: G5
+  status: complete
+  evidence:
+  - src/observatory/references.py
+  - src/observatory/connectors/formats.py
+  - results/observatory/jats_reference_benchmark.json
+- id: G6
+  status: complete
+  evidence:
+  - src/observatory/licensing.py
+  - src/observatory/content.py
+- id: G7
+  status: complete
+  evidence:
+  - src/observatory/fields.py
+  - tests/test_observatory_core.py
+- id: G8
+  status: complete
+  evidence:
+  - src/observatory/visibility.py
+  - src/observatory/adapters/openreview_api.py
+- id: G9
+  status: complete
+  evidence:
+  - src/observatory/language.py
+  - results/observatory/fwf_parallel_language_benchmark.json
+- id: H1
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/lineage_edges_release.parquet, results/observatory/r3/linkage_benchmark.json]
+  gap: null
+- id: H2
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/linkage_candidates.parquet, results/observatory/r3/linkage_benchmark.json]
+  gap: null
+- id: H3
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/linkage_candidates.parquet, results/observatory/r3/linkage_benchmark.json]
+  gap: null
+- id: H4
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/lineage_sensitivity.parquet, results/observatory/r3/linkage_benchmark.json]
+  gap: null
+- id: H5
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/lineage_edges_release.parquet, results/observatory/r3/lineage_products_report.json]
+  gap: null
+- id: H6
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/version_alignment.parquet, results/observatory/r3/lineage_products_report.json]
+  gap: null
+- id: H7
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/candidate_gate_chains.parquet, results/observatory/r3/trajectory_analysis_contract.json]
+  gap: null
+- id: H8
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/lineage_sensitivity.parquet, results/observatory/r3/trajectory_analysis_contract.json]
+  gap: null
+- id: H9
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/lineage_error_report.json]
+  gap: null
+- id: I1
+  status: complete
+  evidence:
+  - src/observatory/evaluation_atlas.py
+  - results/observatory/r1/evaluation_objects.parquet
+  - results/observatory/r1/evaluation_products_report.json
+  gap: null
+- id: I2
+  status: complete
+  evidence:
+  - src/observatory/evaluation_atlas.py
+  - src/observatory/policy_audit.py
+  - results/observatory/r1/evaluation_objects.parquet
+  - results/observatory/r1/policy_extraction_audit.json
+  gap: null
+- id: I3
+  status: complete
+  evidence:
+  - src/observatory/construct_atlas.py
+  - results/observatory/r2/construct_spans.parquet
+  - results/observatory/r2/construct_reliability_report.json
+  gap: null
+- id: I4
+  status: complete
+  evidence:
+  - src/observatory/construct_atlas.py
+  - results/observatory/r2/construct_reliability.parquet
+  - results/observatory/r2/construct_reliability_report.json
+  gap: null
+- id: I5
+  status: complete
+  evidence:
+  - src/observatory/semantic_novelty.py
+  - src/observatory/external_reproduction.py
+  - results/observatory/r1/semantic_novelty.parquet
+  - results/observatory/r1/semantic_novelty_fixture.json
+  - results/observatory/r1/semantic_novelty_report.json
+  - results/observatory/r1/p2_semantic_reproduction_audit.json
+  gap: null
+- id: I6
+  status: complete
+  evidence:
+  - src/observatory/construct_atlas.py
+  - results/observatory/r2/recombinatorial_novelty.parquet
+  - results/observatory/r2/recombinatorial_novelty_report.json
+  gap: null
+- id: I7
+  status: complete
+  evidence: [src/observatory/content_claims.py, results/observatory/r3/content_claim_features.parquet, results/observatory/r3/content_claim_extraction_report.json]
+  gap: null
+- id: I8
+  status: complete
+  evidence:
+  - src/observatory/evaluation_atlas.py
+  - src/observatory/semantic_novelty.py
+  - results/observatory/r1/reference_corpus_manifest.json
+  - results/observatory/r1/semantic_novelty_report.json
+  - configs/observatory/versions.yaml
+  gap: null
+- id: I9
+  status: complete
+  evidence: [configs/observatory/construct_models.yaml, src/observatory/construct_model.py, results/observatory/r3/construct_model_report.json, results/observatory/r3/construct_invariance.parquet]
+  gap: null
+- id: I10
+  status: complete
+  evidence:
+  - src/observatory/construct_atlas.py
+  - results/observatory/r2/novelty_evaluation_atlas.parquet
+  - results/observatory/r2/novelty_evaluation_atlas_report.json
+  gap: null
+- id: J1
+  status: complete
+  evidence:
+  - src/observatory/outcomes.py
+  - results/observatory/r2/afterlife_panel.parquet
+  - results/observatory/r2/afterlife_products_report.json
+  gap: null
+- id: J2
+  status: complete
+  evidence:
+  - src/observatory/outcomes.py
+  - results/observatory/r2/fixed_window_outcomes.parquet
+  - results/observatory/r2/openalex_outcome_snapshot.jsonl
+  - results/observatory/r2/afterlife_products_report.json
+  gap: null
+- id: J3
+  status: complete
+  evidence:
+  - src/observatory/outcomes.py
+  - results/observatory/r2/research_object_links.parquet
+  - results/observatory/r2/afterlife_products_report.json
+  gap: null
+- id: J4
+  status: complete
+  evidence:
+  - src/observatory/outcomes.py
+  - results/observatory/r2/corrections_withdrawals.parquet
+  - results/observatory/r2/afterlife_products_report.json
+  gap: null
+- id: J5
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r2/afterlife_panel.parquet, results/observatory/r3/trajectory_analysis_contract.json]
+  gap: null
+- id: J6
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/version_alignment.parquet, results/observatory/r3/trajectory_analysis_contract.json]
+  gap: null
+- id: J7
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/lineage_edges_release.parquet, results/observatory/r3/trajectory_analysis_contract.json]
+  gap: null
+- id: J8
+  status: complete
+  evidence: [src/observatory/outcomes.py, src/observatory/lineage.py, results/observatory/r2/afterlife_panel.parquet, results/observatory/r3/lineage_sensitivity.parquet]
+  gap: null
+- id: K1
+  status: complete
+  evidence: [src/observatory/gtr_sql.py, src/observatory/funding.py, results/observatory/r4/gtr_backup_audit.json, results/observatory/r4/ukri_upstream_adoption.json]
+  gap: null
+- id: K2
+  status: complete
+  evidence: [src/observatory/gtr_sql.py, src/observatory/funding.py, results/observatory/r4/ukri_panel_rounds.parquet, results/observatory/r4/gtr_backup_audit.json]
+  gap: null
+- id: K3
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/nerc_ptf_rounds.parquet, results/observatory/r4/funding_identification_firewall_audit.json]
+  gap: null
+- id: K4
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_external_reproduction_audit.json, results/observatory/r4/funding_products_report.json]
+  gap: null
+- id: K5
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_portfolio_series.parquet, results/observatory/r4/funding_instrument_evaluability.parquet]
+  gap: null
+- id: K6
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_instrument_evaluability.parquet, results/observatory/r4/funding_products_report.json]
+  gap: null
+- id: K7
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_instrument_evaluability.parquet, results/observatory/r4/funding_identification_firewall_audit.json, tests/test_observatory_core.py]
+  gap: null
+- id: K8
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_repeat_lower_bounds.parquet, results/observatory/r4/funding_products_report.json]
+  gap: null
+- id: K9
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_portfolio_series.parquet]
+  gap: null
+- id: K10
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/grant_output_linkage.parquet, results/observatory/r4/gtr_backup_audit.json]
+  gap: null
+- id: K11
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_prospective_watcher.json]
+  gap: null
+- id: K12
+  status: complete
+  evidence: [src/observatory/funding.py, results/observatory/r4/funding_identification_firewall_audit.json, tests/test_observatory_core.py]
+  gap: null
+- id: L1
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_application_panel.parquet, results/observatory/r4/patent_products_report.json]
+  gap: null
+- id: L2
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_pilot_report.json]
+  gap: null
+- id: L3
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_benchmark_reconciliation.json, results/observatory/r4/patent_products_report.json]
+  gap: null
+- id: L4
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_application_panel.parquet, results/observatory/r4/patent_pilot_report.json]
+  gap: null
+- id: L5
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_action_chains.parquet, results/observatory/r4/patent_pilot_report.json]
+  gap: null
+- id: L6
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_claim_alignment.parquet, results/observatory/r4/patent_pilot_report.json, tests/test_observatory_core.py]
+  gap: null
+- id: L7
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_capacity_panel.parquet, results/observatory/r4/patent_products_report.json]
+  gap: null
+- id: L8
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_prior_art_links.parquet, results/observatory/r4/patent_products_report.json]
+  gap: null
+- id: L9
+  status: complete
+  evidence: [configs/observatory/patent_events.yaml, src/observatory/patents.py, results/observatory/r4/patent_policy_events.parquet]
+  gap: null
+- id: L10
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_benchmark_reconciliation.json]
+  gap: null
+- id: L11
+  status: complete
+  evidence: [src/observatory/patents.py, results/observatory/r4/patent_pilot_report.json, results/observatory/r4/patent_products_report.json]
+  gap: null
+- id: M1
+  status: complete
+  evidence:
+  - tests/fixtures/observatory
+  - tests/test_observatory_core.py
+  - tests/test_observatory_hardening.py
+  - src/observatory/release_validation.py
+  - .github/workflows/ci.yml
+  - results/observatory/release_validation.json
+- id: M2
+  status: complete
+  evidence:
+  - src/observatory/atlas.py
+  - results/observatory/openreview_process_audit.json
+  - results/observatory/openreview_api_population_coverage.json
+  - results/observatory/copernicus_population_coverage.json
+  - results/observatory/source_coverage_atlas.json
+  - tests/test_observatory_core.py
+- id: M3
+  status: complete
+  evidence:
+  - src/observatory/quality.py
+  - results/observatory/r1/stage_outcome_audit.json
+  - tests/test_observatory_core.py
+  gap: null
+- id: M4
+  status: complete
+  evidence:
+  - src/observatory/policy_audit.py
+  - results/observatory/r1/policy_extraction_audit.json
+  - results/observatory/r1/institutional_regime_archive.parquet
+  gap: null
+- id: M5
+  status: complete
+  evidence: [src/observatory/lineage.py, results/observatory/r3/linkage_benchmark.json, results/observatory/r3/lineage_error_report.json]
+  gap: null
+- id: M6
+  status: complete
+  evidence:
+  - src/observatory/r2_assurance.py
+  - results/observatory/r2/text_reference_coverage.parquet
+  - results/observatory/r2/text_reference_extraction_audit.json
+  gap: null
+- id: M7
+  status: complete
+  evidence:
+  - src/observatory/quality.py
+  - src/observatory/views.py
+  - results/observatory/r1/temporal_leakage_audit.json
+  - tests/test_observatory_core.py
+  gap: null
+- id: M8
+  status: complete
+  evidence: [src/observatory/r3_validation.py, results/observatory/r3/feature_determinism_audit.json]
+  gap: null
+- id: M9
+  status: complete
+  evidence:
+  - src/observatory/storage.py
+  - src/observatory/r2_assurance.py
+  - results/observatory/r2/parser_source_drift_report.json
+  gap: null
+- id: M10
+  status: complete
+  evidence:
+  - src/observatory/r2_assurance.py
+  - results/observatory/r2/missingness_selection_report.json
+  gap: null
+- id: M11
+  status: complete
+  evidence: [src/observatory/r3_validation.py, results/observatory/r3/adversarial_referee_suite.json]
+  gap: null
+- id: M12
+  status: complete
+  evidence:
+  - src/observatory/release_validation.py
+  - src/observatory/release_engineering.py
+  - results/observatory/release_validation.json
+  - tests/test_observatory_core.py
+  gap: null
+- id: N1
+  status: complete
+  evidence:
+  - docs/observatory/CONSTITUTION.md
+  - docs/observatory/GOVERNANCE_AND_ETHICS.md
+  - configs/observatory/governance.yaml
+  - src/observatory/operations.py
+  - results/observatory/no_paid_api_audit.json
+- id: N2
+  status: complete
+  evidence:
+  - src/observatory/r2_assurance.py
+  - src/observatory/release_engineering.py
+  - results/observatory/r2/r2_privacy_audit.json
+  gap: null
+- id: N3
+  status: complete
+  evidence:
+  - docs/observatory/PROHIBITED_USES.md
+  - configs/observatory/governance.yaml
+  - src/observatory/operations.py
+  - tests/test_observatory_core.py
+  - results/observatory/r5/static_explorer_report.json
+  - results/observatory/r5/community_benchmark_report.json
+  - results/observatory/r5/privacy_licence_redteam.json
+  gap: null
+- id: N4
+  status: complete
+  evidence:
+  - src/observatory/release_engineering.py
+  - configs/observatory/release_components.yaml
+  - tests/test_observatory_core.py
+  gap: null
+- id: N5
+  status: complete
+  evidence:
+  - src/observatory/r2_assurance.py
+  - results/observatory/r2/terms_access_snapshot.json
+  gap: null
+- id: N6
+  status: complete
+  evidence:
+  - docs/observatory/TAKEDOWN_AND_CORRECTIONS.md
+  - src/observatory/r5.py
+  - results/observatory/r5/removal_propagation_simulation.parquet
+  - results/observatory/r5/removal_propagation_report.json
+  gap: null
+- id: N7
+  status: complete
+  evidence:
+  - src/observatory/audit.py
+  - modal_observatory.py
+  - modal_abc.py
+  - tests/test_observatory_core.py
+  - results/observatory/r5/credential_history_quarantine.json
+  gap: null
+- id: N8
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r5/audit_fixture_governance.json
+  gap: null
+- id: N9
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r5/risk_cards.json
+  gap: null
+- id: N10
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r5/privacy_licence_redteam.json
+  gap: null
+- id: O1
+  status: complete
+  evidence:
+  - configs/observatory/versions.yaml
+  - src/observatory/release_engineering.py
+  - src/observatory/storage.py
+  - tests/test_observatory_core.py
+  gap: null
+- id: O2
+  status: complete
+  evidence:
+  - configs/observatory/release_components.yaml
+  - src/observatory/release_engineering.py
+  - src/observatory/release_validation.py
+  - tests/test_observatory_core.py
+  gap: null
+- id: O3
+  status: complete
+  evidence:
+  - src/observatory/cleanroom.py
+  - results/observatory/r1/cleanroom_fixture_rebuild.json
+  - tests/fixtures/observatory
+  - tests/test_observatory_core.py
+  gap: null
+- id: O4
+  status: complete
+  evidence:
+  - docs/observatory/DATA_CARD.md
+  - docs/observatory/SCHEMA_HANDBOOK.md
+  - docs/observatory/OBSERVABILITY_HANDBOOK.md
+  - schemas/observatory/catalog.json
+  gap: null
+- id: O5
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r5/explorer/index.html
+  - results/observatory/r5/static_explorer_report.json
+  gap: null
+- id: O6
+  status: complete
+  evidence:
+  - src/observatory/notebooks.py
+  - docs/observatory/notebooks/01_gate_cycle_atlas.ipynb
+  - docs/observatory/notebooks/02_novelty_evaluation_atlas.ipynb
+  - docs/observatory/notebooks/03_afterlife_censoring.ipynb
+  - results/observatory/r2/notebook_execution_report.json
+  gap: null
+- id: O7
+  status: complete
+  evidence:
+  - docs/observatory/CITATION.cff
+  - configs/observatory/publication.yaml
+  - src/observatory/r2_assurance.py
+  - results/observatory/r2/CORPUS_ATTRIBUTION.json
+  - docs/observatory/CORPUS_ATTRIBUTION.md
+  gap: null
+- id: O8
+  status: pending
+  evidence:
+  - docs/observatory/DURABLE_RELEASE_PLAN.md
+  - results/observatory/r5/publication_readiness.json
+  - results/observatory/publication/PUBLICATION_MANIFEST.json
+  - results/observatory/publication/HUGGINGFACE_PRIVATE_DEPOSIT_RECEIPT.json
+  - results/observatory/publication/EXTERNAL_BLOCKER_AUDIT.json
+  gap: >-
+    The checksum-verified Hugging Face staging deposit exists at a private immutable revision.
+    Public visibility, a persistent public identifier, and a second independent public path remain pending.
+- id: O9
+  status: complete
+  evidence:
+  - configs/observatory/versions.yaml
+  - docs/observatory/RELEASE_MIGRATIONS.md
+  - src/observatory/migrations.py
+  - results/observatory/r5/release_diff_0.1.0-r1_to_1.0.0.json
+  gap: null
+- id: O10
+  status: complete
+  evidence:
+  - docs/observatory/COMMUNITY_CONTRIBUTING.md
+  - docs/observatory/issue_templates
+  - results/observatory/r5/community_correction_drill.json
+  gap: null
+- id: O11
+  status: pending
+  evidence:
+  - docs/observatory/DATA_METHODS_PAPER.tex
+  - results/observatory/r5/quantitative_claim_ledger.json
+  - results/observatory/publication/open-selection-graph-data-methods-paper-2.0.0.tar
+  - results/observatory/publication/EXTERNAL_BLOCKER_AUDIT.json
+  gap: The standalone data/methods manuscript and quantitative ledger are complete, but the verified dataset deposit remains private and there is no frozen release DOI or external manuscript submission receipt. The paper explicitly does not claim submission.
+- id: P1
+  status: complete
+  evidence: [src/observatory/r3_validation.py, results/observatory/r3/gate_cycle_descriptive_atlas.parquet, results/observatory/r3/gate_cycle_descriptive_atlas_report.json]
+  gap: null
+- id: P2
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r5/calibration_target_panel.parquet
+  - results/observatory/r5/calibration_bridge_report.json
+  gap: null
+- id: P3
+  status: complete
+  evidence:
+  - configs/observatory/dynamic_estimands.yaml
+  - src/observatory/r5.py
+  - results/observatory/r5/dynamic_panel_preregistration.json
+  gap: null
+- id: P4
+  status: complete
+  evidence: [configs/observatory/construct_models.yaml, src/observatory/construct_model.py, results/observatory/r3/rulers_doors_cells.parquet, results/observatory/r3/construct_model_report.json]
+  gap: null
+- id: P5
+  status: complete
+  evidence: [src/observatory/lineage.py, src/observatory/r3_validation.py, results/observatory/r3/trajectory_analysis_contract.json, results/observatory/r3/r3_analysis_contracts.json]
+  gap: null
+- id: P6
+  status: complete
+  evidence: [src/observatory/strain.py, src/observatory/r3_validation.py, results/observatory/r3/strain_conservatism_analysis.parquet, results/observatory/r3/r3_analysis_contracts.json]
+  gap: null
+- id: P7
+  status: complete
+  evidence: [src/observatory/lineage.py, src/observatory/r3_validation.py, results/observatory/r3/lineage_sensitivity.parquet, results/observatory/r3/r3_analysis_contracts.json]
+  gap: null
+- id: P8
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r4/funding_prospective_watcher.json
+  - results/observatory/r5/funding_evaluability_analysis.json
+  gap: null
+- id: P9
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r5/legal_scientific_construct_crosswalk.parquet
+  - results/observatory/r5/legal_scientific_comparison_report.json
+  gap: null
+- id: P10
+  status: complete
+  evidence:
+  - configs/observatory/community_benchmarks.yaml
+  - src/observatory/r5.py
+  - results/observatory/r5/community_benchmark_tasks.parquet
+  - results/observatory/r5/community_benchmark_report.json
+  gap: null
+- id: Q1
+  status: complete
+  evidence:
+  - configs/observatory/network_policy.yaml
+  - configs/observatory/excluded_sources.yaml
+  - src/observatory/audit.py
+  - src/observatory/connectors/http.py
+  - .github/workflows/ci.yml
+  - results/observatory/no_paid_api_audit.json
+- id: Q2
+  status: complete
+  evidence:
+  - src/observatory/operations.py
+  - src/observatory/connectors/runner.py
+  - tests/test_observatory_core.py
+  - results/observatory/r5/resource_reconciliations.parquet
+  - results/observatory/r5/resource_reconciliation_report.json
+  gap: null
+- id: Q3
+  status: complete
+  evidence:
+  - modal_observatory.py
+  - src/observatory/connectors/checkpoint.py
+  - src/observatory/connectors/runner.py
+  - tests/test_observatory_hardening.py
+  - results/observatory/modal_openreview_process_receipt.json
+- id: Q4
+  status: complete
+  evidence:
+  - configs/observatory/modal_budget.yaml
+  - src/observatory/operations.py
+  - tests/test_observatory_core.py
+  - results/observatory/r5/modal_budget_ledger.jsonl
+  - results/observatory/r5/modal_provider_billing_audit.json
+  - results/observatory/r5/modal_budget_ledger_audit.json
+  gap: null
+- id: Q5
+  status: complete
+  evidence:
+  - modal_observatory.py
+  - docs/observatory/DECISIONS.md
+  - results/observatory/modal_openreview_process_receipt.json
+  - results/observatory/r5/modal_job_decision_registry.parquet
+  - results/observatory/r5/compute_telemetry_report.json
+  gap: null
+- id: Q6
+  status: complete
+  evidence:
+  - src/observatory/storage_guard.py
+  - src/observatory/storage.py
+  - src/observatory/fulltext.py
+  - src/observatory/semantic_novelty.py
+  - src/observatory/release_engineering.py
+  - docs/observatory/RAW_STORAGE_LIFECYCLE.md
+  - results/observatory/recoverability_manifest.json
+  - tests/test_observatory_core.py
+  gap: null
+- id: Q7
+  status: complete
+  evidence:
+  - src/observatory/connectors/runner.py
+  - results/observatory/runs
+  - results/observatory/ticket_evidence_audit.json
+  - configs/observatory/release_waves.yaml
+  - results/observatory/r5/epic_resumability_manifests.json
+  - results/observatory/r5/operations_dashboard.html
+  - results/observatory/r5/compute_telemetry_report.json
+  gap: null
+- id: Q8
+  status: complete
+  evidence:
+  - src/observatory/r5.py
+  - results/observatory/r5/disaster_recovery_drill.json
+  gap: null
+- id: Q9
+  status: complete
+  evidence:
+  - configs/observatory/update_schedule.yaml
+  - src/observatory/r5.py
+  - results/observatory/r5/update_scheduler_audit.json
+  gap: null
+- id: Q10
+  status: complete
+  evidence:
+  - docs/observatory/DECISIONS.md
+  - configs/observatory/release_waves.yaml
+  - results/observatory/ticket_evidence_audit.json
+  - src/observatory/ticket_evidence.py
+  - results/observatory/r5/decision_backaudit.json
+  gap: null

@@ -1,0 +1,92 @@
+{
+  "$id": "https://example.invalid/observatory/identifier_alias.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "canonical_value": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "confidence": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "conflict_status": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "entity_id": {
+      "type": "string"
+    },
+    "entity_kind": {
+      "type": "string"
+    },
+    "identifier_alias_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "provenance_event_id": {
+      "type": "string"
+    },
+    "record_version": {
+      "type": "integer"
+    },
+    "relation": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "scheme": {
+      "type": "string"
+    },
+    "source_id": {
+      "type": "string"
+    },
+    "source_object_id": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "identifier_alias_id",
+    "entity_kind",
+    "entity_id",
+    "scheme",
+    "value",
+    "source_id",
+    "source_object_id",
+    "provenance_event_id",
+    "observed_at",
+    "record_version"
+  ],
+  "title": "Observatory identifier_alias",
+  "type": "object"
+}

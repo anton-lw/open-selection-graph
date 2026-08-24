@@ -1,0 +1,70 @@
+{
+  "$id": "https://example.invalid/observatory/field_provenance.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "confidence": {
+      "anyOf": [
+        {
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "field_name": {
+      "type": "string"
+    },
+    "field_provenance_id": {
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "type": "string"
+    },
+    "override_reason": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "provenance_event_id": {
+      "type": "string"
+    },
+    "record_id": {
+      "type": "string"
+    },
+    "source_object_id": {
+      "type": "string"
+    },
+    "source_selector": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "table_name": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "field_provenance_id",
+    "table_name",
+    "record_id",
+    "field_name",
+    "source_object_id",
+    "provenance_event_id",
+    "observed_at"
+  ],
+  "title": "Observatory field_provenance",
+  "type": "object"
+}

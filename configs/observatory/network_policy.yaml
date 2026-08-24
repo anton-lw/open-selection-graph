@@ -1,0 +1,61 @@
+schema: observatory.network-policy/1
+constitution_version: 0.1.0
+mode: deny_by_default
+unknown_outbound_configuration: prohibited
+metered_or_overage_capable_services: prohibited
+allowed_hosts:
+  api.crossref.org: [crossref, copernicus_crossref]
+  api.elifesciences.org: [elife_process]
+  api.openalex.org: [openalex]
+  api.openreview.net: [openreview, openreview_api]
+  api2.openreview.net: [openreview, openreview_api]
+  datasets-server.huggingface.co: [reviewarena, arr_review_arcade]
+  doi.org: [copernicus_outcomes]
+  dx.doi.org: [copernicus_outcomes]
+  elifesciences.org: [elife]
+  europepmc.org: [europe_pmc]
+  export.arxiv.org: [arxiv]
+  f1000research.com: [f1000research, f1000_process]
+  huggingface.co: [specter2, qwen3_embedding_0_6b, hupd, panorama]
+  gatesopenresearch.org: [gates_open_research_process]
+  hrbopenresearch.org: [hrb_open_research_process]
+  www.kaggle.com: [kaggle_arxiv_snapshot]
+  oai-pmh.copernicus.org: [copernicus]
+  openresearch.nihr.ac.uk: [nihr_open_research_process]
+  openreview.net: [openreview, openreview_api]
+  peerj.com: [peerj]
+  plos.org: [plos_review_history]
+  royalsociety.org: [royal_society_review]
+  scipost.org: [scipost, scipost_process]
+  wellcomeopenresearch.org: [wellcome_open_research_process]
+  www.biomedcentral.com: [bmc_open_review]
+  www.ebi.ac.uk: [europe_pmc]
+  www.embopress.org: [embo_transparent_review]
+  www.ukri.org: [ukri_public_outcomes]
+  zenodo.org: [snsf_individual_votes, ukri_demystifying, preprint_to_paper_gray_zone]
+  patentdataset.org: [hupd]
+  github.com: [peer_review_analyze_1_0, patre]
+static_namespaces:
+  - example.invalid
+  - example.org
+  - json-schema.org
+  - purl.org
+  - purl.oclc.org
+  - schemas.openxmlformats.org
+  - www.openarchives.org
+  - www.tei-c.org
+  - www.w3.org
+non_data_hosts:
+  download.pytorch.org: pinned open-source runtime wheels for immutable compute images
+  localhost: container-local GROBID service; never an external request
+direct_http_modules:
+  modal_validity.py: pinned bulk-source reducers with byte/hash verification and ephemeral raw storage
+prohibited_environment_markers:
+  - SCOPUS
+  - WEB_OF_SCIENCE
+  - DIMENSIONS
+  - PATSTAT
+  - ALTMETRIC
+  - COMMERCIAL_LLM
+  - OPENAI_API_KEY
+  - ANTHROPIC_API_KEY

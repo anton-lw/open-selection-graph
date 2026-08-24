@@ -1,0 +1,12 @@
+schema: observatory.public-observability-snapshots/1
+snapshots:
+  - snapshot_id: openreview-public-stage-2026-08-20
+    source_id: openreview
+    observed_at: '2026-08-20T10:42:00Z'
+    evidence_path: results/observatory/openreview_public_invitation_audit.json
+    evidence_time_basis: durable Modal audit completion and immutable report hash
+  - snapshot_id: openreview-public-stage-2026-08-23
+    source_id: openreview
+    observed_at: '2026-08-23T19:24:25.475751Z'
+    evidence_path: results/observatory/observability_snapshots/openreview_public_invitation_audit_2026-08-23.json
+    evidence_time_basis: live provider count and public-reader reaudit

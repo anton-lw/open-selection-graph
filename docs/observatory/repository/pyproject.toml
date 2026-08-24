@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "open-selection-graph"
+version = "2.0.0"
+description = "Code, schemas and validation tools for the Open Selection Graph dataset"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = {text = "MIT"}
+authors = [
+  {name = "Anton Waagaard", email = "anton@dimpactlab.org"},
+]
+keywords = ["science-of-science", "peer-review", "research-data", "selection-processes"]
+dependencies = [
+  "beautifulsoup4>=4.12",
+  "duckdb>=1.1",
+  "jsonschema>=4.21",
+  "lxml>=5",
+  "matplotlib>=3.7",
+  "networkx>=3.0",
+  "numpy>=1.24",
+  "openpyxl>=3.1",
+  "openreview-py>=2.4",
+  "pandas>=2.0",
+  "pdfplumber>=0.11",
+  "pyarrow>=16",
+  "pypdf>=4",
+  "pyyaml>=6",
+  "requests>=2.31",
+  "scikit-learn>=1.3",
+  "scipy>=1.10",
+  "sentence-transformers>=5",
+  "torch>=2.1",
+  "transformers>=4.35",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+modal = ["modal>=1.0"]
+
+[project.scripts]
+open-selection-graph = "observatory.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["observatory*"]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+markers = [
+  "release_assets: requires the complete licence-separated OSG data release",
+]

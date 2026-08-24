@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: Cite the frozen dataset release and this software when using OSG.
+title: Open Selection Graph
+type: dataset
+version: 2.0.0
+date-released: '2026-08-23'
+authors:
+  - family-names: Waagaard
+    given-names: Anton
+    affiliation: Dimensional Impact Lab
+    email: anton@dimpactlab.org
+abstract: >-
+  A provenance-rich dataset for mapping observable populations and selection
+  processes in science, linking institutional rules, evaluations, decisions,
+  versions, trajectories, and outcomes.
+keywords:
+  - peer review
+  - scientific selection
+  - metascience
+  - research funding
+  - patent examination
+license: CC-BY-4.0
+notes: Component-level data licences in the release manifest control.

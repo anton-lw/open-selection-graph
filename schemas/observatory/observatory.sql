@@ -1,0 +1,443 @@
+CREATE TABLE "authorship_observation" (
+  "authorship_observation_id" VARCHAR NOT NULL,
+  "candidate_version_id" VARCHAR NOT NULL,
+  "position" BIGINT,
+  "public_name" VARCHAR,
+  "public_identifier" VARCHAR,
+  "protected_person_id" VARCHAR,
+  "anonymous_label" VARCHAR,
+  "visible_from" TIMESTAMPTZ,
+  "visible_to" TIMESTAMPTZ,
+  "audience" VARCHAR NOT NULL,
+  "source_evidence" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("authorship_observation_id")
+);
+
+CREATE TABLE "candidate" (
+  "candidate_id" VARCHAR NOT NULL,
+  "first_observed_at" TIMESTAMPTZ,
+  "domain" VARCHAR,
+  "candidate_type" VARCHAR NOT NULL,
+  "canonical_title" VARCHAR,
+  "status" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("candidate_id")
+);
+
+CREATE TABLE "candidate_gate_event" (
+  "candidate_gate_event_id" VARCHAR NOT NULL,
+  "candidate_id" VARCHAR NOT NULL,
+  "candidate_version_id" VARCHAR,
+  "gate_cycle_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "submitted_at" TIMESTAMPTZ,
+  "earliest_observed_stage" VARCHAR NOT NULL,
+  "final_observed_stage" VARCHAR,
+  "coverage_observation_id" VARCHAR NOT NULL,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("candidate_gate_event_id")
+);
+
+CREATE TABLE "candidate_version" (
+  "candidate_version_id" VARCHAR NOT NULL,
+  "candidate_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "version_label" VARCHAR,
+  "version_number" BIGINT,
+  "created_at" TIMESTAMPTZ,
+  "modified_at" TIMESTAMPTZ,
+  "title" VARCHAR,
+  "abstract" VARCHAR,
+  "content_artifact_id" VARCHAR,
+  "content_hash" VARCHAR,
+  "licence" VARCHAR,
+  "language" VARCHAR,
+  "authorship_visible" BOOLEAN,
+  "withdrawn" BOOLEAN,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("candidate_version_id")
+);
+
+CREATE TABLE "capacity_observation" (
+  "capacity_observation_id" VARCHAR NOT NULL,
+  "gate_cycle_id" VARCHAR NOT NULL,
+  "period_start" TIMESTAMPTZ,
+  "period_end" TIMESTAMPTZ,
+  "submitted_count" BIGINT,
+  "review_count" BIGINT,
+  "evaluator_count" BIGINT,
+  "panel_size" BIGINT,
+  "assignments_per_evaluator" DOUBLE,
+  "turnaround_days" DOUBLE,
+  "missing_review_share" DOUBLE,
+  "proxy_definition" VARCHAR,
+  "measurement_caveat" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("capacity_observation_id")
+);
+
+CREATE TABLE "content_artifact" (
+  "content_artifact_id" VARCHAR NOT NULL,
+  "object_type" VARCHAR NOT NULL,
+  "media_type" VARCHAR,
+  "byte_hash" VARCHAR,
+  "normalized_text_hash" VARCHAR,
+  "source_url" VARCHAR,
+  "local_pointer" VARCHAR,
+  "licence" VARCHAR,
+  "release_class" VARCHAR NOT NULL,
+  "size_bytes" BIGINT,
+  "language" VARCHAR,
+  "parser_version" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("content_artifact_id")
+);
+
+CREATE TABLE "coverage_observation" (
+  "coverage_observation_id" VARCHAR NOT NULL,
+  "gate_cycle_id" VARCHAR NOT NULL,
+  "object_type" VARCHAR NOT NULL,
+  "earliest_public_stage" VARCHAR NOT NULL,
+  "observability_grade" VARCHAR NOT NULL,
+  "expected_count" BIGINT,
+  "found_count" BIGINT,
+  "coverage_ratio" DOUBLE,
+  "expected_count_method" VARCHAR,
+  "query_or_invitation" VARCHAR,
+  "known_hidden_stages" VARCHAR[],
+  "known_exclusions" VARCHAR[],
+  "missing_reason" VARCHAR,
+  "audit_status" VARCHAR,
+  "valid_from" TIMESTAMPTZ,
+  "valid_to" TIMESTAMPTZ,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("coverage_observation_id")
+);
+
+CREATE TABLE "decision_event" (
+  "decision_event_id" VARCHAR NOT NULL,
+  "candidate_version_id" VARCHAR NOT NULL,
+  "gate_cycle_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "stage_native" VARCHAR NOT NULL,
+  "stage_normalized" VARCHAR NOT NULL,
+  "outcome_native" VARCHAR,
+  "outcome_normalized" VARCHAR,
+  "tier_or_band" VARCHAR,
+  "reason" VARCHAR,
+  "deciding_body" VARCHAR,
+  "decided_at" TIMESTAMPTZ,
+  "policy_version_id" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("decision_event_id")
+);
+
+CREATE TABLE "downstream_outcome" (
+  "downstream_outcome_id" VARCHAR NOT NULL,
+  "candidate_id" VARCHAR NOT NULL,
+  "candidate_version_id" VARCHAR,
+  "outcome_type" VARCHAR NOT NULL,
+  "native_id" VARCHAR,
+  "doi" VARCHAR,
+  "venue" VARCHAR,
+  "occurred_at" TIMESTAMPTZ,
+  "window_years" BIGINT,
+  "value_numeric" DOUBLE,
+  "value_json" JSON,
+  "censoring_date" TIMESTAMPTZ,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("downstream_outcome_id")
+);
+
+CREATE TABLE "evaluation" (
+  "evaluation_id" VARCHAR NOT NULL,
+  "candidate_version_id" VARCHAR NOT NULL,
+  "gate_cycle_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "evaluation_type" VARCHAR NOT NULL,
+  "evaluator_role" VARCHAR,
+  "evaluator_public_id" VARCHAR,
+  "evaluator_protected_id" VARCHAR,
+  "anonymous" BOOLEAN,
+  "official" BOOLEAN,
+  "criterion_native" VARCHAR,
+  "criterion_normalized" VARCHAR,
+  "criterion_value" VARCHAR,
+  "criterion_value_numeric" DOUBLE,
+  "scale_json" JSON,
+  "confidence_value" DOUBLE,
+  "text_artifact_id" VARCHAR,
+  "created_at" TIMESTAMPTZ,
+  "forum_native_id" VARCHAR,
+  "invitation_native" VARCHAR,
+  "readers_json" JSON,
+  "signatures_json" JSON,
+  "reply_to_native_id" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("evaluation_id")
+);
+
+CREATE TABLE "field_assignment" (
+  "field_assignment_id" VARCHAR NOT NULL,
+  "entity_kind" VARCHAR NOT NULL,
+  "entity_id" VARCHAR NOT NULL,
+  "taxonomy" VARCHAR NOT NULL,
+  "native_label" VARCHAR,
+  "normalized_label" VARCHAR,
+  "score" DOUBLE,
+  "mapping_version" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("field_assignment_id")
+);
+
+CREATE TABLE "field_provenance" (
+  "field_provenance_id" VARCHAR NOT NULL,
+  "table_name" VARCHAR NOT NULL,
+  "record_id" VARCHAR NOT NULL,
+  "field_name" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "source_selector" VARCHAR,
+  "confidence" DOUBLE,
+  "override_reason" VARCHAR,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  PRIMARY KEY ("field_provenance_id")
+);
+
+CREATE TABLE "gate" (
+  "gate_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "name" VARCHAR NOT NULL,
+  "organization" VARCHAR,
+  "domain" VARCHAR,
+  "country" VARCHAR,
+  "architecture" VARCHAR NOT NULL,
+  "active_from" TIMESTAMPTZ,
+  "active_to" TIMESTAMPTZ,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("gate_id")
+);
+
+CREATE TABLE "gate_cycle" (
+  "gate_cycle_id" VARCHAR NOT NULL,
+  "gate_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "name" VARCHAR,
+  "track" VARCHAR,
+  "cycle_start" TIMESTAMPTZ,
+  "cycle_end" TIMESTAMPTZ,
+  "policy_version_id" VARCHAR,
+  "architecture" VARCHAR NOT NULL,
+  "received_count" BIGINT,
+  "observable_count" BIGINT,
+  "evaluated_count" BIGINT,
+  "selected_count" BIGINT,
+  "status" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("gate_cycle_id")
+);
+
+CREATE TABLE "identifier_alias" (
+  "identifier_alias_id" VARCHAR NOT NULL,
+  "entity_kind" VARCHAR NOT NULL,
+  "entity_id" VARCHAR NOT NULL,
+  "scheme" VARCHAR NOT NULL,
+  "value" VARCHAR NOT NULL,
+  "canonical_value" VARCHAR,
+  "relation" VARCHAR,
+  "confidence" DOUBLE,
+  "conflict_status" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("identifier_alias_id")
+);
+
+CREATE TABLE "identity_visibility" (
+  "identity_visibility_id" VARCHAR NOT NULL,
+  "candidate_version_id" VARCHAR NOT NULL,
+  "identity_kind" VARCHAR NOT NULL,
+  "visible_from" TIMESTAMPTZ,
+  "visible_to" TIMESTAMPTZ,
+  "audience" VARCHAR NOT NULL,
+  "source_evidence" VARCHAR,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("identity_visibility_id")
+);
+
+CREATE TABLE "language_derivative" (
+  "language_derivative_id" VARCHAR NOT NULL,
+  "content_artifact_id" VARCHAR NOT NULL,
+  "source_language" VARCHAR,
+  "target_language" VARCHAR,
+  "method" VARCHAR,
+  "model_version" VARCHAR,
+  "derived_artifact_id" VARCHAR,
+  "validated" BOOLEAN,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("language_derivative_id")
+);
+
+CREATE TABLE "lineage_edge" (
+  "lineage_edge_id" VARCHAR NOT NULL,
+  "source_candidate_id" VARCHAR,
+  "source_version_id" VARCHAR,
+  "target_candidate_id" VARCHAR,
+  "target_version_id" VARCHAR,
+  "relation_type" VARCHAR NOT NULL,
+  "declared" BOOLEAN NOT NULL,
+  "confidence" DOUBLE,
+  "linkage_tier" VARCHAR,
+  "method_version" VARCHAR,
+  "evidence_json" JSON,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("lineage_edge_id")
+);
+
+CREATE TABLE "policy_version" (
+  "policy_version_id" VARCHAR NOT NULL,
+  "gate_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "effective_at" TIMESTAMPTZ,
+  "valid_to" TIMESTAMPTZ,
+  "criteria_json" JSON,
+  "rubric_json" JSON,
+  "stage_rules_json" JSON,
+  "quota_or_cap" VARCHAR,
+  "anonymity_model" VARCHAR,
+  "revision_rules" VARCHAR,
+  "policy_url" VARCHAR,
+  "content_hash" VARCHAR,
+  "date_confidence" DOUBLE,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("policy_version_id")
+);
+
+CREATE TABLE "provenance_event" (
+  "provenance_event_id" VARCHAR NOT NULL,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "event_type" VARCHAR NOT NULL,
+  "occurred_at" TIMESTAMPTZ NOT NULL,
+  "parser_name" VARCHAR,
+  "parser_version" VARCHAR,
+  "code_hash" VARCHAR,
+  "input_hash" VARCHAR,
+  "output_hash" VARCHAR,
+  "parameters_json" JSON,
+  "parent_event_ids" VARCHAR[],
+  "success" BOOLEAN NOT NULL,
+  "error" VARCHAR,
+  PRIMARY KEY ("provenance_event_id")
+);
+
+CREATE TABLE "reference_edge" (
+  "reference_edge_id" VARCHAR NOT NULL,
+  "citing_version_id" VARCHAR NOT NULL,
+  "reference_position" BIGINT,
+  "cited_candidate_id" VARCHAR,
+  "cited_version_id" VARCHAR,
+  "cited_identifier" VARCHAR,
+  "raw_citation_hash" VARCHAR,
+  "match_method" VARCHAR,
+  "confidence" DOUBLE,
+  "time_valid" BOOLEAN,
+  "source_id" VARCHAR NOT NULL,
+  "source_object_id" VARCHAR NOT NULL,
+  "provenance_event_id" VARCHAR NOT NULL,
+  "observed_at" TIMESTAMPTZ NOT NULL,
+  "record_version" BIGINT NOT NULL,
+  PRIMARY KEY ("reference_edge_id")
+);
+
+CREATE TABLE "source_object" (
+  "source_object_id" VARCHAR NOT NULL,
+  "source_id" VARCHAR NOT NULL,
+  "native_id" VARCHAR NOT NULL,
+  "object_type" VARCHAR NOT NULL,
+  "source_url" VARCHAR,
+  "created_at" TIMESTAMPTZ,
+  "modified_at" TIMESTAMPTZ,
+  "retrieved_at" TIMESTAMPTZ NOT NULL,
+  "deleted_at" TIMESTAMPTZ,
+  "byte_hash" VARCHAR,
+  "raw_pointer" VARCHAR,
+  "http_status" BIGINT,
+  "etag" VARCHAR,
+  "last_modified" VARCHAR,
+  "licence" VARCHAR,
+  "release_class" VARCHAR NOT NULL,
+  "status" VARCHAR NOT NULL,
+  PRIMARY KEY ("source_object_id")
+);

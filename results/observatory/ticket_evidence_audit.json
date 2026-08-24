@@ -1,0 +1,4944 @@
+{
+  "all_acceptance_complete": false,
+  "audit_hash": "92aa9d4df1418f9a73be705ca8e0a5662d89742f9932081ab8c6d1e875308cb2",
+  "configured_ticket_count": 164,
+  "duplicates": [],
+  "expected_ids": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "D1",
+    "D2",
+    "D3",
+    "D4",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E10",
+    "E11",
+    "E12",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5",
+    "G6",
+    "G7",
+    "G8",
+    "G9",
+    "H1",
+    "H2",
+    "H3",
+    "H4",
+    "H5",
+    "H6",
+    "H7",
+    "H8",
+    "H9",
+    "I1",
+    "I2",
+    "I3",
+    "I4",
+    "I5",
+    "I6",
+    "I7",
+    "I8",
+    "I9",
+    "I10",
+    "J1",
+    "J2",
+    "J3",
+    "J4",
+    "J5",
+    "J6",
+    "J7",
+    "J8",
+    "K1",
+    "K2",
+    "K3",
+    "K4",
+    "K5",
+    "K6",
+    "K7",
+    "K8",
+    "K9",
+    "K10",
+    "K11",
+    "K12",
+    "L1",
+    "L2",
+    "L3",
+    "L4",
+    "L5",
+    "L6",
+    "L7",
+    "L8",
+    "L9",
+    "L10",
+    "L11",
+    "M1",
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6",
+    "M7",
+    "M8",
+    "M9",
+    "M10",
+    "M11",
+    "M12",
+    "N1",
+    "N2",
+    "N3",
+    "N4",
+    "N5",
+    "N6",
+    "N7",
+    "N8",
+    "N9",
+    "N10",
+    "O1",
+    "O2",
+    "O3",
+    "O4",
+    "O5",
+    "O6",
+    "O7",
+    "O8",
+    "O9",
+    "O10",
+    "O11",
+    "P1",
+    "P2",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P7",
+    "P8",
+    "P9",
+    "P10",
+    "Q1",
+    "Q2",
+    "Q3",
+    "Q4",
+    "Q5",
+    "Q6",
+    "Q7",
+    "Q8",
+    "Q9",
+    "Q10"
+  ],
+  "expected_ticket_count": 164,
+  "gate_status_counts": {
+    "gate": {
+      "complete": 18
+    },
+    "non_gate": {
+      "complete": 144,
+      "pending": 2
+    }
+  },
+  "missing": [],
+  "passes_structure": true,
+  "release_wave_duplicates": [],
+  "release_wave_missing": [],
+  "release_wave_ticket_count": 164,
+  "release_wave_unexpected": [],
+  "release_waves_path": "configs/observatory/release_waves.yaml",
+  "requirements_match_ticketbook": true,
+  "requirements_path": "configs/observatory/ticket_requirements.yaml",
+  "requirements_ticket_count": 164,
+  "schema": "observatory.ticket-evidence-audit/1",
+  "scope": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q"
+  ],
+  "status_by_epic": {
+    "A": {
+      "complete": 7
+    },
+    "B": {
+      "complete": 8
+    },
+    "C": {
+      "complete": 8
+    },
+    "D": {
+      "complete": 8
+    },
+    "E": {
+      "complete": 12
+    },
+    "F": {
+      "complete": 9
+    },
+    "G": {
+      "complete": 9
+    },
+    "H": {
+      "complete": 9
+    },
+    "I": {
+      "complete": 10
+    },
+    "J": {
+      "complete": 8
+    },
+    "K": {
+      "complete": 12
+    },
+    "L": {
+      "complete": 11
+    },
+    "M": {
+      "complete": 12
+    },
+    "N": {
+      "complete": 10
+    },
+    "O": {
+      "complete": 9,
+      "pending": 2
+    },
+    "P": {
+      "complete": 10
+    },
+    "Q": {
+      "complete": 10
+    }
+  },
+  "status_by_priority": {
+    "P0": {
+      "complete": 81
+    },
+    "P1": {
+      "complete": 73,
+      "pending": 2
+    },
+    "P2": {
+      "complete": 8
+    }
+  },
+  "status_by_release_wave": {
+    "R0": {
+      "complete": 25
+    },
+    "R1": {
+      "complete": 42
+    },
+    "R2": {
+      "complete": 23
+    },
+    "R3": {
+      "complete": 26
+    },
+    "R4": {
+      "complete": 23
+    },
+    "R5": {
+      "complete": 23,
+      "pending": 2
+    }
+  },
+  "status_counts": {
+    "complete": 162,
+    "pending": 2
+  },
+  "tickets": [
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/CONSTITUTION.md",
+          "size_bytes": 3319
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/constitution.py",
+          "size_bytes": 5811
+        }
+      ],
+      "id": "A1",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/estimands.yaml",
+          "size_bytes": 6510
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/architectures.yaml",
+          "size_bytes": 2792
+        }
+      ],
+      "id": "A2",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/claims.yaml",
+          "size_bytes": 1368
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/executed_claim_ledger.json",
+          "size_bytes": 1942
+        }
+      ],
+      "id": "A3",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/partitions.yaml",
+          "size_bytes": 1093
+        }
+      ],
+      "id": "A4",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/architectures.yaml",
+          "size_bytes": 2792
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/mappings.yaml",
+          "size_bytes": 1081
+        }
+      ],
+      "id": "A5",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/source_states.yaml",
+          "size_bytes": 1083
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/delta.py",
+          "size_bytes": 2309
+        }
+      ],
+      "id": "A6",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/stop_rules.yaml",
+          "size_bytes": 2486
+        }
+      ],
+      "id": "A7",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/sources.yaml",
+          "size_bytes": 46593
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/registry.py",
+          "size_bytes": 8686
+        }
+      ],
+      "id": "B1",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/publication_census.yaml",
+          "size_bytes": 12052
+        }
+      ],
+      "id": "B2",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/funding_census.yaml",
+          "size_bytes": 1300
+        }
+      ],
+      "id": "B3",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/patent_source_matrix.yaml",
+          "size_bytes": 1299
+        }
+      ],
+      "id": "B4",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "directory",
+          "path": "tests/fixtures/observatory",
+          "size_bytes": null
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/probes.py",
+          "size_bytes": 6970
+        }
+      ],
+      "id": "B5",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/license_matrix.py",
+          "size_bytes": 2484
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/licensing.py",
+          "size_bytes": 3307
+        }
+      ],
+      "id": "B6",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/denominators.py",
+          "size_bytes": 1377
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/publication_census.yaml",
+          "size_bytes": 12052
+        }
+      ],
+      "id": "B7",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/excluded_sources.yaml",
+          "size_bytes": 938
+        }
+      ],
+      "id": "B8",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/schema.py",
+          "size_bytes": 14972
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "schemas/observatory/catalog.json",
+          "size_bytes": 65380
+        }
+      ],
+      "id": "C1",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/ids.py",
+          "size_bytes": 1558
+        }
+      ],
+      "id": "C2",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/provenance.py",
+          "size_bytes": 3350
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/integrity.py",
+          "size_bytes": 5045
+        }
+      ],
+      "id": "C3",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/storage.py",
+          "size_bytes": 19745
+        }
+      ],
+      "id": "C4",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/temporal.py",
+          "size_bytes": 1647
+        }
+      ],
+      "id": "C5",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/mappings.yaml",
+          "size_bytes": 1081
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/mappings.py",
+          "size_bytes": 967
+        }
+      ],
+      "id": "C6",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/denominators.py",
+          "size_bytes": 1377
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/schema.py",
+          "size_bytes": 14972
+        }
+      ],
+      "id": "C7",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/views.py",
+          "size_bytes": 4062
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/executed_claim_ledger.json",
+          "size_bytes": 1942
+        }
+      ],
+      "id": "C8",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/base.py",
+          "size_bytes": 3510
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/runner.py",
+          "size_bytes": 41839
+        }
+      ],
+      "id": "D1",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/http.py",
+          "size_bytes": 11202
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_hardening.py",
+          "size_bytes": 30477
+        }
+      ],
+      "id": "D2",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/checkpoint.py",
+          "size_bytes": 2159
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_hardening.py",
+          "size_bytes": 30477
+        }
+      ],
+      "id": "D3",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/formats.py",
+          "size_bytes": 9391
+        }
+      ],
+      "id": "D4",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/storage.py",
+          "size_bytes": 19745
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/ids.py",
+          "size_bytes": 1558
+        }
+      ],
+      "id": "D5",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/fulltext.py",
+          "size_bytes": 7448
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/fulltext_benchmark_1000.json",
+          "size_bytes": 359384
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "modal_observatory.py",
+          "size_bytes": 91537
+        }
+      ],
+      "id": "D6",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/delta.py",
+          "size_bytes": 2309
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_hardening.py",
+          "size_bytes": 30477
+        }
+      ],
+      "id": "D7",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/runner.py",
+          "size_bytes": 41839
+        },
+        {
+          "exists": true,
+          "kind": "directory",
+          "path": "tests/fixtures/observatory",
+          "size_bytes": null
+        }
+      ],
+      "id": "D8",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_surface_matrix.json",
+          "size_bytes": 4433668
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/openreview_surface/probe_manifest.json",
+          "size_bytes": 13472
+        }
+      ],
+      "id": "E1",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_openreview_process_receipt.json",
+          "size_bytes": 6096
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_process_audit.json",
+          "size_bytes": 425213
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_forum_count_sample.json",
+          "size_bytes": 17841
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_passing_state_manifest.json",
+          "size_bytes": 48492
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_api_population_coverage.json",
+          "size_bytes": 493979
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/openreview_api.py",
+          "size_bytes": 82052
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/openreview_process.py",
+          "size_bytes": 57341
+        }
+      ],
+      "gap": null,
+      "id": "E2",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_openreview_process_receipt.json",
+          "size_bytes": 6096
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_process_audit.json",
+          "size_bytes": 425213
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_forum_count_sample.json",
+          "size_bytes": 17841
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_passing_state_manifest.json",
+          "size_bytes": 48492
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_api_population_coverage.json",
+          "size_bytes": 493979
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/openreview_api.py",
+          "size_bytes": 82052
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/openreview_process.py",
+          "size_bytes": 57341
+        }
+      ],
+      "gap": null,
+      "id": "E3",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_derived_corpora_reconciliation.json",
+          "size_bytes": 53379
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/hf_reconciliation.py",
+          "size_bytes": 13965
+        }
+      ],
+      "gap": null,
+      "id": "E4",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_copernicus_receipt.json",
+          "size_bytes": 1321
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/copernicus_population_census.json",
+          "size_bytes": 54973
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/copernicus_crossref_posted_census.json",
+          "size_bytes": 1433
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/copernicus.py",
+          "size_bytes": 18752
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/copernicus/probe_manifest.json",
+          "size_bytes": 16377
+        }
+      ],
+      "gap": null,
+      "id": "E5",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_copernicus_outcomes_receipt.json",
+          "size_bytes": 2212
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/copernicus_public_review_chains.json",
+          "size_bytes": 20387
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/copernicus_doi_relation_audit.json",
+          "size_bytes": 163804
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/copernicus_outcomes.py",
+          "size_bytes": 13771
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/copernicus_relation_audit.py",
+          "size_bytes": 4943
+        }
+      ],
+      "gap": null,
+      "id": "E6",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_elife_process_receipt.json",
+          "size_bytes": 1376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/elife_editorial_model_cohorts.json",
+          "size_bytes": 5115
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/elife_cohorts.py",
+          "size_bytes": 7622
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/elife.py",
+          "size_bytes": 25361
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/elife_process/probe_manifest.json",
+          "size_bytes": 11376
+        }
+      ],
+      "id": "E7",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_f1000_process_receipt.json",
+          "size_bytes": 9977
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/f1000_family_process_report.json",
+          "size_bytes": 34525
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_f1000_f1000research_shard_receipt.json",
+          "size_bytes": 1295
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_f1000_wellcome_open_research_shard_receipt.json",
+          "size_bytes": 1295
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_f1000_gates_open_research_shard_receipt.json",
+          "size_bytes": 1280
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_f1000_nihr_open_research_shard_receipt.json",
+          "size_bytes": 1274
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/f1000.py",
+          "size_bytes": 43127
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/f1000_family.py",
+          "size_bytes": 12717
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/f1000_process/probe_manifest.json",
+          "size_bytes": 15211
+        }
+      ],
+      "gap": null,
+      "id": "E8",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_scipost_process_receipt.json",
+          "size_bytes": 1418
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/scipost_process_report.json",
+          "size_bytes": 130631
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/scipost.py",
+          "size_bytes": 38752
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/scipost_process.py",
+          "size_bytes": 7850
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/scipost_process/probe_manifest.json",
+          "size_bytes": 11516
+        }
+      ],
+      "gap": null,
+      "id": "E9",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/selected_history_pointer_audit.json",
+          "size_bytes": 6410
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/provider_process_audit.json",
+          "size_bytes": 10402
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/peerj/probe_manifest.json",
+          "size_bytes": 12371
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/plos_review_history/probe_manifest.json",
+          "size_bytes": 13520
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/embo_transparent_review/probe_manifest.json",
+          "size_bytes": 12496
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/royal_society_review/probe_manifest.json",
+          "size_bytes": 12501
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/bmc_open_review/probe_manifest.json",
+          "size_bytes": 12719
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/selected_history.py",
+          "size_bytes": 5418
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/views.py",
+          "size_bytes": 4062
+        }
+      ],
+      "id": "E10",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_crossref_receipt.json",
+          "size_bytes": 1377
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/crossref_peer_review_profile.json",
+          "size_bytes": 35349
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/crossref_profile.py",
+          "size_bytes": 5869
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/crossref/probe_manifest.json",
+          "size_bytes": 13304
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "modal_observatory.py",
+          "size_bytes": 91537
+        }
+      ],
+      "gap": null,
+      "id": "E11",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/source_coverage_atlas.json",
+          "size_bytes": 17071506
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/atlas.py",
+          "size_bytes": 14077
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/copernicus_crossref_population_coverage.json",
+          "size_bytes": 299198
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/copernicus_population_coverage.json",
+          "size_bytes": 500784
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_api_population_coverage.json",
+          "size_bytes": 493979
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_surface_population_coverage.json",
+          "size_bytes": 3640712
+        }
+      ],
+      "gap": null,
+      "id": "E12",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/institutional.py",
+          "size_bytes": 24475
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/institutional_regime_archive.parquet",
+          "size_bytes": 1933537
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/institutional_products_report.json",
+          "size_bytes": 38405
+        }
+      ],
+      "gap": null,
+      "id": "F1",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/institutional.py",
+          "size_bytes": 24475
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/policy_audit.py",
+          "size_bytes": 7287
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/openreview_extracted_rules.parquet",
+          "size_bytes": 1378945
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/policy_extraction_audit.json",
+          "size_bytes": 182818
+        }
+      ],
+      "gap": null,
+      "id": "F2",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/policy_history.py",
+          "size_bytes": 5076
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/historical_policy_archive.parquet",
+          "size_bytes": 697366
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/policy_history_report.json",
+          "size_bytes": 498
+        }
+      ],
+      "gap": null,
+      "id": "F3",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/institutional.py",
+          "size_bytes": 24475
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/rubric_construct_crosswalk.parquet",
+          "size_bytes": 568260
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/institutional_products_report.json",
+          "size_bytes": 38405
+        }
+      ],
+      "gap": null,
+      "id": "F4",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/institutional.py",
+          "size_bytes": 24475
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/gate_cycle_flow_series.parquet",
+          "size_bytes": 238944
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/institutional_products_report.json",
+          "size_bytes": 38405
+        }
+      ],
+      "gap": null,
+      "id": "F5",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/strain.py",
+          "size_bytes": 9874
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/evaluator_supply_strain.parquet",
+          "size_bytes": 14156
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/strain_reform_report.json",
+          "size_bytes": 435
+        }
+      ],
+      "gap": null,
+      "id": "F6",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/strain.py",
+          "size_bytes": 9874
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/timing_strain_series.parquet",
+          "size_bytes": 225963
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/strain_reform_report.json",
+          "size_bytes": 435
+        }
+      ],
+      "gap": null,
+      "id": "F7",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/strain.py",
+          "size_bytes": 9874
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/registered_reforms.parquet",
+          "size_bytes": 7052
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/strain_reform_report.json",
+          "size_bytes": 435
+        }
+      ],
+      "gap": null,
+      "id": "F8",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/policy_audit.py",
+          "size_bytes": 7287
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/policy_extraction_audit.json",
+          "size_bytes": 182818
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "F9",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/identity.py",
+          "size_bytes": 4946
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/openalex.py",
+          "size_bytes": 8298
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/doi_canonicalization_benchmark.json",
+          "size_bytes": 485
+        }
+      ],
+      "id": "G1",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/arxiv.py",
+          "size_bytes": 11040
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/arxiv/probe_manifest.json",
+          "size_bytes": 13406
+        }
+      ],
+      "id": "G2",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/europepmc.py",
+          "size_bytes": 19621
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/fixtures/observatory/europe_pmc/probe_manifest.json",
+          "size_bytes": 12299
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/jats_reference_benchmark.json",
+          "size_bytes": 574
+        }
+      ],
+      "id": "G3",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/identity.py",
+          "size_bytes": 4946
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/schema.py",
+          "size_bytes": 14972
+        }
+      ],
+      "id": "G4",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/references.py",
+          "size_bytes": 3768
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/formats.py",
+          "size_bytes": 9391
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/jats_reference_benchmark.json",
+          "size_bytes": 574
+        }
+      ],
+      "id": "G5",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/licensing.py",
+          "size_bytes": 3307
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/content.py",
+          "size_bytes": 2129
+        }
+      ],
+      "id": "G6",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/fields.py",
+          "size_bytes": 2700
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "id": "G7",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/visibility.py",
+          "size_bytes": 1067
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/adapters/openreview_api.py",
+          "size_bytes": 82052
+        }
+      ],
+      "id": "G8",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/language.py",
+          "size_bytes": 5131
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/fwf_parallel_language_benchmark.json",
+          "size_bytes": 725
+        }
+      ],
+      "id": "G9",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_edges_release.parquet",
+          "size_bytes": 110236
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/linkage_benchmark.json",
+          "size_bytes": 4068
+        }
+      ],
+      "gap": null,
+      "id": "H1",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/linkage_candidates.parquet",
+          "size_bytes": 55833
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/linkage_benchmark.json",
+          "size_bytes": 4068
+        }
+      ],
+      "gap": null,
+      "id": "H2",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/linkage_candidates.parquet",
+          "size_bytes": 55833
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/linkage_benchmark.json",
+          "size_bytes": 4068
+        }
+      ],
+      "gap": null,
+      "id": "H3",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_sensitivity.parquet",
+          "size_bytes": 2287
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/linkage_benchmark.json",
+          "size_bytes": 4068
+        }
+      ],
+      "gap": null,
+      "id": "H4",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_edges_release.parquet",
+          "size_bytes": 110236
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_products_report.json",
+          "size_bytes": 507
+        }
+      ],
+      "gap": null,
+      "id": "H5",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/version_alignment.parquet",
+          "size_bytes": 20002
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_products_report.json",
+          "size_bytes": 507
+        }
+      ],
+      "gap": null,
+      "id": "H6",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/candidate_gate_chains.parquet",
+          "size_bytes": 661622
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/trajectory_analysis_contract.json",
+          "size_bytes": 1208
+        }
+      ],
+      "gap": null,
+      "id": "H7",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_sensitivity.parquet",
+          "size_bytes": 2287
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/trajectory_analysis_contract.json",
+          "size_bytes": 1208
+        }
+      ],
+      "gap": null,
+      "id": "H8",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_error_report.json",
+          "size_bytes": 471
+        }
+      ],
+      "gap": null,
+      "id": "H9",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/evaluation_atlas.py",
+          "size_bytes": 11691
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/evaluation_objects.parquet",
+          "size_bytes": 2664290
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/evaluation_products_report.json",
+          "size_bytes": 1771
+        }
+      ],
+      "gap": null,
+      "id": "I1",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/evaluation_atlas.py",
+          "size_bytes": 11691
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/policy_audit.py",
+          "size_bytes": 7287
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/evaluation_objects.parquet",
+          "size_bytes": 2664290
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/policy_extraction_audit.json",
+          "size_bytes": 182818
+        }
+      ],
+      "gap": null,
+      "id": "I2",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/construct_atlas.py",
+          "size_bytes": 27250
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/construct_spans.parquet",
+          "size_bytes": 17609
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/construct_reliability_report.json",
+          "size_bytes": 814
+        }
+      ],
+      "gap": null,
+      "id": "I3",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/construct_atlas.py",
+          "size_bytes": 27250
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/construct_reliability.parquet",
+          "size_bytes": 4259
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/construct_reliability_report.json",
+          "size_bytes": 814
+        }
+      ],
+      "gap": null,
+      "id": "I4",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/semantic_novelty.py",
+          "size_bytes": 14260
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/external_reproduction.py",
+          "size_bytes": 5356
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/semantic_novelty.parquet",
+          "size_bytes": 1040756
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/semantic_novelty_fixture.json",
+          "size_bytes": 319
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/semantic_novelty_report.json",
+          "size_bytes": 17315
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/p2_semantic_reproduction_audit.json",
+          "size_bytes": 2118
+        }
+      ],
+      "gap": null,
+      "id": "I5",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/construct_atlas.py",
+          "size_bytes": 27250
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/recombinatorial_novelty.parquet",
+          "size_bytes": 9112
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/recombinatorial_novelty_report.json",
+          "size_bytes": 2044
+        }
+      ],
+      "gap": null,
+      "id": "I6",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/content_claims.py",
+          "size_bytes": 4808
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/content_claim_features.parquet",
+          "size_bytes": 543430
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/content_claim_extraction_report.json",
+          "size_bytes": 4342
+        }
+      ],
+      "gap": null,
+      "id": "I7",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/evaluation_atlas.py",
+          "size_bytes": 11691
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/semantic_novelty.py",
+          "size_bytes": 14260
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/reference_corpus_manifest.json",
+          "size_bytes": 6697
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/semantic_novelty_report.json",
+          "size_bytes": 17315
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/versions.yaml",
+          "size_bytes": 1674
+        }
+      ],
+      "gap": null,
+      "id": "I8",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/construct_models.yaml",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/construct_model.py",
+          "size_bytes": 7539
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/construct_model_report.json",
+          "size_bytes": 1977
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/construct_invariance.parquet",
+          "size_bytes": 2138
+        }
+      ],
+      "gap": null,
+      "id": "I9",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/construct_atlas.py",
+          "size_bytes": 27250
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/novelty_evaluation_atlas.parquet",
+          "size_bytes": 4245
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/novelty_evaluation_atlas_report.json",
+          "size_bytes": 253
+        }
+      ],
+      "gap": null,
+      "id": "I10",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/outcomes.py",
+          "size_bytes": 18742
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/afterlife_panel.parquet",
+          "size_bytes": 314385
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/afterlife_products_report.json",
+          "size_bytes": 967
+        }
+      ],
+      "gap": null,
+      "id": "J1",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/outcomes.py",
+          "size_bytes": 18742
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/fixed_window_outcomes.parquet",
+          "size_bytes": 6672
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/openalex_outcome_snapshot.jsonl",
+          "size_bytes": 14270
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/afterlife_products_report.json",
+          "size_bytes": 967
+        }
+      ],
+      "gap": null,
+      "id": "J2",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/outcomes.py",
+          "size_bytes": 18742
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/research_object_links.parquet",
+          "size_bytes": 10925
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/afterlife_products_report.json",
+          "size_bytes": 967
+        }
+      ],
+      "gap": null,
+      "id": "J3",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/outcomes.py",
+          "size_bytes": 18742
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/corrections_withdrawals.parquet",
+          "size_bytes": 4526
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/afterlife_products_report.json",
+          "size_bytes": 967
+        }
+      ],
+      "gap": null,
+      "id": "J4",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/afterlife_panel.parquet",
+          "size_bytes": 314385
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/trajectory_analysis_contract.json",
+          "size_bytes": 1208
+        }
+      ],
+      "gap": null,
+      "id": "J5",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/version_alignment.parquet",
+          "size_bytes": 20002
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/trajectory_analysis_contract.json",
+          "size_bytes": 1208
+        }
+      ],
+      "gap": null,
+      "id": "J6",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_edges_release.parquet",
+          "size_bytes": 110236
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/trajectory_analysis_contract.json",
+          "size_bytes": 1208
+        }
+      ],
+      "gap": null,
+      "id": "J7",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/outcomes.py",
+          "size_bytes": 18742
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/afterlife_panel.parquet",
+          "size_bytes": 314385
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_sensitivity.parquet",
+          "size_bytes": 2287
+        }
+      ],
+      "gap": null,
+      "id": "J8",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/gtr_sql.py",
+          "size_bytes": 9023
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/gtr_backup_audit.json",
+          "size_bytes": 1194912
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/ukri_upstream_adoption.json",
+          "size_bytes": 1535
+        }
+      ],
+      "gap": null,
+      "id": "K1",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/gtr_sql.py",
+          "size_bytes": 9023
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/ukri_panel_rounds.parquet",
+          "size_bytes": 91528
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/gtr_backup_audit.json",
+          "size_bytes": 1194912
+        }
+      ],
+      "gap": null,
+      "id": "K2",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/nerc_ptf_rounds.parquet",
+          "size_bytes": 6059
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_identification_firewall_audit.json",
+          "size_bytes": 483
+        }
+      ],
+      "gap": null,
+      "id": "K3",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_external_reproduction_audit.json",
+          "size_bytes": 1557
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_products_report.json",
+          "size_bytes": 677
+        }
+      ],
+      "gap": null,
+      "id": "K4",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_portfolio_series.parquet",
+          "size_bytes": 15042
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_instrument_evaluability.parquet",
+          "size_bytes": 9893
+        }
+      ],
+      "gap": null,
+      "id": "K5",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_instrument_evaluability.parquet",
+          "size_bytes": 9893
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_products_report.json",
+          "size_bytes": 677
+        }
+      ],
+      "gap": null,
+      "id": "K6",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_instrument_evaluability.parquet",
+          "size_bytes": 9893
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_identification_firewall_audit.json",
+          "size_bytes": 483
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "K7",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_repeat_lower_bounds.parquet",
+          "size_bytes": 60827
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_products_report.json",
+          "size_bytes": 677
+        }
+      ],
+      "gap": null,
+      "id": "K8",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_portfolio_series.parquet",
+          "size_bytes": 15042
+        }
+      ],
+      "gap": null,
+      "id": "K9",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/grant_output_linkage.parquet",
+          "size_bytes": 71901
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/gtr_backup_audit.json",
+          "size_bytes": 1194912
+        }
+      ],
+      "gap": null,
+      "id": "K10",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_prospective_watcher.json",
+          "size_bytes": 737
+        }
+      ],
+      "gap": null,
+      "id": "K11",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/funding.py",
+          "size_bytes": 37396
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_identification_firewall_audit.json",
+          "size_bytes": 483
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "K12",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_application_panel.parquet",
+          "size_bytes": 772689
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_products_report.json",
+          "size_bytes": 1279
+        }
+      ],
+      "gap": null,
+      "id": "L1",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_pilot_report.json",
+          "size_bytes": 2200
+        }
+      ],
+      "gap": null,
+      "id": "L2",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_benchmark_reconciliation.json",
+          "size_bytes": 1157
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_products_report.json",
+          "size_bytes": 1279
+        }
+      ],
+      "gap": null,
+      "id": "L3",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_application_panel.parquet",
+          "size_bytes": 772689
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_pilot_report.json",
+          "size_bytes": 2200
+        }
+      ],
+      "gap": null,
+      "id": "L4",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_action_chains.parquet",
+          "size_bytes": 385659
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_pilot_report.json",
+          "size_bytes": 2200
+        }
+      ],
+      "gap": null,
+      "id": "L5",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_claim_alignment.parquet",
+          "size_bytes": 10343833
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_pilot_report.json",
+          "size_bytes": 2200
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "L6",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_capacity_panel.parquet",
+          "size_bytes": 12907
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_products_report.json",
+          "size_bytes": 1279
+        }
+      ],
+      "gap": null,
+      "id": "L7",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_prior_art_links.parquet",
+          "size_bytes": 347178
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_products_report.json",
+          "size_bytes": 1279
+        }
+      ],
+      "gap": null,
+      "id": "L8",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/patent_events.yaml",
+          "size_bytes": 1162
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_policy_events.parquet",
+          "size_bytes": 3913
+        }
+      ],
+      "gap": null,
+      "id": "L9",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_benchmark_reconciliation.json",
+          "size_bytes": 1157
+        }
+      ],
+      "gap": null,
+      "id": "L10",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/patents.py",
+          "size_bytes": 30376
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_pilot_report.json",
+          "size_bytes": 2200
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/patent_products_report.json",
+          "size_bytes": 1279
+        }
+      ],
+      "gap": null,
+      "id": "L11",
+      "issues": [],
+      "release_wave": "R4",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "directory",
+          "path": "tests/fixtures/observatory",
+          "size_bytes": null
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_hardening.py",
+          "size_bytes": 30477
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_validation.py",
+          "size_bytes": 6546
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": ".github/workflows/ci.yml",
+          "size_bytes": 2685
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/release_validation.json",
+          "size_bytes": 938
+        }
+      ],
+      "id": "M1",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/atlas.py",
+          "size_bytes": 14077
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_process_audit.json",
+          "size_bytes": 425213
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/openreview_api_population_coverage.json",
+          "size_bytes": 493979
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/copernicus_population_coverage.json",
+          "size_bytes": 500784
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/source_coverage_atlas.json",
+          "size_bytes": 17071506
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "id": "M2",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/quality.py",
+          "size_bytes": 8732
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/stage_outcome_audit.json",
+          "size_bytes": 940
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "M3",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/policy_audit.py",
+          "size_bytes": 7287
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/policy_extraction_audit.json",
+          "size_bytes": 182818
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/institutional_regime_archive.parquet",
+          "size_bytes": 1933537
+        }
+      ],
+      "gap": null,
+      "id": "M4",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/linkage_benchmark.json",
+          "size_bytes": 4068
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_error_report.json",
+          "size_bytes": 471
+        }
+      ],
+      "gap": null,
+      "id": "M5",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r2_assurance.py",
+          "size_bytes": 15275
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/text_reference_coverage.parquet",
+          "size_bytes": 203474
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/text_reference_extraction_audit.json",
+          "size_bytes": 6542
+        }
+      ],
+      "gap": null,
+      "id": "M6",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/quality.py",
+          "size_bytes": 8732
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/views.py",
+          "size_bytes": 4062
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/temporal_leakage_audit.json",
+          "size_bytes": 2258
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "M7",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r3_validation.py",
+          "size_bytes": 11853
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/feature_determinism_audit.json",
+          "size_bytes": 2726
+        }
+      ],
+      "gap": null,
+      "id": "M8",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/storage.py",
+          "size_bytes": 19745
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r2_assurance.py",
+          "size_bytes": 15275
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/parser_source_drift_report.json",
+          "size_bytes": 6324
+        }
+      ],
+      "gap": null,
+      "id": "M9",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r2_assurance.py",
+          "size_bytes": 15275
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/missingness_selection_report.json",
+          "size_bytes": 6334
+        }
+      ],
+      "gap": null,
+      "id": "M10",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r3_validation.py",
+          "size_bytes": 11853
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/adversarial_referee_suite.json",
+          "size_bytes": 3844
+        }
+      ],
+      "gap": null,
+      "id": "M11",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_validation.py",
+          "size_bytes": 6546
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_engineering.py",
+          "size_bytes": 17814
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/release_validation.json",
+          "size_bytes": 938
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "M12",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/CONSTITUTION.md",
+          "size_bytes": 3319
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/GOVERNANCE_AND_ETHICS.md",
+          "size_bytes": 3347
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/governance.yaml",
+          "size_bytes": 4330
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/operations.py",
+          "size_bytes": 17467
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/no_paid_api_audit.json",
+          "size_bytes": 1729
+        }
+      ],
+      "id": "N1",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r2_assurance.py",
+          "size_bytes": 15275
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_engineering.py",
+          "size_bytes": 17814
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/r2_privacy_audit.json",
+          "size_bytes": 266
+        }
+      ],
+      "gap": null,
+      "id": "N2",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/PROHIBITED_USES.md",
+          "size_bytes": 1353
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/governance.yaml",
+          "size_bytes": 4330
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/operations.py",
+          "size_bytes": 17467
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/static_explorer_report.json",
+          "size_bytes": 622
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/community_benchmark_report.json",
+          "size_bytes": 3145
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/privacy_licence_redteam.json",
+          "size_bytes": 1301
+        }
+      ],
+      "gap": null,
+      "id": "N3",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_engineering.py",
+          "size_bytes": 17814
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/release_components.yaml",
+          "size_bytes": 12122
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "N4",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r2_assurance.py",
+          "size_bytes": 15275
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/terms_access_snapshot.json",
+          "size_bytes": 28596
+        }
+      ],
+      "gap": null,
+      "id": "N5",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/TAKEDOWN_AND_CORRECTIONS.md",
+          "size_bytes": 1019
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/removal_propagation_simulation.parquet",
+          "size_bytes": 4261
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/removal_propagation_report.json",
+          "size_bytes": 654
+        }
+      ],
+      "gap": null,
+      "id": "N6",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/audit.py",
+          "size_bytes": 14463
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "modal_observatory.py",
+          "size_bytes": 91537
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "modal_abc.py",
+          "size_bytes": 41039
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/credential_history_quarantine.json",
+          "size_bytes": 2239
+        }
+      ],
+      "gap": null,
+      "id": "N7",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/audit_fixture_governance.json",
+          "size_bytes": 595
+        }
+      ],
+      "gap": null,
+      "id": "N8",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/risk_cards.json",
+          "size_bytes": 54182
+        }
+      ],
+      "gap": null,
+      "id": "N9",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/privacy_licence_redteam.json",
+          "size_bytes": 1301
+        }
+      ],
+      "gap": null,
+      "id": "N10",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/versions.yaml",
+          "size_bytes": 1674
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_engineering.py",
+          "size_bytes": 17814
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/storage.py",
+          "size_bytes": 19745
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "O1",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/release_components.yaml",
+          "size_bytes": 12122
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_engineering.py",
+          "size_bytes": 17814
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_validation.py",
+          "size_bytes": 6546
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "O2",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/cleanroom.py",
+          "size_bytes": 4679
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r1/cleanroom_fixture_rebuild.json",
+          "size_bytes": 5912
+        },
+        {
+          "exists": true,
+          "kind": "directory",
+          "path": "tests/fixtures/observatory",
+          "size_bytes": null
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "O3",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/DATA_CARD.md",
+          "size_bytes": 18545
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/SCHEMA_HANDBOOK.md",
+          "size_bytes": 3917
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/OBSERVABILITY_HANDBOOK.md",
+          "size_bytes": 3500
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "schemas/observatory/catalog.json",
+          "size_bytes": 65380
+        }
+      ],
+      "gap": null,
+      "id": "O4",
+      "issues": [],
+      "release_wave": "R1",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/explorer/index.html",
+          "size_bytes": 2981
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/static_explorer_report.json",
+          "size_bytes": 622
+        }
+      ],
+      "gap": null,
+      "id": "O5",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/notebooks.py",
+          "size_bytes": 5772
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/notebooks/01_gate_cycle_atlas.ipynb",
+          "size_bytes": 1226
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/notebooks/02_novelty_evaluation_atlas.ipynb",
+          "size_bytes": 1237
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/notebooks/03_afterlife_censoring.ipynb",
+          "size_bytes": 1266
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/notebook_execution_report.json",
+          "size_bytes": 2129
+        }
+      ],
+      "gap": null,
+      "id": "O6",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/CITATION.cff",
+          "size_bytes": 717
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/publication.yaml",
+          "size_bytes": 1116
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r2_assurance.py",
+          "size_bytes": 15275
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r2/CORPUS_ATTRIBUTION.json",
+          "size_bytes": 23685
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/CORPUS_ATTRIBUTION.md",
+          "size_bytes": 5023
+        }
+      ],
+      "gap": null,
+      "id": "O7",
+      "issues": [],
+      "release_wave": "R2",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/DURABLE_RELEASE_PLAN.md",
+          "size_bytes": 705
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/publication_readiness.json",
+          "size_bytes": 1960
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/publication/PUBLICATION_MANIFEST.json",
+          "size_bytes": 3851
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/publication/HUGGINGFACE_PRIVATE_DEPOSIT_RECEIPT.json",
+          "size_bytes": 1436
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/publication/EXTERNAL_BLOCKER_AUDIT.json",
+          "size_bytes": 1644
+        }
+      ],
+      "gap": "The checksum-verified Hugging Face staging deposit exists at a private immutable revision. Public visibility, a persistent public identifier, and a second independent public path remain pending.",
+      "id": "O8",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "pending"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/versions.yaml",
+          "size_bytes": 1674
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/RELEASE_MIGRATIONS.md",
+          "size_bytes": 749
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/migrations.py",
+          "size_bytes": 3544
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/release_diff_0.1.0-r1_to_1.0.0.json",
+          "size_bytes": 2035
+        }
+      ],
+      "gap": null,
+      "id": "O9",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/COMMUNITY_CONTRIBUTING.md",
+          "size_bytes": 989
+        },
+        {
+          "exists": true,
+          "kind": "directory",
+          "path": "docs/observatory/issue_templates",
+          "size_bytes": null
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/community_correction_drill.json",
+          "size_bytes": 1030
+        }
+      ],
+      "gap": null,
+      "id": "O10",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/DATA_METHODS_PAPER.tex",
+          "size_bytes": 76184
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/quantitative_claim_ledger.json",
+          "size_bytes": 41481
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/publication/open-selection-graph-data-methods-paper-2.0.0.tar",
+          "size_bytes": 17684480
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/publication/EXTERNAL_BLOCKER_AUDIT.json",
+          "size_bytes": 1644
+        }
+      ],
+      "gap": "The standalone data/methods manuscript and quantitative ledger are complete, but the verified dataset deposit remains private and there is no frozen release DOI or external manuscript submission receipt. The paper explicitly does not claim submission.",
+      "id": "O11",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "pending"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r3_validation.py",
+          "size_bytes": 11853
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/gate_cycle_descriptive_atlas.parquet",
+          "size_bytes": 52225
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+          "size_bytes": 446
+        }
+      ],
+      "gap": null,
+      "id": "P1",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/calibration_target_panel.parquet",
+          "size_bytes": 1593
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/calibration_bridge_report.json",
+          "size_bytes": 668
+        }
+      ],
+      "gap": null,
+      "id": "P2",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/dynamic_estimands.yaml",
+          "size_bytes": 1472
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/dynamic_panel_preregistration.json",
+          "size_bytes": 2134
+        }
+      ],
+      "gap": null,
+      "id": "P3",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/construct_models.yaml",
+          "size_bytes": 865
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/construct_model.py",
+          "size_bytes": 7539
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/rulers_doors_cells.parquet",
+          "size_bytes": 3841
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/construct_model_report.json",
+          "size_bytes": 1977
+        }
+      ],
+      "gap": null,
+      "id": "P4",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r3_validation.py",
+          "size_bytes": 11853
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/trajectory_analysis_contract.json",
+          "size_bytes": 1208
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/r3_analysis_contracts.json",
+          "size_bytes": 1310
+        }
+      ],
+      "gap": null,
+      "id": "P5",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/strain.py",
+          "size_bytes": 9874
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r3_validation.py",
+          "size_bytes": 11853
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/strain_conservatism_analysis.parquet",
+          "size_bytes": 107897
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/r3_analysis_contracts.json",
+          "size_bytes": 1310
+        }
+      ],
+      "gap": null,
+      "id": "P6",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/lineage.py",
+          "size_bytes": 32806
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r3_validation.py",
+          "size_bytes": 11853
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/lineage_sensitivity.parquet",
+          "size_bytes": 2287
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r3/r3_analysis_contracts.json",
+          "size_bytes": 1310
+        }
+      ],
+      "gap": null,
+      "id": "P7",
+      "issues": [],
+      "release_wave": "R3",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r4/funding_prospective_watcher.json",
+          "size_bytes": 737
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/funding_evaluability_analysis.json",
+          "size_bytes": 369
+        }
+      ],
+      "gap": null,
+      "id": "P8",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/legal_scientific_construct_crosswalk.parquet",
+          "size_bytes": 2733
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/legal_scientific_comparison_report.json",
+          "size_bytes": 432
+        }
+      ],
+      "gap": null,
+      "id": "P9",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/community_benchmarks.yaml",
+          "size_bytes": 475
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/community_benchmark_tasks.parquet",
+          "size_bytes": 3627
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/community_benchmark_report.json",
+          "size_bytes": 3145
+        }
+      ],
+      "gap": null,
+      "id": "P10",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/network_policy.yaml",
+          "size_bytes": 2229
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/excluded_sources.yaml",
+          "size_bytes": 938
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/audit.py",
+          "size_bytes": 14463
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/http.py",
+          "size_bytes": 11202
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": ".github/workflows/ci.yml",
+          "size_bytes": 2685
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/no_paid_api_audit.json",
+          "size_bytes": 1729
+        }
+      ],
+      "id": "Q1",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/operations.py",
+          "size_bytes": 17467
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/runner.py",
+          "size_bytes": 41839
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/resource_reconciliations.parquet",
+          "size_bytes": 7235
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/resource_reconciliation_report.json",
+          "size_bytes": 392
+        }
+      ],
+      "gap": null,
+      "id": "Q2",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "modal_observatory.py",
+          "size_bytes": 91537
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/checkpoint.py",
+          "size_bytes": 2159
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/runner.py",
+          "size_bytes": 41839
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_hardening.py",
+          "size_bytes": 30477
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_openreview_process_receipt.json",
+          "size_bytes": 6096
+        }
+      ],
+      "id": "Q3",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/modal_budget.yaml",
+          "size_bytes": 884
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/operations.py",
+          "size_bytes": 17467
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/modal_budget_ledger.jsonl",
+          "size_bytes": 6079
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/modal_provider_billing_audit.json",
+          "size_bytes": 496
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/modal_budget_ledger_audit.json",
+          "size_bytes": 561
+        }
+      ],
+      "gap": null,
+      "id": "Q4",
+      "issues": [],
+      "release_wave": "R0",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "modal_observatory.py",
+          "size_bytes": 91537
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/DECISIONS.md",
+          "size_bytes": 7367
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/modal_openreview_process_receipt.json",
+          "size_bytes": 6096
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/modal_job_decision_registry.parquet",
+          "size_bytes": 6239
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/compute_telemetry_report.json",
+          "size_bytes": 266
+        }
+      ],
+      "gap": null,
+      "id": "Q5",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/storage_guard.py",
+          "size_bytes": 3018
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/storage.py",
+          "size_bytes": 19745
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/fulltext.py",
+          "size_bytes": 7448
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/semantic_novelty.py",
+          "size_bytes": 14260
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/release_engineering.py",
+          "size_bytes": 17814
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/RAW_STORAGE_LIFECYCLE.md",
+          "size_bytes": 1876
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/recoverability_manifest.json",
+          "size_bytes": 8579
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "tests/test_observatory_core.py",
+          "size_bytes": 75508
+        }
+      ],
+      "gap": null,
+      "id": "Q6",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/connectors/runner.py",
+          "size_bytes": 41839
+        },
+        {
+          "exists": true,
+          "kind": "directory",
+          "path": "results/observatory/runs",
+          "size_bytes": null
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/ticket_evidence_audit.json",
+          "size_bytes": 117449
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/release_waves.yaml",
+          "size_bytes": 1348
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/epic_resumability_manifests.json",
+          "size_bytes": 2232
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/operations_dashboard.html",
+          "size_bytes": 789
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/compute_telemetry_report.json",
+          "size_bytes": 266
+        }
+      ],
+      "gap": null,
+      "id": "Q7",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/disaster_recovery_drill.json",
+          "size_bytes": 5584
+        }
+      ],
+      "gap": null,
+      "id": "Q8",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/update_schedule.yaml",
+          "size_bytes": 1711
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/r5.py",
+          "size_bytes": 67415
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/update_scheduler_audit.json",
+          "size_bytes": 614
+        }
+      ],
+      "gap": null,
+      "id": "Q9",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    },
+    {
+      "evidence": [
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "docs/observatory/DECISIONS.md",
+          "size_bytes": 7367
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "configs/observatory/release_waves.yaml",
+          "size_bytes": 1348
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/ticket_evidence_audit.json",
+          "size_bytes": 117449
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "src/observatory/ticket_evidence.py",
+          "size_bytes": 6041
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/r5/decision_backaudit.json",
+          "size_bytes": 386
+        }
+      ],
+      "gap": null,
+      "id": "Q10",
+      "issues": [],
+      "release_wave": "R5",
+      "status": "complete"
+    }
+  ],
+  "unexpected": []
+}

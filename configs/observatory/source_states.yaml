@@ -1,0 +1,17 @@
+schema: observatory.source_states/1
+constitution_version: 0.1.0
+states:
+  included: Source passes access, terms, licence, coverage, and fixture gates for its declared release tier.
+  pointer_only: Metadata/pointers/hashes may be released; source text is not redistributed.
+  derived_only: Non-reconstructive derived features may be released; raw content is protected or ephemeral.
+  quarantined: Access or semantics are unresolved; no substantive analysis.
+  blocked_by_terms: Terms, robots, licence, or access controls prohibit the proposed acquisition/release.
+  blocked_by_coverage: Earliest observable population or denominator cannot support the proposed use.
+  retired: Adapter/source is superseded or no longer reproducible; historical snapshots remain immutable.
+transitions:
+  - source_id: openreview
+    from_status: quarantined
+    to_status: quarantined
+    effective_at: 2026-08-10T00:00:00Z
+    evidence: [configs/observatory/sources.yaml, data/p2/openreview]
+    migration_note: Initial registry state; cycle-level promotion requires invitation and denominator audit.

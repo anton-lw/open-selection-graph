@@ -1,0 +1,23 @@
+schema: observatory.patent-events/1
+events:
+  - event_id: aia-first-inventor-to-file
+    effective_at: 2013-03-16
+    affected_legal_grounds: [35_U.S.C._102, priority_rules]
+    affected_units: US applications subject to AIA effective-date rules
+    concurrent_changes: [transition provisions, derivation proceedings]
+    plausibility: 0.45
+    source_url: https://www.uspto.gov/patents/laws/america-invents-act-aia
+  - event_id: alice-corp-v-cls-bank
+    effective_at: 2014-06-19
+    affected_legal_grounds: [35_U.S.C._101]
+    affected_units: software and abstract-idea eligibility examinations
+    concurrent_changes: [USPTO interim eligibility guidance]
+    plausibility: 0.55
+    source_url: https://www.supremecourt.gov/opinions/13pdf/13-298_7lh8.pdf
+  - event_id: uspto-2019-eligibility-guidance
+    effective_at: 2019-01-07
+    affected_legal_grounds: [35_U.S.C._101]
+    affected_units: applications examined under subject-matter eligibility guidance
+    concurrent_changes: [examiner training, Berkheimer memorandum implementation]
+    plausibility: 0.60
+    source_url: https://www.uspto.gov/patents/laws/examination-policy/subject-matter-eligibility

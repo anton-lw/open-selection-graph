@@ -1,0 +1,17 @@
+{
+  "connector_version": "3",
+  "found_page_bundles": 1,
+  "passes": true,
+  "provider_expected_edits": 159567,
+  "query_hash": "0a3766fda38641f73700d816bbd67bf325a70587fe07d24bb036535713fba65f",
+  "schema": "observatory.openreview-domain-edit-proof/1",
+  "tables": {
+    "coverage_observation": 1,
+    "field_provenance": 9010,
+    "gate": 1,
+    "gate_cycle": 1,
+    "lineage_edge": 1000,
+    "provenance_event": 2,
+    "source_object": 2
+  }
+}

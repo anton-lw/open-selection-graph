@@ -1,0 +1,152 @@
+{
+  "$id": "urn:observatory:source-card:1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "access_mode": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "architecture": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "authentication": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "cost_class": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "denominator_methods": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "earliest_public_stage": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "family": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "identifiers": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "licences": {
+      "additionalProperties": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "type": "object"
+    },
+    "notes": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "object_types": {
+      "items": {
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "official_url": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "provider": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "provisional_grade": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "rate_limit": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "robots_url": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "source_id": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "status": {
+      "minLength": 1,
+      "type": "string"
+    },
+    "terms_url": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "update_cadence": {
+      "anyOf": [
+        {
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    }
+  },
+  "required": [
+    "source_id",
+    "provider",
+    "family",
+    "official_url",
+    "access_mode",
+    "authentication",
+    "cost_class",
+    "object_types",
+    "architecture",
+    "provisional_grade",
+    "earliest_public_stage",
+    "status",
+    "denominator_methods"
+  ],
+  "type": "object"
+}

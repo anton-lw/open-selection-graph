@@ -1,0 +1,1543 @@
+schema: observatory.sources/1
+constitution_version: 0.1.0
+snapshot_date: 2026-08-13
+sources:
+- source_id: openreview_surface
+  provider: OpenReview
+  family: publication_gate_configuration
+  official_url: https://docs.openreview.net/getting-started/objects-in-openreview/groups
+  access_mode: unauthenticated API v1/v2 public group records
+  authentication: none
+  cost_class: free
+  object_types:
+  - venue_group
+  - configuration
+  - stage_rule
+  - rubric_pointer
+  architecture: unknown
+  provisional_grade: U
+  earliest_public_stage: configuration only; candidate invitation audit required
+  status: included
+  terms_url: https://openreview.net/legal/terms
+  robots_url: https://openreview.net/robots.txt
+  licences:
+    configuration: CC-BY-4.0
+    metadata: CC0
+  denominator_methods:
+  - union of active_venues and historical venues group members
+  identifiers:
+  - OpenReview group id
+  - invitation id
+  update_cadence: quarterly
+  rate_limit: provider-enforced; Retry-After honored
+  notes: Separate from candidate Notes because public group configuration is anonymously accessible.
+- source_id: openreview
+  provider: OpenReview
+  family: publication_gate
+  official_url: https://openreview.net/venues
+  access_mode: REST API v1/v2 plus public pages
+  authentication: optional_free_account
+  cost_class: free
+  object_types:
+  - submission
+  - manuscript
+  - review
+  - meta_review
+  - decision
+  - rebuttal
+  - comment
+  - policy
+  architecture: competitive_quota
+  provisional_grade: U
+  earliest_public_stage: venue-year-specific invitation audit required
+  status: quarantined
+  terms_url: https://openreview.net/legal/terms
+  robots_url: https://openreview.net/robots.txt
+  licences:
+    metadata: CC0
+    comments: CC-BY-4.0
+    configuration: CC-BY-4.0
+    manuscripts: per-object
+  denominator_methods:
+  - API invitation count
+  - venue-published statistics
+  identifiers:
+  - OpenReview note id
+  - forum id
+  - invitation
+  - venue id
+  update_cadence: quarterly plus conference notification dates
+  rate_limit: provider-enforced; Retry-After honored
+  notes: Grade separately by venue, year, invitation, and object type.
+- source_id: openreview_api
+  provider: OpenReview
+  family: publication_gate_raw_api
+  official_url: https://docs.openreview.net/getting-started/using-the-api
+  access_mode: invitation-explicit REST API v1/v2 Notes and Edits
+  authentication: optional_free_account
+  cost_class: free
+  object_types:
+  - note
+  - note_edit
+  - submission
+  - review
+  - decision
+  - rebuttal
+  - comment
+  - revision
+  architecture: unknown
+  provisional_grade: B
+  earliest_public_stage: provider-audited public submission invitation
+  status: included
+  release_gate_tickets:
+  - E2
+  - E3
+  terms_url: https://openreview.net/legal/terms
+  robots_url: https://openreview.net/robots.txt
+  licences:
+    metadata: CC0
+    comments: CC-BY-4.0
+    manuscripts: per-object
+  denominator_methods:
+  - invitation-specific count=true response
+  identifiers:
+  - OpenReview note id
+  - edit id
+  - forum id
+  - invitation id
+  update_cadence: quarterly plus conference notification dates
+  rate_limit: self-imposed 3 seconds minimum; Retry-After honored; 50000 request daily ceiling
+  notes: Grade B applies only to the 176 cycles frozen in the passing-state manifest; unreadable Notes/Edits and confidential screening remain explicit hidden stages.
+- source_id: reviewarena
+  provider: ReviewArena authors
+  family: derived_review_corpus
+  official_url: https://huggingface.co/datasets/Samarth0710/reviewarena
+  access_mode: Hugging Face public dataset files
+  authentication: none
+  cost_class: free
+  object_types:
+  - submission
+  - manuscript_ocr
+  - review
+  - decision
+  architecture: competitive_quota
+  provisional_grade: C
+  earliest_public_stage: corpus-defined
+  status: pointer_only
+  licences:
+    dataset: per-repository-card
+    manuscripts: per-object
+  denominator_methods:
+  - dataset builder metadata
+  - source OpenReview reconciliation
+  identifiers:
+  - dataset row id
+  - OpenReview id when present
+  update_cadence: release-defined
+  notes: Reconciliation source; not authoritative for institutional coverage.
+- source_id: re2
+  provider: Re2 authors
+  family: derived_review_corpus
+  official_url: https://arxiv.org/abs/2505.07920
+  access_mode: public research release
+  authentication: none
+  cost_class: free
+  object_types:
+  - submission
+  - review
+  - rebuttal
+  architecture: competitive_quota
+  provisional_grade: C
+  earliest_public_stage: corpus-defined
+  status: pointer_only
+  licences:
+    dataset: per-release
+    manuscripts: per-object
+  denominator_methods:
+  - dataset paper counts
+  - source reconciliation
+  identifiers:
+  - dataset id
+  - venue id
+  update_cadence: release-defined
+- source_id: nlpeer
+  provider: UKP Lab
+  family: derived_review_corpus
+  official_url: https://github.com/UKPLab/nlpeer
+  access_mode: public repository and source-specific acquisition
+  authentication: none
+  cost_class: free
+  object_types:
+  - manuscript
+  - review
+  - revision
+  architecture: unknown
+  provisional_grade: C
+  earliest_public_stage: source-specific
+  status: pointer_only
+  licences:
+    code: repository licence
+    data: source-specific
+  denominator_methods:
+  - release manifest
+  identifiers:
+  - dataset id
+  - DOI
+  - arXiv id
+  update_cadence: release-defined
+- source_id: researcharcade
+  provider: ResearchArcade authors
+  family: derived_review_corpus
+  official_url: https://ulab-uiuc.github.io/research-arcade/learn/csv-dataset.html
+  access_mode: Hugging Face public Parquet tables
+  authentication: none
+  cost_class: free
+  object_types:
+  - submission
+  - review
+  - revision
+  - author
+  - arxiv_link
+  - relation
+  architecture: unknown
+  provisional_grade: C
+  earliest_public_stage: corpus-defined OpenReview objects
+  status: pointer_only
+  licences:
+    dataset_metadata: unresolved
+    source_objects: per-object
+  denominator_methods:
+  - Hugging Face Dataset Viewer size
+  - source OpenReview reconciliation
+  identifiers:
+  - OpenReview note id
+  - forum id
+  - arXiv id
+  - dataset row id
+  update_cadence: release-defined
+  notes: Graph/lineage candidate source only; OpenReview remains authoritative and writer strings are not identity truth.
+- source_id: peerread
+  provider: Allen Institute for AI
+  family: derived_review_corpus
+  official_url: https://github.com/allenai/PeerRead
+  access_mode: public legacy repository and dataset script
+  authentication: none
+  cost_class: free
+  object_types:
+  - submission
+  - review
+  - decision
+  - parsed_manuscript
+  architecture: unknown
+  provisional_grade: C
+  earliest_public_stage: corpus-defined selected/collected sample
+  status: pointer_only
+  licences:
+    dataset: source-specific
+    manuscripts: per-object
+  denominator_methods:
+  - release manifest
+  - source reconciliation
+  identifiers:
+  - dataset id
+  - arXiv id
+  - OpenReview id when present
+  update_cadence: retired release
+  notes: Dataset Viewer cannot execute the legacy loading script; no arbitrary code is run in OSG census.
+- source_id: moprd
+  provider: MOPRD authors
+  family: derived_review_corpus
+  official_url: https://arxiv.org/abs/2212.04972
+  access_mode: paper and discoverable public release pointers
+  authentication: none
+  cost_class: free
+  object_types:
+  - manuscript_version
+  - review
+  - meta_review
+  - rebuttal
+  - decision
+  architecture: rolling_threshold
+  provisional_grade: C
+  earliest_public_stage: selected transparent review history
+  status: quarantined
+  licences:
+    dataset: unknown
+    source_objects: per-object
+  denominator_methods:
+  - paper-reported 6578-paper release
+  - source reconciliation
+  identifiers:
+  - dataset id
+  - DOI
+  update_cadence: release-defined
+  notes: No release ingestion until stable public distribution and object licences are verified.
+- source_id: arr_review_arcade
+  provider: Review Arcade authors / ACL ARR consent programme
+  family: consented_review_corpus
+  official_url: https://huggingface.co/datasets/G4KMU/review_arcade
+  access_mode: public Hugging Face Parquet release
+  authentication: none
+  cost_class: free
+  object_types:
+  - consented_manuscript_version
+  - review
+  - meta_review
+  - outcome
+  architecture: rolling_threshold
+  provisional_grade: C
+  earliest_public_stage: consented release population
+  status: pointer_only
+  licences:
+    dataset: unresolved_in_viewer_metadata
+    source_objects: consent-and-release-specific
+  denominator_methods:
+  - Hugging Face Dataset Viewer split counts
+  - ARR release documentation
+  identifiers:
+  - dataset row id
+  - title; no stable OpenReview id in viewer schema
+  update_cadence: release-defined
+  notes: Existing consented data only; OSG does not recruit subjects or infer non-consenting records.
+- source_id: crossref
+  provider: Crossref
+  family: scholarly_metadata
+  official_url: https://api.crossref.org
+  access_mode: REST cursor API and public data files
+  authentication: none
+  cost_class: free
+  object_types:
+  - metadata
+  - relation
+  - peer_review
+  - component
+  - update
+  architecture: unknown
+  provisional_grade: D
+  earliest_public_stage: deposited visible object only
+  status: included
+  release_gate_tickets:
+  - E11
+  terms_url: https://www.crossref.org/documentation/retrieve-metadata/
+  licences:
+    metadata: CC0 with documented abstract exceptions
+    content: per-object
+  denominator_methods:
+  - REST message total-results
+  - depositor/type facets
+  identifiers:
+  - DOI
+  - member
+  - prefix
+  - relation
+  update_cadence: monthly snapshot with cursor deltas
+  rate_limit: polite pool headers honored
+- source_id: copernicus
+  provider: Copernicus Publications
+  family: publication_gate
+  official_url: https://publications.copernicus.org/services/public_peer_review.html
+  access_mode: OAI-PMH, NLM XML, Crossref relations, public pages
+  authentication: none
+  cost_class: free
+  object_types:
+  - preprint
+  - review
+  - editor_comment
+  - author_reply
+  - revision
+  - decision
+  - article
+  architecture: access_public_discussion
+  provisional_grade: B
+  earliest_public_stage: public discussion after access review
+  status: included
+  release_gate_tickets:
+  - E5
+  terms_url: https://publications.copernicus.org/for_authors/publication_policy.html
+  licences:
+    metadata: open
+    article: CC-BY-4.0
+    discussion_content: per-object/source policy
+  denominator_methods:
+  - OAI enumeration
+  - Crossref prefix/type facets
+  - journal archive counts
+  identifiers:
+  - DOI
+  - discussion paper id
+  - journal article id
+  update_cadence: monthly
+- source_id: copernicus_crossref
+  provider: Crossref / Copernicus Publications
+  family: publication_gate_denominator
+  official_url: https://api.crossref.org/prefixes/10.5194/works
+  access_mode: REST cursor API with prefix and posted-content type filter
+  authentication: none
+  cost_class: free
+  object_types:
+  - discussion_preprint
+  - conference_abstract
+  - public_review_relation
+  - posted_content_metadata
+  architecture: access_public_discussion
+  provisional_grade: B
+  earliest_public_stage: public discussion after access review
+  status: included
+  release_gate_tickets:
+  - E5
+  terms_url: https://www.crossref.org/documentation/retrieve-metadata/
+  licences:
+    metadata: CC0 with documented abstract exceptions
+    content: pointer/hash only
+  denominator_methods:
+  - Crossref prefix 10.5194 plus type posted-content total-results and exact cursor exhaustion
+  identifiers:
+  - DOI
+  - subtype
+  - relation target DOI
+  - depositor
+  update_cadence: frozen monthly snapshot
+  rate_limit: self-imposed 0.1 seconds minimum; Retry-After honored
+  notes: Population denominator for Copernicus discussion candidates. Subtype preprint enters the candidate pool; egusphere-egu subtype other is explicitly excluded as conference material; deposit absence or missing final relation is censoring, never rejection.
+- source_id: copernicus_outcomes
+  provider: Copernicus Publications
+  family: publication_gate_outcome_layer
+  official_url: https://publications.copernicus.org/services/public_peer_review.html
+  access_mode: provider landing-page status plus Crossref final-article and comment relations
+  authentication: none
+  cost_class: free
+  object_types:
+  - public_discussion_outcome
+  - rejected_after_discussion
+  - withdrawal
+  - retraction
+  - relation_audit
+  architecture: access_public_discussion
+  provisional_grade: U
+  earliest_public_stage: public discussion after hidden access review
+  status: included
+  release_gate_tickets:
+  - E6
+  terms_url: https://publications.copernicus.org/for_authors/publication_policy.html
+  robots_url: https://publications.copernicus.org/robots.txt
+  licences:
+    derived_status: releasable
+    provider_page: pointer_hash
+    relations: Crossref metadata
+  denominator_methods:
+  - complete Copernicus public discussion chain census and affirmative provider status
+  identifiers:
+  - discussion DOI
+  - final article DOI
+  - comment DOI
+  update_cadence: frozen monthly snapshot
+  rate_limit: self-imposed 0.25 seconds minimum per provider request; bounded retries
+  notes: Missing final relations and missing pages are censoring, never rejection. E6 passed with 2,064 affirmative rejected-after-public-discussion manuscripts and 400/400 independently resolved sampled comment DOI relations; hidden access review remains explicit.
+- source_id: elife
+  provider: eLife Sciences
+  family: publication_gate
+  official_url: https://elifesciences.org/about/peer-review
+  access_mode: public site, Crossref, Europe PMC/JATS
+  authentication: none
+  cost_class: free
+  object_types:
+  - reviewed_preprint
+  - review
+  - author_response
+  - assessment
+  - version
+  - article
+  architecture: publish_review_curate
+  provisional_grade: B
+  earliest_public_stage: sent for review / reviewed preprint
+  status: quarantined
+  release_gate_tickets:
+  - E7
+  licences:
+    articles: per-object open licence
+    reviews: per-object/source policy
+    metadata: open
+  denominator_methods:
+  - eLife search/API count
+  - Crossref prefix/type facets
+  - Europe PMC
+  identifiers:
+  - DOI
+  - eLife article id
+  - reviewed-preprint version
+  update_cadence: monthly
+- source_id: elife_process
+  provider: eLife Sciences
+  family: provider_native_publication_gate
+  official_url: https://api.elifesciences.org/reviewed-preprints
+  access_mode: public reviewed-preprints API plus public process-page Next.js data
+  authentication: none
+  cost_class: free
+  object_types:
+  - reviewed_preprint
+  - review
+  - author_response
+  - assessment
+  - manuscript_version
+  - version_of_record
+  architecture: publish_review_curate
+  provisional_grade: B
+  earliest_public_stage: sent for review; reviewed-preprint population is public after review
+  status: included
+  release_gate_tickets:
+  - E7
+  terms_url: https://elifesciences.org/terms
+  robots_url: https://elifesciences.org/robots.txt
+  licences:
+    articles: per-object open licence
+    reviews: per-object/source policy
+    metadata: open
+  denominator_methods:
+  - reviewed-preprints API exact total
+  - completed cursor
+  - sent-for-review cohort reconstruction
+  identifiers:
+  - eLife manuscript id
+  - reviewed-preprint version
+  - version DOI
+  - umbrella DOI
+  - preprint DOI
+  update_cadence: monthly plus policy-change snapshots
+  rate_limit: self-imposed 0.25 seconds minimum between requests; Retry-After honored
+  notes: Entry is sent for review; later Version of Record is an author choice and is never encoded as acceptance. The exact 4,672-object population passed; 48.4% retain complete public process pages and the remainder use the official detail-API fallback, which is exposed for text-level filtering.
+- source_id: f1000research
+  provider: F1000 Research
+  family: publication_gate
+  official_url: https://f1000research.com/about
+  access_mode: public site, Crossref, Europe PMC/JATS
+  authentication: none
+  cost_class: free
+  object_types:
+  - article
+  - version
+  - review
+  - author_response
+  - status
+  architecture: post_publication_review
+  provisional_grade: B
+  earliest_public_stage: published after editorial screen
+  status: included
+  release_gate_tickets:
+  - E8
+  licences:
+    articles: per-object open licence
+    reviews: per-object/source policy
+    metadata: open
+  denominator_methods:
+  - platform search count
+  - Crossref depositor/type facets
+  - Europe PMC
+  identifiers:
+  - DOI
+  - article id
+  - version
+  update_cadence: monthly
+- source_id: f1000_process
+  provider: F1000 Research Limited platform family
+  family: provider_native_publication_gate
+  official_url: https://f1000research.com/developers
+  access_mode: public corpus enumeration and JATS XML API
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article_version
+  - review_report
+  - author_response
+  - approval_status
+  architecture: post_publication_review
+  provisional_grade: B
+  earliest_public_stage: publication after a hidden editorial screen
+  status: included
+  release_gate_tickets:
+  - E8
+  terms_url: https://f1000research.com/about/legal/termsandconditions
+  robots_url: https://f1000research.com/robots.txt
+  licences:
+    articles: per-object JATS licence
+    reviews: per-subarticle JATS licence
+    metadata: open API
+  denominator_methods:
+  - per-platform published-xml-urls provider census expanded through every declared version
+  identifiers:
+  - version DOI
+  - base article DOI
+  - review DOI
+  update_cadence: monthly
+  rate_limit: self-imposed 0.5 seconds minimum; Retry-After honored; 50000-request daily ceiling
+  notes: F1000Research, Wellcome Open Research, Gates Open Research, NIHR Open Research, and HRB Open Research are independently probed on each run and included only when their unauthenticated corpus endpoints pass. The frozen census acquired all 25,369 listed versions across four passing hosts and normalized 25,342 (99.89%); 27 remain explicit unresolved censoring. Not Approved is a review status and never a rejection; pre-publication editorial screening remains hidden.
+- source_id: wellcome_open_research_process
+  provider: Wellcome Open Research
+  family: provider_native_publication_gate
+  official_url: https://wellcomeopenresearch.org/developers
+  access_mode: public corpus enumeration and JATS XML API via f1000_process
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article_version
+  - review_report
+  - author_response
+  - approval_status
+  architecture: post_publication_review
+  provisional_grade: B
+  earliest_public_stage: publication after a hidden editorial screen
+  status: included
+  release_gate_tickets:
+  - E8
+  terms_url: https://wellcomeopenresearch.org/about/legal/termsandconditions
+  robots_url: https://wellcomeopenresearch.org/robots.txt
+  licences:
+    articles: per-object JATS licence
+    reviews: per-subarticle JATS licence
+    metadata: open API
+  denominator_methods:
+  - published-xml-urls provider version census
+  identifiers:
+  - version DOI
+  - base article DOI
+  - review DOI
+  update_cadence: monthly
+  notes: Separate institutional gate; shared parser does not collapse its population or policy into F1000Research.
+- source_id: gates_open_research_process
+  provider: Gates Open Research
+  family: provider_native_publication_gate
+  official_url: https://gatesopenresearch.org/developers
+  access_mode: public corpus enumeration and JATS XML API via f1000_process
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article_version
+  - review_report
+  - author_response
+  - approval_status
+  architecture: post_publication_review
+  provisional_grade: B
+  earliest_public_stage: publication after a hidden editorial screen
+  status: included
+  release_gate_tickets:
+  - E8
+  terms_url: https://gatesopenresearch.org/about/legal/termsandconditions
+  robots_url: https://gatesopenresearch.org/robots.txt
+  licences:
+    articles: per-object JATS licence
+    reviews: per-subarticle JATS licence
+    metadata: open API
+  denominator_methods:
+  - published-xml-urls provider version census
+  identifiers:
+  - version DOI
+  - base article DOI
+  - review DOI
+  update_cadence: monthly plus policy change
+  notes: Historical model changes are retained as a platform-specific policy issue; Crossref/Europe PMC supplies separately versioned indexing evidence.
+- source_id: nihr_open_research_process
+  provider: NIHR Open Research
+  family: provider_native_publication_gate
+  official_url: https://openresearch.nihr.ac.uk
+  access_mode: public corpus enumeration and JATS XML API via f1000_process
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article_version
+  - review_report
+  - author_response
+  - approval_status
+  architecture: post_publication_review
+  provisional_grade: B
+  earliest_public_stage: publication after a hidden editorial screen
+  status: included
+  release_gate_tickets:
+  - E8
+  terms_url: https://openresearch.nihr.ac.uk/about/legal/termsandconditions
+  robots_url: https://openresearch.nihr.ac.uk/robots.txt
+  licences:
+    articles: per-object JATS licence
+    reviews: per-subarticle JATS licence
+    metadata: open API
+  denominator_methods:
+  - published-xml-urls provider version census
+  identifiers:
+  - version DOI
+  - base article DOI
+  - review DOI
+  update_cadence: monthly
+  notes: Peer-reviewed articles and non-peer-reviewed documents are distinct; the article XML corpus is the process target.
+- source_id: hrb_open_research_process
+  provider: HRB Open Research
+  family: provider_native_publication_gate
+  official_url: https://hrbopenresearch.org
+  access_mode: public site; corpus endpoint probed by f1000_process
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article_version
+  - review_report
+  - author_response
+  - approval_status
+  architecture: post_publication_review
+  provisional_grade: U
+  earliest_public_stage: publication after a hidden editorial screen
+  status: quarantined
+  release_gate_tickets:
+  - E8
+  terms_url: https://hrbopenresearch.org/about/legal/termsandconditions
+  robots_url: https://hrbopenresearch.org/robots.txt
+  licences:
+    articles: per-object open licence
+    reviews: per-object open licence
+    metadata: public
+  denominator_methods:
+  - published-xml-urls endpoint probe
+  identifiers:
+  - version DOI
+  - base article DOI
+  - review DOI
+  update_cadence: monthly access re-probe
+  notes: Official FAQ confirms an API, but the endpoint returned HTTP 403 in the frozen census and is excluded by the no-partnership public-access gate. Every later run must re-probe and apply the same rule.
+- source_id: scipost
+  provider: SciPost Foundation
+  family: publication_gate
+  official_url: https://scipost.org
+  access_mode: public HTML, Crossref, open-source platform metadata
+  authentication: none
+  cost_class: free
+  object_types:
+  - submission
+  - report
+  - reply
+  - recommendation
+  - decision
+  - article
+  - comment
+  architecture: access_public_discussion
+  provisional_grade: U
+  earliest_public_stage: public submission/refereeing stage to be enumerated
+  status: quarantined
+  release_gate_tickets:
+  - E9
+  terms_url: https://scipost.org/terms_and_conditions
+  licences:
+    software: AGPL-3.0
+    content: per-object open licence
+    metadata: open
+  denominator_methods:
+  - public submission enumeration
+  - journal statistics
+  - Crossref
+  identifiers:
+  - SciPost submission id
+  - DOI
+  - arXiv id
+  update_cadence: monthly
+- source_id: scipost_process
+  provider: SciPost Foundation
+  family: provider_native_publication_gate
+  official_url: https://scipost.org/submissions/
+  access_mode: complete current-public pagination and public submission/version pages
+  authentication: none
+  cost_class: free
+  object_types:
+  - submission_series
+  - submission_version
+  - invited_report
+  - contributed_report
+  - author_reply
+  - editorial_decision
+  architecture: access_public_discussion
+  provisional_grade: U
+  earliest_public_stage: public page after successful editor assignment
+  status: included
+  release_gate_tickets:
+  - E9
+  terms_url: https://scipost.org/terms_and_conditions
+  robots_url: https://scipost.org/robots.txt
+  licences:
+    pages: pointer/hash only pending object-level licence
+    derived_metadata: releasable
+    software: AGPL-3.0
+  denominator_methods:
+  - complete dated pagination of currently public submission series
+  identifiers:
+  - SciPost submission id
+  - arXiv id
+  - report DOI
+  - publication DOI
+  update_cadence: monthly plus deletion tombstones
+  rate_limit: self-imposed 0.25 seconds minimum; Retry-After honored; 20000-request daily ceiling
+  notes: Grade U is structural; rejected or withdrawn pages are normally removed unless authors request retention. The connector reconstructs every version/report/reply visible in the dated current-public census and never treats it as an entry-complete pool.
+- source_id: peerj
+  provider: PeerJ
+  family: transparent_review_history
+  official_url: https://peerj.com/about/policies-and-procedures/
+  access_mode: public review-history pages and Crossref relations
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article
+  - manuscript_version
+  - review
+  - editor_decision
+  - rebuttal
+  architecture: rolling_threshold
+  provisional_grade: C
+  earliest_public_stage: published articles' review histories
+  status: pointer_only
+  release_gate_tickets:
+  - E10
+  terms_url: https://peerj.com/about/policies-and-procedures/
+  licences:
+    articles: per-object
+    review_history: per-object/source policy
+    metadata: Crossref terms
+  denominator_methods:
+  - published-article enumeration
+  - Crossref depositor facets
+  identifiers:
+  - DOI
+  - PeerJ article id
+  - review DOI
+  update_cadence: quarterly
+- source_id: plos_review_history
+  provider: PLOS
+  family: transparent_review_history
+  official_url: https://plos.org/resource/open-peer-review/
+  access_mode: article history packages, sub-DOIs, AllofPLOS/Crossref discovery
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article
+  - review_history
+  - review
+  - decision_letter
+  - author_response
+  architecture: rolling_threshold
+  provisional_grade: C
+  earliest_public_stage: accepted author opt-in history
+  status: pointer_only
+  release_gate_tickets:
+  - E10
+  licences:
+    articles: CC-BY
+    review_history: per-object/source policy
+    metadata: open
+  denominator_methods:
+  - PLOS eligible/opt-in statistics
+  - Crossref component enumeration
+  identifiers:
+  - DOI
+  - sub-DOI
+  update_cadence: quarterly
+- source_id: embo_transparent_review
+  provider: EMBO Press
+  family: transparent_review_history
+  official_url: https://www.embopress.org/page/journal/14602075/authorguide
+  access_mode: article process files and Crossref discovery
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article
+  - process_file
+  - review
+  - response
+  - decision
+  architecture: rolling_threshold
+  provisional_grade: C
+  earliest_public_stage: selected published process files
+  status: pointer_only
+  release_gate_tickets:
+  - E10
+  licences:
+    content: per-object/source policy
+    metadata: Crossref terms
+  denominator_methods:
+  - publisher archive enumeration
+  - Crossref depositor facets
+  identifiers:
+  - DOI
+  update_cadence: quarterly
+- source_id: royal_society_review
+  provider: The Royal Society
+  family: transparent_review_history
+  official_url: https://royalsociety.org/journals/ethics-policies/editorial-standards/
+  access_mode: article supplementary peer-review files and Crossref
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article
+  - review_history
+  - decision
+  - response
+  architecture: rolling_threshold
+  provisional_grade: C
+  earliest_public_stage: selected published articles
+  status: pointer_only
+  release_gate_tickets:
+  - E10
+  licences:
+    content: per-object
+    metadata: Crossref terms
+  denominator_methods:
+  - Crossref peer-review depositor facets
+  - journal enumeration
+  identifiers:
+  - DOI
+  - component DOI
+  update_cadence: quarterly
+- source_id: bmc_open_review
+  provider: BMC/Springer Nature
+  family: transparent_review_history
+  official_url: https://www.biomedcentral.com/getpublished/peer-review-process
+  access_mode: public article/review pages, Europe PMC, Crossref
+  authentication: none
+  cost_class: free
+  object_types:
+  - published_article
+  - review
+  - response
+  - decision
+  architecture: rolling_threshold
+  provisional_grade: C
+  earliest_public_stage: published articles under open-review journals
+  status: pointer_only
+  release_gate_tickets:
+  - E10
+  licences:
+    content: per-object
+    metadata: open/Crossref
+  denominator_methods:
+  - journal archive
+  - Crossref/Europe PMC enumeration
+  identifiers:
+  - DOI
+  - PMCID
+  update_cadence: quarterly
+- source_id: qeios
+  provider: Qeios
+  family: publication_gate
+  official_url: https://www.qeios.com
+  access_mode: public pages and Crossref relations
+  authentication: none
+  cost_class: free
+  object_types:
+  - preprint
+  - review
+  - version
+  architecture: post_publication_review
+  provisional_grade: U
+  earliest_public_stage: public preprint
+  status: quarantined
+  licences:
+    content: per-object
+    metadata: Crossref terms
+  denominator_methods:
+  - site enumeration
+  - Crossref depositor facet
+  identifiers:
+  - DOI
+  - Qeios id
+  update_cadence: quarterly
+- source_id: prereview
+  provider: PREreview
+  family: community_review
+  official_url: https://prereview.org
+  access_mode: public site/API if documented
+  authentication: none
+  cost_class: free
+  object_types:
+  - preprint_pointer
+  - community_review
+  architecture: post_publication_review
+  provisional_grade: C
+  earliest_public_stage: community-selected public preprints
+  status: quarantined
+  licences:
+    content: per-object/source terms
+    metadata: unresolved
+  denominator_methods:
+  - public object enumeration
+  identifiers:
+  - DOI
+  - preprint DOI
+  - PREreview id
+  update_cadence: quarterly
+- source_id: openalex
+  provider: OurResearch
+  family: scholarly_metadata
+  official_url: https://developers.openalex.org
+  access_mode: free quarterly public snapshot plus free singleton REST lookups only
+  authentication: optional_free_account
+  cost_class: free
+  object_types:
+  - work
+  - source
+  - author
+  - institution
+  - topic
+  - citation
+  architecture: unknown
+  provisional_grade: D
+  earliest_public_stage: visible scholarly work
+  status: included
+  licences:
+    metadata: CC0
+  denominator_methods:
+  - snapshot manifests
+  - singleton-resolution input count
+  identifiers:
+  - OpenAlex ID
+  - DOI
+  - ORCID
+  - ROR
+  - ISSN
+  update_cadence: free quarterly snapshot; no paid monthly/daily deltas
+  notes: List/search/content endpoints are metered/freemium as of 2026 and are prohibited for OSG bulk build; code must enforce singleton-only API use.
+- source_id: arxiv
+  provider: arXiv
+  family: scholarly_content
+  official_url: https://info.arxiv.org/help/bulk_data.html
+  access_mode: OAI-PMH, public metadata, bulk source/PDF channels
+  authentication: none
+  cost_class: free
+  object_types:
+  - preprint
+  - version
+  - metadata
+  - source
+  - pdf
+  architecture: unknown
+  provisional_grade: D
+  earliest_public_stage: public preprint
+  status: included
+  licences:
+    metadata: public
+    content: per-submission licence
+  denominator_methods:
+  - OAI enumeration
+  - bulk manifest
+  identifiers:
+  - arXiv id
+  - DOI
+  - journal reference
+  update_cadence: monthly snapshot/delta
+  rate_limit: OAI delay and bulk guidance honored
+- source_id: kaggle_arxiv_snapshot
+  provider: Cornell University / Kaggle
+  family: scholarly_content_mirror
+  official_url: https://www.kaggle.com/datasets/Cornell-University/arxiv
+  access_mode: public snapshot download through a free account
+  authentication: free_account
+  cost_class: free
+  object_types:
+  - preprint_metadata_snapshot
+  architecture: unknown
+  provisional_grade: D
+  earliest_public_stage: public preprint
+  status: quarantined
+  terms_url: https://www.kaggle.com/terms
+  licences:
+    metadata: source dataset terms and per-submission arXiv licence
+  denominator_methods:
+  - immutable snapshot archive manifest
+  identifiers:
+  - arXiv id
+  - DOI
+  update_cadence: manual snapshot only; no paid or metered Kaggle service
+  notes: Legacy research-program mirror; credentials must enter only through the kaggle-credentials Modal secret and are never release inputs.
+  release_gate_tickets:
+  - N7
+  - Q1
+- source_id: europe_pmc
+  provider: Europe PMC
+  family: scholarly_metadata_content
+  official_url: https://europepmc.org/developers
+  terms_url: https://staging.europepmc.org/Copyright
+  access_mode: REST API, OAI, open-access XML
+  authentication: none
+  cost_class: free
+  object_types:
+  - work
+  - preprint
+  - article
+  - fulltext_xml
+  - reference
+  - correction
+  - retraction
+  architecture: unknown
+  provisional_grade: D
+  earliest_public_stage: indexed/public work
+  status: included
+  licences:
+    metadata: open
+    fulltext: per-object open licence
+  denominator_methods:
+  - REST hitCount
+  - OAI enumeration
+  identifiers:
+  - PMID
+  - PMCID
+  - DOI
+  - preprint id
+  update_cadence: monthly
+- source_id: ukri_demystifying
+  provider: Demystifying Funding authors/UKRI public sources
+  family: funding_gate
+  official_url: https://zenodo.org/records/19243841
+  access_mode: public Zenodo dataset
+  authentication: none
+  cost_class: free
+  object_types:
+  - meeting
+  - application
+  - opportunity
+  - project
+  - outcome
+  architecture: competitive_quota
+  provisional_grade: U
+  earliest_public_stage: source-specific panel/public outcome stage
+  status: pointer_only
+  licences:
+    dataset: CC-BY-NC-SA-4.0
+    upstream: source-specific
+  denominator_methods:
+  - dataset manifests and paper counts
+  - UKRI source reconciliation
+  identifiers:
+  - UKRI application id
+  - project id
+  - opportunity id
+  update_cadence: release-defined
+- source_id: fwf
+  provider: Austrian Science Fund
+  family: funding_gate
+  official_url: https://openapi.fwf.ac.at
+  access_mode: public API/project pages
+  authentication: none
+  cost_class: free
+  object_types:
+  - funded_project
+  - summary
+  - programme
+  - board_meeting
+  - investigator
+  architecture: fundable_band_lottery
+  provisional_grade: D
+  earliest_public_stage: funded project registry
+  status: included
+  licences:
+    metadata: source terms
+    summaries: source terms
+  denominator_methods:
+  - API index count
+  - funder annual/application statistics
+  identifiers:
+  - project id
+  - grant DOI
+  - ORCID
+  - ROR
+  update_cadence: quarterly
+- source_id: snsf
+  provider: Swiss National Science Foundation
+  family: funding_gate
+  official_url: https://data.snf.ch
+  access_mode: public bulk CSV/data portal
+  authentication: none
+  cost_class: free
+  object_types:
+  - funded_project
+  - abstract
+  - lay_summary
+  - call
+  - instrument
+  architecture: fundable_band_lottery
+  provisional_grade: D
+  earliest_public_stage: funded project registry
+  status: included
+  licences:
+    metadata: source dataset terms
+    text: source dataset terms
+  denominator_methods:
+  - bulk row count
+  - portal totals
+  - call statistics
+  identifiers:
+  - grant id
+  - call
+  - instrument
+  update_cadence: quarterly
+- source_id: ukri_public_outcomes
+  provider: UK Research and Innovation
+  family: funding_gate
+  official_url: https://www.ukri.org/publications/
+  access_mode: public HTML, PDF, XLSX, CSV
+  authentication: none
+  cost_class: free
+  object_types:
+  - call
+  - application_outcome
+  - panel
+  - policy
+  - project
+  architecture: competitive_quota
+  provisional_grade: U
+  earliest_public_stage: council/call-specific public stage
+  status: quarantined
+  licences:
+    metadata: source terms
+    documents: Open Government Licence where stated
+  denominator_methods:
+  - round file row counts
+  - published call totals
+  identifiers:
+  - application id
+  - project id
+  - call id
+  update_cadence: quarterly
+- source_id: lottery_instrument_web
+  provider: Multiple public funders
+  family: funding_policy
+  official_url: https://www.britac.ac.uk
+  access_mode: public policy pages, reports, and outcome files
+  authentication: none
+  cost_class: free
+  object_types:
+  - instrument
+  - policy
+  - aggregate_count
+  - award_list
+  architecture: fundable_band_lottery
+  provisional_grade: U
+  earliest_public_stage: instrument-specific
+  status: quarantined
+  licences:
+    documents: source-specific
+  denominator_methods:
+  - funder reports
+  - round files
+  - annual statistics
+  identifiers:
+  - instrument id
+  - round id
+  update_cadence: quarterly
+  notes: Covers British Academy, HRC New Zealand, NWO, Volkswagen Foundation after individual source proof.
+- source_id: uspto_oard
+  provider: United States Patent and Trademark Office
+  family: patent_gate
+  official_url: https://www.uspto.gov/ip-policy/economic-research/research-datasets/office-action-research-dataset-patents
+  access_mode: public bulk research dataset
+  authentication: none
+  cost_class: free
+  object_types:
+  - office_action
+  - legal_ground
+  - claim_trait
+  - prior_art
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: publicly viewable application prosecution
+  status: included
+  licences:
+    data: US government/public dataset terms
+  denominator_methods:
+  - provider manifest/counts
+  - PatEx reconciliation
+  identifiers:
+  - application id
+  - action id
+  - claim number
+  update_cadence: provider release-defined
+- source_id: uspto_patex
+  provider: United States Patent and Trademark Office
+  family: patent_gate
+  official_url: https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-examination-research-dataset-public-pair
+  access_mode: public bulk research dataset
+  authentication: none
+  cost_class: free
+  object_types:
+  - application
+  - event
+  - examiner
+  - art_unit
+  - continuation
+  - outcome
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: publicly viewable application
+  status: included
+  licences:
+    data: US government/public dataset terms
+  denominator_methods:
+  - provider manifest/counts
+  identifiers:
+  - application id
+  - publication id
+  - patent id
+  - examiner id
+  update_cadence: provider release-defined
+- source_id: uspto_claims
+  provider: United States Patent and Trademark Office
+  family: patent_content
+  official_url: https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-claims-research-dataset
+  access_mode: public bulk research dataset
+  authentication: none
+  cost_class: free
+  object_types:
+  - claim
+  - claim_dependency
+  - patent
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: published/granted claims in covered period
+  status: included
+  licences:
+    data: US government/public dataset terms
+  denominator_methods:
+  - provider manifest/counts
+  identifiers:
+  - patent id
+  - claim number
+  update_cadence: provider release-defined
+- source_id: uspto_odp
+  provider: United States Patent and Trademark Office
+  family: patent_gate
+  official_url: https://data.uspto.gov/apis/patent-file-wrapper/documents
+  access_mode: public API/files with free USPTO account when required
+  authentication: free_account
+  cost_class: free
+  object_types:
+  - application_document
+  - office_action
+  - response
+  - amendment
+  - notice_of_allowance
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: publicly viewable application
+  status: quarantined
+  terms_url: https://data.uspto.gov
+  licences:
+    documents: public patent file wrapper/source terms
+  denominator_methods:
+  - PatEx application list
+  - API response totals
+  identifiers:
+  - application id
+  - document id
+  update_cadence: weekly/monthly pilot
+- source_id: panorama
+  provider: PANORAMA authors
+  family: derived_patent_corpus
+  official_url: https://huggingface.co/datasets/LG-AI-Research/PANORAMA
+  access_mode: public research dataset
+  authentication: none
+  cost_class: free
+  object_types:
+  - application
+  - claim
+  - prior_art
+  - office_action
+  - allowance
+  - rationale
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: selected public prosecution trails
+  status: pointer_only
+  licences:
+    dataset: per-repository-card
+    source_documents: public patent records
+  denominator_methods:
+  - dataset manifest/paper counts
+  identifiers:
+  - application id
+  - patent id
+  update_cadence: release-defined
+- source_id: patent_cr
+  provider: Patent-CR authors
+  family: derived_patent_corpus
+  official_url: https://aclanthology.org/2025.naacl-long.116/
+  access_mode: public research release
+  authentication: none
+  cost_class: free
+  object_types:
+  - initial_claim
+  - rejected_application
+  - granted_claim
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: selected public rejected-to-granted pairs
+  status: pointer_only
+  licences:
+    dataset: per-release
+    source_documents: public patent records
+  denominator_methods:
+  - paper/release counts
+  identifiers:
+  - patent/application id
+  update_cadence: release-defined
+- source_id: patre
+  provider: PatRe authors
+  family: derived_patent_corpus
+  official_url: https://arxiv.org/abs/2605.03571
+  access_mode: public research release
+  authentication: none
+  cost_class: free
+  object_types:
+  - application
+  - office_action
+  - rebuttal
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: selected public prosecution cases
+  status: pointer_only
+  licences:
+    dataset: per-release
+    source_documents: public patent records
+  denominator_methods:
+  - paper/release counts
+  identifiers:
+  - application id
+  update_cadence: release-defined
+- source_id: specter2
+  provider: Allen Institute for AI
+  family: open_scientific_embedding_model
+  official_url: https://huggingface.co/allenai/specter2_base
+  access_mode: public version-pinned model repository; local inference only
+  authentication: none
+  cost_class: free
+  object_types:
+  - model_weights
+  - tokenizer
+  - model_configuration
+  architecture: unknown
+  provisional_grade: U
+  earliest_public_stage: not applicable; computational dependency rather than a selection population
+  status: included
+  licences:
+    model: Apache-2.0
+  denominator_methods:
+  - not applicable; the source supplies a scientific-document encoder, not a candidate population
+  identifiers:
+  - Hugging Face repository id
+  - Git commit revision
+  update_cadence: immutable pinned revision
+  notes: SPECTER2 base is executed locally on title and abstract metadata; no paid inference API is used.
+- source_id: qwen3_embedding_0_6b
+  provider: Qwen team
+  family: open_text_embedding_model
+  official_url: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+  access_mode: public version-pinned model repository; local or controlled batch inference only
+  authentication: none
+  cost_class: free
+  object_types:
+  - model_weights
+  - tokenizer
+  - model_configuration
+  architecture: unknown
+  provisional_grade: U
+  earliest_public_stage: not applicable; computational dependency rather than a selection population
+  status: included
+  licences:
+    model: Apache-2.0
+  denominator_methods:
+  - not applicable; the source supplies an encoder, not a candidate population
+  identifiers:
+  - Hugging Face repository id
+  - Git commit revision
+  update_cadence: immutable pinned revision
+  notes: The 0.6B encoder is revision-pinned; OSG retains derived scores and hashes, not input text or vectors.
+- source_id: hupd
+  provider: Harvard USPTO Patent Dataset authors
+  family: derived_patent_corpus
+  official_url: https://patentdataset.org/
+  access_mode: public version-pinned bulk metadata from the project Hugging Face repository
+  authentication: none
+  cost_class: free
+  object_types:
+  - public_patent_application
+  - filing_metadata
+  - examination_outcome
+  architecture: prosecution_examination
+  provisional_grade: B
+  earliest_public_stage: publicly disclosed English-language US utility application
+  status: pointer_only
+  licences:
+    dataset: CC-BY-NC-SA-4.0
+  denominator_methods:
+  - pinned bulk-file row and distinct-application counts
+  identifiers:
+  - application number
+  - publication number
+  - patent number
+  update_cadence: immutable pinned revision
+  notes: OSG releases aggregate cells and a hash-only PANORAMA crosswalk; raw metadata and person/text fields are excluded.
+- source_id: snsf_individual_votes
+  provider: Rachel Heyard / Swiss National Science Foundation
+  family: funding_evaluation_benchmark
+  official_url: https://zenodo.org/records/4531160
+  access_mode: public versioned Zenodo workbook
+  authentication: none
+  cost_class: free
+  object_types:
+  - proposal_panel_event
+  - individual_vote
+  - funding_outcome
+  architecture: fundable_band_lottery
+  provisional_grade: B
+  earliest_public_stage: proposal evaluated in the released anonymised panel
+  status: pointer_only
+  licences:
+    workbook: CC-BY-4.0
+  denominator_methods:
+  - complete sheet row and expected cell counts
+  identifiers:
+  - panel-local proposal label
+  - panel-local voter label
+  update_cadence: immutable Zenodo record
+- source_id: peer_review_analyze_1_0
+  provider: Peer Review Analyze authors
+  family: human_annotated_review_benchmark
+  official_url: https://github.com/Tirthankar-Ghosal/Peer-Review-Analyze-1.0
+  access_mode: public research repository
+  authentication: none
+  cost_class: free
+  object_types:
+  - human_annotated_review_span
+  - construct_label
+  architecture: competitive_quota
+  provisional_grade: C
+  earliest_public_stage: corpus-defined ICLR 2018 review sample
+  status: pointer_only
+  licences:
+    repository: MIT
+  denominator_methods:
+  - pinned archive file and annotation counts
+  identifiers:
+  - submission directory
+  - review file
+  - annotation span
+  update_cadence: immutable pinned archive
+- source_id: preprint_to_paper_gray_zone
+  provider: PreprintToPaper authors
+  family: human_adjudicated_lineage_benchmark
+  official_url: https://zenodo.org/records/17992421
+  access_mode: public versioned Zenodo dataset
+  authentication: none
+  cost_class: free
+  object_types:
+  - preprint_publication_candidate_pair
+  - human_lineage_label
+  architecture: unknown
+  provisional_grade: U
+  earliest_public_stage: corpus-defined Gray Zone candidate pair
+  status: pointer_only
+  licences:
+    dataset: CC-BY-4.0
+  denominator_methods:
+  - pinned Gray Zone file row count
+  identifiers:
+  - bioRxiv DOI
+  - suspected publication DOI
+  update_cadence: immutable pinned record

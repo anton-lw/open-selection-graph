@@ -1,0 +1,33 @@
+schema: observatory.claims/1
+constitution_version: 0.1.0
+claims:
+  - id: OBS-CONSTITUTION-001
+    statement: Entry-selection analyses use only observability-grade A records.
+    status: constitutional
+    dataset_version: observatory-r0
+    query: SELECT count(*) FROM analysis_entry_selection WHERE observability_grade <> 'A'
+    code_hash: pending-release-build
+    rows: 0
+    observability_grade: A
+    policy_version: constitution-0.1.0
+    validation_artifact: tests/test_observatory_core.py::test_constitution_firewall_and_registered_estimand
+    scope: All OSG entry-selection analysis views.
+    evidence:
+      - src/observatory/constitution.py
+      - docs/observatory/CONSTITUTION.md
+    release: R0
+  - id: OBS-SOURCE-001
+    statement: A populated review table does not by itself establish a candidate-pool denominator.
+    status: constitutional
+    dataset_version: observatory-r0
+    query: SELECT count(*) FROM coverage_observation WHERE expected_count IS NULL
+    code_hash: pending-release-build
+    rows: null
+    observability_grade: U
+    policy_version: constitution-0.1.0
+    validation_artifact: configs/observatory/stop_rules.yaml#denominator_failure
+    scope: Source-cycle-object populations with unresolved denominators.
+    evidence:
+      - configs/observatory/stop_rules.yaml
+      - configs/observatory/estimands.yaml
+    release: R0

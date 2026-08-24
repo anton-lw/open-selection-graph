@@ -1,0 +1,54 @@
+\begin{figure*}[t]
+\centering
+\resizebox{\textwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=7mm and 10mm,
+  entity/.style={draw=MidnightBlue, rounded corners=2pt, fill=MidnightBlue!6,
+    minimum height=7mm, inner xsep=5pt, font=\sffamily\footnotesize, align=center},
+  event/.style={draw=ForestGreen, rounded corners=2pt, fill=ForestGreen!7,
+    minimum height=7mm, inner xsep=5pt, font=\sffamily\footnotesize, align=center},
+  evidence/.style={draw=BurntOrange, rounded corners=2pt, fill=BurntOrange!8,
+    minimum height=7mm, inner xsep=5pt, font=\sffamily\footnotesize, align=center},
+  domainnode/.style={draw=Plum, dashed, rounded corners=2pt, fill=Plum!5,
+    minimum height=7mm, inner xsep=5pt, font=\sffamily\scriptsize, align=center},
+  link/.style={-{Latex[length=2mm]}, semithick, draw=black!65},
+  many/.style={font=\sffamily\scriptsize, fill=white, inner sep=1pt},
+]
+\node[entity] (gate) {Gate};
+\node[entity, right=of gate] (cycle) {Gate cycle};
+\node[entity, above right=of cycle] (policy) {Policy version};
+\node[evidence, below right=of cycle] (coverage) {Coverage observation\\\scriptsize grade, stage, expected/found};
+\node[event, right=17mm of cycle] (cge) {Candidate--gate event};
+\node[entity, above right=of cge] (candidate) {Candidate};
+\node[entity, right=of candidate] (version) {Candidate version};
+\node[event, below right=of version] (evaluation) {Evaluation};
+\node[event, below=of version] (decision) {Decision event};
+\node[event, above right=of version] (lineage) {Lineage edge\\\scriptsize declared or probabilistic tier};
+\node[event, right=of version] (outcome) {Downstream outcome};
+\node[evidence, below=15mm of cge] (source) {Source object};
+\node[evidence, right=of source] (provenance) {Provenance event};
+\node[evidence, right=of provenance] (fieldprov) {Field provenance};
+\node[domainnode, above=11mm of gate] (funding) {Funding instrument / round\\\scriptsize eligible pool, panel, allocation};
+\node[domainnode, below=11mm of gate] (patent) {Patent application / action\\\scriptsize claims, grounds, amendment, outcome};
+
+\draw[link] (gate) -- node[many,above]{1:n} (cycle);
+\draw[link] (cycle) -- node[many,sloped,above]{n:1} (policy);
+\draw[link] (cycle) -- node[many,sloped,below]{1:n} (coverage);
+\draw[link] (cycle) -- node[many,above]{1:n} (cge);
+\draw[link] (candidate) -- node[many,sloped,above]{1:n} (cge);
+\draw[link] (candidate) -- node[many,above]{1:n} (version);
+\draw[link] (version) -- node[many,sloped,above]{1:n} (evaluation);
+\draw[link] (version) -- node[many,left]{1:n} (decision);
+\draw[link] (version) -- node[many,above]{1:n} (outcome);
+\draw[link] (candidate) -- node[many,sloped,above]{n:m} (lineage);
+\draw[link] (lineage) -- (outcome);
+\draw[link] (source) -- node[many,above]{1:n} (provenance);
+\draw[link] (provenance) -- node[many,above]{1:n} (fieldprov);
+\draw[link] (fieldprov) |- (evaluation);
+\draw[link,dashed,draw=Plum] (funding) -- (gate);
+\draw[link,dashed,draw=Plum] (patent) -- (gate);
+\end{tikzpicture}
+}
+\caption{Entity--relationship view of OSG. Candidate--gate events connect research objects to institutional cycles; coverage observations determine which denominators and rates are admissible. Funding rounds and patent prosecution are represented as domain-specific realisations of the same gate--candidate--event pattern without erasing their native stages or legal meanings. Every normalised fact remains traceable to source and field-level provenance.}
+\label{fig:er-diagram}
+\end{figure*}

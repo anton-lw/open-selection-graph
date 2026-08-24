@@ -1,0 +1,2574 @@
+{
+  "arrow_types": {
+    "bool": "bool",
+    "float64": "float64",
+    "int64": "int64",
+    "json": "large_string",
+    "list_string": "list<string>",
+    "string": "string",
+    "timestamp": "timestamp[us, tz=UTC]"
+  },
+  "primary_keys": {
+    "authorship_observation": "authorship_observation_id",
+    "candidate": "candidate_id",
+    "candidate_gate_event": "candidate_gate_event_id",
+    "candidate_version": "candidate_version_id",
+    "capacity_observation": "capacity_observation_id",
+    "content_artifact": "content_artifact_id",
+    "coverage_observation": "coverage_observation_id",
+    "decision_event": "decision_event_id",
+    "downstream_outcome": "downstream_outcome_id",
+    "evaluation": "evaluation_id",
+    "field_assignment": "field_assignment_id",
+    "field_provenance": "field_provenance_id",
+    "gate": "gate_id",
+    "gate_cycle": "gate_cycle_id",
+    "identifier_alias": "identifier_alias_id",
+    "identity_visibility": "identity_visibility_id",
+    "language_derivative": "language_derivative_id",
+    "lineage_edge": "lineage_edge_id",
+    "policy_version": "policy_version_id",
+    "provenance_event": "provenance_event_id",
+    "reference_edge": "reference_edge_id",
+    "source_object": "source_object_id"
+  },
+  "schema": "observatory.schema-catalog/1",
+  "tables": {
+    "authorship_observation": [
+      {
+        "description": "",
+        "name": "authorship_observation_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_version_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "position",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "public_name",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "public_identifier",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "protected_person_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "anonymous_label",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "visible_from",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "visible_to",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "audience",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_evidence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "candidate": [
+      {
+        "description": "",
+        "name": "candidate_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "first_observed_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "domain",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "canonical_title",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "status",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "candidate_gate_event": [
+      {
+        "description": "",
+        "name": "candidate_gate_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_version_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "gate_cycle_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "submitted_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "earliest_observed_stage",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "final_observed_stage",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "coverage_observation_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "candidate_version": [
+      {
+        "description": "",
+        "name": "candidate_version_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "version_label",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "version_number",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "created_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "modified_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "title",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "abstract",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "content_artifact_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "content_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "licence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "language",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "authorship_visible",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "withdrawn",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "capacity_observation": [
+      {
+        "description": "",
+        "name": "capacity_observation_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "gate_cycle_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "period_start",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "period_end",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "submitted_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "review_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "evaluator_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "panel_size",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "assignments_per_evaluator",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "turnaround_days",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "missing_review_share",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "proxy_definition",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "measurement_caveat",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "content_artifact": [
+      {
+        "description": "",
+        "name": "content_artifact_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "object_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "media_type",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "byte_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "normalized_text_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_url",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "local_pointer",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "licence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "release_class",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "size_bytes",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "language",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "parser_version",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "coverage_observation": [
+      {
+        "description": "",
+        "name": "coverage_observation_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "gate_cycle_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "object_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "earliest_public_stage",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observability_grade",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "expected_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "found_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "coverage_ratio",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "expected_count_method",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "query_or_invitation",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "known_hidden_stages",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "list_string"
+      },
+      {
+        "description": "",
+        "name": "known_exclusions",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "list_string"
+      },
+      {
+        "description": "",
+        "name": "missing_reason",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "audit_status",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "valid_from",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "valid_to",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "decision_event": [
+      {
+        "description": "",
+        "name": "decision_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_version_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "gate_cycle_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "stage_native",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "stage_normalized",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "outcome_native",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "outcome_normalized",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "tier_or_band",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "reason",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "deciding_body",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "decided_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "policy_version_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "downstream_outcome": [
+      {
+        "description": "",
+        "name": "downstream_outcome_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_version_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "outcome_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "doi",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "venue",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "occurred_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "window_years",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "value_numeric",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "value_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "censoring_date",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "evaluation": [
+      {
+        "description": "",
+        "name": "evaluation_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_version_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "gate_cycle_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "evaluation_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "evaluator_role",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "evaluator_public_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "evaluator_protected_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "anonymous",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "official",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "criterion_native",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "criterion_normalized",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "criterion_value",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "criterion_value_numeric",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "scale_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "confidence_value",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "text_artifact_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "created_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "forum_native_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "invitation_native",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "readers_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "signatures_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "reply_to_native_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "field_assignment": [
+      {
+        "description": "",
+        "name": "field_assignment_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "entity_kind",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "entity_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "taxonomy",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_label",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "normalized_label",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "score",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "mapping_version",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "field_provenance": [
+      {
+        "description": "",
+        "name": "field_provenance_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "table_name",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "record_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "field_name",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_selector",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "confidence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "override_reason",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      }
+    ],
+    "gate": [
+      {
+        "description": "",
+        "name": "gate_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "name",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "organization",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "domain",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "country",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "architecture",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "active_from",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "active_to",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "gate_cycle": [
+      {
+        "description": "",
+        "name": "gate_cycle_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "gate_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "name",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "track",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "cycle_start",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "cycle_end",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "policy_version_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "architecture",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "received_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "observable_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "evaluated_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "selected_count",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "status",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "identifier_alias": [
+      {
+        "description": "",
+        "name": "identifier_alias_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "entity_kind",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "entity_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "scheme",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "value",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "canonical_value",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "relation",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "confidence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "conflict_status",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "identity_visibility": [
+      {
+        "description": "",
+        "name": "identity_visibility_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "candidate_version_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "identity_kind",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "visible_from",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "visible_to",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "audience",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_evidence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "language_derivative": [
+      {
+        "description": "",
+        "name": "language_derivative_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "content_artifact_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_language",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "target_language",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "method",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "model_version",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "derived_artifact_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "validated",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "lineage_edge": [
+      {
+        "description": "",
+        "name": "lineage_edge_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_candidate_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_version_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "target_candidate_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "target_version_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "relation_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "declared",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "confidence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "linkage_tier",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "method_version",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "evidence_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "policy_version": [
+      {
+        "description": "",
+        "name": "policy_version_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "gate_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "effective_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "valid_to",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "criteria_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "rubric_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "stage_rules_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "quota_or_cap",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "anonymity_model",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "revision_rules",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "policy_url",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "content_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "date_confidence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "provenance_event": [
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "event_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "occurred_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "parser_name",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "parser_version",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "code_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "input_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "output_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "parameters_json",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "json"
+      },
+      {
+        "description": "",
+        "name": "parent_event_ids",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "list_string"
+      },
+      {
+        "description": "",
+        "name": "success",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "error",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      }
+    ],
+    "reference_edge": [
+      {
+        "description": "",
+        "name": "reference_edge_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "citing_version_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "reference_position",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "cited_candidate_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "cited_version_id",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "cited_identifier",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "raw_citation_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "match_method",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "confidence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "float64"
+      },
+      {
+        "description": "",
+        "name": "time_valid",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "bool"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "provenance_event_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "observed_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "record_version",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      }
+    ],
+    "source_object": [
+      {
+        "description": "",
+        "name": "source_object_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "native_id",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "object_type",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "source_url",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "created_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "modified_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "retrieved_at",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "deleted_at",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "timestamp"
+      },
+      {
+        "description": "",
+        "name": "byte_hash",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "raw_pointer",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "http_status",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "int64"
+      },
+      {
+        "description": "",
+        "name": "etag",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "last_modified",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "licence",
+        "nullable": true,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "release_class",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      },
+      {
+        "description": "",
+        "name": "status",
+        "nullable": false,
+        "provenance_class": "source_normalized",
+        "type": "string"
+      }
+    ]
+  }
+}

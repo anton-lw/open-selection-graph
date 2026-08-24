@@ -1,0 +1,1663 @@
+schema: observatory.ticket-requirements/1
+source: TICKETBOOK_OPEN_SELECTION_GRAPH.md
+source_sha256: ad583839f1f0c0f87bef44be7c48a07d3dff4212a840341742067ce974d2f881
+ticket_count: 164
+epics:
+- A
+- B
+- C
+- D
+- E
+- F
+- G
+- H
+- I
+- J
+- K
+- L
+- M
+- N
+- O
+- P
+- Q
+tickets:
+- id: A1
+  epic: A
+  epic_title: Constitution, estimands, and claim discipline
+  title: Freeze OSG constitution
+  priority: P0
+  effort: M
+  gate: true
+  work: 'Write `docs/observatory/CONSTITUTION.md`: hard constraints, primary unit, observability grades, stage-conditioned claim rules, no-paid-API rule, no-deanonymization rule, versioning policy, and governance authority. Define amendment procedure and semantic versioning.'
+  acceptance: Every later epic cites a constitution version; automated release checks fail if a source, field, or analysis has no grade or provenance class.
+  kill_downgrade: null
+- id: A2
+  epic: A
+  epic_title: Constitution, estimands, and claim discipline
+  title: Define target estimands by paper and architecture
+  priority: P0
+  effort: L
+  gate: false
+  work: Create a machine-readable estimand registry covering P/P1/P2/P4 and future analyses. For each estimand record population, intervention/exposure, comparator, outcome, time, required stage, required fields, admissible grades, and known non-identification conditions.
+  acceptance: "At least 20 estimands are registered; a validator can return `identified`, `partially_identified`, or `not_identified` for every `estimand \xD7 gate_cycle` pair."
+  kill_downgrade: Any analysis lacking required fields is restricted to description or bounds; it cannot enter an analysis-ready causal view.
+- id: A3
+  epic: A
+  epic_title: Constitution, estimands, and claim discipline
+  title: Create the claim and evidence ledger
+  priority: P0
+  effort: M
+  gate: true
+  work: Extend the programme's claim-ledger discipline to data products. Each public claim links to dataset version, query, code hash, rows, observability grade, policy version, validation artifact, and scope sentence.
+  acceptance: No headline count or effect appears in release documentation without a ledger row reproducible from the public analysis view.
+  kill_downgrade: null
+- id: A4
+  epic: A
+  epic_title: Constitution, estimands, and claim discipline
+  title: Establish exploratory/confirmatory partitions
+  priority: P0
+  effort: M
+  gate: false
+  work: Mark existing ICLR/TMLR and all data inspected during design as exploratory. Define future-time, venue, and source holdouts before harvesting them. Hash analysis plans before opening confirmatory outcome tables.
+  acceptance: Partitions are immutable in manifests; exploratory records remain usable but cannot be relabelled confirmatory.
+  kill_downgrade: null
+- id: A5
+  epic: A
+  epic_title: Constitution, estimands, and claim discipline
+  title: Define architecture and stage ontologies
+  priority: P0
+  effort: L
+  gate: false
+  work: Formalize competitive quota, rolling threshold, access-review/public-discussion, publish-review-curate, post-publication review, fundable-band/lottery, and prosecution/examination architectures. Define native-to-normalized stage mappings with prohibited equivalences.
+  acceptance: Every included gate cycle maps to one or more versioned architecture traits; no lossy `accepted` Boolean is required to reconstruct native stages.
+  kill_downgrade: null
+- id: A6
+  epic: A
+  epic_title: Constitution, estimands, and claim discipline
+  title: Predefine source failure semantics
+  priority: P1
+  effort: S
+  gate: true
+  work: Define `included`, `pointer_only`, `derived_only`, `quarantined`, `blocked_by_terms`, `blocked_by_coverage`, and `retired` states. Preserve failed probes and reasons.
+  acceptance: A source cannot vanish from the registry; status changes require dated evidence and migration notes.
+  kill_downgrade: null
+- id: A7
+  epic: A
+  epic_title: Constitution, estimands, and claim discipline
+  title: Define the programme stop rules
+  priority: P0
+  effort: M
+  gate: false
+  work: 'Precommit release-level stops: insufficient negative-set size, unresolved stage boundary, linkage precision failure, licence ambiguity, unauditable policy extraction, or compute/storage overruns.'
+  acceptance: Each stop maps to a narrower valid release; none requires abandoning already-valid modules.
+  kill_downgrade: null
+- id: B1
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Build the source-card schema
+  priority: P0
+  effort: M
+  gate: false
+  work: Define fields for provider, gate, object types, endpoints/bulk files, authentication class, rate limits, robots/terms, licence by object, earliest observable stage, provider counts, historical depth, update cadence, identifiers, deletion behavior, and source owner contacts/pages.
+  acceptance: JSON Schema and tabular view validate all source cards; unknowns are explicit rather than empty strings.
+  kill_downgrade: null
+- id: B2
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Census all publication-gate sources
+  priority: P1
+  effort: XL
+  gate: false
+  work: Enumerate OpenReview venues; Crossref peer-review depositors; Copernicus/EGUsphere journals; eLife; F1000-family platforms; SciPost; PeerJ; PLOS; EMBO Press; Royal Society; BMC/open-review journals; Qeios; PREreview; and other discoverable transparent-review systems. Deduplicate provider/venue identities.
+  acceptance: Every candidate has a source card, initial observability grade, size probe, architecture class, and disposition.
+  kill_downgrade: Sources without stable public access or analysable terms remain registry-only.
+- id: B3
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Census funding-gate sources and instruments
+  priority: P1
+  effort: XL
+  gate: false
+  work: Extend the P4 census across UKRI councils, FWF, SNSF, British Academy, HRC New Zealand, NWO, Volkswagen Foundation, and other documented lottery/triage experiments. Include public result PDFs, APIs, aggregate application counts, scheme rules, panel records, and policy dates.
+  acceptance: Every instrument/round receives the six-field evaluability assessment and a source-completeness card.
+  kill_downgrade: null
+- id: B4
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Census patent-examination sources
+  priority: P1
+  effort: L
+  gate: false
+  work: Register USPTO OARD, PatEx/Public PAIR, Patent Claims, Open Data Portal Patent File Wrapper, PatentsView/bulk alternatives, examiner/art-unit tables, maintenance/events, citations, PANORAMA, Patent-CR, PatRe, and public scientific-citation extensions. Record public-application selection boundaries.
+  acceptance: A source-to-field matrix identifies which raw source is authoritative for applications, claims, actions, legal grounds, examiner, art unit, citations, responses, allowance/abandonment, and timing.
+  kill_downgrade: null
+- id: B5
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Run 100-object proof-of-access probes
+  priority: P0
+  effort: XL
+  gate: true
+  work: For every proposed adapter, retrieve a deterministic 100-object fixture with polite rate limits; record HTTP/API behavior, pagination, object relationships, deletions, and raw hashes. Do not authenticate unless public anonymous access fails and a genuinely free account path is documented.
+  acceptance: No source enters full harvest without a reproducible fixture, parser test, terms snapshot, and expected-count method.
+  kill_downgrade: null
+- id: B6
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Build the object-level licence matrix
+  priority: P0
+  effort: L
+  gate: false
+  work: Separate metadata, article text, review text, author response, policy documents, images, and derived embeddings. Encode redistribution, derivative-use, attribution, share-alike, noncommercial, and unknown flags.
+  acceptance: Release builder selects `redistribute`, `pointer_hash`, `derived_only`, or `exclude` per object; one provider-level licence may not override object-specific terms.
+  kill_downgrade: null
+- id: B7
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Establish provider-count and denominator methods
+  priority: P0
+  effort: L
+  gate: false
+  work: 'For each source find an independent expected count: API total, portal statistic, OAI set count, sitemap, Crossref facet, annual report, or enumerated identifier range. Document when no independent denominator exists.'
+  acceptance: A/B grades require provider or dual-method reconciliation; unresolved cycles remain U/C/D.
+  kill_downgrade: null
+- id: B8
+  epic: B
+  epic_title: Source census, access, licensing, and observability
+  title: Maintain a paid/deprecated/excluded-source ledger
+  priority: P1
+  effort: S
+  gate: true
+  work: 'Explicitly list commercial and unsafe dependencies: Scopus, Web of Science, Dimensions, PATSTAT, Altmetric, paid Lens services, commercial LLM APIs, CAPTCHA circumvention, Google Scholar scraping, and any endpoint whose free tier can silently bill.'
+  acceptance: CI scans configuration and dependencies for prohibited services/domains; exceptions require a constitution amendment and cannot violate the no-paid-API constraint.
+  kill_downgrade: null
+- id: C1
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Specify the canonical relational schema
+  priority: P0
+  effort: XL
+  gate: false
+  work: Define `gate`, `gate_cycle`, `policy_version`, `candidate`, `candidate_version`, `candidate_gate_event`, `evaluation`, `decision_event`, `content_artifact`, `lineage_edge`, `capacity_observation`, `coverage_observation`, `downstream_outcome`, `source_object`, and `provenance_event` tables.
+  acceptance: Arrow/Parquet schemas, SQL DDL, JSON Schema, keys, null semantics, enums, and example fixtures exist; round-trip conversion is lossless.
+  kill_downgrade: null
+- id: C2
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Implement stable namespaced identifiers
+  priority: P0
+  effort: L
+  gate: false
+  work: Generate deterministic IDs from source-native identifiers where stable and UUIDv5/content hashes otherwise. Separate intellectual work, submitted object, version, evaluation, decision, and gate cycle.
+  acceptance: Reharvests do not change IDs; merges preserve aliases; collision tests pass on all fixtures.
+  kill_downgrade: null
+- id: C3
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Implement field-level provenance
+  priority: P0
+  effort: L
+  gate: false
+  work: Record source object, retrieval event, parser/transformation version, source path/JSON pointer, confidence, and override history for every normalized field or coherent field group.
+  acceptance: Any sampled value can be traced to raw bytes and transformation code in one query.
+  kill_downgrade: null
+- id: C4
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Build immutable raw and normalized lake layers
+  priority: P0
+  effort: L
+  gate: false
+  work: Use content-addressed compressed raw shards outside Git; append-only retrieval manifests; normalized partitioned Parquet; DuckDB catalog; derived feature layer; release views. Define retention classes for metadata, XML/HTML, PDFs, OCR, and ephemeral intermediates.
+  acceptance: A corrupt/missing shard is detected by hash; normalized tables rebuild from raw fixtures; Git contains only code, schemas, manifests, small fixtures, and release summaries.
+  kill_downgrade: null
+- id: C5
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Define temporal truth and source revisions
+  priority: P0
+  effort: M
+  gate: false
+  work: Preserve `observed_at`, `source_created_at`, `source_modified_at`, `effective_at`, and `valid_to`. Model deleted/withdrawn/retracted objects without erasing prior observations.
+  acceptance: Point-in-time queries can reproduce what was publicly visible at a release cutoff.
+  kill_downgrade: null
+- id: C6
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Encode native and normalized values together
+  priority: P0
+  effort: M
+  gate: false
+  work: Every outcome, stage, rubric criterion, scale, venue, field, and policy trait retains raw label/value beside normalized representations.
+  acceptance: No normalization is irreversible; source-specific adapters have explicit mapping tables and unmapped-value tests.
+  kill_downgrade: null
+- id: C7
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Build coverage as a core table
+  priority: P0
+  effort: L
+  gate: false
+  work: Store earliest public stage, expected/found counts, excluded object classes, API invitation/query, known hidden stages, grade, audit evidence, and grade history by cycle/object type.
+  acceptance: Every candidate-gate table row joins to exactly one applicable coverage record; releases fail on orphan rows.
+  kill_downgrade: null
+- id: C8
+  epic: C
+  epic_title: Canonical architecture, storage, provenance, and IDs
+  title: Design source-independent analysis views
+  priority: P1
+  effort: L
+  gate: false
+  work: Create views for stage transitions, evaluation panels, gate-cycle dynamics, lineage, afterlife, funding evaluability, patent examination, and licence-safe text/features.
+  acceptance: Views enforce observability predicates so users cannot accidentally estimate entry selection from C/D/U sources.
+  kill_downgrade: null
+- id: D1
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Build a connector contract and adapter SDK
+  priority: P0
+  effort: L
+  gate: false
+  work: Standardize `discover`, `count`, `fetch`, `checkpoint`, `normalize`, `validate_fixture`, and `emit_coverage` methods. Support REST cursor/page APIs, OAI-PMH, XML, JSONL/CSV bulk, HTML, sitemaps, and PDFs.
+  acceptance: At least one fixture from each transport class runs through the same orchestration and manifest interface.
+  kill_downgrade: null
+- id: D2
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Implement rate-limit and politeness controls
+  priority: P0
+  effort: M
+  gate: false
+  work: Per-host concurrency, backoff with jitter, `Retry-After`, user-agent/contact, request cache, checksum deduplication, conditional GET, and daily request ceilings. No CAPTCHA bypass or access-control circumvention.
+  acceptance: Integration tests simulate 429/5xx/timeouts; restarts neither duplicate nor skip pages.
+  kill_downgrade: null
+- id: D3
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Implement cursor/checkpoint integrity
+  priority: P0
+  effort: M
+  gate: false
+  work: Persist source query, cursor/page token, last native ID, row count, shard hash, and timestamp atomically. Detect upstream resorting and cursor invalidation.
+  acceptance: Forced interruption/restart tests reproduce the uninterrupted fixture byte-for-byte after canonical ordering.
+  kill_downgrade: null
+- id: D4
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Build format-specific extractors
+  priority: P1
+  effort: XL
+  gate: false
+  work: Robust parsers for JATS/NLM XML, Crossref JSON, OpenReview Notes, TEI/GROBID, OAI Dublin Core, HTML microdata/JSON-LD, policy PDFs, tabular PDFs, CSV/XLSX, and USPTO XML/JSON.
+  acceptance: Golden fixtures cover nested, missing, multilingual, malformed, and schema-version cases; extraction errors are quarantined, not dropped.
+  kill_downgrade: null
+- id: D5
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Add content-addressed download and deduplication
+  priority: P1
+  effort: M
+  gate: false
+  work: Deduplicate identical PDFs/XML/reviews across mirrors and versions while preserving source aliases and retrieval events. Record byte hash and normalized-text hash separately.
+  acceptance: Duplicate storage falls without collapsing genuinely different versions; tests cover metadata-only and byte-identical aliases.
+  kill_downgrade: null
+- id: D6
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Add bounded full-text/OCR orchestration
+  priority: P1
+  effort: L
+  gate: false
+  work: Route born-digital PDFs to GROBID/PyMuPDF, scanned pages to OCR only when permitted, and HTML/XML directly to structured text. Make every job shardable, resumable, and discardable after derived outputs when licences require.
+  acceptance: A 1,000-document mixed-format benchmark reports parse success, reference recall proxy, cost/time, and failure taxonomy before scale-up.
+  kill_downgrade: null
+- id: D7
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Build incremental-update and deletion handling
+  priority: P1
+  effort: L
+  gate: false
+  work: Support delta pulls, modified-since/OAI datestamps, new Crossref relations, source deletions, policy changes, and tombstones. Never mutate an old public snapshot.
+  acceptance: Two successive fixture snapshots yield a deterministic change log with additions, modifications, removals, and grade changes.
+  kill_downgrade: null
+- id: D8
+  epic: D
+  epic_title: Shared acquisition and transformation framework
+  title: Create end-to-end smoke and dry-run modes
+  priority: P0
+  effort: M
+  gate: true
+  work: '`--fixture`, `--limit`, `--dry-run`, `--estimate-storage`, `--estimate-modal-cost`, and `--no-text` modes for every adapter.'
+  acceptance: No full harvest or Modal job can start without a successful smoke manifest and explicit resource estimate.
+  kill_downgrade: null
+- id: E1
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Map the entire OpenReview venue and API surface
+  priority: P0
+  effort: L
+  gate: false
+  work: Enumerate venues, groups, years, tracks, API v1/v2 status, submission/blind-submission/decision/withdrawal/desk-reject invitations, and public readers. Snapshot venue group/configuration records and invitation schemas.
+  acceptance: A venue-year matrix records the exact retrieval recipe and earliest observable stage; unknown invitation semantics remain U.
+  kill_downgrade: A venue with no independently checkable denominator or ambiguous public readers may contribute text/metadata but not A/B selection panels.
+- id: E2
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Harvest OpenReview candidate states and decisions
+  priority: P0
+  effort: XL
+  gate: false
+  work: Retrieve active, withdrawn, desk-rejected, rejected, accepted, and otherwise labelled submissions across all passing venue-years. Preserve original, forum, reply, and invitation IDs; reconstruct state transitions from timestamps rather than final labels alone.
+  acceptance: "Counts reconcile against venue/API totals at \u226595% for each A/B cycle; state transitions pass fixture and sampled timeline audits."
+  kill_downgrade: null
+- id: E3
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Harvest OpenReview evaluations, discussions, rebuttals, and revisions
+  priority: P1
+  effort: XL
+  gate: false
+  work: Retrieve official reviews, meta-reviews, decisions, comments, author responses, ethics reviews, revision notes, score/confidence fields, and public manuscript versions. Separate formal evaluation from public comments and filter by invitation lineage.
+  acceptance: Every object has role, invitation, readers, timestamp, native fields, and forum/version relation; orphan and duplicate rates are reported by cycle.
+  kill_downgrade: null
+- id: E4
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Reconcile existing OpenReview-derived corpora
+  priority: P1
+  effort: L
+  gate: false
+  work: "Ingest metadata/manifests from ReviewArena, Re\xB2, NLPeer, ResearchArcade, PeerRead, MOPRD, ARR-consent releases, and local P2 data where licences permit. Map source overlap, compare counts/content hashes, and retain original dataset IDs/citations."
+  acceptance: A reconciliation report explains which source is authoritative per field, what each corpus adds, and all count disagreements. Do not duplicate raw text already safely represented by pointers/hashes.
+  kill_downgrade: null
+- id: E5
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Harvest Copernicus/EGUsphere metadata and candidate pools
+  priority: P0
+  effort: XL
+  gate: false
+  work: Use OAI-PMH, Crossref relations, journal sites, and NLM XML to enumerate preprints/discussion papers by journal and period. Exclude conference abstracts and other posted-content subtypes. Capture access-review boundary and final publication/rejection status.
+  acceptance: "At least 95% count reconciliation at the declared public discussion stage; subtype precision \u22650.99 in a stratified audit; every candidate has a journal/cycle and outcome state or explicit censoring."
+  kill_downgrade: null
+- id: E6
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Reconstruct Copernicus public-review event chains
+  priority: P0
+  effort: XL
+  gate: false
+  work: Join referee comments, editor comments, author replies, supplements, revised manuscripts, final responses, and final articles through DOI and page relations. Preserve rejected-after-discussion records permanently visible at source.
+  acceptance: "\u226598% precision on relation type in a sampled audit; \u22652,000 evaluated non-ML rejected manuscripts in R1; hidden access review remains explicit."
+  kill_downgrade: null
+- id: E7
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Harvest eLife editorial-model cohorts
+  priority: P0
+  effort: XL
+  gate: false
+  work: Enumerate research articles and Reviewed Preprints across old and new models, using Crossref/Europe PMC/eLife pages and version relations. Extract public reviews, author responses, eLife Assessments, significance/evidence terms, version-of-record status, and model-effective dates.
+  acceptance: "Pre/post architecture cohorts are reproducible; \u201Csent for review\u201D is the declared entry stage; assessment vocabulary and evidence/significance scales retain policy-version definitions."
+  kill_downgrade: null
+- id: E8
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Harvest F1000-family publish-review-revise platforms
+  priority: P1
+  effort: XL
+  gate: false
+  work: Cover F1000Research and publicly accessible platform siblings such as Wellcome Open Research, Gates Open Research, HRB Open Research, and NIHR Open Research where source and licence gates pass. Capture editorial-screen boundary, versions, review status changes, reports, responses, and indexing status.
+  acceptance: Platform-specific source cards distinguish editorial screening from post-publication review; version/review chains rebuild on fixtures and at scale.
+  kill_downgrade: null
+- id: E9
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Harvest SciPost's peer-witnessed process
+  priority: P1
+  effort: L
+  gate: false
+  work: Use public submission pages, reports, replies, editorial recommendations/decisions, arXiv links, and the open-source platform documentation. Record invited versus contributed reports when public and preserve anonymous status.
+  acceptance: A complete post-submission public-stage graph is reconstructed for all passing journals/years; the exclusivity and editorial-vetting rules are policy-versioned.
+  kill_downgrade: null
+- id: E10
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Build the selected-only transparent-review layer
+  priority: P1
+  effort: XXL
+  gate: false
+  work: Create adapters for PeerJ review histories, PLOS Published Peer Review History, EMBO transparent process files, Royal Society transparent review, BMC/open-review journals, and other Crossref-discovered providers. Include decision letters, author responses, manuscript versions, and review sub-DOIs where available.
+  acceptance: Every provider is explicitly C unless a fuller pool is proven. Opt-in and post-acceptance selection mechanisms are encoded; these records cannot enter candidate-pool selection views.
+  kill_downgrade: If text licences or stable retrieval are unclear, retain only Crossref/source pointers and metadata.
+- id: E11
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Use Crossref as the universal review-relation discovery layer
+  priority: P1
+  effort: XL
+  gate: false
+  work: Snapshot all public `peer-review` type metadata and relevant `is-review-of`, `has-review`, `has-comment`, `is-preprint-of`, update, and component relations. Resolve publisher/depositor identities and detect provider-specific relation patterns.
+  acceptance: Snapshot manifest records API filter/cursor/date and total; relation coverage is profiled by depositor/year; Crossref discovery never implies stage completeness by itself.
+  kill_downgrade: null
+- id: E12
+  epic: E
+  epic_title: Publication-gate source programme
+  title: Produce the publication-source coverage atlas
+  priority: P0
+  effort: L
+  gate: true
+  work: Summarize each gate cycle's architecture, observable stage, counts, object types, licences, extraction quality, and inclusion status. Freeze before downstream analyses.
+  acceptance: R1/R2 release builders accept only cycles meeting declared gates; all exclusions and grade changes are public.
+  kill_downgrade: null
+- id: F1
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Build a versioned institutional regime archive
+  priority: P0
+  effort: XL
+  gate: false
+  work: Snapshot author instructions, reviewer guides, acceptance criteria, rubrics, anonymity rules, revision/rebuttal rules, quotas/caps, desk/access screens, publication model, dates, and source URLs. Store raw document hashes and structured fields.
+  acceptance: Every gate cycle links to a policy version effective during its selection period; uncertain effective dates carry intervals and confidence.
+  kill_downgrade: null
+- id: F2
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Extract rules from OpenReview configuration and invitations
+  priority: P1
+  effort: L
+  gate: false
+  work: Parse score options/descriptions, required review fields, anonymity/readers, deadlines, revision settings, and decision labels from venue configurations/invitations. Compare configuration to public guide text.
+  acceptance: Machine-extracted rubrics agree exactly with native schema on fixtures; conflicts between configuration and prose are preserved and flagged.
+  kill_downgrade: null
+- id: F3
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Reconstruct historical web policy versions
+  priority: P1
+  effort: XL
+  gate: false
+  work: Use live pages, Git history, Internet Archive/Memento where allowed, conference repositories, proceedings pages, and dated PDFs. Store only material allowed by source terms; otherwise store timestamped pointers/hashes and structured facts.
+  acceptance: All policy-change claims have pre/post source evidence; a current undated page cannot be back-projected without archived evidence.
+  kill_downgrade: null
+- id: F4
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Create the cross-gate rubric ontology
+  priority: P1
+  effort: L
+  gate: false
+  work: "Map native criteria to broad constructs\u2014novelty/originality, significance/interest, soundness/evidence, clarity, reproducibility, ethics, confidence, overall recommendation\u2014without assuming a single latent factor."
+  acceptance: Crosswalk retains native label/definition/scale/policy; ambiguous constructs are multi-mapped or left unmapped.
+  kill_downgrade: null
+- id: F5
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Construct demand, throughput, and selectivity series
+  priority: P0
+  effort: L
+  gate: false
+  work: For every A/B cycle derive submitted/observable/evaluated/withdrawn/rejected/selected counts, stage-specific rates, submission timing, and censoring. Reconcile with annual reports or provider statistics.
+  acceptance: Counts satisfy stage-flow identities within documented tolerances; discrepancies trigger coverage downgrade.
+  kill_downgrade: null
+- id: F6
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Construct evaluator-supply and workload proxies
+  priority: P1
+  effort: XL
+  gate: false
+  work: Collect public reviewer/PC/editor/panel rosters, assignment/review counts where exposed, reviewer quotas, panel size, number of reports per candidate, review turnaround, discussion volume, and pseudonymous repeat activity. Never infer hidden identities.
+  acceptance: Every proxy has a causal/measurement caveat and denominator; public release aggregates or salts identifiers according to governance rules.
+  kill_downgrade: null
+- id: F7
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Build timing and strain measures
+  priority: P1
+  effort: L
+  gate: false
+  work: Derive submission bunching, review delay, reviewer response delay, decision delay, late/missing-review share, discussion intensity, revision cycles, and workload per public evaluator/panel proxy.
+  acceptance: Measures are source-timezone normalized, robust to missing timestamps, and validated against known venue statistics where available.
+  kill_downgrade: null
+- id: F8
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Register reforms, shocks, and discontinuities
+  priority: P1
+  effort: L
+  gate: false
+  work: Encode policy changes, new rubrics, reviewer quotas, score-scale changes, review-model switches, deadline changes, public-discussion launches, no-reject transitions, lottery adoption, and USPTO policy events with effective dates and source documents.
+  acceptance: Each event has treatment definition, affected units, anticipation window, concurrent changes, and identification rating.
+  kill_downgrade: null
+- id: F9
+  epic: F
+  epic_title: Institutional policy, rules, cycles, and capacity
+  title: Validate policy extraction
+  priority: P0
+  effort: M
+  gate: true
+  work: Run a stratified research-team source audit of policy fields and dates; no external annotators or recruited subjects. Generate disagreement/failure taxonomy and freeze audited fixtures.
+  acceptance: "\u226595% exact agreement on effective date, architecture, criteria, and scale fields; lower-performing automated fields remain source pointers rather than normalized facts."
+  kill_downgrade: null
+- id: G1
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Build DOI/OpenAlex/Crossref identity resolution
+  priority: P0
+  effort: XL
+  gate: false
+  work: Resolve DOI variants, Crossref members/types, OpenAlex work/source/author/institution/concept IDs, updates, and related works. Cache only public metadata and record snapshot dates.
+  acceptance: "DOI canonicalization precision \u22650.999 on fixtures; one-to-many and update/retraction relations are not collapsed."
+  kill_downgrade: null
+- id: G2
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Integrate arXiv versions and bulk metadata
+  priority: P0
+  effort: XL
+  gate: false
+  work: Use OAI/bulk metadata and permitted source/PDF access to connect submission versions, dates, categories, comments, journal references, and DOIs. Preserve licence per version.
+  acceptance: arXiv version histories are deterministic; DOI/journal links have evidence and confidence; no full text is redistributed contrary to article licence.
+  kill_downgrade: null
+- id: G3
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Integrate Europe PMC and JATS full text
+  priority: P1
+  effort: L
+  gate: false
+  work: Resolve PMCID/PMID/DOI/preprint links, versions, peer-review material, licences, references, corrections, and retractions. Prefer structured XML over PDF extraction.
+  acceptance: Biomedical full-text and outcome joins are source-versioned and licence-filtered.
+  kill_downgrade: null
+- id: G4
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Build an identifier alias and conflict graph
+  priority: P0
+  effort: L
+  gate: false
+  work: Preserve DOI, arXiv, OpenReview, publisher manuscript ID, Crossref component DOI, PMCID, funder application ID, patent application/publication IDs, and dataset-specific IDs as typed aliases with evidence.
+  acceptance: Conflicting aliases are quarantined; resolution never overwrites native IDs; every merged candidate has an auditable edge path.
+  kill_downgrade: null
+- id: G5
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Build reference-list extraction and reconciliation
+  priority: P1
+  effort: XXL
+  gate: false
+  work: Combine JATS/XML references, OpenAlex/Crossref references, GROBID TEI, OpenReview PDF parsing, and source-declared bibliographies. Resolve references to works with exact identifiers first and bibliographic matching second.
+  acceptance: Reference recall/precision are estimated on structured-source gold fixtures; unresolved references remain hashed bibliographic strings, not forced matches.
+  kill_downgrade: null
+- id: G6
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Build the licence-aware content store
+  priority: P0
+  effort: L
+  gate: false
+  work: Store permissible abstracts, full text, sections, claims, figures/tables metadata, reviews, replies, and policy text in content-addressed form. For non-redistributable objects store pointer, byte/text hash, extraction recipe, and non-reconstructive features.
+  acceptance: Release packaging cannot include a content object lacking an affirmative redistribution rule.
+  kill_downgrade: null
+- id: G7
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Normalize scientific fields without erasing source taxonomies
+  priority: P1
+  effort: L
+  gate: false
+  work: Preserve native tracks/categories/panel areas/art units and map them probabilistically to OpenAlex topics/fields and a compact programme taxonomy. Record mapping version and uncertainty.
+  acceptance: Native taxonomies remain queryable; broad-field comparisons exclude low-confidence mappings or use weights.
+  kill_downgrade: null
+- id: G8
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Treat author identity and anonymity as time-varying
+  priority: P0
+  effort: M
+  gate: false
+  work: Distinguish names visible at submission, during review, and after decision; preserve anonymous state and disclosure dates. Public lineage views may use public post-decision author data but cannot imply reviewers observed it.
+  acceptance: Reputation/social-bias analyses use only information available to the relevant decision-maker at the decision time.
+  kill_downgrade: null
+- id: G9
+  epic: G
+  epic_title: Scholarly identity, content, references, and fields
+  title: Support multilingual metadata and text
+  priority: P2
+  effort: L
+  gate: false
+  work: Detect language; retain original text; link parallel summaries where source-declared; use multilingual open models only after benchmark. Include FWF German/English pairs and non-English policy documents where material.
+  acceptance: Language is never silently machine-translated into a claimed original; translated derivatives include model/version and are excluded from primary construct estimates unless validated.
+  kill_downgrade: null
+- id: H1
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Harvest source-declared lineage edges
+  priority: P0
+  effort: L
+  gate: false
+  work: Collect DOI/arXiv/version relations, `is-preprint-of`, OpenReview revision/forum relations, journal transfers, publisher version links, author-declared earlier versions, and patent continuation/priority relations.
+  acceptance: Declared edges retain source/evidence/type/direction; circular and temporally impossible relations fail validation.
+  kill_downgrade: null
+- id: H2
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Build deterministic content/title linkage
+  priority: P0
+  effort: L
+  gate: false
+  work: Exact normalized title, content hashes, DOI/arXiv IDs, source-native IDs, and high-specificity author/title/date rules. Normalize punctuation and funder boilerplate without deleting substantive tokens.
+  acceptance: "Deterministic rules achieve \u22650.99 precision on stratified audited pairs; each rule has a collision report."
+  kill_downgrade: null
+- id: H3
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Build probabilistic candidate generation
+  priority: P1
+  effort: L
+  gate: false
+  work: Block on time, field, author/institution when observable, title shingles, abstract embeddings, references, and section fingerprints. Generate candidates broadly without making merge decisions.
+  acceptance: Candidate-generation recall is estimated on source-declared links and exceeds 0.95 where sufficient fields exist.
+  kill_downgrade: null
+- id: H4
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Train/calibrate the linkage decision model
+  priority: P1
+  effort: XL
+  gate: false
+  work: Use source-declared positives, hard negatives, temporal constraints, and research-team audited ambiguous pairs. Prefer interpretable/calibrated models; produce precision-target thresholds rather than one default score.
+  acceptance: "Analysis-grade threshold precision \u22650.97 with confidence interval lower bound \u22650.95; discovery threshold released separately."
+  kill_downgrade: If the precision gate fails for a source pair, release candidate links only; prohibit within-work causal analyses there.
+- id: H5
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Represent splits, merges, and intellectual descendants
+  priority: P1
+  effort: M
+  gate: false
+  work: Distinguish `same_work`, `new_version`, `resubmission`, `journal_transfer`, `split_from`, `merged_from`, `extended_by`, and `related_only`. Permit many-to-many graphs.
+  acceptance: The schema does not force all high-similarity records into one canonical work; ambiguous structures retain probabilities.
+  kill_downgrade: null
+- id: H6
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Align document versions and quantify revision
+  priority: P1
+  effort: XL
+  gate: false
+  work: Section-aware text alignment, claim/reference additions/removals, semantic change, novelty change, evidence/citation changes, and response-to-review mappings. Avoid treating final-text differences as pre-decision covariates.
+  acceptance: Alignment quality is benchmarked on source-declared revisions; derived diffs carry before/after timestamps and section coverage.
+  kill_downgrade: null
+- id: H7
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Construct cross-gate chains
+  priority: P0
+  effort: L
+  gate: false
+  work: Build ordered candidate-gate trajectories with decision, withdrawal, time gap, version, policy, and observability at each stop. Mark left/right censoring and endogenous routing.
+  acceptance: Chain views distinguish observed first gate from first-ever submission and never equate later acceptance with a causal venue effect.
+  kill_downgrade: null
+- id: H8
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Release precision and recall sensitivity layers
+  priority: P0
+  effort: M
+  gate: false
+  work: Freeze strict, medium, and discovery linkage sets plus source-declared-only benchmark. Recompute key counts/effects across sets.
+  acceptance: Headline trajectory findings are stable or explicitly bounded across reasonable linkage thresholds.
+  kill_downgrade: null
+- id: H9
+  epic: H
+  epic_title: Manuscript lineage, versions, and cross-gate trajectories
+  title: Build a public lineage adjudication/error report
+  priority: P1
+  effort: M
+  gate: false
+  work: Publish only non-sensitive aggregate error categories, rule performance, and representative public examples. Internal audited pairs remain governed data if identity combinations create risk.
+  acceptance: Users can understand linkage failure modes without exposing hidden or pseudonymous identities.
+  kill_downgrade: null
+- id: I1
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Normalize evaluation objects and evaluator roles
+  priority: P0
+  effort: L
+  gate: false
+  work: Separate review, meta-review, editorial assessment, public comment, funder panel score/band, and patent office action. Preserve evaluator role, anonymity, invitation, stage, version evaluated, and timestamps.
+  acceptance: No public comment is silently treated as an official review; evaluations join to the exact candidate version when knowable.
+  kill_downgrade: null
+- id: I2
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Extract native structured rubrics losslessly
+  priority: P0
+  effort: XL
+  gate: false
+  work: Parse score fields, ordinal labels, confidence, criterion definitions, required/optional status, and scale direction across policy versions. Store raw value and calibrated within-cycle representation.
+  acceptance: Fixture values round-trip exactly; scale changes create new rubric versions rather than overwritten mappings.
+  kill_downgrade: null
+- id: I3
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Extract construct-bearing text spans
+  priority: P1
+  effort: XL
+  gate: false
+  work: Use rules and local/open models to identify passages about originality, significance, evidence, soundness, risk, feasibility, clarity, reproducibility, and ethics. Retain span offsets, label probabilities, and abstentions.
+  acceptance: "Precision \u22650.90 in a stratified research-team audit for any construct released as a labelled span; otherwise release embeddings/search indexes without labels."
+  kill_downgrade: null
+- id: I4
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Estimate evaluator reliability and disagreement
+  priority: P1
+  effort: L
+  gate: false
+  work: Compute ICC/generalizability, within/between-candidate variance, score/text disagreement, confidence calibration, and meta-review aggregation by rubric and architecture. Respect evaluator pseudonymization.
+  acceptance: Construct validity reports include reliability ceilings; no computational-measure comparison ignores attenuation or low reliability.
+  kill_downgrade: null
+- id: I5
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Rebuild the semantic novelty family
+  priority: P0
+  effort: XL
+  gate: false
+  work: Reproduce P2's semantic variants with time-respecting reference corpora, multiple encoders, aggregation units, and field/year normalization. Store model weights/source, code hash, reference cutoff, and vector checksum.
+  acceptance: Existing P2 results reproduce on frozen fixtures; held-out source-year vectors are generated without future leakage.
+  kill_downgrade: null
+- id: I6
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Rebuild genuine recombinatorial novelty measures
+  priority: P0
+  effort: XXL
+  gate: false
+  work: Parse references for rejected as well as accepted works; compute cited-journal/work/concept pair rarity, new combinations, conventionality/novelty tails, and degree-preserving or time-respecting nulls. Retain unit-of-combination variants.
+  acceptance: Measures reproduce canonical synthetic and published-method fixtures; coverage differences do not silently redefine samples.
+  kill_downgrade: null
+- id: I7
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Add content-structure and claim-level representations
+  priority: P1
+  effort: XL
+  gate: false
+  work: Extract sections, contribution/claim candidates, methods, datasets, evidence types, limitations, patent claims, and cited support where text permits. Use open/local models with abstention; never expose reconstructive representations for restricted text.
+  acceptance: Extraction benchmarks report precision/coverage by source and format; unvalidated fields remain experimental.
+  kill_downgrade: null
+- id: I8
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Build reference-corpus manifests as first-class artifacts
+  priority: P0
+  effort: L
+  gate: false
+  work: Version every reference corpus by source snapshot, eligibility, time cutoff, deduplication, language, missing abstracts/full text, encoder, and retained identifiers/hashes.
+  acceptance: Any novelty vector can be regenerated without refetching an undocumented corpus; reference changes produce a new feature version.
+  kill_downgrade: null
+- id: I9
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Fit a multi-trait, multi-method construct model
+  priority: P1
+  effort: XL
+  gate: false
+  work: "Model human criteria, semantic distance, recombination, cited-work novelty, revision change, and\u2014later\u2014legal novelty/obviousness without forcing one factor. Test measurement invariance across gate architectures, fields, and policy versions."
+  acceptance: Factor/latent structure is compared against preregistered alternatives; failure of invariance is reported as a result, not pooled away.
+  kill_downgrade: null
+- id: I10
+  epic: I
+  epic_title: Evaluation Construct Atlas and novelty measurement
+  title: Publish the Novelty/Evaluation Atlas view
+  priority: P1
+  effort: L
+  gate: false
+  work: Release criterion definitions, scales, reliability, measure correlations, missingness, source coverage, and versioned features in a licence-safe format.
+  acceptance: Users can select a ruler/construct and see its population, reference corpus, reliability, and admissible analyses before downloading values.
+  kill_downgrade: null
+- id: J1
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Resolve later publication and venue outcomes
+  priority: P0
+  effort: XL
+  gate: false
+  work: Link candidate versions/chains to later arXiv versions, journal/conference publications, DOIs, reviewed preprints, repository records, and patent publications. Record first-observed and publication dates, venue, architecture, and linkage confidence.
+  acceptance: High-precision publication links meet the H4 threshold; unmatched candidates remain censored, not classified as unpublished.
+  kill_downgrade: null
+- id: J2
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Build fixed-window citation and uptake outcomes
+  priority: P0
+  effort: L
+  gate: false
+  work: Use frozen OpenAlex/Crossref/Europe PMC citation snapshots to compute 1/2/3/5-year windows where mature, field/year-normalized impact, citing-field breadth, disruption/lineage measures where defensible, and zero-citation censoring.
+  acceptance: Every outcome carries eligibility/cutoff/window; immature cohorts are excluded from fixed-window claims rather than extrapolated silently.
+  kill_downgrade: null
+- id: J3
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Add code, data, protocol, and preregistration links
+  priority: P1
+  effort: L
+  gate: false
+  work: Extract source-declared repository URLs, DataCite/Software Heritage/OSF links, data/code availability statements, and persistent identifiers. Use public APIs/pages only; do not infer private repositories.
+  acceptance: Link-type precision is audited; URL availability is timestamped and does not imply reproducibility or quality.
+  kill_downgrade: null
+- id: J4
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Add corrections, expressions of concern, retractions, and withdrawals
+  priority: P1
+  effort: L
+  gate: false
+  work: Use Crossref updates, Retraction Watch data where publicly/licensably available, Europe PMC, publisher notices, OpenReview states, and source tombstones. Distinguish administrative withdrawal from integrity action.
+  acceptance: Outcome taxonomy preserves native reason and uncertainty; removed source content is not republished.
+  kill_downgrade: null
+- id: J5
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Construct rejected-work survival and transition outcomes
+  priority: P0
+  effort: L
+  gate: false
+  work: For evaluated rejections, estimate later publication, time-to-next-gate, revision magnitude, architecture change, field change, and eventual uptake under explicit right censoring and linkage sensitivity.
+  acceptance: "Survival analyses declare observation start, censoring date, competing events, and linkage set; \u201Cnot found\u201D is not equated with abandonment."
+  kill_downgrade: null
+- id: J6
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Separate revision-mediated and gate-mediated outcomes
+  priority: P1
+  effort: L
+  gate: false
+  work: Preserve pre-decision manuscript features, post-review revision features, and final-publication features. Define total, controlled/direct, and descriptive revision pathways without conditioning casually on post-treatment variables.
+  acceptance: Analysis views label feature timing and prohibit final-version novelty as a predictor of an earlier gate decision.
+  kill_downgrade: null
+- id: J7
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Build intellectual-lineage outcomes beyond exact resubmission
+  priority: P2
+  effort: XL
+  gate: false
+  work: Trace extended papers, split descendants, methods/datasets reused elsewhere, and citation uptake of rejected ideas using conservative related-work edges. Keep this separate from `same_work` trajectories.
+  acceptance: Descendant analyses use distinct identifiers/estimands and never inflate resubmission counts.
+  kill_downgrade: null
+- id: J8
+  epic: J
+  epic_title: Downstream outcomes and rejected-work afterlives
+  title: Publish the Afterlife panel
+  priority: P1
+  effort: L
+  gate: false
+  work: Produce licence-safe per-candidate and aggregated views with source-stage, initial outcome, next gate, version change, later publication, and mature downstream windows.
+  acceptance: Counts reproduce from frozen source/linkage/outcome manifests; coverage and censoring are visible in every summary.
+  kill_downgrade: null
+- id: K1
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Adopt and extend the existing public UKRI lifecycle graph
+  priority: P0
+  effort: L
+  gate: false
+  work: Ingest the Demystifying Funding release and associated schema under its licence; map meetings, applications, opportunities, projects, and outcomes into OSG IDs. Preserve its source IDs, linkage confidence, known gaps, and noncommercial/share-alike obligations.
+  acceptance: Published source counts and link rates reproduce; OSG extension does not re-scrape or claim authorship of upstream work.
+  kill_downgrade: null
+- id: K2
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Harvest all public UKRI council outcome records
+  priority: P1
+  effort: XXL
+  gate: false
+  work: Enumerate competitive-outcome pages and downloadable PDFs/XLSX/CSV across councils, calls, and years. Extract application ID, title, organization, panel/area, stage, outcome, rank/band where public, and round metadata. Reconcile duplicates with the lifecycle graph.
+  acceptance: Each round has expected/found counts, earliest public stage, extraction audit, and source document hash; tabular-PDF errors are surfaced.
+  kill_downgrade: null
+- id: K3
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Build NERC Pushing the Frontiers trajectories
+  priority: P0
+  effort: L
+  gate: false
+  work: Complete all public rounds; link conservative exact and high-precision fuzzy repeat proposals by title/organization and later identifiers; encode intervention periods and bundled process changes.
+  acceptance: Exact and inferred returner layers are separate; inferred precision meets H4; allocation effects remain `not_identified` without arm/eligible-band labels.
+  kill_downgrade: null
+- id: K4
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Integrate FWF projects, calls, policies, and outcomes
+  priority: P1
+  effort: XL
+  gate: false
+  work: Refresh the public FWF project/API corpus; preserve English/German summaries, programme, board meeting, amount, disciplines, ORCID/ROR, call/policy versions, 1000 Ideas rounds, and public application/success aggregates.
+  acceptance: Existing P4 counts/results reproduce on a frozen snapshot; multilingual pairs and policy dates are versioned.
+  kill_downgrade: null
+- id: K5
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Integrate SNSF grants and instrument histories
+  priority: P1
+  effort: XL
+  gate: false
+  work: Refresh public SNSF bulk grants and abstracts; preserve call titles/years, funding instrument, abstract, lay summary, disciplines, amounts, Spark and project-funding comparators, and public lottery/tiebreaker policy dates.
+  acceptance: Call-level cohorts and treated/comparator definitions reproduce; drawn grants are not inferred when source records do not label them.
+  kill_downgrade: null
+- id: K6
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Build the British Academy and other lottery-instrument panel
+  priority: P1
+  effort: XL
+  gate: false
+  work: Harvest public round award lists, application/award counts, scheme rules, dates, eligibility, applicant-per-round constraints, and policy reports for British Academy and other confirmed instruments such as HRC New Zealand, NWO, or Volkswagen Foundation where public evidence passes the source gate.
+  acceptance: Each instrument has a dated rule history and evaluability record; winner-only sources remain D.
+  kill_downgrade: null
+- id: K7
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Encode the P4 six-field evaluability standard
+  priority: P0
+  effort: M
+  gate: false
+  work: For every instrument/round record arm labels, assignment mechanism, eligible choice set, application counts, entrant/returner status, and unfunded text availability, plus source evidence and field-level confidence.
+  acceptance: A deterministic evaluator returns identified estimands and missing disclosures; manual prose cannot override absent fields.
+  kill_downgrade: null
+- id: K8
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Build public application-resubmission linkage
+  priority: P1
+  effort: XL
+  gate: false
+  work: Link applications across rounds using IDs, title, organization, investigator where public, summaries where available, and time constraints. Separate same proposal, revised proposal, and related research programme.
+  acceptance: High-precision links meet H4; public analysis reports lower-bound returner shares and sensitivity to title change.
+  kill_downgrade: null
+- id: K9
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Construct entry, demand, success, and portfolio series
+  priority: P0
+  effort: L
+  gate: false
+  work: Assemble public application counts, stage counts, award counts, success rates, new/returning lower bounds, requested/awarded amounts, field mix, and portfolio novelty across rule changes.
+  acceptance: Numerator/denominator definitions and stages are explicit; aggregate series never masquerade as microdata.
+  kill_downgrade: null
+- id: K10
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Link funded projects to research outputs
+  priority: P2
+  effort: XL
+  gate: false
+  work: Use public grant DOIs, funder IDs in Crossref/OpenAlex/Europe PMC, project pages, and acknowledgements to build output/citation/code/data portfolios with lag windows.
+  acceptance: Grant-output linkage method and precision are audited; missing acknowledgements are treated as undercoverage.
+  kill_downgrade: null
+- id: K11
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Build a prospective instrument and outcome watcher
+  priority: P1
+  effort: L
+  gate: false
+  work: Freeze P4 predicates and source manifests, then monitor future calls/outcomes/instrument disclosures at a modest cadence. Timestamp new policy/outcome arrivals before analysis.
+  acceptance: Future records form a genuine temporal holdout with acquisition time and unchanged registered predicates.
+  kill_downgrade: null
+- id: K12
+  epic: K
+  epic_title: Public Funding Evaluability and Trajectories module
+  title: Enforce the funding identification firewall
+  priority: P0
+  effort: M
+  gate: true
+  work: Prevent arm-level, entry-effect, or allocation-effect estimators from running unless the required K7 fields pass. Provide partial-identification/bounds views where assumptions are explicit.
+  acceptance: Unit tests attempt invalid estimands on winner registries and fail with informative `not_identified` messages.
+  kill_downgrade: null
+- id: L1
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Freeze the patent estimands and scope boundary
+  priority: P0
+  effort: M
+  gate: true
+  work: "Define target populations as publicly viewable US applications and observable prosecution events; distinguish legal novelty (\xA7102), non-obviousness (\xA7103), eligibility (\xA7101), disclosure/clarity (\xA7112), restriction, and other actions. Register the missing unpublished/early-abandoned/nonpublication population."
+  acceptance: No result generalizes to all filed applications without bounds or external counts; legal and scientific novelty are never equated by label.
+  kill_downgrade: null
+- id: L2
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Run a 50,000-application art-unit/time-stratified pilot
+  priority: P0
+  effort: XL
+  gate: false
+  work: Sample public applications across technology centers, art units, filing cohorts, outcomes, and examiner workload. Join PatEx/OARD/Claims and a bounded file-wrapper subset before population-scale ingestion.
+  acceptance: Pilot quantifies join rates, missing document classes, OCR needs, storage, processing time, and projected Modal/local cost; full scale requires passing budget and validity gates.
+  kill_downgrade: null
+- id: L3
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Integrate PatEx/Public PAIR application histories
+  priority: P1
+  effort: XXL
+  gate: false
+  work: Ingest applications, continuations, publications, status, examiner, art unit, filing/prosecution events, pendency, disposal, allowance, abandonment, and public-document metadata from free bulk files.
+  acceptance: Provider counts and known research-dataset statistics reconcile; family/continuation relations are preserved rather than deduplicated away.
+  kill_downgrade: null
+- id: L4
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Integrate OARD office-action traits
+  priority: P1
+  effort: XL
+  gate: false
+  work: Join office actions to applications/claims; preserve action date/type, affected claims, legal grounds, cited prior art, and parser uncertainty.
+  acceptance: Join coverage and ground-specific precision reproduce provider validation where available; unmatched actions remain visible.
+  kill_downgrade: null
+- id: L5
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Extract file-wrapper action/response chains
+  priority: P1
+  effort: XXL
+  gate: false
+  work: From the free USPTO Open Data Portal or bulk source, retrieve non-final/final actions, applicant amendments/arguments, interviews where public, notices of allowance, appeal events, and claim documents. Use account-gated access only if free and terms permit automated research.
+  acceptance: Multi-turn chains are temporally ordered and resumable; no full pull begins before the pilot establishes document availability and cost.
+  kill_downgrade: null
+- id: L6
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Reconstruct claim versions and survival
+  priority: P0
+  effort: XL
+  gate: false
+  work: Parse independent/dependent claims, dependencies, additions/cancellations/amendments, limitation-level diffs, and claim status through prosecution. Separate initial filed, action-targeted, amended, allowed, and granted claims.
+  acceptance: Claim alignment benchmark reports precision/coverage; ambiguous numbering/renumbering creates explicit unresolved mappings.
+  kill_downgrade: null
+- id: L7
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Build examiner, art-unit, and capacity panels
+  priority: P1
+  effort: XL
+  gate: false
+  work: Derive public examiner histories, docket/decision volume proxies, experience/tenure proxy, art-unit congestion, pendency, action frequency, and time-to-disposal. Encode policy and classification changes.
+  acceptance: Measures are institution-level research variables, not personnel rankings; public release aggregates small cells and follows governance restrictions.
+  kill_downgrade: null
+- id: L8
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Link patent and scientific prior art
+  priority: P1
+  effort: XXL
+  gate: false
+  work: Resolve patent citations and non-patent literature from office actions to USPTO patents, Crossref/OpenAlex works, arXiv, PubMed, and other stable IDs. Preserve examiner/applicant source where public and in-text versus front-page citation.
+  acceptance: Link precision is audited by citation type; unresolved NPL remains normalized text/hash; scientific novelty measures use only time-prior art.
+  kill_downgrade: null
+- id: L9
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Register patent policy shocks and institutional reforms
+  priority: P2
+  effort: L
+  gate: false
+  work: Encode examination guidance changes, Supreme Court/Federal Circuit doctrinal events where relevant, fee/track programmes, examiner-count/workload changes, classification migrations, and API/source regime changes.
+  acceptance: Each candidate event has affected legal grounds/units, effective timing, concurrent changes, and quasi-experimental plausibility score.
+  kill_downgrade: null
+- id: L10
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Reconcile PANORAMA, Patent-CR, PatRe, and adjacent releases
+  priority: P1
+  effort: L
+  gate: false
+  work: Map their cases/tasks to OSG IDs where licences allow; measure overlap and coverage; reuse benchmark annotations instead of recreating them; document the institutional variables they omit.
+  acceptance: The module's additionality is demonstrably population/institutional rather than a duplicate generation task.
+  kill_downgrade: null
+- id: L11
+  epic: L
+  epic_title: Patent Examination Gate module
+  title: Release a bounded Patent Gate panel before full scale
+  priority: P1
+  effort: L
+  gate: true
+  work: Publish pilot schema, source coverage, legal-ground atlas, claim-version sample, capacity measures, and benchmark joins before deciding on the multi-million-application build.
+  acceptance: "Full-scale approval requires \u226595% application/event joins for target cohorts, validated claim alignment, legal releaseability, and resource projection within free-data/$30-compute constraints."
+  kill_downgrade: null
+- id: M1
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Build schema and invariant tests
+  priority: P0
+  effort: L
+  gate: false
+  work: Primary/foreign keys, temporal ordering, stage-flow consistency, value domains, native/normalized presence, licence flags, provenance reachability, non-overlapping policy periods, and graph-cycle rules.
+  acceptance: Tests run on fixtures, snapshots, and releases; violations fail the build rather than emit warnings only.
+  kill_downgrade: null
+- id: M2
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Reconcile source counts independently
+  priority: P0
+  effort: XL
+  gate: false
+  work: Compare API totals, portal reports, Crossref facets, OAI enumerations, sitemaps, annual reports, and harvested rows by cycle/object type. Investigate differences, including withdrawn/deleted records.
+  acceptance: "A/B grade cycles meet \u226595% count coverage or documented stricter source-specific threshold; lower cycles are downgraded automatically."
+  kill_downgrade: null
+- id: M3
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Audit stage and outcome normalization
+  priority: P0
+  effort: L
+  gate: false
+  work: Stratified research-team audit by provider, year, native outcome, and edge case. Oversample withdrawals, desk/access rejects, revise/resubmit, curated/no-decision, and patent/funding stage labels.
+  acceptance: "Precision \u22650.98 for release outcome labels; unsupported mappings remain native-only."
+  kill_downgrade: null
+- id: M4
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Audit policy and rubric truth
+  priority: P0
+  effort: L
+  gate: false
+  work: Verify policy effective dates, criteria, scales, anonymity, revision rules, caps/quotas, and architecture against dated primary sources.
+  acceptance: "\u22650.95 exact agreement on audited structured facts; conflicts and unknowns visible in release."
+  kill_downgrade: null
+- id: M5
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Audit identity and lineage
+  priority: P0
+  effort: XL
+  gate: false
+  work: Evaluate DOI aliases, version links, same-work/resubmission edges, splits/merges, funding repeat applications, and patent families on source-declared and audited pairs.
+  acceptance: "Analysis-grade precision \u22650.97 with interval lower bound \u22650.95; source-pair performance reported separately."
+  kill_downgrade: null
+- id: M6
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Audit reference and full-text extraction
+  priority: P1
+  effort: L
+  gate: false
+  work: Benchmark structured XML, born-digital PDF, scanned PDF, tables, citations, sections, and claim parsing. Report failures by source/year/language rather than one average.
+  acceptance: Each released feature declares minimum text/reference coverage; failed documents remain in metadata panels with missingness reason.
+  kill_downgrade: null
+- id: M7
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Test temporal leakage and availability
+  priority: P0
+  effort: L
+  gate: false
+  work: Verify that features used for gate decisions were publicly/temporally available by the decision date; reference corpora are prior-only; final versions, future citations, and post-decision author identities are excluded from predictors.
+  acceptance: Automated leakage tests cover every analysis view and fail on deliberately contaminated fixtures.
+  kill_downgrade: null
+- id: M8
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Rebuild feature determinism and numerical tolerance
+  priority: P0
+  effort: M
+  gate: false
+  work: Re-run sampled embeddings, novelty metrics, diffs, links, and outcome windows across clean environments; record deterministic seeds/model hashes and numeric tolerance where hardware differs.
+  acceptance: Checksums or declared tolerances reproduce; stochastic pipelines publish seed ensembles or uncertainty.
+  kill_downgrade: null
+- id: M9
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Detect source and parser drift
+  priority: P1
+  effort: M
+  gate: false
+  work: Compare schema fingerprints, field distributions, null rates, object counts, and fixture parses across updates. Alert on API/platform/policy changes.
+  acceptance: No update can silently change historical normalized values; migrations are versioned and backfilled or scoped.
+  kill_downgrade: null
+- id: M10
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Run missingness and selection diagnostics
+  priority: P0
+  effort: L
+  gate: false
+  work: Profile missing text/reviews/scores/outcomes/identities by decision, venue, year, field, architecture, and licence. Test whether opt-in/open-history subsets differ from their observable parent populations.
+  acceptance: Every public analysis view includes missingness tables and admissible weighting/bounding guidance; C/D sources cannot be presented as representative without evidence.
+  kill_downgrade: null
+- id: M11
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Conduct an adversarial external-referee simulation
+  priority: P0
+  effort: L
+  gate: false
+  work: 'Red-team ten failure claims: false completeness, architecture collapse, licence overreach, reviewer deanonymization, linkage artifacts, future leakage, policy-date error, selection-on-text availability, funding overidentification, and legal/scientific novelty conflation.'
+  acceptance: Each challenge has a falsification query and documented resolution/downgrade before R1 and again before R5.
+  kill_downgrade: null
+- id: M12
+  epic: M
+  epic_title: Quality assurance, coverage validation, and red-team programme
+  title: Issue a machine-readable release validation report
+  priority: P0
+  effort: M
+  gate: true
+  work: Aggregate all schema, count, coverage, extraction, linkage, leakage, licence, privacy, and reproducibility gates into pass/fail/waived statuses with evidence artifacts.
+  acceptance: Public release tooling refuses to package a snapshot with an unapproved P0 failure; waivers require constitution-compliant scope reduction.
+  kill_downgrade: null
+- id: N1
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Write OSG data-governance and ethics plan
+  priority: P0
+  effort: L
+  gate: true
+  work: Document purposes, public-source basis, data categories, risk groups, identity handling, research-team access, release tiers, retention, takedowns, prohibited uses, and the distinction between public-data research and recruitment of human subjects.
+  acceptance: Plan is versioned before full harvest; every table/field has a release tier and purpose.
+  kill_downgrade: null
+- id: N2
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Minimize and tier personal identifiers
+  priority: P0
+  effort: L
+  gate: false
+  work: Remove emails/contact data; separate public author identities from decision-time disclosure; salt/pseudonymize evaluator IDs; aggregate small panels; keep sensitive linkage keys outside public packages.
+  acceptance: Automated scans find no direct contact fields or unhashed protected IDs in release artifacts; decision-time analysis views respect anonymity.
+  kill_downgrade: null
+- id: N3
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Prohibit reviewer deanonymization and individual ranking
+  priority: P0
+  effort: S
+  gate: true
+  work: Encode policy and licences barring identity inference, cross-profile joins intended to reveal anonymous reviewers, individual productivity/quality rankings, employment evaluation, harassment, or automated targeting.
+  acceptance: Public documentation, licence/terms, schema, explorer, and benchmark tasks do not expose features that make prohibited uses a supported workflow.
+  kill_downgrade: null
+- id: N4
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Implement object-level release licensing
+  priority: P0
+  effort: L
+  gate: false
+  work: Generate attribution/source/licence records; enforce CC BY, CC0, CC BY-NC-SA, share-alike, and pointer-only rules; separate software licence from data/content licences.
+  acceptance: Package builder rejects incompatible mixed bundles or emits separately licensed components with required notices.
+  kill_downgrade: null
+- id: N5
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Snapshot and monitor terms/robots/access conditions
+  priority: P0
+  effort: M
+  gate: false
+  work: Retain dated terms/robots URLs and hashes, access method, user-agent, and redistribution decision. Recheck before each major update.
+  acceptance: A terms change automatically pauses the relevant adapter pending review; historical lawful snapshots are not silently altered.
+  kill_downgrade: null
+- id: N6
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Build takedown, correction, and source-removal procedures
+  priority: P1
+  effort: M
+  gate: false
+  work: Public contact route, request authentication, impact assessment, versioned tombstones, downstream feature invalidation, and release errata. Avoid promising deletion where immutable third-party archives remain.
+  acceptance: A simulated removal propagates through raw-access indexes, normalized rows, derived features, analysis views, and changelog.
+  kill_downgrade: null
+- id: N7
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Secure credentials and job environments
+  priority: P0
+  effort: M
+  gate: false
+  work: Use operating-system/Modal secret stores or ephemeral environment injection; redact subprocess and HTTP logs; disable shell tracing; scan Git history/staged files/artifacts; rotate any credential suspected of exposure.
+  acceptance: Secret scanners cover tokens, passwords, emails used as login IDs, authorization headers, `.env`, notebooks, and manifests; no secret is required to reproduce public-data outputs.
+  kill_downgrade: null
+- id: N8
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Govern internal audit fixtures
+  priority: P1
+  effort: M
+  gate: false
+  work: Use public records for research-team quality audits, minimize copied text, record audit sampling rather than auditor identity, and release aggregate labels/errors only where redistribution is allowed.
+  acceptance: Audits do not constitute a recruited annotation study and do not expose extra personal data beyond source records.
+  kill_downgrade: null
+- id: N9
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Produce source- and release-level risk cards
+  priority: P1
+  effort: M
+  gate: false
+  work: Summarize population, hidden stages, identity risks, text rights, downstream harms, prohibited uses, bias/missingness, and takedown route for every module.
+  acceptance: No public module lacks a risk card; high-risk sources can be distributed as aggregate/remote-build recipes only.
+  kill_downgrade: null
+- id: N10
+  epic: N
+  epic_title: Governance, privacy, security, and licensing
+  title: Conduct pre-release privacy and licence red team
+  priority: P0
+  effort: L
+  gate: true
+  work: Attempt contact-field leakage, reviewer re-identification through joins, restricted-text reconstruction from features, licence incompatibility, and deleted-object recovery.
+  acceptance: All P0 findings close or the affected component is removed/downgraded before release.
+  kill_downgrade: null
+- id: O1
+  epic: O
+  epic_title: Release engineering and community product
+  title: Define semantic dataset versioning and snapshot IDs
+  priority: P0
+  effort: M
+  gate: false
+  work: Version schema, source snapshot, normalized data, linkage model, feature families, and release independently. Define breaking/nonbreaking changes and immutable release cutoffs.
+  acceptance: A row can name all relevant versions; historical analyses resolve exact artifacts.
+  kill_downgrade: null
+- id: O2
+  epic: O
+  epic_title: Release engineering and community product
+  title: Build licence-safe release packages
+  priority: P0
+  effort: L
+  gate: false
+  work: Emit partitioned Parquet, DuckDB, compact CSV summaries, schemas, source/provenance tables, and pointer/hash content indexes. Split modules by incompatible licences.
+  acceptance: Fresh-environment load tests and package checksum verification pass; no protected raw lake is required for public analysis examples.
+  kill_downgrade: null
+- id: O3
+  epic: O
+  epic_title: Release engineering and community product
+  title: Publish reproducible source adapters and rebuild recipes
+  priority: P1
+  effort: XL
+  gate: false
+  work: Release code, small public fixtures, environment lock, endpoint documentation, checkpoint/retry instructions, resource estimates, and source-owner politeness rules. For pointer-only text, allow users to rebuild locally under source terms.
+  acceptance: A clean-room fixture rebuild works without private files, credentials, or paid APIs.
+  kill_downgrade: null
+- id: O4
+  epic: O
+  epic_title: Release engineering and community product
+  title: Write the data card, schema handbook, and observability handbook
+  priority: P0
+  effort: L
+  gate: false
+  work: Explain units, stages, grades, populations, identifiers, tables, missingness, linkage, licences, ethics, admissible analyses, and common invalid queries.
+  acceptance: A new user can determine the correct denominator and stage for every example without reading pipeline code.
+  kill_downgrade: null
+- id: O5
+  epic: O
+  epic_title: Release engineering and community product
+  title: Build a static/local OSG explorer
+  priority: P1
+  effort: XL
+  gate: false
+  work: 'Create a no-hosting-cost explorer using static artifacts and/or local DuckDB: source coverage, policy timelines, architecture map, construct atlas, flow counts, and lineage examples. Suppress protected small cells and identifiers.'
+  acceptance: Explorer is generated entirely from release views, works locally, and never calls a paid or credentialed API.
+  kill_downgrade: null
+- id: O6
+  epic: O
+  epic_title: Release engineering and community product
+  title: Publish benchmark and example notebooks
+  priority: P1
+  effort: L
+  gate: false
+  work: Examples for stage-flow validation, cross-architecture description, novelty construct comparison, lineage sensitivity, rejected-work survival, funding evaluability, and patent legal-ground analysis.
+  acceptance: Every notebook runs on a documented public package subset with fixed seeds and produces ledgered figures/tables.
+  kill_downgrade: null
+- id: O7
+  epic: O
+  epic_title: Release engineering and community product
+  title: Create citation, authorship, and upstream-credit metadata
+  priority: P1
+  effort: M
+  gate: false
+  work: '`CITATION.cff`, dataset DOI metadata, contributor roles, upstream dataset citations, source-provider attribution, and derived-work obligations.'
+  acceptance: Every reused corpus/bulk dataset is credited in machine-readable and human-readable metadata.
+  kill_downgrade: null
+- id: O8
+  epic: O
+  epic_title: Release engineering and community product
+  title: Publish on free durable repositories
+  priority: P1
+  effort: M
+  gate: false
+  work: Use Zenodo and/or Hugging Face datasets where licence and size permit; GitHub for code/manifests; split large or restricted modules appropriately. No paid storage is assumed.
+  acceptance: At least two independent persistent access paths exist for metadata/code; large data have checksums and recovery instructions.
+  kill_downgrade: null
+- id: O9
+  epic: O
+  epic_title: Release engineering and community product
+  title: Build release diffs and migration tools
+  priority: P1
+  effort: L
+  gate: false
+  work: Row/object additions, removals, source corrections, grade changes, ID merges/splits, schema migrations, and feature-version changes between releases.
+  acceptance: Users can update analyses without silently mixing versions; every breaking change has a migration note/tool.
+  kill_downgrade: null
+- id: O10
+  epic: O
+  epic_title: Release engineering and community product
+  title: Establish community issue and contribution protocol
+  priority: P2
+  effort: M
+  gate: false
+  work: Templates for source corrections, missing venues, policy evidence, linkage errors, takedowns, and new adapters; contribution tests and code-of-conduct/prohibited-use acknowledgement.
+  acceptance: Community corrections enter through auditable provenance and cannot overwrite canonical data without validation.
+  kill_downgrade: null
+- id: O11
+  epic: O
+  epic_title: Release engineering and community product
+  title: Write and submit OSG data/methods paper
+  priority: P1
+  effort: XL
+  gate: false
+  work: "Lead with observability, institutional state, architecture-preserving schema, coverage validation, construct pluralism, and community use cases\u2014not record count. Include negative source results and legal/ethical design."
+  acceptance: Every quantitative statement is release-reproducible; paper cites the frozen release DOI and validation report.
+  kill_downgrade: null
+- id: P1
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Publish the gate-cycle descriptive atlas
+  priority: P1
+  effort: L
+  gate: false
+  work: Stage flows, demand, selectivity, criteria, timing, review volume, missingness, fields, and policy histories by architecture. Treat source coverage as a result.
+  acceptance: All denominators are grade-admissible; descriptive outputs reproduce from R1/R2 release views.
+  kill_downgrade: null
+- id: P2
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Recalibrate P on accepted and rejected candidates
+  priority: P1
+  effort: XL
+  gate: false
+  work: Define empirical moments for proposal novelty/quality proxies, rejection, reviewer disagreement, team/collaboration, capacity, and downstream uptake across gates. Fit/validate on separate architectures and time blocks.
+  acceptance: Calibration no longer relies predominantly on accepted bibliometrics; model/empirical novelty scale mismatch is either bridged or explicitly modeled.
+  kill_downgrade: null
+- id: P3
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Test P1's institutional feedback panel
+  priority: P1
+  effort: XL
+  gate: false
+  work: Estimate lag relations among demand, accepted novelty/diversity, rejection, timing/strain, policy state, and capacity; use reforms/event studies only where F8 rates identification plausible.
+  acceptance: Dynamic estimands, lags, pretrends, fixed effects, missing stages, and sensitivity to architecture are preregistered.
+  kill_downgrade: null
+- id: P4
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: "Run P2's rulers \xD7 doors design"
+  priority: P0
+  effort: XL
+  gate: false
+  work: Compare semantic, recombinatorial, cited-work, and native evaluator constructs across ICLR/TMLR, Copernicus, eLife, and later gates. Use many gate cycles and measurement-invariance tests.
+  acceptance: Door comparisons do not pool incompatible stages; ruler effects report reference corpus and reliability; exploratory/confirmatory partitions are honoured.
+  kill_downgrade: null
+- id: P5
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Estimate within-work cross-gate and revision designs
+  priority: P1
+  effort: XL
+  gate: false
+  work: Difference-in-slopes and trajectory analyses using strict lineage edges; account for endogenous routing, informative withdrawal, revision mediation, and survivor selection with bounds/sensitivity.
+  acceptance: "No \u201Caccepted later\u201D comparison is presented as causal without a defensible assignment strategy."
+  kill_downgrade: null
+- id: P6
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Study reviewer strain and conservatism
+  priority: P1
+  effort: XL
+  gate: false
+  work: Relate public workload/delay proxies to score severity, disagreement, review length/construct mix, novelty pricing, and reliance on reputation-visible attributes. Exploit within-cycle timing or assignment shocks only where credible.
+  acceptance: Reviewer-level outputs meet governance aggregation; workload proxies have validated denominators and alternative specifications.
+  kill_downgrade: null
+- id: P7
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Study rejected-work afterlives
+  priority: P1
+  effort: XL
+  gate: false
+  work: Survival, revision, rerouting, later impact, idea persistence, and architecture transitions for evaluated rejects versus suitably comparable selected works.
+  acceptance: Right censoring, publication/linkage missingness, post-treatment revision, and field/venue selection are explicit; findings reproduce across linkage layers.
+  kill_downgrade: null
+- id: P8
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Execute the P4 evaluability and public-trajectory programme
+  priority: P1
+  effort: L
+  gate: false
+  work: Expand the lottery census, monitor disclosure, estimate public entrant/returner lower bounds, and evaluate which allocation/entry estimands each instrument identifies. Publish null/non-identification verdicts as first-class results.
+  acceptance: No winner-registry analysis exceeds K12; prospective records remain held out until registered evaluation.
+  kill_downgrade: null
+- id: P9
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Compare scientific and legal novelty gates
+  priority: P2
+  effort: XL
+  gate: false
+  work: "Map human/computational scientific novelty against \xA7102/\xA7103 decisions, claim amendment, examiner/art-unit capacity, and scientific prior art. Frame as construct/institution comparison, not equivalence."
+  acceptance: Legal grounds stay separated; cross-domain inference is theory-led and includes known public-application selection.
+  kill_downgrade: null
+- id: P10
+  epic: P
+  epic_title: Analysis-ready products and programme experiments
+  title: Release community benchmark tasks
+  priority: P2
+  effort: L
+  gate: false
+  work: Non-generative benchmarks for observability classification, policy/rubric extraction, stage normalization, version linkage, construct measurement, and calibrated missingness. Include source/time/domain holdouts.
+  acceptance: Tasks do not reward reviewer deanonymization, proprietary API use, or leakage from final outcomes; licences permit redistributed inputs or provide rebuild recipes.
+  kill_downgrade: null
+- id: Q1
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Establish the no-paid-API enforcement layer
+  priority: P0
+  effort: M
+  gate: true
+  work: Central allowlist of public/free endpoints and denylist of commercial services; scan dependencies, environment variable names, URLs, notebooks, and job specs. Free services that require billing details or can incur overages default to denied.
+  acceptance: CI fails on prohibited domains/SDKs or unknown outbound service configuration; every allowed source links to its source card.
+  kill_downgrade: null
+- id: Q2
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Build source/storage/compute estimators
+  priority: P0
+  effort: L
+  gate: false
+  work: From fixture size and provider counts project requests, raw/compressed bytes, normalized bytes, parsing hours, embedding tokens/documents, memory, and Modal upper cost by source and feature family.
+  acceptance: Estimates precede full pulls and are reconciled against actuals after each shard; >25% error triggers reforecast before continuation.
+  kill_downgrade: null
+- id: Q3
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Implement the Modal job harness
+  priority: P0
+  effort: L
+  gate: false
+  work: Sharded/resumable jobs, input/output manifests, immutable code/model image, cost/time logging, explicit concurrency, retry ceiling, per-shard checkpoint, and local-equivalent fixture path. Secrets enter only through the configured secret mechanism.
+  acceptance: A failed/restarted job neither repeats completed costly work nor logs credentials; output hashes reproduce from job manifests.
+  kill_downgrade: null
+- id: Q4
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Enforce the $30 Modal budget envelope
+  priority: P0
+  effort: S
+  gate: true
+  work: 'Allocate provisional ceilings: **$3 pilots**, **$12 publication full-text/embedding scale pass**, **$6 reference/linkage feature pass**, **$3 patent pilot**, **$6 contingency**. Default per-job ceiling is $3; spending beyond an envelope requires an updated ledger and cannot consume contingency before relevant pilot gates pass.'
+  acceptance: Preflight aborts if projected cumulative spend exceeds $30; actual cumulative cost is recorded after every job; no automatic retry can exceed its job cap.
+  kill_downgrade: null
+- id: Q5
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Prefer local and deterministic compute
+  priority: P1
+  effort: M
+  gate: false
+  work: Run downloads, XML/HTML parsing, joins, policy extraction, audits, DuckDB builds, and small models locally. Benchmark CPU/MPS/GPU versus Modal only for costly tasks; use compact open models and cached vectors.
+  acceptance: Modal is used only where the job manifest documents the local bottleneck and cheaper validated alternative was considered.
+  kill_downgrade: null
+- id: Q6
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Build storage lifecycle and free-space stops
+  priority: P0
+  effort: M
+  gate: false
+  work: Predictive free-space check; content deduplication; compressed shards; ephemeral PDF/OCR retention; protected raw/normalized/release tiers; no recursive broad-path deletion. Move removable caches to a validated explicit path and record recoverability.
+  acceptance: Jobs stop before unsafe disk pressure; deletion/compaction targets are exact and manifests show what can be refetched.
+  kill_downgrade: null
+- id: Q7
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Create run manifests, telemetry, and dashboards
+  priority: P1
+  effort: L
+  gate: false
+  work: Source rows, objects, bytes, errors, retries, rates, cost, parser version, coverage, validation status, and last successful checkpoint. Produce a local/static progress dashboard.
+  acceptance: Every epic can be resumed by another researcher from manifests without inspecting shell history.
+  kill_downgrade: null
+- id: Q8
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Build backup and disaster-recovery procedures
+  priority: P1
+  effort: M
+  gate: false
+  work: Back up code/manifests/schemas/small fixtures and irreplaceable source snapshots; exploit public refetch for replaceable bulk data; verify checksums; document recovery order. Use free/local storage only.
+  acceptance: A clean temporary environment rebuilds R0 and a representative R1 partition after simulated local loss.
+  kill_downgrade: null
+- id: Q9
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Schedule incremental refreshes and source-health checks
+  priority: P2
+  effort: L
+  gate: false
+  work: Monthly/quarterly cadence appropriate to provider; lightweight count/schema/terms probes before delta harvest; prospective holdout timestamps; failure notifications kept local/free.
+  acceptance: Update automation cannot mutate old releases, spend Modal credit, or launch a large pull without explicit budget/source gates.
+  kill_downgrade: null
+- id: Q10
+  epic: Q
+  epic_title: Operations, budgets, resilience, and updates
+  title: Maintain the programme decision log and burndown
+  priority: P1
+  effort: S
+  gate: true
+  work: Record source inclusions/exclusions, grade changes, schema amendments, budget decisions, stop rules fired, and scientific scope changes. Track tickets by release wave rather than one undifferentiated backlog.
+  acceptance: Every deviation from this ticketbook has date, evidence, approver, affected claims/releases, and rollback/narrowing path.
+  kill_downgrade: null

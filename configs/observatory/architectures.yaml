@@ -1,0 +1,45 @@
+schema: observatory.architectures/1
+constitution_version: 0.1.0
+architectures:
+  competitive_quota:
+    ontology_version: 2026-08-10.1
+    traits: [periodic, capacity_constrained, mutually_compared]
+    definition: Periodic selection under a capacity or acceptance quota.
+    canonical_stages: [submitted, desk_screen, evaluated, withdrawn, selected, rejected]
+    prohibited_equivalences: ["reviewed_preprint=selected", "revision_invited=selected"]
+  rolling_threshold:
+    ontology_version: 2026-08-10.1
+    traits: [rolling, threshold_based]
+    definition: Continuous or rolling decisions against a stated quality threshold.
+    canonical_stages: [submitted, desk_screen, evaluated, revision, selected, rejected, withdrawn]
+    prohibited_equivalences: ["calendar_quarter=deadline cohort"]
+  access_public_discussion:
+    ontology_version: 2026-08-10.1
+    traits: [hidden_access_screen, public_post_access_pool, public_discussion]
+    definition: Hidden or streamlined access review followed by a complete public discussion-stage pool.
+    canonical_stages: [access_hidden, public_discussion, revision, selected, rejected, withdrawn]
+    prohibited_equivalences: ["public_discussion=all submissions"]
+  publish_review_curate:
+    ontology_version: 2026-08-10.1
+    traits: [editorial_screen, public_review, optional_curation]
+    definition: Public reviewed preprints with evaluation and optional curation/version of record.
+    canonical_stages: [editorial_screen_hidden, reviewed_preprint, revision, curated, version_of_record]
+    prohibited_equivalences: ["reviewed_preprint=accepted", "not_curated=rejected"]
+  post_publication_review:
+    ontology_version: 2026-08-10.1
+    traits: [editorial_screen, publication_before_evaluation, public_review]
+    definition: Publication after editorial checks followed by open evaluation and revision.
+    canonical_stages: [editorial_screen_hidden, published, review_pending, approved, revision]
+    prohibited_equivalences: ["published=approved"]
+  fundable_band_lottery:
+    ontology_version: 2026-08-10.1
+    traits: [eligibility_screen, quality_band, randomized_allocation]
+    definition: Eligibility/quality screening followed by random or partly random allocation.
+    canonical_stages: [submitted, eligibility, assessed, fundable, randomized, funded, unfunded]
+    prohibited_equivalences: ["funded=randomized arm", "winner registry=eligible pool"]
+  prosecution_examination:
+    ontology_version: 2026-08-10.1
+    traits: [iterative, claim_level, legal_examination]
+    definition: Iterative legal examination of applications and claims.
+    canonical_stages: [filed, public, examined, non_final_action, response, final_action, allowed, abandoned]
+    prohibited_equivalences: ["office action=rejection", "grant=initial acceptance"]

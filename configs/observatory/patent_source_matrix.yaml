@@ -1,0 +1,42 @@
+schema: observatory.patent-source-matrix/1
+constitution_version: 0.1.0
+snapshot_date: 2026-08-10
+selection_boundary: Publicly viewable US applications and associated prosecution records; not all filed applications.
+fields:
+  applications:
+    authoritative: uspto_patex
+    corroborating: [uspto_odp, panorama]
+  claims:
+    authoritative: uspto_claims
+    corroborating: [uspto_odp, patent_cr, patre]
+  office_actions:
+    authoritative: uspto_oard
+    corroborating: [uspto_patex, uspto_odp]
+  legal_grounds:
+    authoritative: uspto_oard
+    corroborating: [patent_cr, patre]
+  examiner:
+    authoritative: uspto_patex
+    corroborating: [uspto_oard, panorama]
+  art_unit:
+    authoritative: uspto_patex
+    corroborating: [uspto_oard, panorama]
+  patent_citations:
+    authoritative: uspto_patex
+    corroborating: [uspto_odp, panorama]
+  non_patent_literature:
+    authoritative: uspto_odp
+    corroborating: [uspto_oard, panorama]
+  applicant_responses:
+    authoritative: uspto_odp
+    corroborating: [uspto_patex]
+  allowance_abandonment:
+    authoritative: uspto_patex
+    corroborating: [uspto_odp, panorama]
+  event_timing:
+    authoritative: uspto_patex
+    corroborating: [uspto_oard, uspto_odp]
+  maintenance_and_post_grant:
+    authoritative: uspto_odp
+    corroborating: [panorama]
+

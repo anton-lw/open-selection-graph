@@ -1,0 +1,19 @@
+schema: observatory.funding-census/1
+constitution_version: 0.1.0
+snapshot_date: 2026-08-10
+six_field_standard:
+  - applications
+  - passing_or_eligible_pool
+  - assignment_arm
+  - awards_or_outcome
+  - unfunded_candidate_text
+  - decision_date_or_round
+authoritative_existing_census: results/p4/candidate/evaluability.json
+expected_instruments: 17
+source_completeness_cards:
+  - {source_card_id: fwf, instruments: [FWF_1000IDEAS, FWF_PI_PROJECTS], micro_population: winners_only, grade: D, disposition: included_portfolio_only}
+  - {source_card_id: snsf, instruments: [SNSF_TIEBREAK, SNSF_SPARK], micro_population: winners_only, grade: D, disposition: included_portfolio_only}
+  - {source_card_id: ukri_public_outcomes, instruments: [NERC_PTF, NERC_PREDECESSOR, UKRI_PORTFOLIO], micro_population: round_specific_public_files, grade: U, disposition: quarantined_by_round}
+  - {source_card_id: ukri_demystifying, instruments: [UKRI_PUBLIC_LIFECYCLE], micro_population: upstream_dataset_defined, grade: U, disposition: pointer_only}
+  - {source_card_id: lottery_instrument_web, instruments: [BRITISH_ACADEMY, HRC_NZ_EXPLORER, NWO_LOTTERY, VOLKSWAGEN_PARTIAL_RANDOMISATION, NFRF_TRANSFORMATIONS], micro_population: policy_and_aggregate_outcomes, grade: U, disposition: registry_only_until_round_probes}
+

@@ -1,0 +1,57 @@
+# Corpus attribution
+
+The OSG preserves upstream authorship and licences.
+
+- **OpenReview** (`openreview_surface`): https://docs.openreview.net/getting-started/objects-in-openreview/groups
+- **OpenReview** (`openreview`): https://openreview.net/venues
+- **OpenReview** (`openreview_api`): https://docs.openreview.net/getting-started/using-the-api
+- **ReviewArena authors** (`reviewarena`): https://huggingface.co/datasets/Samarth0710/reviewarena
+- **Re2 authors** (`re2`): https://arxiv.org/abs/2505.07920
+- **UKP Lab** (`nlpeer`): https://github.com/UKPLab/nlpeer
+- **ResearchArcade authors** (`researcharcade`): https://ulab-uiuc.github.io/research-arcade/learn/csv-dataset.html
+- **Allen Institute for AI** (`peerread`): https://github.com/allenai/PeerRead
+- **MOPRD authors** (`moprd`): https://arxiv.org/abs/2212.04972
+- **Review Arcade authors / ACL ARR consent programme** (`arr_review_arcade`): https://huggingface.co/datasets/G4KMU/review_arcade
+- **Crossref** (`crossref`): https://api.crossref.org
+- **Copernicus Publications** (`copernicus`): https://publications.copernicus.org/services/public_peer_review.html
+- **Crossref / Copernicus Publications** (`copernicus_crossref`): https://api.crossref.org/prefixes/10.5194/works
+- **Copernicus Publications** (`copernicus_outcomes`): https://publications.copernicus.org/services/public_peer_review.html
+- **eLife Sciences** (`elife`): https://elifesciences.org/about/peer-review
+- **eLife Sciences** (`elife_process`): https://api.elifesciences.org/reviewed-preprints
+- **F1000 Research** (`f1000research`): https://f1000research.com/about
+- **F1000 Research Limited platform family** (`f1000_process`): https://f1000research.com/developers
+- **Wellcome Open Research** (`wellcome_open_research_process`): https://wellcomeopenresearch.org/developers
+- **Gates Open Research** (`gates_open_research_process`): https://gatesopenresearch.org/developers
+- **NIHR Open Research** (`nihr_open_research_process`): https://openresearch.nihr.ac.uk
+- **HRB Open Research** (`hrb_open_research_process`): https://hrbopenresearch.org
+- **SciPost Foundation** (`scipost`): https://scipost.org
+- **SciPost Foundation** (`scipost_process`): https://scipost.org/submissions/
+- **PeerJ** (`peerj`): https://peerj.com/about/policies-and-procedures/
+- **PLOS** (`plos_review_history`): https://plos.org/resource/open-peer-review/
+- **EMBO Press** (`embo_transparent_review`): https://www.embopress.org/page/journal/14602075/authorguide
+- **The Royal Society** (`royal_society_review`): https://royalsociety.org/journals/ethics-policies/editorial-standards/
+- **BMC/Springer Nature** (`bmc_open_review`): https://www.biomedcentral.com/getpublished/peer-review-process
+- **Qeios** (`qeios`): https://www.qeios.com
+- **PREreview** (`prereview`): https://prereview.org
+- **OurResearch** (`openalex`): https://developers.openalex.org
+- **arXiv** (`arxiv`): https://info.arxiv.org/help/bulk_data.html
+- **Cornell University / Kaggle** (`kaggle_arxiv_snapshot`): https://www.kaggle.com/datasets/Cornell-University/arxiv
+- **Europe PMC** (`europe_pmc`): https://europepmc.org/developers
+- **Demystifying Funding authors/UKRI public sources** (`ukri_demystifying`): https://zenodo.org/records/19243841
+- **Austrian Science Fund** (`fwf`): https://openapi.fwf.ac.at
+- **Swiss National Science Foundation** (`snsf`): https://data.snf.ch
+- **UK Research and Innovation** (`ukri_public_outcomes`): https://www.ukri.org/publications/
+- **Multiple public funders** (`lottery_instrument_web`): https://www.britac.ac.uk
+- **United States Patent and Trademark Office** (`uspto_oard`): https://www.uspto.gov/ip-policy/economic-research/research-datasets/office-action-research-dataset-patents
+- **United States Patent and Trademark Office** (`uspto_patex`): https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-examination-research-dataset-public-pair
+- **United States Patent and Trademark Office** (`uspto_claims`): https://www.uspto.gov/ip-policy/economic-research/research-datasets/patent-claims-research-dataset
+- **United States Patent and Trademark Office** (`uspto_odp`): https://data.uspto.gov/apis/patent-file-wrapper/documents
+- **PANORAMA authors** (`panorama`): https://huggingface.co/datasets/LG-AI-Research/PANORAMA
+- **Patent-CR authors** (`patent_cr`): https://aclanthology.org/2025.naacl-long.116/
+- **PatRe authors** (`patre`): https://arxiv.org/abs/2605.03571
+- **Allen Institute for AI** (`specter2`): https://huggingface.co/allenai/specter2_base
+- **Qwen team** (`qwen3_embedding_0_6b`): https://huggingface.co/Qwen/Qwen3-Embedding-0.6B
+- **Harvard USPTO Patent Dataset authors** (`hupd`): https://patentdataset.org/
+- **Rachel Heyard / Swiss National Science Foundation** (`snsf_individual_votes`): https://zenodo.org/records/4531160
+- **Peer Review Analyze authors** (`peer_review_analyze_1_0`): https://github.com/Tirthankar-Ghosal/Peer-Review-Analyze-1.0
+- **PreprintToPaper authors** (`preprint_to_paper_gray_zone`): https://zenodo.org/records/17992421

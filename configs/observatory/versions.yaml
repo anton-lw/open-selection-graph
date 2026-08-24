@@ -1,0 +1,49 @@
+schema: observatory.version-registry/1
+constitution_version: 0.1.0
+release:
+  release_version: 2.0.0
+  immutable_cutoff: '2026-08-23T23:59:59Z'
+  schema_version: 1.0.0
+  source_snapshot_version: '2026-08-23'
+  normalized_data_version: 1.0.0
+  linkage_model_version: 3.0.0
+  feature_versions:
+    institutional_regimes: 1.1.0
+    evaluation_objects: 1.0.0
+    semantic_novelty: 3.0.0
+    construct_atlas: 2.0.0
+    recombinatorial_novelty: 2.0.0
+    afterlife_outcomes: 3.0.0
+    lineage: 3.0.0
+    evaluator_strain: 1.0.0
+    funding_evaluability: 2.0.0
+    patent_gate: 2.0.0
+    benchmarks: 2.0.0
+    observability_bounds: 1.0.0
+    transportability: 2.0.0
+  release_package_version: 2.0.0
+change_rules:
+  breaking:
+    - removing or renaming a public field or table
+    - changing a canonical identifier for an unchanged source entity
+    - changing an estimand, stage, observability-grade, or temporal meaning
+    - changing a feature formula, reference eligibility rule, or model revision
+  nonbreaking:
+    - adding a nullable field with unchanged existing semantics
+    - adding newly observed rows to a new immutable source snapshot
+    - adding a source-specific warning or stricter coverage downgrade
+  always_new_source_snapshot:
+    - any provider refetch
+    - terms or robots recheck
+    - source deletion or correction
+  always_new_feature_version:
+    - reference-corpus membership change
+    - model weights, vocabulary, parameters, seed, or code change
+    - normalization-group change
+row_version_columns:
+  - schema_version
+  - source_snapshot_version
+  - normalized_data_version
+  - linkage_model_version
+  - feature_version
+  - release_package_version

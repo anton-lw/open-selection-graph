@@ -1,0 +1,1015 @@
+{
+  "claim_macros_path": "docs/observatory/generated/quantitative_claims.tex",
+  "claim_macros_sha256": "fc57793368f6b591a6a175364283225379a264feed7772ab7f45f7d634e18745",
+  "claims": [
+    {
+      "claim_id": "observability_census_cycles",
+      "evidence_path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+      "evidence_sha256": "60647d03ac1ce0e273349f2a6bce5dc5b947f1cdc10cee028c06803d01339265",
+      "field": "observability_census_cycles",
+      "release_reproducible": true,
+      "value": 4872
+    },
+    {
+      "claim_id": "publication_gate_cycles",
+      "evidence_path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+      "evidence_sha256": "60647d03ac1ce0e273349f2a6bce5dc5b947f1cdc10cee028c06803d01339265",
+      "field": "cycles",
+      "release_reproducible": true,
+      "value": 350
+    },
+    {
+      "claim_id": "admissible_rate_cycles",
+      "evidence_path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+      "evidence_sha256": "60647d03ac1ce0e273349f2a6bce5dc5b947f1cdc10cee028c06803d01339265",
+      "field": "admissible_cycles",
+      "release_reproducible": true,
+      "value": 210
+    },
+    {
+      "claim_id": "populated_admissible_cycles",
+      "evidence_path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+      "evidence_sha256": "60647d03ac1ce0e273349f2a6bce5dc5b947f1cdc10cee028c06803d01339265",
+      "field": "populated_admissible_cycles",
+      "release_reproducible": true,
+      "value": 200
+    },
+    {
+      "claim_id": "policy_surface_cycles",
+      "evidence_path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+      "evidence_sha256": "60647d03ac1ce0e273349f2a6bce5dc5b947f1cdc10cee028c06803d01339265",
+      "field": "policy_surface_cycles_separated",
+      "release_reproducible": true,
+      "value": 4522
+    },
+    {
+      "claim_id": "selection_rate_cycles",
+      "evidence_path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+      "evidence_sha256": "60647d03ac1ce0e273349f2a6bce5dc5b947f1cdc10cee028c06803d01339265",
+      "field": "rate_rows",
+      "release_reproducible": true,
+      "value": 61
+    },
+    {
+      "claim_id": "review_rate_cycles",
+      "evidence_path": "results/observatory/r3/gate_cycle_descriptive_atlas_report.json",
+      "evidence_sha256": "60647d03ac1ce0e273349f2a6bce5dc5b947f1cdc10cee028c06803d01339265",
+      "field": "review_rate_rows",
+      "release_reproducible": true,
+      "value": 197
+    },
+    {
+      "claim_id": "verified_openreview_cycles",
+      "evidence_path": "results/observatory/openreview_verified_cycle_metrics_report.json",
+      "evidence_sha256": "d32050d22ec10072e09289e961fcb9a240ab465ed478db6e71da6c4a10a5f0e4",
+      "field": "cycle_count",
+      "release_reproducible": true,
+      "value": 176
+    },
+    {
+      "claim_id": "verified_openreview_populated_cycles",
+      "evidence_path": "results/observatory/openreview_verified_cycle_metrics_report.json",
+      "evidence_sha256": "d32050d22ec10072e09289e961fcb9a240ab465ed478db6e71da6c4a10a5f0e4",
+      "field": "populated_cycle_count",
+      "release_reproducible": true,
+      "value": 166
+    },
+    {
+      "claim_id": "verified_openreview_candidates",
+      "evidence_path": "results/observatory/openreview_verified_cycle_metrics_report.json",
+      "evidence_sha256": "d32050d22ec10072e09289e961fcb9a240ab465ed478db6e71da6c4a10a5f0e4",
+      "field": "candidate_count",
+      "release_reproducible": true,
+      "value": 55369
+    },
+    {
+      "claim_id": "verified_openreview_reviews",
+      "evidence_path": "results/observatory/openreview_verified_cycle_metrics_report.json",
+      "evidence_sha256": "d32050d22ec10072e09289e961fcb9a240ab465ed478db6e71da6c4a10a5f0e4",
+      "field": "official_review_count",
+      "release_reproducible": true,
+      "value": 31992
+    },
+    {
+      "claim_id": "openreview_passing_cycles",
+      "evidence_path": "results/observatory/openreview_process_audit.json",
+      "evidence_sha256": "d17f79336f3997f5ca682cee529d92331c9fb711c5fea50dfe95e3072ec73b05",
+      "field": "passing_cycle_count",
+      "release_reproducible": true,
+      "value": 176
+    },
+    {
+      "claim_id": "openreview_forums",
+      "evidence_path": "results/observatory/openreview_process_audit.json",
+      "evidence_sha256": "d17f79336f3997f5ca682cee529d92331c9fb711c5fea50dfe95e3072ec73b05",
+      "field": "forum_count",
+      "release_reproducible": true,
+      "value": 44330
+    },
+    {
+      "claim_id": "openreview_current_notes",
+      "evidence_path": "results/observatory/openreview_process_audit.json",
+      "evidence_sha256": "d17f79336f3997f5ca682cee529d92331c9fb711c5fea50dfe95e3072ec73b05",
+      "field": "current_found_note_count",
+      "release_reproducible": true,
+      "value": 679898
+    },
+    {
+      "claim_id": "openreview_rule_records",
+      "evidence_path": "results/observatory/r1/institutional_products_report.json",
+      "evidence_sha256": "d6cb7ef8666fadf507728a729c437c000a88a7622e948723ea5f377f5e15e99b",
+      "field": "counts.openreview_rule_records",
+      "release_reproducible": true,
+      "value": 4525
+    },
+    {
+      "claim_id": "rubric_fields",
+      "evidence_path": "results/observatory/r1/institutional_products_report.json",
+      "evidence_sha256": "d6cb7ef8666fadf507728a729c437c000a88a7622e948723ea5f377f5e15e99b",
+      "field": "counts.rubric_fields",
+      "release_reproducible": true,
+      "value": 11188
+    },
+    {
+      "claim_id": "flow_identity_violations",
+      "evidence_path": "results/observatory/r1/institutional_products_report.json",
+      "evidence_sha256": "d6cb7ef8666fadf507728a729c437c000a88a7622e948723ea5f377f5e15e99b",
+      "field": "counts.flow_identity_violations",
+      "release_reproducible": true,
+      "value": 12
+    },
+    {
+      "claim_id": "institutional_gate_cycles",
+      "evidence_path": "results/observatory/r1/institutional_products_report.json",
+      "evidence_sha256": "d6cb7ef8666fadf507728a729c437c000a88a7622e948723ea5f377f5e15e99b",
+      "field": "counts.gate_cycles",
+      "release_reproducible": true,
+      "value": 4696
+    },
+    {
+      "claim_id": "historical_policy_versions",
+      "evidence_path": "results/observatory/r2/policy_history_report.json",
+      "evidence_sha256": "f400840706efd5aed65509dca94e19f60aa0fbf13116c15378d46d6e7f04cf98",
+      "field": "policy_versions",
+      "release_reproducible": true,
+      "value": 4531
+    },
+    {
+      "claim_id": "evaluation_objects",
+      "evidence_path": "results/observatory/r1/evaluation_products_report.json",
+      "evidence_sha256": "f75fb7b690ddb96a5d0196c250cee9dbb4c9958beaf3b9cac808e151c05c0431",
+      "field": "evaluation_count",
+      "release_reproducible": true,
+      "value": 40483
+    },
+    {
+      "claim_id": "exact_evaluation_joins",
+      "evidence_path": "results/observatory/r1/evaluation_products_report.json",
+      "evidence_sha256": "f75fb7b690ddb96a5d0196c250cee9dbb4c9958beaf3b9cac808e151c05c0431",
+      "field": "exact_version_gate_join_count",
+      "release_reproducible": true,
+      "value": 40102
+    },
+    {
+      "claim_id": "construct_atlas_constructs",
+      "evidence_path": "results/observatory/r2/novelty_evaluation_atlas_report.json",
+      "evidence_sha256": "7c7217552343aed4700b607f0201757b57713e079a9ccf6f04ae53924476bf50",
+      "field": "constructs",
+      "release_reproducible": true,
+      "value": 5
+    },
+    {
+      "claim_id": "construct_atlas_rulers",
+      "evidence_path": "results/observatory/r2/novelty_evaluation_atlas_report.json",
+      "evidence_sha256": "7c7217552343aed4700b607f0201757b57713e079a9ccf6f04ae53924476bf50",
+      "field": "rulers",
+      "release_reproducible": true,
+      "value": 4
+    },
+    {
+      "claim_id": "construct_atlas_selectors",
+      "evidence_path": "results/observatory/r2/novelty_evaluation_atlas_report.json",
+      "evidence_sha256": "7c7217552343aed4700b607f0201757b57713e079a9ccf6f04ae53924476bf50",
+      "field": "selector_count",
+      "release_reproducible": true,
+      "value": 9
+    },
+    {
+      "claim_id": "construct_span_audit_n",
+      "evidence_path": "results/observatory/r2/construct_reliability_report.json",
+      "evidence_sha256": "4ec40de803fef0c010ed1357a55bf09a5fe58ff1950f793f850fc56ee4597af8",
+      "field": "audit.audited",
+      "release_reproducible": true,
+      "value": 314
+    },
+    {
+      "claim_id": "construct_span_precision",
+      "evidence_path": "results/observatory/r2/construct_reliability_report.json",
+      "evidence_sha256": "4ec40de803fef0c010ed1357a55bf09a5fe58ff1950f793f850fc56ee4597af8",
+      "field": "audit.precision",
+      "release_reproducible": true,
+      "value": 1.0
+    },
+    {
+      "claim_id": "construct_span_precision_lower",
+      "evidence_path": "results/observatory/r2/construct_reliability_report.json",
+      "evidence_sha256": "4ec40de803fef0c010ed1357a55bf09a5fe58ff1950f793f850fc56ee4597af8",
+      "field": "audit.precision_wilson_lower_95",
+      "release_reproducible": true,
+      "value": 0.9879139152112274
+    },
+    {
+      "claim_id": "semantic_feature_rows",
+      "evidence_path": "results/observatory/r1/semantic_novelty_report.json",
+      "evidence_sha256": "abb684e2ce63659b3bef5ccc344ea90349e7c0736cfb86290923e138077cd2bd",
+      "field": "feature_row_count",
+      "release_reproducible": true,
+      "value": 8516
+    },
+    {
+      "claim_id": "semantic_versions",
+      "evidence_path": "results/observatory/r1/semantic_novelty_report.json",
+      "evidence_sha256": "abb684e2ce63659b3bef5ccc344ea90349e7c0736cfb86290923e138077cd2bd",
+      "field": "unique_version_count",
+      "release_reproducible": true,
+      "value": 8516
+    },
+    {
+      "claim_id": "future_dated_exclusions",
+      "evidence_path": "results/observatory/r1/semantic_novelty_report.json",
+      "evidence_sha256": "abb684e2ce63659b3bef5ccc344ea90349e7c0736cfb86290923e138077cd2bd",
+      "field": "invalid_future_timestamp_count",
+      "release_reproducible": true,
+      "value": 450
+    },
+    {
+      "claim_id": "qwen3_semantic_rows",
+      "evidence_path": "results/observatory/validity/qwen3_semantic_novelty_report.json",
+      "evidence_sha256": "4df58730ec92d835cdfecffe60c6ecb3069c615b864a426df6ac122a4c287649",
+      "field": "feature_rows",
+      "release_reproducible": true,
+      "value": 8507
+    },
+    {
+      "claim_id": "semantic_ruler_shared_rows",
+      "evidence_path": "results/observatory/validity/semantic_ruler_triangulation_report.json",
+      "evidence_sha256": "20c043eb64d63d2321d3d53fe30c09815b2968e37bdfb9d3a7731a062ee5bf77",
+      "field": "shared_rows",
+      "release_reproducible": true,
+      "value": 8501
+    },
+    {
+      "claim_id": "semantic_ruler_centroid_spearman",
+      "evidence_path": "results/observatory/validity/semantic_ruler_triangulation_report.json",
+      "evidence_sha256": "20c043eb64d63d2321d3d53fe30c09815b2968e37bdfb9d3a7731a062ee5bf77",
+      "field": "within_source_year_centroid_percentile_spearman",
+      "release_reproducible": true,
+      "value": 0.5544874245051507
+    },
+    {
+      "claim_id": "semantic_ruler_median_disagreement",
+      "evidence_path": "results/observatory/validity/semantic_ruler_triangulation_report.json",
+      "evidence_sha256": "20c043eb64d63d2321d3d53fe30c09815b2968e37bdfb9d3a7731a062ee5bf77",
+      "field": "median_centroid_percentile_disagreement",
+      "release_reproducible": true,
+      "value": 0.1669513236549957
+    },
+    {
+      "claim_id": "recombinatorial_versions",
+      "evidence_path": "results/observatory/r2/recombinatorial_novelty_report.json",
+      "evidence_sha256": "d0ccabca053e146b4d22dc39de85a701df20b3159b049b38f913f5c5591b9651",
+      "field": "measured_versions",
+      "release_reproducible": true,
+      "value": 93
+    },
+    {
+      "claim_id": "textual_recombinatorial_versions",
+      "evidence_path": "results/observatory/r2/recombinatorial_novelty_report.json",
+      "evidence_sha256": "d0ccabca053e146b4d22dc39de85a701df20b3159b049b38f913f5c5591b9651",
+      "field": "textual_measured_versions",
+      "release_reproducible": true,
+      "value": 7939
+    },
+    {
+      "claim_id": "textual_recombinatorial_documents",
+      "evidence_path": "results/observatory/r2/recombinatorial_novelty_report.json",
+      "evidence_sha256": "d0ccabca053e146b4d22dc39de85a701df20b3159b049b38f913f5c5591b9651",
+      "field": "textual_documents",
+      "release_reproducible": true,
+      "value": 8563
+    },
+    {
+      "claim_id": "textual_recombinatorial_coverage",
+      "evidence_path": "results/observatory/r2/recombinatorial_novelty_report.json",
+      "evidence_sha256": "d0ccabca053e146b4d22dc39de85a701df20b3159b049b38f913f5c5591b9651",
+      "field": "textual_coverage",
+      "release_reproducible": true,
+      "value": 0.9271283428704893
+    },
+    {
+      "claim_id": "source_declared_lineage_edges",
+      "evidence_path": "results/observatory/r3/lineage_products_report.json",
+      "evidence_sha256": "ccbaf887bad0a11993e613bd98bf1db761bcb9f3e07da51bf03493de682b5be6",
+      "field": "edges",
+      "release_reproducible": true,
+      "value": 1080
+    },
+    {
+      "claim_id": "linkage_candidate_pairs",
+      "evidence_path": "results/observatory/r3/lineage_products_report.json",
+      "evidence_sha256": "ccbaf887bad0a11993e613bd98bf1db761bcb9f3e07da51bf03493de682b5be6",
+      "field": "candidate_pairs",
+      "release_reproducible": true,
+      "value": 953
+    },
+    {
+      "claim_id": "probabilistic_linkage_candidates",
+      "evidence_path": "results/observatory/r3/lineage_products_report.json",
+      "evidence_sha256": "ccbaf887bad0a11993e613bd98bf1db761bcb9f3e07da51bf03493de682b5be6",
+      "field": "probabilistic_candidate_pairs",
+      "release_reproducible": true,
+      "value": 75897
+    },
+    {
+      "claim_id": "probabilistic_high_recall_pairs",
+      "evidence_path": "results/observatory/r3/lineage_products_report.json",
+      "evidence_sha256": "ccbaf887bad0a11993e613bd98bf1db761bcb9f3e07da51bf03493de682b5be6",
+      "field": "probabilistic_high_recall_pairs",
+      "release_reproducible": true,
+      "value": 6652
+    },
+    {
+      "claim_id": "version_alignments",
+      "evidence_path": "results/observatory/r3/lineage_products_report.json",
+      "evidence_sha256": "ccbaf887bad0a11993e613bd98bf1db761bcb9f3e07da51bf03493de682b5be6",
+      "field": "alignment_rows",
+      "release_reproducible": true,
+      "value": 199
+    },
+    {
+      "claim_id": "candidate_gate_chains",
+      "evidence_path": "results/observatory/r3/lineage_products_report.json",
+      "evidence_sha256": "ccbaf887bad0a11993e613bd98bf1db761bcb9f3e07da51bf03493de682b5be6",
+      "field": "chain_rows",
+      "release_reproducible": true,
+      "value": 8627
+    },
+    {
+      "claim_id": "lineage_audit_n",
+      "evidence_path": "results/observatory/r3/linkage_benchmark.json",
+      "evidence_sha256": "733b0200e62bb33d849206ac3bed941e392d47c5ff12fb2558abd9dfb1e930be",
+      "field": "analysis_grade.audited",
+      "release_reproducible": true,
+      "value": 711
+    },
+    {
+      "claim_id": "lineage_precision",
+      "evidence_path": "results/observatory/r3/linkage_benchmark.json",
+      "evidence_sha256": "733b0200e62bb33d849206ac3bed941e392d47c5ff12fb2558abd9dfb1e930be",
+      "field": "analysis_grade.precision",
+      "release_reproducible": true,
+      "value": 1.0
+    },
+    {
+      "claim_id": "lineage_precision_lower",
+      "evidence_path": "results/observatory/r3/linkage_benchmark.json",
+      "evidence_sha256": "733b0200e62bb33d849206ac3bed941e392d47c5ff12fb2558abd9dfb1e930be",
+      "field": "analysis_grade.precision_wilson_lower_95",
+      "release_reproducible": true,
+      "value": 0.9946261387426637
+    },
+    {
+      "claim_id": "probabilistic_balanced_pairs",
+      "evidence_path": "results/observatory/r3/linkage_benchmark.json",
+      "evidence_sha256": "733b0200e62bb33d849206ac3bed941e392d47c5ff12fb2558abd9dfb1e930be",
+      "field": "probabilistic_model.threshold_edge_counts.balanced_0_50",
+      "release_reproducible": true,
+      "value": 3330
+    },
+    {
+      "claim_id": "probabilistic_high_precision_pairs",
+      "evidence_path": "results/observatory/r3/linkage_benchmark.json",
+      "evidence_sha256": "733b0200e62bb33d849206ac3bed941e392d47c5ff12fb2558abd9dfb1e930be",
+      "field": "probabilistic_model.threshold_edge_counts.high_precision_0_90",
+      "release_reproducible": true,
+      "value": 253
+    },
+    {
+      "claim_id": "human_review_spans",
+      "evidence_path": "results/observatory/validity/external_human_benchmarks_report.json",
+      "evidence_sha256": "0ce2da44a727d38ec112929e46de8f2aa0063748475c9a3e366799962859de9d",
+      "field": "human_annotated_spans",
+      "release_reproducible": true,
+      "value": 13724
+    },
+    {
+      "claim_id": "human_review_min_auc",
+      "evidence_path": "results/observatory/validity/external_human_benchmarks_report.json",
+      "evidence_sha256": "0ce2da44a727d38ec112929e46de8f2aa0063748475c9a3e366799962859de9d",
+      "field": "construct_min_grouped_cv_auc",
+      "release_reproducible": true,
+      "value": 0.7199748460825475
+    },
+    {
+      "claim_id": "human_review_max_auc",
+      "evidence_path": "results/observatory/validity/external_human_benchmarks_report.json",
+      "evidence_sha256": "0ce2da44a727d38ec112929e46de8f2aa0063748475c9a3e366799962859de9d",
+      "field": "construct_max_grouped_cv_auc",
+      "release_reproducible": true,
+      "value": 0.9379519819321999
+    },
+    {
+      "claim_id": "human_lineage_decisive_pairs",
+      "evidence_path": "results/observatory/validity/external_human_benchmarks_report.json",
+      "evidence_sha256": "0ce2da44a727d38ec112929e46de8f2aa0063748475c9a3e366799962859de9d",
+      "field": "lineage_two_decisive_labels",
+      "release_reproducible": true,
+      "value": 284
+    },
+    {
+      "claim_id": "human_lineage_consensus_pairs",
+      "evidence_path": "results/observatory/validity/external_human_benchmarks_report.json",
+      "evidence_sha256": "0ce2da44a727d38ec112929e46de8f2aa0063748475c9a3e366799962859de9d",
+      "field": "lineage_consensus_rows",
+      "release_reproducible": true,
+      "value": 269
+    },
+    {
+      "claim_id": "human_lineage_kappa",
+      "evidence_path": "results/observatory/validity/external_human_benchmarks_report.json",
+      "evidence_sha256": "0ce2da44a727d38ec112929e46de8f2aa0063748475c9a3e366799962859de9d",
+      "field": "lineage_annotator_kappa",
+      "release_reproducible": true,
+      "value": 0.8587720461477257
+    },
+    {
+      "claim_id": "human_lineage_oof_auc",
+      "evidence_path": "results/observatory/validity/external_human_benchmarks_report.json",
+      "evidence_sha256": "0ce2da44a727d38ec112929e46de8f2aa0063748475c9a3e366799962859de9d",
+      "field": "lineage_human_calibration.out_of_fold_roc_auc",
+      "release_reproducible": true,
+      "value": 0.9711820003082139
+    },
+    {
+      "claim_id": "afterlife_candidates",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "candidate_count",
+      "release_reproducible": true,
+      "value": 8903
+    },
+    {
+      "claim_id": "publication_link_precision",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "publication_link_precision",
+      "release_reproducible": true,
+      "value": 1.0
+    },
+    {
+      "claim_id": "publication_link_precision_lower",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "publication_link_precision_lower_95",
+      "release_reproducible": true,
+      "value": 0.9893835857471552
+    },
+    {
+      "claim_id": "immature_outcomes_excluded",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "immature_rows_excluded",
+      "release_reproducible": true,
+      "value": 113
+    },
+    {
+      "claim_id": "publication_observation_window_rows",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "publication_observation_window_rows",
+      "release_reproducible": true,
+      "value": 35612
+    },
+    {
+      "claim_id": "mature_observation_window_rows",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "mature_observation_window_rows",
+      "release_reproducible": true,
+      "value": 32510
+    },
+    {
+      "claim_id": "publication_event_times_unidentified",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "publication_event_times_unidentified",
+      "release_reproducible": true,
+      "value": 8903
+    },
+    {
+      "claim_id": "publication_linkage_bound_rows",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "publication_linkage_bound_rows",
+      "release_reproducible": true,
+      "value": 224
+    },
+    {
+      "claim_id": "unmatched_as_nonpublication",
+      "evidence_path": "results/observatory/r2/afterlife_products_report.json",
+      "evidence_sha256": "6f1d60facb8edcfdce64ecaeb7547398c9b9200516e97fc514759a4fd695df56",
+      "field": "unmatched_classified_as_unpublished",
+      "release_reproducible": true,
+      "value": 0
+    },
+    {
+      "claim_id": "observability_bound_cycles",
+      "evidence_path": "results/observatory/validity/observability_bounds_report.json",
+      "evidence_sha256": "f00677e4e94cfcbe487eba0d720b5bc697d4b94480aeaeb405016b74f8062127",
+      "field": "cycles",
+      "release_reproducible": true,
+      "value": 4872
+    },
+    {
+      "claim_id": "hidden_screen_sensitivity_rows",
+      "evidence_path": "results/observatory/validity/observability_bounds_report.json",
+      "evidence_sha256": "f00677e4e94cfcbe487eba0d720b5bc697d4b94480aeaeb405016b74f8062127",
+      "field": "sensitivity_rows",
+      "release_reproducible": true,
+      "value": 34104
+    },
+    {
+      "claim_id": "public_observability_snapshots",
+      "evidence_path": "results/observatory/validity/observability_bounds_report.json",
+      "evidence_sha256": "f00677e4e94cfcbe487eba0d720b5bc697d4b94480aeaeb405016b74f8062127",
+      "field": "public_observability_snapshots",
+      "release_reproducible": true,
+      "value": 2
+    },
+    {
+      "claim_id": "public_observability_snapshot_rows",
+      "evidence_path": "results/observatory/validity/observability_bounds_report.json",
+      "evidence_sha256": "f00677e4e94cfcbe487eba0d720b5bc697d4b94480aeaeb405016b74f8062127",
+      "field": "snapshot_rows",
+      "release_reproducible": true,
+      "value": 410
+    },
+    {
+      "claim_id": "observability_recorded_grade_changes",
+      "evidence_path": "results/observatory/validity/observability_bounds_report.json",
+      "evidence_sha256": "f00677e4e94cfcbe487eba0d720b5bc697d4b94480aeaeb405016b74f8062127",
+      "field": "recorded_grade_changes",
+      "release_reproducible": true,
+      "value": 0
+    },
+    {
+      "claim_id": "observability_recorded_count_changes",
+      "evidence_path": "results/observatory/validity/observability_bounds_report.json",
+      "evidence_sha256": "f00677e4e94cfcbe487eba0d720b5bc697d4b94480aeaeb405016b74f8062127",
+      "field": "recorded_provider_count_changes",
+      "release_reproducible": true,
+      "value": 9
+    },
+    {
+      "claim_id": "transport_source_pairs",
+      "evidence_path": "results/observatory/validity/transportability_diagnostics_report.json",
+      "evidence_sha256": "2cb494e30e1f42858a773dc74a5bcf8c3619dcdffec46e7c4538fe31930e0384",
+      "field": "source_pairs",
+      "release_reproducible": true,
+      "value": 120
+    },
+    {
+      "claim_id": "pointer_rebuild_artifacts",
+      "evidence_path": "results/observatory/validity/pointer_rebuild_registry_report.json",
+      "evidence_sha256": "31b11ea1bce587e6601a2ca38a033b436760cbd3c8c1c729692479b4df365072",
+      "field": "artifacts",
+      "release_reproducible": true,
+      "value": 684
+    },
+    {
+      "claim_id": "registered_reforms",
+      "evidence_path": "results/observatory/r3/strain_reform_report.json",
+      "evidence_sha256": "41060156f190360dfcc8e39e1ae2b1b7b5bb2c3ec79ef49c9d31729f7b023104",
+      "field": "registered_events",
+      "release_reproducible": true,
+      "value": 3
+    },
+    {
+      "claim_id": "funding_instruments",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "instruments",
+      "release_reproducible": true,
+      "value": 18
+    },
+    {
+      "claim_id": "ukri_opportunities",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "ukri_opportunities",
+      "release_reproducible": true,
+      "value": 2102
+    },
+    {
+      "claim_id": "ukri_panel_rounds",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "ukri_panel_rounds",
+      "release_reproducible": true,
+      "value": 1449
+    },
+    {
+      "claim_id": "repeat_awardee_lower_bounds",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "repeat_awardee_lower_bounds",
+      "release_reproducible": true,
+      "value": 1555
+    },
+    {
+      "claim_id": "funding_panel_application_events",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "public_panel_application_events",
+      "release_reproducible": true,
+      "value": 21883
+    },
+    {
+      "claim_id": "funding_panel_choice_sets",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "public_panel_choice_sets",
+      "release_reproducible": true,
+      "value": 1521
+    },
+    {
+      "claim_id": "snsf_proposal_panel_events",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "snsf_proposal_panel_events",
+      "release_reproducible": true,
+      "value": 432
+    },
+    {
+      "claim_id": "snsf_individual_vote_cells",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "snsf_individual_vote_cells",
+      "release_reproducible": true,
+      "value": 4811
+    },
+    {
+      "claim_id": "snsf_outcome_observed_proposals",
+      "evidence_path": "results/observatory/r4/funding_products_report.json",
+      "evidence_sha256": "91989013ff67e3e116afec98df7dc670dbb2c396631fca489dd456e2f3808490",
+      "field": "snsf_outcome_observed_proposals",
+      "release_reproducible": true,
+      "value": 353
+    },
+    {
+      "claim_id": "patent_pilot_applications",
+      "evidence_path": "results/observatory/r4/patent_pilot_report.json",
+      "evidence_sha256": "a17d5d5493880142b9a139ad5ae2e8dd3cd8a1badebb1ac71ef489e97a52de7b",
+      "field": "provider_published_cases",
+      "release_reproducible": true,
+      "value": 8143
+    },
+    {
+      "claim_id": "patent_action_chains",
+      "evidence_path": "results/observatory/r4/patent_products_report.json",
+      "evidence_sha256": "3dec7a474335352ae5c5276be11a9031b52bab4c9416ce512c1c7e9b1af05ea4",
+      "field": "action_chain_rows",
+      "release_reproducible": true,
+      "value": 40715
+    },
+    {
+      "claim_id": "patent_claim_alignment_rows",
+      "evidence_path": "results/observatory/r4/patent_products_report.json",
+      "evidence_sha256": "3dec7a474335352ae5c5276be11a9031b52bab4c9416ce512c1c7e9b1af05ea4",
+      "field": "claim_alignment_rows",
+      "release_reproducible": true,
+      "value": 174120
+    },
+    {
+      "claim_id": "patent_prior_art_links",
+      "evidence_path": "results/observatory/r4/patent_products_report.json",
+      "evidence_sha256": "3dec7a474335352ae5c5276be11a9031b52bab4c9416ce512c1c7e9b1af05ea4",
+      "field": "prior_art_links",
+      "release_reproducible": true,
+      "value": 24232
+    },
+    {
+      "claim_id": "patent_capacity_cells",
+      "evidence_path": "results/observatory/r4/patent_products_report.json",
+      "evidence_sha256": "3dec7a474335352ae5c5276be11a9031b52bab4c9416ce512c1c7e9b1af05ea4",
+      "field": "capacity_cells",
+      "release_reproducible": true,
+      "value": 3391
+    },
+    {
+      "claim_id": "patent_claim_alignment_coverage",
+      "evidence_path": "results/observatory/r4/patent_pilot_report.json",
+      "evidence_sha256": "a17d5d5493880142b9a139ad5ae2e8dd3cd8a1badebb1ac71ef489e97a52de7b",
+      "field": "claim_alignment_coverage",
+      "release_reproducible": true,
+      "value": 0.9093900758097864
+    },
+    {
+      "claim_id": "patent_claim_alignment_unresolved",
+      "evidence_path": "results/observatory/r4/patent_pilot_report.json",
+      "evidence_sha256": "a17d5d5493880142b9a139ad5ae2e8dd3cd8a1badebb1ac71ef489e97a52de7b",
+      "field": "claim_alignment_unresolved",
+      "release_reproducible": true,
+      "value": 15777
+    },
+    {
+      "claim_id": "patent_claim_state_accounting_coverage",
+      "evidence_path": "results/observatory/r4/patent_pilot_report.json",
+      "evidence_sha256": "a17d5d5493880142b9a139ad5ae2e8dd3cd8a1badebb1ac71ef489e97a52de7b",
+      "field": "claim_state_accounting_coverage",
+      "release_reproducible": true,
+      "value": 1.0
+    },
+    {
+      "claim_id": "patent_initial_only_claim_states",
+      "evidence_path": "results/observatory/r4/patent_pilot_report.json",
+      "evidence_sha256": "a17d5d5493880142b9a139ad5ae2e8dd3cd8a1badebb1ac71ef489e97a52de7b",
+      "field": "initial_only_claim_states",
+      "release_reproducible": true,
+      "value": 229
+    },
+    {
+      "claim_id": "patent_final_only_claim_states",
+      "evidence_path": "results/observatory/r4/patent_pilot_report.json",
+      "evidence_sha256": "a17d5d5493880142b9a139ad5ae2e8dd3cd8a1badebb1ac71ef489e97a52de7b",
+      "field": "final_only_claim_states",
+      "release_reproducible": true,
+      "value": 15548
+    },
+    {
+      "claim_id": "hupd_public_applications",
+      "evidence_path": "results/observatory/validity/hupd_population_report.json",
+      "evidence_sha256": "0550472f830c3c88593b448cbbacfd9bc24d42ff1bda27ba5f1fb4dea3824c06",
+      "field": "distinct_applications",
+      "release_reproducible": true,
+      "value": 4518254
+    },
+    {
+      "claim_id": "hupd_accepted_applications",
+      "evidence_path": "results/observatory/validity/hupd_population_report.json",
+      "evidence_sha256": "0550472f830c3c88593b448cbbacfd9bc24d42ff1bda27ba5f1fb4dea3824c06",
+      "field": "accepted_as_of_2020",
+      "release_reproducible": true,
+      "value": 2225736
+    },
+    {
+      "claim_id": "hupd_rejected_applications",
+      "evidence_path": "results/observatory/validity/hupd_population_report.json",
+      "evidence_sha256": "0550472f830c3c88593b448cbbacfd9bc24d42ff1bda27ba5f1fb4dea3824c06",
+      "field": "rejected_as_of_2020",
+      "release_reproducible": true,
+      "value": 1112710
+    },
+    {
+      "claim_id": "hupd_population_cells",
+      "evidence_path": "results/observatory/validity/hupd_population_report.json",
+      "evidence_sha256": "0550472f830c3c88593b448cbbacfd9bc24d42ff1bda27ba5f1fb4dea3824c06",
+      "field": "population_cells",
+      "release_reproducible": true,
+      "value": 578
+    },
+    {
+      "claim_id": "panorama_hupd_overlap_2004_2016",
+      "evidence_path": "results/observatory/r4/patent_population_report.json",
+      "evidence_sha256": "0896e132a0765c620e3f1ecaaecebbd9bb6db3a38601843381d376a507d45c53",
+      "field": "panorama_2004_2016_overlap",
+      "release_reproducible": true,
+      "value": 0.9148936170212766
+    },
+    {
+      "claim_id": "panorama_exact_hupd_matches",
+      "evidence_path": "results/observatory/r4/patent_population_report.json",
+      "evidence_sha256": "0896e132a0765c620e3f1ecaaecebbd9bb6db3a38601843381d376a507d45c53",
+      "field": "panorama_reconciliation_counts.exact_hupd_application_match",
+      "release_reproducible": true,
+      "value": 3416
+    },
+    {
+      "claim_id": "panorama_within_hupd_year_nonmatches",
+      "evidence_path": "results/observatory/r4/patent_population_report.json",
+      "evidence_sha256": "0896e132a0765c620e3f1ecaaecebbd9bb6db3a38601843381d376a507d45c53",
+      "field": "panorama_reconciliation_counts.within_hupd_year_boundary_not_present",
+      "release_reproducible": true,
+      "value": 1195
+    },
+    {
+      "claim_id": "panorama_outside_hupd_year_boundary",
+      "evidence_path": "results/observatory/r4/patent_population_report.json",
+      "evidence_sha256": "0896e132a0765c620e3f1ecaaecebbd9bb6db3a38601843381d376a507d45c53",
+      "field": "panorama_reconciliation_counts.outside_hupd_filing_year_boundary",
+      "release_reproducible": true,
+      "value": 3532
+    },
+    {
+      "claim_id": "stage_outcome_audit_n",
+      "evidence_path": "results/observatory/r1/stage_outcome_audit.json",
+      "evidence_sha256": "39ac6963a02bb6f46697db521d3b93ff8c040f660d842e4c13fde30a2bb1a7af",
+      "field": "population_count",
+      "release_reproducible": true,
+      "value": 7255
+    },
+    {
+      "claim_id": "stage_outcome_precision",
+      "evidence_path": "results/observatory/r1/stage_outcome_audit.json",
+      "evidence_sha256": "39ac6963a02bb6f46697db521d3b93ff8c040f660d842e4c13fde30a2bb1a7af",
+      "field": "precision",
+      "release_reproducible": true,
+      "value": 1.0
+    },
+    {
+      "claim_id": "schema_artifacts",
+      "evidence_path": "results/observatory/r5/disaster_recovery_drill.json",
+      "evidence_sha256": "a9fa58c66a722d75d3c8fad77531b4b41ae575f23d09023a59d4dc21d435f977",
+      "field": "r0_schema_artifacts",
+      "release_reproducible": true,
+      "value": 26
+    },
+    {
+      "claim_id": "registered_estimands",
+      "evidence_path": "results/observatory/r5/disaster_recovery_drill.json",
+      "evidence_sha256": "a9fa58c66a722d75d3c8fad77531b4b41ae575f23d09023a59d4dc21d435f977",
+      "field": "r0_registry_validation.estimands",
+      "release_reproducible": true,
+      "value": 21
+    },
+    {
+      "claim_id": "recovery_source_cards",
+      "evidence_path": "results/observatory/r5/disaster_recovery_drill.json",
+      "evidence_sha256": "a9fa58c66a722d75d3c8fad77531b4b41ae575f23d09023a59d4dc21d435f977",
+      "field": "r0_registry_validation.source_cards",
+      "release_reproducible": true,
+      "value": 53
+    },
+    {
+      "claim_id": "community_benchmark_tasks",
+      "evidence_path": "results/observatory/r5/community_benchmark_report.json",
+      "evidence_sha256": "6a63e1c5c4a2210431bd0a159c7347edbf9248485ccf7a045871dfa1edad1ebf",
+      "field": "tasks",
+      "release_reproducible": true,
+      "value": 6
+    },
+    {
+      "claim_id": "modal_completed_receipts",
+      "evidence_path": "results/observatory/r5/modal_budget_ledger_audit.json",
+      "evidence_sha256": "b464ee32dc3b8c3b24a4fc639429e1f3d5d53e436dd94074dae65dd571ccbeb7",
+      "field": "completed_receipts",
+      "release_reproducible": true,
+      "value": 12
+    },
+    {
+      "claim_id": "modal_spend_usd",
+      "evidence_path": "results/observatory/r5/modal_budget_ledger_audit.json",
+      "evidence_sha256": "b464ee32dc3b8c3b24a4fc639429e1f3d5d53e436dd94074dae65dd571ccbeb7",
+      "field": "provider_total_usd",
+      "release_reproducible": true,
+      "value": 26.78175951
+    },
+    {
+      "claim_id": "source_cards",
+      "evidence_path": "configs/observatory/sources.yaml",
+      "evidence_sha256": "5edff28c73898e25042f187184f9b3c403e4e4d23d96644783d931dbce37c560",
+      "field": "len(sources)",
+      "release_reproducible": true,
+      "value": 53
+    },
+    {
+      "claim_id": "release_components",
+      "evidence_path": "configs/observatory/release_components.yaml",
+      "evidence_sha256": "91f525093e3d487daf265fd97d9509336eeaf27d59df6e5d6dc10d0ed3b22c40",
+      "field": "len(components)",
+      "release_reproducible": true,
+      "value": 6
+    },
+    {
+      "claim_id": "release_parquet_tables",
+      "evidence_path": "configs/observatory/release_components.yaml",
+      "evidence_sha256": "91f525093e3d487daf265fd97d9509336eeaf27d59df6e5d6dc10d0ed3b22c40",
+      "field": "count(components.*.files[*.parquet])",
+      "release_reproducible": true,
+      "value": 72
+    }
+  ],
+  "comment_only_registration_present": false,
+  "frozen_release_doi": null,
+  "generated_macro_count": 130,
+  "generated_macro_values_match_ledger": true,
+  "macro_value_mismatches": [],
+  "nonclaims_due_missing_registered_field": [],
+  "paper_claim_ids": [
+    "admissible_rate_cycles",
+    "afterlife_candidates",
+    "candidate_gate_chains",
+    "construct_atlas_constructs",
+    "construct_atlas_rulers",
+    "construct_atlas_selectors",
+    "construct_span_audit_n",
+    "construct_span_precision",
+    "construct_span_precision_lower",
+    "evaluation_objects",
+    "exact_evaluation_joins",
+    "funding_instruments",
+    "funding_panel_application_events",
+    "funding_panel_choice_sets",
+    "future_dated_exclusions",
+    "hidden_screen_sensitivity_rows",
+    "historical_policy_versions",
+    "human_lineage_consensus_pairs",
+    "human_lineage_decisive_pairs",
+    "human_lineage_kappa",
+    "human_lineage_oof_auc",
+    "human_review_max_auc",
+    "human_review_min_auc",
+    "human_review_spans",
+    "hupd_population_cells",
+    "hupd_public_applications",
+    "immature_outcomes_excluded",
+    "institutional_gate_cycles",
+    "lineage_audit_n",
+    "lineage_precision",
+    "lineage_precision_lower",
+    "mature_observation_window_rows",
+    "observability_census_cycles",
+    "observability_recorded_count_changes",
+    "observability_recorded_grade_changes",
+    "openreview_current_notes",
+    "openreview_forums",
+    "openreview_passing_cycles",
+    "openreview_rule_records",
+    "panorama_exact_hupd_matches",
+    "panorama_hupd_overlap_2004_2016",
+    "panorama_outside_hupd_year_boundary",
+    "panorama_within_hupd_year_nonmatches",
+    "patent_action_chains",
+    "patent_capacity_cells",
+    "patent_claim_alignment_coverage",
+    "patent_claim_alignment_rows",
+    "patent_final_only_claim_states",
+    "patent_initial_only_claim_states",
+    "patent_pilot_applications",
+    "patent_prior_art_links",
+    "pointer_rebuild_artifacts",
+    "policy_surface_cycles",
+    "populated_admissible_cycles",
+    "probabilistic_balanced_pairs",
+    "probabilistic_high_precision_pairs",
+    "probabilistic_high_recall_pairs",
+    "probabilistic_linkage_candidates",
+    "public_observability_snapshot_rows",
+    "publication_event_times_unidentified",
+    "publication_gate_cycles",
+    "publication_link_precision",
+    "publication_link_precision_lower",
+    "publication_linkage_bound_rows",
+    "publication_observation_window_rows",
+    "qwen3_semantic_rows",
+    "recombinatorial_versions",
+    "recovery_source_cards",
+    "registered_estimands",
+    "release_components",
+    "release_parquet_tables",
+    "repeat_awardee_lower_bounds",
+    "review_rate_cycles",
+    "rubric_fields",
+    "schema_artifacts",
+    "selection_rate_cycles",
+    "semantic_feature_rows",
+    "semantic_ruler_centroid_spearman",
+    "semantic_ruler_median_disagreement",
+    "semantic_ruler_shared_rows",
+    "snsf_individual_vote_cells",
+    "snsf_outcome_observed_proposals",
+    "snsf_proposal_panel_events",
+    "source_cards",
+    "source_declared_lineage_edges",
+    "stage_outcome_audit_n",
+    "stage_outcome_precision",
+    "textual_recombinatorial_coverage",
+    "textual_recombinatorial_documents",
+    "textual_recombinatorial_versions",
+    "transport_source_pairs",
+    "ukri_opportunities",
+    "ukri_panel_rounds",
+    "verified_openreview_candidates",
+    "verified_openreview_cycles",
+    "verified_openreview_populated_cycles",
+    "verified_openreview_reviews",
+    "version_alignments"
+  ],
+  "paper_claims_without_ledger_row": [],
+  "paper_macro_usage_count": 98,
+  "paper_path": "docs/observatory/DATA_METHODS_PAPER.tex",
+  "paper_submitted": false,
+  "passes_quantitative_reproduction": true,
+  "passes_submission_acceptance": false,
+  "schema": "observatory.quantitative-claim-ledger/1"
+}

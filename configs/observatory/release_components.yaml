@@ -1,0 +1,205 @@
+schema: observatory.release-components/1
+release_id: open-selection-graph-2.0.0
+components:
+  metadata:
+    licence: CC0-1.0
+    notice: Canonical identifiers, schemas, source cards, coverage facts, and generated metadata.
+    files:
+      - results/observatory/source_coverage_atlas.json
+      - results/observatory/r1/gate_cycle_flow_series.parquet
+      - results/observatory/openreview_verified_cycle_metrics.parquet
+      - results/observatory/r1/institutional_regime_archive.parquet
+      - results/observatory/r1/openreview_extracted_rules.parquet
+      - results/observatory/r1/rubric_construct_crosswalk.parquet
+      - results/observatory/r2/historical_policy_archive.parquet
+      - results/observatory/r2/text_reference_coverage.parquet
+      - results/observatory/r2/CORPUS_ATTRIBUTION.json
+      - results/observatory/r3/gate_cycle_descriptive_atlas.parquet
+      - results/observatory/r3/gate_cycle_observability_census.parquet
+      - results/observatory/r3/registered_reforms.parquet
+      - results/observatory/validity/pointer_rebuild_registry.parquet
+      - results/observatory/r5/calibration_target_panel.parquet
+      - results/observatory/r5/community_benchmark_tasks.parquet
+      - results/observatory/r5/legal_scientific_construct_crosswalk.parquet
+      - results/observatory/r5/explorer/index.html
+      - configs/observatory/community_benchmarks.yaml
+      - configs/observatory/dynamic_estimands.yaml
+      - configs/observatory/update_schedule.yaml
+      - docs/observatory/DATA_CARD.md
+      - docs/observatory/SCHEMA_HANDBOOK.md
+      - docs/observatory/OBSERVABILITY_HANDBOOK.md
+      - docs/observatory/CORPUS_ATTRIBUTION.md
+      - docs/observatory/CITATION.cff
+      - docs/observatory/TAKEDOWN_AND_CORRECTIONS.md
+      - docs/observatory/COMMUNITY_CONTRIBUTING.md
+      - docs/observatory/RELEASE_MIGRATIONS.md
+      - docs/observatory/DATA_METHODS_PAPER.tex
+      - docs/observatory/figures/osg_er_diagram.tex
+      - docs/observatory/figures/osg_descriptive_overview.pdf
+      - docs/observatory/figures/osg_descriptive_overview.png
+      - docs/observatory/generated/descriptive_tables.tex
+      - docs/observatory/generated/quantitative_claims.tex
+      - docs/observatory/DURABLE_RELEASE_PLAN.md
+      - docs/observatory/issue_templates/new_adapter.md
+      - docs/observatory/issue_templates/source_correction.md
+      - docs/observatory/issue_templates/takedown.md
+  derived_features:
+    licence: CC-BY-4.0
+    notice: Derived evaluation and novelty features; no source full text is redistributed.
+    files:
+      - results/observatory/r1/evaluation_objects.parquet
+      - results/observatory/r1/semantic_novelty.parquet
+      - results/observatory/r2/afterlife_panel.parquet
+      - results/observatory/r2/construct_reliability.parquet
+      - results/observatory/r2/construct_spans.parquet
+      - results/observatory/r2/corrections_withdrawals.parquet
+      - results/observatory/r2/fixed_window_outcomes.parquet
+      - results/observatory/r2/novelty_evaluation_atlas.parquet
+      - results/observatory/r2/recombinatorial_novelty.parquet
+      - results/observatory/r2/textual_recombinatorial_novelty.parquet
+      - results/observatory/r2/research_object_links.parquet
+      - results/observatory/r2/outcome_observation_state.parquet
+      - results/observatory/r2/publication_linkage_bounds.parquet
+      - results/observatory/r2/publication_observation_windows.parquet
+      - results/observatory/r3/candidate_gate_chains.parquet
+      - results/observatory/r3/construct_invariance.parquet
+      - results/observatory/r3/content_claim_features.parquet
+      - results/observatory/r3/evaluator_supply_strain.parquet
+      - results/observatory/r3/lineage_edges_release.parquet
+      - results/observatory/r3/probabilistic_lineage_candidates.parquet
+      - results/observatory/r3/lineage_sensitivity.parquet
+      - results/observatory/r3/rulers_doors_cells.parquet
+      - results/observatory/r3/strain_conservatism_analysis.parquet
+      - results/observatory/r3/timing_strain_series.parquet
+      - results/observatory/r3/version_alignment.parquet
+      - results/observatory/validity/freeform_construct_benchmark.parquet
+      - results/observatory/validity/hidden_screen_sensitivity.parquet
+      - results/observatory/validity/human_adjudicated_lineage_benchmark.parquet
+      - results/observatory/validity/observability_partial_identification.parquet
+      - results/observatory/validity/observability_snapshot_history.parquet
+      - results/observatory/validity/coverage_record_history.parquet
+      - results/observatory/validity/qwen3_freeform_construct_oof.parquet
+      - results/observatory/validity/qwen3_lineage_title_neighbors.parquet
+      - results/observatory/validity/qwen3_semantic_novelty.parquet
+      - results/observatory/validity/semantic_ruler_triangulation.parquet
+      - results/observatory/validity/transportability_diagnostics.parquet
+  funding_open_panels:
+    licence: CC-BY-4.0 and OGL-3.0; source-level notices control
+    notice: Anonymised proposal-level public panel populations from UKRI and SNSF; no proposal text, person fields, or assignment arms.
+    files:
+      - results/observatory/r4/funding_panel_application_events.parquet
+      - results/observatory/r4/funding_panel_choice_sets.parquet
+      - results/observatory/r4/snsf_individual_vote_cells.parquet
+      - results/observatory/r4/snsf_panel_choice_sets.parquet
+      - results/observatory/r4/snsf_proposal_panel_events.parquet
+  funding_noncommercial:
+    licence: CC-BY-NC-SA-4.0
+    notice: Derived public funding panels. Upstream source terms and non-commercial/share-alike obligations control.
+    files:
+      - results/observatory/r4/funding_instrument_evaluability.parquet
+      - results/observatory/r4/funding_portfolio_series.parquet
+      - results/observatory/r4/funding_repeat_lower_bounds.parquet
+      - results/observatory/r4/grant_output_linkage.parquet
+      - results/observatory/r4/nerc_ptf_rounds.parquet
+      - results/observatory/r4/ukri_opportunity_registry.parquet
+      - results/observatory/r4/ukri_panel_rounds.parquet
+      - results/observatory/r4/ukri_round_registry.parquet
+  patent_noncommercial:
+    licence: CC-BY-NC-SA-4.0
+    notice: Derived PANORAMA process panel, full privacy-minimised HUPD application census, and hash-only crosswalk; no source claims, invention text, or person fields redistributed.
+    files:
+      - results/observatory/r4/patent_action_chains.parquet
+      - results/observatory/r4/patent_application_panel.parquet
+      - results/observatory/r4/patent_capacity_panel.parquet
+      - results/observatory/r4/patent_claim_alignment.parquet
+      - results/observatory/r4/patent_policy_events.parquet
+      - results/observatory/r4/patent_population_crosswalk.parquet
+      - results/observatory/r4/patent_prior_art_links.parquet
+      - results/observatory/validity/hupd_application_population.parquet
+      - results/observatory/validity/hupd_population_cells.parquet
+  validation:
+    licence: CC0-1.0
+    notice: Machine-readable manifests and aggregate validation evidence.
+    files:
+      - results/observatory/r1/evaluation_products_report.json
+      - results/observatory/r1/cleanroom_fixture_rebuild.json
+      - results/observatory/r1/institutional_products_report.json
+      - results/observatory/r1/policy_extraction_audit.json
+      - results/observatory/r1/p2_semantic_reproduction_audit.json
+      - results/observatory/r1/reference_corpus_manifest.json
+      - results/observatory/r1/semantic_novelty_fixture.json
+      - results/observatory/r1/semantic_novelty_report.json
+      - results/observatory/r1/stage_outcome_audit.json
+      - results/observatory/r1/temporal_leakage_audit.json
+      - results/observatory/r2/afterlife_products_report.json
+      - results/observatory/r2/construct_reliability_report.json
+      - results/observatory/r2/missingness_selection_report.json
+      - results/observatory/r2/notebook_execution_report.json
+      - results/observatory/r2/novelty_evaluation_atlas_report.json
+      - results/observatory/r2/openalex_outcome_snapshot.jsonl
+      - results/observatory/r2/parser_source_drift_report.json
+      - results/observatory/r2/policy_history_report.json
+      - results/observatory/r2/r2_assurance_report.json
+      - results/observatory/r2/r2_privacy_audit.json
+      - results/observatory/r2/recombinatorial_novelty_report.json
+      - results/observatory/r2/terms_access_snapshot.json
+      - results/observatory/r2/text_reference_extraction_audit.json
+      - results/observatory/r3/adversarial_referee_suite.json
+      - results/observatory/r3/construct_model_report.json
+      - results/observatory/r3/feature_determinism_audit.json
+      - results/observatory/r3/gate_cycle_descriptive_atlas_report.json
+      - results/observatory/openreview_verified_cycle_metrics_report.json
+      - results/observatory/r3/descriptive_summary.json
+      - results/observatory/r3/lineage_error_report.json
+      - results/observatory/r3/lineage_products_report.json
+      - results/observatory/r3/linkage_benchmark.json
+      - results/observatory/r3/r3_analysis_contracts.json
+      - results/observatory/r3/strain_reform_report.json
+      - results/observatory/r3/trajectory_analysis_contract.json
+      - results/observatory/r4/funding_external_reproduction_audit.json
+      - results/observatory/r4/funding_identification_firewall_audit.json
+      - results/observatory/r4/funding_products_report.json
+      - results/observatory/r4/funding_panel_choice_sets_report.json
+      - results/observatory/r4/funding_prospective_watcher.json
+      - results/observatory/r4/snsf_individual_vote_panels_report.json
+      - results/observatory/r4/gtr_backup_audit.json
+      - results/observatory/r4/patent_benchmark_reconciliation.json
+      - results/observatory/r4/patent_pilot_report.json
+      - results/observatory/r4/patent_population_report.json
+      - results/observatory/r4/patent_products_report.json
+      - results/observatory/validity/external_human_benchmarks_report.json
+      - results/observatory/validity/hupd_population_report.json
+      - results/observatory/validity/observability_bounds_report.json
+      - results/observatory/validity/pointer_rebuild_registry_report.json
+      - results/observatory/validity/qwen3_freeform_construct_oof_report.json
+      - results/observatory/validity/qwen3_lineage_title_neighbors_report.json
+      - results/observatory/validity/qwen3_semantic_novelty_report.json
+      - results/observatory/validity/semantic_ruler_triangulation_report.json
+      - results/observatory/validity/transportability_diagnostics_report.json
+      - results/observatory/validity/validity_extension_build_report.json
+      - results/observatory/r5/audit_fixture_governance.json
+      - results/observatory/r5/calibration_bridge_report.json
+      - results/observatory/r5/community_benchmark_report.json
+      - results/observatory/r5/community_correction_drill.json
+      - results/observatory/r5/credential_history_quarantine.json
+      - results/observatory/r5/decision_backaudit.json
+      - results/observatory/r5/disaster_recovery_drill.json
+      - results/observatory/r5/dynamic_panel_preregistration.json
+      - results/observatory/r5/funding_evaluability_analysis.json
+      - results/observatory/r5/legal_scientific_comparison_report.json
+      - results/observatory/r5/modal_budget_ledger_audit.json
+      - results/observatory/r5/privacy_licence_redteam.json
+      - results/observatory/r5/publication_readiness.json
+      - results/observatory/r5/quantitative_claim_ledger.json
+      - results/observatory/r5/removal_propagation_report.json
+      - results/observatory/r5/resource_reconciliation_report.json
+      - results/observatory/r5/risk_cards.json
+      - results/observatory/r5/static_explorer_report.json
+      - results/observatory/r5/update_scheduler_audit.json
+excluded_content:
+  - raw source objects
+  - source full text and review text
+  - evaluator public or protected identifiers
+  - authorship protected identifiers
+  - contact fields
+  - pointer-only or restricted content payloads

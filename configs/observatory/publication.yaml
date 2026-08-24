@@ -1,0 +1,31 @@
+schema: observatory.publication-plan/1
+release_id: open-selection-graph-2.0.0
+release_root: results/observatory/releases/open-selection-graph-2.0.0
+creator:
+  name: Anton Waagaard
+  type: person
+  affiliation: Dimensional Impact Lab
+  email: anton@dimpactlab.org
+  contact_released: true
+targets:
+  code_metadata:
+    preferred_provider: GitHub
+    fallback_provider: another free public Git forge
+    required_persistent_path: true
+  dataset_components:
+    preferred_provider: Zenodo
+    fallback_provider: Hugging Face Datasets
+    required_persistent_path: true
+  data_methods_paper:
+    preferred_provider: Zenodo preprint or programme-owner selected data journal
+    requires_frozen_dataset_doi: true
+authentication:
+  persist_tokens: false
+  browser_or_ephemeral_environment_only: true
+  required_write_scopes: [repository-write, deposit-write]
+publication_gates:
+  - package verification passes
+  - two independent paths return live public URLs
+  - downloaded artifacts match local checksums
+  - dataset persistent identifier is frozen into citation and paper
+  - paper submission returns a provider receipt

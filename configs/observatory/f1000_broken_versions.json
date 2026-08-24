@@ -1,0 +1,48 @@
+{
+  "recoveries": {
+    "https://f1000research.com/articles/12-626/v1/xml": {
+      "doi": "10.12688/f1000research.132099.1",
+      "evidence_url": "https://api.crossref.org/works/10.12688%2Ff1000research.132099.1",
+      "licence": "https://creativecommons.org/licenses/by/4.0/",
+      "published": "2023-06-07",
+      "title": "Serum calprotectin as a marker of neonatal sepsis: a hospital-based cross-sectional diagnostic study"
+    },
+    "https://f1000research.com/articles/12-715/v1/xml": {
+      "doi": "10.12688/f1000research.133390.1",
+      "evidence_url": "https://api.crossref.org/works/10.12688%2Ff1000research.133390.1",
+      "licence": "https://creativecommons.org/licenses/by/4.0/",
+      "published": "2023-06-20",
+      "title": "Measuring behaviour in hens using an ethogram to assess analgesia during further refinement of a high welfare, on-hen, poultry red mite feeding device"
+    },
+    "https://f1000research.com/articles/12-765/v2/xml": {
+      "doi": "10.12688/f1000research.136828.2",
+      "evidence_url": "https://api.crossref.org/works/10.12688%2Ff1000research.136828.2",
+      "licence": "https://creativecommons.org/licenses/by/4.0/",
+      "published": "2024-04-23",
+      "title": "Effect of foot core exercises vs ankle proprioceptive neuromuscular facilitation on pain, range of motion, and dynamic balance in individuals with plantar fasciitis: a comparative study"
+    },
+    "https://f1000research.com/articles/13-624/v1/xml": {
+      "doi": "10.12688/f1000research.150838.1",
+      "evidence_url": "https://api.crossref.org/works/10.12688%2Ff1000research.150838.1",
+      "licence": "https://creativecommons.org/licenses/by/3.0/igo/",
+      "published": "2024-06-12",
+      "title": "The association between non-communicable diseases and COVID-19 severity and mortality among infected hospitalized healthcare workers in 29 countries: a cohort study"
+    },
+    "https://f1000research.com/articles/13-624/v2/xml": {
+      "doi": "10.12688/f1000research.150838.2",
+      "evidence_url": "https://api.crossref.org/works/10.12688%2Ff1000research.150838.2",
+      "licence": "https://creativecommons.org/licenses/by/3.0/igo/",
+      "published": "2025-06-11",
+      "title": "The association between non-communicable diseases and COVID-19 severity and mortality among infected hospitalized healthcare workers in 29 countries: a cohort study"
+    },
+    "https://f1000research.com/articles/15-72/v2/xml": {
+      "doi": "10.12688/f1000research.174513.2",
+      "evidence_url": "https://api.crossref.org/works/10.12688%2Ff1000research.174513.2",
+      "licence": "https://creativecommons.org/licenses/by/4.0/",
+      "published": "2026-05-25",
+      "title": "Model Reproduksi Budaya sebagai Penggerak Ketahanan Sosio-budaya: Wawasan dari Tinjauan Sistematis"
+    }
+  },
+  "schema": "observatory.f1000-metadata-recovery/1",
+  "snapshot_hash": "d1ad39f57856b40f67a73a33572dd6ad2f163240ab6dc540813ca28add91ed53"
+}

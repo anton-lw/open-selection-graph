@@ -1,0 +1,85 @@
+schema: observatory.governance/1
+constitution_version: 0.1.0
+plan_version: 0.2.0
+effective_at: 2026-08-10T00:00:00Z
+amended_at: 2026-08-20T00:00:00Z
+authority:
+  - docs/observatory/CONSTITUTION.md
+  - docs/observatory/GOVERNANCE_AND_ETHICS.md
+purposes:
+  - document publicly observable scientific gatekeeping processes
+  - support architecture-aware, coverage-qualified research and public reuse
+public_source_basis: public endpoints, bulk snapshots, repositories, and source-owner pages only
+human_subjects_position: no recruitment, interaction, intervention, or bespoke data partnership
+risk_groups:
+  - anonymous or pseudonymous evaluators
+  - named authors, applicants, editors, and decision makers
+  - people represented in small or sensitive institutional cells
+access_roles:
+  maintainers: encrypted raw and restricted identity fields where source terms permit
+  researchers: normalized research views without secret credentials
+  public: release views only
+release_tiers:
+  public: redistributable normalized fields and non-disclosive aggregates
+  pointer_hash: public source pointers or hashes when content cannot be redistributed
+  aggregate_only: disclosure-controlled statistics; no row-level public release
+  restricted: never included in public row-level releases
+retention:
+  raw: retain only while required for reproducible normalization and source terms permit
+  normalized: immutable versioned releases with deletion tombstones
+  credentials: ephemeral secret-store injection; never retained in data artifacts
+takedown:
+  channel: repository security/contact channel
+  response: quarantine affected release fields or objects, preserve a non-disclosive tombstone, and issue an amended release
+prohibited_uses:
+  - reviewer deanonymization or identity inference
+  - cross-profile joins designed to reveal anonymous participants
+  - individual productivity, quality, employability, or funding rankings
+  - employment evaluation, harassment, surveillance, or automated targeting
+  - reconstruction or redistribution of restricted source text
+table_purposes:
+  gate: identify the institutional gate while preserving architecture
+  gate_cycle: delimit policy-stable venue, track, call, or cycle populations
+  policy_version: preserve temporally valid native institutional rules
+  candidate: represent the candidate entity independently of versions and outcomes
+  candidate_version: preserve observable candidate versions without post-outcome leakage
+  candidate_gate_event: connect candidates to gate cycles and observable entry stages
+  evaluation: represent public evaluation events without enabling reviewer identification
+  decision_event: preserve native decision stages and normalized outcomes
+  content_artifact: record licensed content, pointers, and hashes without unauthorized redistribution
+  lineage_edge: represent declared or probabilistic candidate/version trajectories
+  capacity_observation: represent aggregate workload and institutional capacity proxies
+  coverage_observation: qualify every population and object type with denominator evidence
+  downstream_outcome: represent temporally censored post-gate outcomes
+  source_object: preserve retrieval state and source-level lineage
+  provenance_event: make transformations reproducible and auditable
+  field_provenance: attribute normalized values to source selectors and transformations
+  identifier_alias: resolve public identifiers with explicit confidence and conflicts
+  reference_edge: represent time-valid scholarly references without text reconstruction
+  field_assignment: preserve native and normalized research-field assignments
+  identity_visibility: encode when identity facts were public to a specified audience
+  authorship_observation: encode time- and audience-bounded public authorship facts
+  language_derivative: document translation and language-normalization derivatives
+field_rules:
+  restricted:
+    - evaluator_public_id
+    - evaluator_protected_id
+    - protected_person_id
+    - public_name
+    - public_identifier
+    - raw_pointer
+    - local_pointer
+    - readers_json
+    - signatures_json
+  pointer_hash:
+    - source_url
+    - policy_url
+    - licence
+    - byte_hash
+    - normalized_text_hash
+    - content_hash
+    - raw_citation_hash
+  aggregate_only:
+    - assignments_per_evaluator
+  public_default: public
+

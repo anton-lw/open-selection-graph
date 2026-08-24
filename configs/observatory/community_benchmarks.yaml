@@ -1,0 +1,16 @@
+schema: observatory.community-benchmarks/1
+global_prohibitions:
+  - reviewer deanonymization
+  - individual ranking
+  - proprietary or paid APIs
+  - final-outcome leakage
+tasks:
+  - observability_classification
+  - policy_rubric_extraction
+  - stage_normalization
+  - version_linkage
+  - construct_measurement
+  - calibrated_missingness
+holdouts: [source, time, domain]
+input_policy: redistribute only licence-cleared fixtures; otherwise publish rebuild pointers and hashes
+

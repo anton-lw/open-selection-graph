@@ -1,0 +1,12 @@
+schema: observatory.excluded-sources/1
+constitution_version: 0.1.0
+sources:
+  - {name: Scopus, reason: paid commercial bibliographic API/bulk access, status: prohibited}
+  - {name: Web of Science, reason: paid commercial bibliographic access, status: prohibited}
+  - {name: Dimensions, reason: paid/commercial analytics dependency, status: prohibited}
+  - {name: PATSTAT, reason: paid EPO bulk database, status: prohibited}
+  - {name: Altmetric, reason: paid commercial attention data, status: prohibited}
+  - {name: Lens commercial services, reason: paid patent/scholarly API tiers, status: prohibited}
+  - {name: Google Scholar scraping, reason: no supported bulk API and access-control/terms risk, status: prohibited}
+  - {name: Commercial LLM APIs, reason: paid model calls violate the hard constraint, status: prohibited}
+  - {name: CAPTCHA circumvention, reason: access-control circumvention is never permitted, status: prohibited}

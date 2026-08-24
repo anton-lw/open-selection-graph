@@ -1,0 +1,22 @@
+schema: observatory.release-waves/1
+constitution_version: 0.1.0
+assignment_semantics: one primary implementation/release wave per ticket; cross-wave dependencies remain in the ticket requirements
+waves:
+  R0:
+    purpose: constitution, proof of access, schema, governance, and operational gates
+    tickets: [A1, A2, A3, A4, A5, A6, A7, B1, B5, B6, B7, B8, C1, C2, C3, C4, C5, C6, C7, N1, N3, N7, Q1, Q2, Q4]
+  R1:
+    purpose: shared infrastructure and architecture triangle
+    tickets: [D1, D2, D3, D4, D5, D6, D7, D8, E1, E2, E3, E5, E6, E7, E11, E12, F1, F2, F4, F5, F9, G1, G2, G3, G4, G5, G6, G8, I1, I2, I5, I8, M1, M2, M3, M4, M7, M12, O1, O2, O3, O4]
+  R2:
+    purpose: publication-gate atlas
+    tickets: [E4, E8, E9, E10, F3, G7, G9, I3, I4, I6, I10, J1, J2, J3, J4, N2, N4, N5, M6, M9, M10, O6, O7]
+  R3:
+    purpose: trajectories, versions, constructs, and strain
+    tickets: [H1, H2, H3, H4, H5, H6, H7, H8, H9, I7, I9, J5, J6, J7, J8, F6, F7, F8, M5, M8, M11, P1, P4, P5, P6, P7]
+  R4:
+    purpose: funding and patent extensions
+    tickets: [K1, K2, K3, K4, K5, K6, K7, K8, K9, K10, K11, K12, L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11]
+  R5:
+    purpose: OSG 1.0, community products, and durable maintenance
+    tickets: [B2, B3, B4, C8, N6, N8, N9, N10, O5, O8, O9, O10, O11, P2, P3, P8, P9, P10, Q3, Q5, Q6, Q7, Q8, Q9, Q10]
