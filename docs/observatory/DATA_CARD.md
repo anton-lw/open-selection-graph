@@ -80,6 +80,8 @@ The release is organised into six licence-separated components.
 
 Each component includes a `LICENCE.json` file. The release root contains `VERSION.json`, `PACKAGE.json`, `MANIFEST.json`, `VALIDATION.json`, `TABLE_COUNTS.csv`, an analytical DuckDB database, and machine-readable schemas. The HUPD census remains a standalone Parquet table because of its size. Its row count and hash are verified with the rest of the package.
 
+The frozen version 2.0.0 release is archived at [doi:10.5281/zenodo.22081233](https://doi.org/10.5281/zenodo.22081233). Code and metadata are available from [GitHub](https://github.com/anton-lw/open-selection-graph), and the licence-separated archives are mirrored on [Hugging Face](https://huggingface.co/datasets/antonsaccount/open-selection-graph).
+
 ## Quick start
 
 Query the analytical database with DuckDB:

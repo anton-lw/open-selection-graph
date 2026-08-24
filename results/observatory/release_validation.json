@@ -10,7 +10,7 @@
     "scope_reductions_valid": true,
     "ticket_structure": true
   },
-  "generated_at": "2026-08-24T13:28:49+00:00",
+  "generated_at": "2026-08-24T13:46:35+00:00",
   "governance_catalogue_hash": "aadd726d76802f2f8dd887f7ca762221a648d46b3886cdb21b6e88d3660f28cd",
   "invalid_scope_reductions": [],
   "missing_evidence_rows": [],
@@ -20,6 +20,6 @@
   "required_ticket_count": 164,
   "schema": "observatory.release-validation/1",
   "scope_reductions": {},
-  "ticket_audit_hash": "ac0f9770a40128d691b9bcc9a53b40379384f94bf59ffe208cc4332871d89563",
-  "validation_hash": "3e5202f6070ee58f79764946edd281fa318476ce6fdabbef96cf9d25347b4bfc"
+  "ticket_audit_hash": "8ca78f191a3ff3d981d287cc8b78951fdf7d8e5f73eced0c13a550294c7349d6",
+  "validation_hash": "e3b9527471b745df674d497cede09e5784e57997f03a2d9cdc0f146648487eb6"
 }

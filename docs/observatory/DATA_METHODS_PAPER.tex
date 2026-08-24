@@ -141,6 +141,7 @@
 \setlength{\headheight}{19pt}
 
 \makeatletter
+\renewcommand{\@seccntformat}[1]{\csname the#1\endcsname\hspace{0.65em}}
 \renewcommand\section{\@startsection{section}{1}{\z@}%
   {2.7ex \@plus 0.8ex \@minus 0.3ex}%
   {1.0ex \@plus 0.2ex}%
@@ -207,11 +208,7 @@ funding, and patent examination. The dataset contains a
 OpenReview cohorts, public UKRI and SNSF panel records, a PANORAMA patent
 examination panel, and a privacy-minimised census of
 \OSGClaimHupdPublicApplications{} published English-language US utility
-applications filed from 2004 through 2018. Each
-record retains source terminology together with explicit coverage,
-missing-stage, and comparison fields. Semantic and lineage benchmarks,
-fixed-window outcome tables, and validation reports support research on
-selection processes whose public evidence is informative and incomplete.
+applications filed from 2004 through 2018.
 \end{abstract}
 
 \textbf{Keywords:} peer review; research evaluation; scientific
@@ -1372,7 +1369,13 @@ verified independently.
 \section{Data availability}\label{data-availability}
 
 The data records described in this article are contained in the
-licence-separated release package accompanying the manuscript. The
+licence-separated release package archived at
+\url{https://doi.org/10.5281/zenodo.22081233}. The code and metadata are
+also available at
+\url{https://github.com/anton-lw/open-selection-graph}, and the release
+archives are mirrored at
+\url{https://huggingface.co/datasets/antonsaccount/open-selection-graph}.
+The
 package-level \texttt{VERSION.json}, \texttt{PACKAGE.json},
 \texttt{VALIDATION.json}, and \texttt{MANIFEST.json} files identify the
 snapshot and provide table counts, component licences, and SHA-256

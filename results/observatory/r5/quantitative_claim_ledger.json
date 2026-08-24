@@ -885,7 +885,7 @@
     {
       "claim_id": "release_components",
       "evidence_path": "configs/observatory/release_components.yaml",
-      "evidence_sha256": "91f525093e3d487daf265fd97d9509336eeaf27d59df6e5d6dc10d0ed3b22c40",
+      "evidence_sha256": "b219b1a2674978788cd174e478b4948c46c0ddbd785379863e0214448b94119c",
       "field": "len(components)",
       "release_reproducible": true,
       "value": 6
@@ -893,18 +893,19 @@
     {
       "claim_id": "release_parquet_tables",
       "evidence_path": "configs/observatory/release_components.yaml",
-      "evidence_sha256": "91f525093e3d487daf265fd97d9509336eeaf27d59df6e5d6dc10d0ed3b22c40",
+      "evidence_sha256": "b219b1a2674978788cd174e478b4948c46c0ddbd785379863e0214448b94119c",
       "field": "count(components.*.files[*.parquet])",
       "release_reproducible": true,
       "value": 72
     }
   ],
   "comment_only_registration_present": false,
-  "frozen_release_doi": null,
+  "frozen_release_doi": "10.5281/zenodo.22081233",
   "generated_macro_count": 130,
   "generated_macro_values_match_ledger": true,
   "macro_value_mismatches": [],
   "nonclaims_due_missing_registered_field": [],
+  "paper_cites_frozen_release_doi": true,
   "paper_claim_ids": [
     "admissible_rate_cycles",
     "afterlife_candidates",

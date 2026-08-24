@@ -864,7 +864,7 @@ tickets:
   - results/observatory/r5/quantitative_claim_ledger.json
   - results/observatory/publication/open-selection-graph-data-methods-paper-2.0.0.tar
   - results/observatory/publication/EXTERNAL_BLOCKER_AUDIT.json
-  gap: The standalone data/methods manuscript, quantitative ledger and verified public dataset deposit are complete, but there is no frozen archival DOI or external manuscript submission receipt. The paper explicitly does not claim submission.
+  gap: The standalone data/methods manuscript and quantitative ledger cite the reserved release DOI. Publication of that DOI and an external journal submission receipt remain pending.
 - id: P1
   status: complete
   evidence: [src/observatory/r3_validation.py, results/observatory/r3/gate_cycle_descriptive_atlas.parquet, results/observatory/r3/gate_cycle_descriptive_atlas_report.json]

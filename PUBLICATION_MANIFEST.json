@@ -5,7 +5,7 @@
       "licence": "software and file-specific licences",
       "member_count": 246,
       "path": "results/observatory/publication/open-selection-graph-code-metadata-2.0.0.tar",
-      "sha256": "fca3191808d586e49b2f5a229a80d80a3baf11ba581752bbd826c898986491e7",
+      "sha256": "a71c8dd3bfe5c1491737454b4ef156a3ba9257c4b36f07548a733857ef75d7ef",
       "size_bytes": 5109760
     },
     {
@@ -13,7 +13,7 @@
       "licence": "CC-BY-4.0",
       "member_count": 64,
       "path": "results/observatory/publication/open-selection-graph-derived_features-2.0.0.tar",
-      "sha256": "fa93bb04f31d94c117452ad717fe853ff749a10a766c042af831fbf9d5f3476f",
+      "sha256": "c36bee3c51c33d3850799f900b993979644799ffff6c4cf4bd3c003c0c493832",
       "size_bytes": 15298560
     },
     {
@@ -21,7 +21,7 @@
       "licence": "CC-BY-NC-SA-4.0",
       "member_count": 36,
       "path": "results/observatory/publication/open-selection-graph-funding_noncommercial-2.0.0.tar",
-      "sha256": "4c8a8fcc4f983b43f77cd27629cd86144387a8d621588f60ff24c4474d422df2",
+      "sha256": "d396051f3a40067610d0321cfc194a451a54ba3701dab0f50ecb4ce6583eb3e5",
       "size_bytes": 931840
     },
     {
@@ -29,7 +29,7 @@
       "licence": "CC-BY-4.0 and OGL-3.0; source-level notices control",
       "member_count": 33,
       "path": "results/observatory/publication/open-selection-graph-funding_open_panels-2.0.0.tar",
-      "sha256": "c512906e3171ce48f3060f435ebd25a9db1c50206e80f5890ff9d7709d04f4d0",
+      "sha256": "07b7b8f138115f3cb2ca5fa047fb47862132b8184319d7eea974dda9d380b01b",
       "size_bytes": 1536000
     },
     {
@@ -37,7 +37,7 @@
       "licence": "CC0-1.0",
       "member_count": 66,
       "path": "results/observatory/publication/open-selection-graph-metadata-2.0.0.tar",
-      "sha256": "3fa4ca46eb7c35dc46f57226b7114f25d0ba8e480373a45f23e26ae8501004e3",
+      "sha256": "3c5f2c76b674c7ee1114ae86d1cebdfde6805a3145a917f884f0d9d4f38421d4",
       "size_bytes": 23224320
     },
     {
@@ -45,7 +45,7 @@
       "licence": "CC-BY-NC-SA-4.0",
       "member_count": 37,
       "path": "results/observatory/publication/open-selection-graph-patent_noncommercial-2.0.0.tar",
-      "sha256": "880a6e5203de821ff6f509ff485e22f11c556846de92af72217f46e79e68f56d",
+      "sha256": "4f9ebf1096df4f492759ded11454df797ab6482ef74ea5d39b60ba9ab5200906",
       "size_bytes": 483665920
     },
     {
@@ -53,7 +53,7 @@
       "licence": "CC0-1.0",
       "member_count": 103,
       "path": "results/observatory/publication/open-selection-graph-validation-2.0.0.tar",
-      "sha256": "f86e1fa062a212bdae835a8517aca28398979cdcd338f6128492fc0738a308de",
+      "sha256": "3d71405466bf5a08d9c51703501703f2bbff1b6082e5f664067887be45a278c0",
       "size_bytes": 2068480
     },
     {
@@ -61,7 +61,7 @@
       "licence": "CC-BY-4.0",
       "member_count": 12,
       "path": "results/observatory/publication/open-selection-graph-data-methods-paper-2.0.0.tar",
-      "sha256": "579bce1764e62b43f518fcd14bc0f1a9daa0abbf21cc6b837bbc4d440ffe5679",
+      "sha256": "ff54aaefc454859c46949df7fdc8f8462515a2b8f7cbe48c78d4abe7edab2406",
       "size_bytes": 17684480
     }
   ],

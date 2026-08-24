@@ -1,6 +1,6 @@
 {
   "all_acceptance_complete": false,
-  "audit_hash": "ac0f9770a40128d691b9bcc9a53b40379384f94bf59ffe208cc4332871d89563",
+  "audit_hash": "8ca78f191a3ff3d981d287cc8b78951fdf7d8e5f73eced0c13a550294c7349d6",
   "configured_ticket_count": 164,
   "duplicates": [],
   "expected_ids": [
@@ -3747,7 +3747,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -3813,7 +3813,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -3834,7 +3834,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -3855,7 +3855,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -3975,7 +3975,7 @@
           "exists": true,
           "kind": "file",
           "path": "docs/observatory/DATA_CARD.md",
-          "size_bytes": 18545
+          "size_bytes": 18898
         },
         {
           "exists": true,
@@ -4008,7 +4008,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4074,7 +4074,7 @@
           "exists": true,
           "kind": "file",
           "path": "docs/observatory/CITATION.cff",
-          "size_bytes": 717
+          "size_bytes": 857
         },
         {
           "exists": true,
@@ -4218,13 +4218,13 @@
           "exists": true,
           "kind": "file",
           "path": "docs/observatory/DATA_METHODS_PAPER.tex",
-          "size_bytes": 76184
+          "size_bytes": 76214
         },
         {
           "exists": true,
           "kind": "file",
           "path": "results/observatory/r5/quantitative_claim_ledger.json",
-          "size_bytes": 41481
+          "size_bytes": 41544
         },
         {
           "exists": true,
@@ -4239,7 +4239,7 @@
           "size_bytes": 1644
         }
       ],
-      "gap": "The standalone data/methods manuscript, quantitative ledger and verified public dataset deposit are complete, but there is no frozen archival DOI or external manuscript submission receipt. The paper explicitly does not claim submission.",
+      "gap": "The standalone data/methods manuscript and quantitative ledger cite the reserved release DOI. Publication of that DOI and an external journal submission receipt remain pending.",
       "id": "O11",
       "issues": [],
       "release_wave": "R5",
@@ -4278,7 +4278,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4311,7 +4311,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4464,7 +4464,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4491,7 +4491,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4524,7 +4524,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4825,7 +4825,7 @@
           "exists": true,
           "kind": "file",
           "path": "results/observatory/ticket_evidence_audit.json",
-          "size_bytes": 117435
+          "size_bytes": 117375
         },
         {
           "exists": true,
@@ -4864,7 +4864,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4891,7 +4891,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 70506
+          "size_bytes": 71078
         },
         {
           "exists": true,
@@ -4924,7 +4924,7 @@
           "exists": true,
           "kind": "file",
           "path": "results/observatory/ticket_evidence_audit.json",
-          "size_bytes": 117435
+          "size_bytes": 117375
         },
         {
           "exists": true,

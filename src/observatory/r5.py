@@ -1169,6 +1169,22 @@ def build_quantitative_claim_ledger(workspace: Path, output: Path) -> dict[str, 
     comment_only_registration_present = bool(
         re.search(r"^% QCL:", paper_text, flags=re.MULTILINE)
     )
+    zenodo_receipt_path = (
+        workspace
+        / "results"
+        / "observatory"
+        / "publication"
+        / "ZENODO_PRIVATE_DEPOSIT_RECEIPT.json"
+    )
+    zenodo_receipt = (
+        json.loads(zenodo_receipt_path.read_text())
+        if zenodo_receipt_path.is_file()
+        else {}
+    )
+    frozen_release_doi = zenodo_receipt.get("reserved_doi")
+    paper_cites_frozen_release_doi = bool(
+        frozen_release_doi and str(frozen_release_doi) in paper_text
+    )
     report = {
         "schema": "observatory.quantitative-claim-ledger/1",
         "claims": rows,
@@ -1183,7 +1199,8 @@ def build_quantitative_claim_ledger(workspace: Path, output: Path) -> dict[str, 
         "macro_value_mismatches": macro_value_mismatches,
         "paper_macro_usage_count": len(invoked_macros),
         "comment_only_registration_present": comment_only_registration_present,
-        "frozen_release_doi": None,
+        "frozen_release_doi": frozen_release_doi,
+        "paper_cites_frozen_release_doi": paper_cites_frozen_release_doi,
         "paper_submitted": False,
         "passes_quantitative_reproduction": all(
             row["evidence_sha256"] and row["release_reproducible"] for row in rows
