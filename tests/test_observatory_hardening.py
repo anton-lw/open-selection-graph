@@ -198,6 +198,43 @@ def test_publication_readiness_counts_each_verified_private_provider(
     assert not report["passes"]
 
 
+def test_publication_readiness_accepts_two_verified_public_paths(
+    tmp_path: Path,
+) -> None:
+    publication = tmp_path / "results" / "observatory" / "publication"
+    publication.mkdir(parents=True)
+    common = {
+        "visibility": "public",
+        "passes_private_staging_deposit": True,
+        "passes_public_release_gate": True,
+        "remote_checksum_verification": {"passes": True},
+    }
+    (publication / "GITHUB_PRIVATE_DEPOSIT_RECEIPT.json").write_text(
+        json.dumps(
+            {
+                **common,
+                "persistent_public_identifier": "https://github.com/example/osg",
+            }
+        )
+    )
+    (publication / "HUGGINGFACE_PRIVATE_DEPOSIT_RECEIPT.json").write_text(
+        json.dumps(
+            {
+                **common,
+                "persistent_public_identifier": "https://huggingface.co/datasets/example/osg",
+            }
+        )
+    )
+
+    report = build_publication_readiness(tmp_path, tmp_path / "r5")
+
+    assert report["passes"]
+    assert report["independent_live_paths"] == 2
+    assert report["public_release_paths"] == 2
+    assert report["private_staging_paths"] == 0
+    assert all(row["status"] == "public_release_verified" for row in report["paths"])
+
+
 def test_secret_scan_allows_only_an_explicitly_released_contact(tmp_path: Path) -> None:
     metadata = tmp_path / "publication.yaml"
     metadata.write_text(

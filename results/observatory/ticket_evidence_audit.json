@@ -1,6 +1,6 @@
 {
   "all_acceptance_complete": false,
-  "audit_hash": "34995ff39bf73d5520a79fd6f45952f123482a5ddc740d93819d8a31bf05cd62",
+  "audit_hash": "a73a7df47e82521cf94781cf285af7c40023b361e80da4b5a86d6f5781a56da2",
   "configured_ticket_count": 164,
   "duplicates": [],
   "expected_ids": [
@@ -175,8 +175,8 @@
       "complete": 18
     },
     "non_gate": {
-      "complete": 144,
-      "pending": 2
+      "complete": 145,
+      "pending": 1
     }
   },
   "missing": [],
@@ -253,8 +253,8 @@
       "complete": 10
     },
     "O": {
-      "complete": 9,
-      "pending": 2
+      "complete": 10,
+      "pending": 1
     },
     "P": {
       "complete": 10
@@ -268,8 +268,8 @@
       "complete": 81
     },
     "P1": {
-      "complete": 73,
-      "pending": 2
+      "complete": 74,
+      "pending": 1
     },
     "P2": {
       "complete": 8
@@ -292,13 +292,13 @@
       "complete": 23
     },
     "R5": {
-      "complete": 23,
-      "pending": 2
+      "complete": 24,
+      "pending": 1
     }
   },
   "status_counts": {
-    "complete": 162,
-    "pending": 2
+    "complete": 163,
+    "pending": 1
   },
   "tickets": [
     {
@@ -739,7 +739,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 31768
+          "size_bytes": 33007
         }
       ],
       "id": "D2",
@@ -759,7 +759,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 31768
+          "size_bytes": 33007
         }
       ],
       "id": "D3",
@@ -839,7 +839,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 31768
+          "size_bytes": 33007
         }
       ],
       "id": "D7",
@@ -3237,7 +3237,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 31768
+          "size_bytes": 33007
         },
         {
           "exists": true,
@@ -3747,7 +3747,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -3813,7 +3813,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -3834,7 +3834,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -3855,7 +3855,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4008,7 +4008,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4119,7 +4119,7 @@
           "exists": true,
           "kind": "file",
           "path": "results/observatory/r5/publication_readiness.json",
-          "size_bytes": 2147
+          "size_bytes": 2275
         },
         {
           "exists": true,
@@ -4131,7 +4131,13 @@
           "exists": true,
           "kind": "file",
           "path": "results/observatory/publication/HUGGINGFACE_PRIVATE_DEPOSIT_RECEIPT.json",
-          "size_bytes": 1436
+          "size_bytes": 1553
+        },
+        {
+          "exists": true,
+          "kind": "file",
+          "path": "results/observatory/publication/GITHUB_PRIVATE_DEPOSIT_RECEIPT.json",
+          "size_bytes": 1374
         },
         {
           "exists": true,
@@ -4140,11 +4146,11 @@
           "size_bytes": 1644
         }
       ],
-      "gap": "The checksum-verified Hugging Face staging deposit exists at a private immutable revision. Public visibility, a persistent public identifier, and a second independent public path remain pending.",
+      "gap": null,
       "id": "O8",
       "issues": [],
       "release_wave": "R5",
-      "status": "pending"
+      "status": "complete"
     },
     {
       "evidence": [
@@ -4233,7 +4239,7 @@
           "size_bytes": 1644
         }
       ],
-      "gap": "The standalone data/methods manuscript and quantitative ledger are complete, but the verified dataset deposit remains private and there is no frozen release DOI or external manuscript submission receipt. The paper explicitly does not claim submission.",
+      "gap": "The standalone data/methods manuscript, quantitative ledger and verified public dataset deposit are complete, but there is no frozen archival DOI or external manuscript submission receipt. The paper explicitly does not claim submission.",
       "id": "O11",
       "issues": [],
       "release_wave": "R5",
@@ -4272,7 +4278,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4305,7 +4311,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4458,7 +4464,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4485,7 +4491,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4518,7 +4524,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4646,7 +4652,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 31768
+          "size_bytes": 33007
         },
         {
           "exists": true,
@@ -4858,7 +4864,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,
@@ -4885,7 +4891,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 68993
+          "size_bytes": 70506
         },
         {
           "exists": true,

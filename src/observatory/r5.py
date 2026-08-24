@@ -761,15 +761,15 @@ def build_publication_readiness(workspace: Path, output: Path) -> dict[str, Any]
     receipt_specs = {
         "github_repository": (
             publication / "GITHUB_PRIVATE_DEPOSIT_RECEIPT.json",
-            {"private"},
+            {"private", "public"},
         ),
         "hugging_face_dataset": (
             publication / "HUGGINGFACE_PRIVATE_DEPOSIT_RECEIPT.json",
-            {"private"},
+            {"private", "public"},
         ),
         "zenodo": (
             publication / "ZENODO_PRIVATE_DEPOSIT_RECEIPT.json",
-            {"private", "private_draft"},
+            {"private", "private_draft", "public"},
         ),
     }
     receipts: dict[str, dict[str, Any]] = {}
@@ -793,27 +793,49 @@ def build_publication_readiness(workspace: Path, output: Path) -> dict[str, Any]
         if provider in verified_receipts
     }
     private_staging_verified = bool(dataset_providers)
+    github_receipt = receipts.get("github_repository") or {}
+    hugging_face_receipt = receipts.get("hugging_face_dataset") or {}
     zenodo_receipt = receipts.get("zenodo") or {}
+    github_public_identifier = (
+        github_receipt.get("persistent_public_identifier")
+        if github_receipt.get("visibility") == "public"
+        and github_receipt.get("passes_public_release_gate")
+        else None
+    )
+    dataset_public_identifier = next(
+        (
+            receipt.get("persistent_public_identifier")
+            for receipt in (zenodo_receipt, hugging_face_receipt)
+            if receipt.get("visibility") == "public"
+            and receipt.get("passes_public_release_gate")
+            and receipt.get("persistent_public_identifier")
+        ),
+        None,
+    )
     paths = [
         {
             "name": "public code and metadata repository",
             "provider": "GitHub or equivalent free Git forge",
             "status": (
-                "private_staging_verified_public_visibility_pending"
+                "public_release_verified"
+                if github_public_identifier
+                else "private_staging_verified_public_visibility_pending"
                 if github_verified
                 else "pending_independent_public_path"
             ),
-            "persistent_identifier": None,
+            "persistent_identifier": github_public_identifier,
         },
         {
             "name": "licence-separated dataset archive",
             "provider": "Zenodo or Hugging Face Dataset",
             "status": (
-                "private_staging_verified_public_visibility_pending"
+                "public_release_verified"
+                if dataset_public_identifier
+                else "private_staging_verified_public_visibility_pending"
                 if private_staging_verified
                 else "blocked_authentication_required"
             ),
-            "persistent_identifier": None,
+            "persistent_identifier": dataset_public_identifier,
             "reserved_identifier": zenodo_receipt.get("reserved_doi"),
         },
     ]
@@ -821,11 +843,20 @@ def build_publication_readiness(workspace: Path, output: Path) -> dict[str, Any]
         str(path.relative_to(workspace))
         for path, _receipt in verified_receipts.values()
     ]
+    independent_live_paths = sum(
+        row["persistent_identifier"] is not None for row in paths
+    )
+    private_staging_paths = sum(
+        receipt.get("visibility") in {"private", "private_draft"}
+        for _path, receipt in verified_receipts.values()
+    )
     report = {
         "schema": "observatory.publication-readiness/1",
         "paths": paths,
-        "independent_live_paths": sum(row["persistent_identifier"] is not None for row in paths),
-        "private_staging_paths": len(verified_receipts),
+        "independent_live_paths": independent_live_paths,
+        "private_staging_paths": private_staging_paths,
+        "verified_deposit_paths": len(verified_receipts),
+        "public_release_paths": independent_live_paths,
         "private_deposit_receipt": (
             str(verified_receipts[sorted(dataset_providers)[0]][0].relative_to(workspace))
             if dataset_providers
@@ -856,9 +887,11 @@ def build_publication_readiness(workspace: Path, output: Path) -> dict[str, Any]
                 else "deposit authentication required"
             ),
         },
-        "passes": False,
+        "passes": independent_live_paths >= 2,
         "blocking_action": (
-            "programme owner authorizes public visibility and selects the paper submission target"
+            "programme owner selects the paper submission target and freezes any journal-required archival DOI"
+            if independent_live_paths >= 2
+            else "programme owner authorizes public visibility and selects the paper submission target"
             if github_verified and private_staging_verified
             else "programme owner completes the remaining private staging path, authorizes public visibility, and selects the paper submission target"
             if private_staging_verified
