@@ -1,6 +1,6 @@
 {
   "all_acceptance_complete": false,
-  "audit_hash": "a73a7df47e82521cf94781cf285af7c40023b361e80da4b5a86d6f5781a56da2",
+  "audit_hash": "ac0f9770a40128d691b9bcc9a53b40379384f94bf59ffe208cc4332871d89563",
   "configured_ticket_count": 164,
   "duplicates": [],
   "expected_ids": [
@@ -4825,7 +4825,7 @@
           "exists": true,
           "kind": "file",
           "path": "results/observatory/ticket_evidence_audit.json",
-          "size_bytes": 117449
+          "size_bytes": 117435
         },
         {
           "exists": true,
@@ -4924,7 +4924,7 @@
           "exists": true,
           "kind": "file",
           "path": "results/observatory/ticket_evidence_audit.json",
-          "size_bytes": 117449
+          "size_bytes": 117435
         },
         {
           "exists": true,
