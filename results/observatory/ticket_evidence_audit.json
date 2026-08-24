@@ -1,6 +1,6 @@
 {
   "all_acceptance_complete": false,
-  "audit_hash": "92aa9d4df1418f9a73be705ca8e0a5662d89742f9932081ab8c6d1e875308cb2",
+  "audit_hash": "34995ff39bf73d5520a79fd6f45952f123482a5ddc740d93819d8a31bf05cd62",
   "configured_ticket_count": 164,
   "duplicates": [],
   "expected_ids": [
@@ -739,7 +739,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 30477
+          "size_bytes": 31768
         }
       ],
       "id": "D2",
@@ -759,7 +759,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 30477
+          "size_bytes": 31768
         }
       ],
       "id": "D3",
@@ -839,7 +839,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 30477
+          "size_bytes": 31768
         }
       ],
       "id": "D7",
@@ -3237,7 +3237,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 30477
+          "size_bytes": 31768
         },
         {
           "exists": true,
@@ -3747,7 +3747,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -3813,7 +3813,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -3834,7 +3834,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -3855,7 +3855,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4008,7 +4008,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4119,7 +4119,7 @@
           "exists": true,
           "kind": "file",
           "path": "results/observatory/r5/publication_readiness.json",
-          "size_bytes": 1960
+          "size_bytes": 2147
         },
         {
           "exists": true,
@@ -4272,7 +4272,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4305,7 +4305,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4458,7 +4458,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4485,7 +4485,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4518,7 +4518,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4646,7 +4646,7 @@
           "exists": true,
           "kind": "file",
           "path": "tests/test_observatory_hardening.py",
-          "size_bytes": 30477
+          "size_bytes": 31768
         },
         {
           "exists": true,
@@ -4858,7 +4858,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
@@ -4885,7 +4885,7 @@
           "exists": true,
           "kind": "file",
           "path": "src/observatory/r5.py",
-          "size_bytes": 67415
+          "size_bytes": 68993
         },
         {
           "exists": true,
